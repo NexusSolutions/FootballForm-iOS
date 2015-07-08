@@ -1,0 +1,91 @@
+ShinobiCharts CHANGELOG
+
+***All changes additionally apply to the MonoTouch version unless otherwise stated***
+
+2.5.3 to 2.5.4 (01/10/2013)
+==========
+
+* This improves the workaround introduced in 2.5.3 to address OpenGL ES backwards compatibility issues on iPhone 5s. The workaround should now work correctly on iOS 6 devices in debug mode. 
+
+
+
+2.5.1 to 2.5.3 (27/09/2013)
+==========
+
+* Note that 2.5.2 was an internal only release.
+
+* With the iPhone 5s, Apple has moved to a new processor architecture that is claimed to be fully backwards compatible.  Whilst this should mean support for existing GL code, like our own, we have discovered a bug in Apple’s multi-sampling implementation. We have implemented a work-around and raised a radar with Apple to alert them of this issue.
+
+* Fixes a bug with axis title labels, affecting arm64 simulator builds.
+
+
+
+2.5.0 to 2.5.1 (19/09/2013)
+==========
+
+* Adds arm64 support (includes changes to primitive parameter types to accommodate 32bit - 64bit compatibility)
+
+* Changes minimum supported version to iOS6 (mandated by arm64 slice inclusion) - see version 2.5.0 for < iOS6
+
+* NOTE: Xamarin bindings do not contain a 64-bit slice. This will be made available as soon as Xamarin provide the tooling
+
+
+
+2.3.1 - 2.5.0 (11-Sep-2013)
+==========
+
+In the latest release of our ShinobiControls, we have taken the opportunity to bring our products into line with each other, and to update our release process. Any future major releases will include all of our products, rather than having separate releases for individual products. The Shinobi Suite is currently at version 2.5.0, so we have updated all of our products to have this version number. 
+
+* Added iOS7 theme, which the chart will now default to on iOS7 devices.
+
+* Added a utility class (ShinobiCharts) that allows the developer to set the theme and licenseKey for all of their charts centrally.
+
+* Chart style and theme classes now conform to the NSCopying protocol.
+
+* Added the property legendItem to SChartSeries which allows the developer to specify an object that adheres to the SChartLegendItem protocol to supply the series title & legend symbol for that series.
+
+* The methods setTheme: and applyTheme have been deprecated and replaced by the method applyTheme: which will apply the supplied theme.
+
+* Fixes an issue where 'pixelValueForDataValue' would give an incorrect return value on an axis with a transform.
+
+* Improved performance of tick mark calculation when using a DateTimeAxis.
+
+* Added properties to the ShinobiChart to allow chart title positioning, which were previously only available by using the chart's theme.
+
+* Fixed issue whereby tick labels & data range were not being calculated correctly when an axis was being initialised with a large range.
+
+* Fixed various issues regarding data to pixel and pixel to data mapping.
+
+* Deprecated 'offsetForDataValue:inSeries:' in favor of 'offSetForSeries:'.
+
+2.3.0 - 2.3.1 (30-Aug-2013)
+==========
+
+Mostly minor fixes:
+
+* Category axes initWithRange / defaultRange issue fixed
+
+* X-axis tick label sizing now correctly interprets label length
+
+* Truncation on tick labels is no longer present
+
+* Stack data series appending bug fixed
+
+* Other minor fixes and tweaks
+
+
+2.2.1 - 2.3.0 (7-Aug-2013)
+==========
+
+* Charts is now distributed in a disk image with a pkg installer. This will install the framework to Xcode where it can be included in projects like any Apple framework.
+
+* The user-guide and samples have been improved with more information and how-to guides
+
+* Charts now support appending data via methods on the chart itself. This is supported by a heavily modified render engine for optimum performance.
+
+* Bubble series now have their own dedicated class to improve support for this series type.
+
+* Improved tickmark support for discontinuous axes and several bugs in this area fixed - including an infinite loop.
+
+* Other bug fixes.
+

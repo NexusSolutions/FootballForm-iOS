@@ -1,0 +1,1140 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>SChartLegend Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.1 (build 858)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">ShinobiCharts </a></h1>
+				<a id="developerHome" href="../index.html">Scott Logic Ltd</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">SChartLegend Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/autosizeLabels">&nbsp;&nbsp;&nbsp;&nbsp;autosizeLabels</option>
+	
+	<option value="//api/name/cornerRadius">&nbsp;&nbsp;&nbsp;&nbsp;cornerRadius</option>
+	
+	<option value="//api/name/fixedWidthRatio">&nbsp;&nbsp;&nbsp;&nbsp;fixedWidthRatio</option>
+	
+	<option value="//api/name/labels">&nbsp;&nbsp;&nbsp;&nbsp;labels</option>
+	
+	<option value="//api/name/maxSeriesPerLine">&nbsp;&nbsp;&nbsp;&nbsp;maxSeriesPerLine</option>
+	
+	<option value="//api/name/placement">&nbsp;&nbsp;&nbsp;&nbsp;placement</option>
+	
+	<option value="//api/name/position">&nbsp;&nbsp;&nbsp;&nbsp;position</option>
+	
+	<option value="//api/name/showSymbols">&nbsp;&nbsp;&nbsp;&nbsp;showSymbols</option>
+	
+	<option value="//api/name/style">&nbsp;&nbsp;&nbsp;&nbsp;style</option>
+	
+	<option value="//api/name/symbolWidth">&nbsp;&nbsp;&nbsp;&nbsp;symbolWidth</option>
+	
+	<option value="//api/name/symbols">&nbsp;&nbsp;&nbsp;&nbsp;symbols</option>
+	
+	<option value="//api/name/title">&nbsp;&nbsp;&nbsp;&nbsp;title</option>
+	
+	
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/drawLegend">&nbsp;&nbsp;&nbsp;&nbsp;- drawLegend</option>
+	
+	<option value="//api/name/initWithChart:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithChart:</option>
+	
+	<option value="//api/name/reload">&nbsp;&nbsp;&nbsp;&nbsp;- reload</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Initialisation">Initialisation</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Drawing the legend">Drawing the legend</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Formatting the legend">Formatting the legend</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Styling">Styling</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Legend items">Legend items</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/autosizeLabels">autosizeLabels</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/cornerRadius">cornerRadius</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/fixedWidthRatio">fixedWidthRatio</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/labels">labels</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/maxSeriesPerLine">maxSeriesPerLine</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/placement">placement</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/position">position</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/showSymbols">showSymbols</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/style">style</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/symbolWidth">symbolWidth</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/symbols">symbols</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/title">title</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/drawLegend">drawLegend</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithChart:">initWithChart:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/reload">reload</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="SChartLegend Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">SChartLegend Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value">UIView</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">SChartLegend.h</td>
+</tr><tr>
+	<td class="specification-title">Companion guide</td>
+	<td class="specification-value"><a href="../docs/markdown_files/ChartsUserGuide.html">ChartsUserGuide</a></td>
+</tr><tr>
+	<td class="specification-title">Availability</td>
+	<td class="specification-value">Standard<br />Premium</td>
+</tr><tr>
+	<td class="specification-title">Related samples</td>
+	<td class="specification-value"></td>
+</tr>
+						</tbody></table></div>
+					
+					
+					
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>Series data can be displayed in a legend on a <a href="../Classes/ShinobiChart.html"><code>ShinobiChart</code></a>. The <code>SChartLegend</code> is a UIView-based object that represents the legend as a visual item on the chart. The legend may appear in a number of preset positions within the chart.</p>
+
+<p>The <a href="#//api/name/placement">placement</a> of the legend inside or outside the plot area has different effects:</p>
+
+<pre><code>typedef enum {
+    SChartLegendPlacementOutsidePlotArea,
+    SChartLegendPlacementInsidePlotArea,
+    SChartLegendPlacementOnPlotAreaBorder
+} SChartLegendPlacement;
+</code></pre>
+
+<p>See the <a href="#//api/name/placement"><code>placement</code></a> property for more information.</p>
+
+<p>Irrespective of how the plot area behaves, we can anchor the legend to several preset positions in the chart area:</p>
+
+<pre><code>typedef enum {
+    SChartLegendPositionTopRight,
+    SChartLegendPositionMiddleRight,
+    SChartLegendPositionBottomRight,
+    SChartLegendPositionBottomMiddle,
+    SChartLegendPositionBottomLeft,
+    SChartLegendPositionMiddleLeft,
+    SChartLegendPositionTopLeft,
+    SChartLegendPositionTopMiddle
+} SChartLegendPosition;
+</code></pre>
+
+<p>See the <a href="#//api/name/position"><code>position</code></a> property for more information.</p>
+
+<p>To create a custom legend object, you can subclass <code>SChartLegend</code> and override its <a href="#//api/name/drawLegend"><code>drawLegend</code></a> method.  You can then assign the new legend object to <a href="../Classes/ShinobiChart.html#//api/name/legend"><code>[ShinobiChart legend]</code></a>.</p>
+
+<p>Any instance of <a href="../Classes/SChartSeries.html"><code>SChartSeries</code></a> will adopt the <a href="../Protocols/SChartLegendItem.html"><code>SChartLegendItem</code></a> protocol, which means that series can also customize how they appear in the legend.  <a href="../Protocols/SChartLegendItem.html"><code>SChartLegendItem</code></a> allows a series to specify the <a href="#//api/name/title">title</a> or symbol which should represent it in the legend.  For radial series, it allows the series to specify how each slice should be represented.  See the protocol&rsquo;s API documentation for more information.</p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						<a title="Initialisation" name="task_Initialisation"></a>
+						<h3 class="subsubtitle task-title">Initialisation</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/initWithChart:">&ndash;&nbsp;initWithChart:</a></code>
+		<span class="tooltip"><p>Initializes the legend with a reference to the <a href="#//api/name/chart">chart</a>.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Drawing the legend" name="task_Drawing the legend"></a>
+						<h3 class="subsubtitle task-title">Drawing the legend</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/drawLegend">&ndash;&nbsp;drawLegend</a></code>
+		<span class="tooltip"><p>The main function called by the <a href="#//api/name/chart">chart</a> to construct the legend.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Formatting the legend" name="task_Formatting the legend"></a>
+						<h3 class="subsubtitle task-title">Formatting the legend</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/title">&nbsp;&nbsp;title</a></code>
+		<span class="tooltip"><p>Sets a title for the legend.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/position">&nbsp;&nbsp;position</a></code>
+		<span class="tooltip"><p>Specifies the positioning of the legend on the chart.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/placement">&nbsp;&nbsp;placement</a></code>
+		<span class="tooltip"><p>The <a href="#//api/name/position">position</a> of the legend relative to the chart plot area.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/symbolWidth">&nbsp;&nbsp;symbolWidth</a></code>
+		<span class="tooltip"><p>The width that each symbol in the legend should have, in points.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/showSymbols">&nbsp;&nbsp;showSymbols</a></code>
+		<span class="tooltip"><p>DEPRECATED - Use <a href="../Classes/SChartLegendStyle.html#//api/name/showSymbols"><code>[SChartLegendStyle showSymbols]</code></a> instead.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/maxSeriesPerLine">&nbsp;&nbsp;maxSeriesPerLine</a></code>
+		<span class="tooltip"><p>The maximum number of series which are shown per row in horizontal legends.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/autosizeLabels">&nbsp;&nbsp;autosizeLabels</a></code>
+		<span class="tooltip"><p>If this is set to <code>YES</code>, legend <a href="#//api/name/labels">labels</a> will autosize to fit their text.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/fixedWidthRatio">&nbsp;&nbsp;fixedWidthRatio</a></code>
+		<span class="tooltip"><p>Defines a fixed ratio of the width of the overall chart which the legend will take up.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+						
+						<a title="Styling" name="task_Styling"></a>
+						<h3 class="subsubtitle task-title">Styling</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/style">&nbsp;&nbsp;style</a></code>
+		<span class="tooltip"><p>Manages the appearance of the legend.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/cornerRadius">&nbsp;&nbsp;cornerRadius</a></code>
+		<span class="tooltip"><p>Determines the radius of the legend corners.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+						
+						<a title="Legend items" name="task_Legend items"></a>
+						<h3 class="subsubtitle task-title">Legend items</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/symbols">&nbsp;&nbsp;symbols</a></code>
+		<span class="tooltip"><p>The symbols which are contained within the legend.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/labels">&nbsp;&nbsp;labels</a></code>
+		<span class="tooltip"><p>The labels which are contained within the legend.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/reload">&ndash;&nbsp;reload</a></code>
+		<span class="tooltip"><p>Causes the legend to redraw itself. Changes in series styling will not be updated within the legend until this method has been called.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/autosizeLabels" title="autosizeLabels"></a>
+	<h3 class="subsubtitle method-title">autosizeLabels</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>If this is set to <code>YES</code>, legend <a href="#//api/name/labels">labels</a> will autosize to fit their text.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) BOOL autosizeLabels</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Note that the legend frame will still be overridden if the frame is set manually,
+but this setting will override any value of <a href="#//api/name/fixedWidthRatio"><code>fixedWidthRatio</code></a> that has been set on the legend.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartLegend.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/cornerRadius" title="cornerRadius"></a>
+	<h3 class="subsubtitle method-title">cornerRadius</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Determines the radius of the legend corners.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) NSNumber *cornerRadius</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>This defaults to 0.  Setting this to <code>nil</code> also equates to a radius of 0 - which results in square corners.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartLegend.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/fixedWidthRatio" title="fixedWidthRatio"></a>
+	<h3 class="subsubtitle method-title">fixedWidthRatio</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Defines a fixed ratio of the width of the overall chart which the legend will take up.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) NSNumber *fixedWidthRatio</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>If this value is not set, the width of the chart will be auto-calculated.  This defaults to <code>nil</code>.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartLegend.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/labels" title="labels"></a>
+	<h3 class="subsubtitle method-title">labels</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The labels which are contained within the legend.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) NSMutableArray *labels</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartLegend.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/maxSeriesPerLine" title="maxSeriesPerLine"></a>
+	<h3 class="subsubtitle method-title">maxSeriesPerLine</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The maximum number of series which are shown per row in horizontal legends.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) NSInteger maxSeriesPerLine</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartLegend.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/placement" title="placement"></a>
+	<h3 class="subsubtitle method-title">placement</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The <a href="#//api/name/position">position</a> of the legend relative to the chart plot area.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) SChartLegendPlacement placement</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The options available are:</p>
+
+<pre><code>typedef enum {
+    SChartLegendPlacementOutsidePlotArea,
+    SChartLegendPlacementInsidePlotArea,
+    SChartLegendPlacementOnPlotAreaBorder
+} SChartLegendPlacement;
+</code></pre>
+
+<p>If the legend is drawn outside of the plot area, the plot area will shrink to accommodate the legend without obscuring the chart plot.  If the legend is drawn inside the plot area, the plot area will expand as though the legend is not there - with the legend displaying over it.</p>
+
+<p>If the legend is drawn on the plot area border, the plot area will shrink to accomodate half of the legend.  In this case, the legend will half overlap with the chart, and half be drawn outside the plot area.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartLegend.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/position" title="position"></a>
+	<h3 class="subsubtitle method-title">position</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Specifies the positioning of the legend on the chart.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) SChartLegendPosition position</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The options available are:
+    typedef enum {
+        SChartLegendPositionTopRight,
+        SChartLegendPositionMiddleRight,
+        SChartLegendPositionBottomRight,
+        SChartLegendPositionBottomMiddle,
+        SChartLegendPositionBottomLeft,
+        SChartLegendPositionMiddleLeft,
+        SChartLegendPositionTopLeft,
+        SChartLegendPositionTopMiddle,
+        SChartLegendPositionOnTopBorder,
+        SChartLegendPositionOnRightBorder
+    } SChartLegendPosition;</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartLegend.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/showSymbols" title="showSymbols"></a>
+	<h3 class="subsubtitle method-title">showSymbols</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>DEPRECATED - Use <a href="../Classes/SChartLegendStyle.html#//api/name/showSymbols"><code>[SChartLegendStyle showSymbols]</code></a> instead.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) BOOL showSymbols</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartLegend.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/style" title="style"></a>
+	<h3 class="subsubtitle method-title">style</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Manages the appearance of the legend.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) SChartLegendStyle *style</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="../Classes/SChartLegendStyle.html">SChartLegendStyle</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartLegend.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/symbolWidth" title="symbolWidth"></a>
+	<h3 class="subsubtitle method-title">symbolWidth</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The width that each symbol in the legend should have, in points.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) NSNumber *symbolWidth</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>If this is not set by the user, each symbol will automatically take up half of the width of the legend (with the chart series label/text taking up the other half).</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartLegend.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/symbols" title="symbols"></a>
+	<h3 class="subsubtitle method-title">symbols</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The symbols which are contained within the legend.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) NSMutableArray *symbols</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartLegend.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/title" title="title"></a>
+	<h3 class="subsubtitle method-title">title</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Sets a title for the legend.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) NSString *title</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartLegend.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/drawLegend" title="drawLegend"></a>
+	<h3 class="subsubtitle method-title">drawLegend</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The main function called by the <a href="#//api/name/chart">chart</a> to construct the legend.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)drawLegend</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Override this function to create a custom legend.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartLegend.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/initWithChart:" title="initWithChart:"></a>
+	<h3 class="subsubtitle method-title">initWithChart:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Initializes the legend with a reference to the <a href="#//api/name/chart">chart</a>.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)initWithChart:(ShinobiChart *)<em>_chart</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>_chart</em></dt>
+			<dd><p>The <a href="#//api/name/chart">chart</a> which will contain the legend.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>An initialized legend object, or <code>nil</code> if the legend couldn&rsquo;t be created.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartLegend.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/reload" title="reload"></a>
+	<h3 class="subsubtitle method-title">reload</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Causes the legend to redraw itself. Changes in series styling will not be updated within the legend until this method has been called.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)reload</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartLegend.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2013 Scott Logic Ltd. All rights reserved. (Last updated: 2013-10-01)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 858)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

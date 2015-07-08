@@ -1,0 +1,1727 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>SChartDateFrequency Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.1 (build 858)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">ShinobiCharts </a></h1>
+				<a id="developerHome" href="../index.html">Scott Logic Ltd</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">SChartDateFrequency Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/denomination">&nbsp;&nbsp;&nbsp;&nbsp;denomination</option>
+	
+	
+	
+	
+	<option value="class_methods">Class Methods</option>
+	
+	<option value="//api/name/dateFrequencyWithDay:">&nbsp;&nbsp;&nbsp;&nbsp;+ dateFrequencyWithDay:</option>
+	
+	<option value="//api/name/dateFrequencyWithHour:">&nbsp;&nbsp;&nbsp;&nbsp;+ dateFrequencyWithHour:</option>
+	
+	<option value="//api/name/dateFrequencyWithMinute:">&nbsp;&nbsp;&nbsp;&nbsp;+ dateFrequencyWithMinute:</option>
+	
+	<option value="//api/name/dateFrequencyWithMonth:">&nbsp;&nbsp;&nbsp;&nbsp;+ dateFrequencyWithMonth:</option>
+	
+	<option value="//api/name/dateFrequencyWithSecond:">&nbsp;&nbsp;&nbsp;&nbsp;+ dateFrequencyWithSecond:</option>
+	
+	<option value="//api/name/dateFrequencyWithWeek:">&nbsp;&nbsp;&nbsp;&nbsp;+ dateFrequencyWithWeek:</option>
+	
+	<option value="//api/name/dateFrequencyWithYear:">&nbsp;&nbsp;&nbsp;&nbsp;+ dateFrequencyWithYear:</option>
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/initWithDay:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithDay:</option>
+	
+	<option value="//api/name/initWithHour:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithHour:</option>
+	
+	<option value="//api/name/initWithMinute:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithMinute:</option>
+	
+	<option value="//api/name/initWithMonth:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithMonth:</option>
+	
+	<option value="//api/name/initWithSecond:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithSecond:</option>
+	
+	<option value="//api/name/initWithWeek:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithWeek:</option>
+	
+	<option value="//api/name/initWithYear:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithYear:</option>
+	
+	<option value="//api/name/setDay:">&nbsp;&nbsp;&nbsp;&nbsp;- setDay:</option>
+	
+	<option value="//api/name/setHour:">&nbsp;&nbsp;&nbsp;&nbsp;- setHour:</option>
+	
+	<option value="//api/name/setMinute:">&nbsp;&nbsp;&nbsp;&nbsp;- setMinute:</option>
+	
+	<option value="//api/name/setMonth:">&nbsp;&nbsp;&nbsp;&nbsp;- setMonth:</option>
+	
+	<option value="//api/name/setSecond:">&nbsp;&nbsp;&nbsp;&nbsp;- setSecond:</option>
+	
+	<option value="//api/name/setWeek:">&nbsp;&nbsp;&nbsp;&nbsp;- setWeek:</option>
+	
+	<option value="//api/name/setYear:">&nbsp;&nbsp;&nbsp;&nbsp;- setYear:</option>
+	
+	<option value="//api/name/toSeconds">&nbsp;&nbsp;&nbsp;&nbsp;- toSeconds</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Initialization">Initialization</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Factory methods">Factory methods</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Setting a new frequency">Setting a new frequency</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Accessing the state of the date frequency object">Accessing the state of the date frequency object</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/denomination">denomination</a></span></li>
+	
+</ul></li>
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#class_methods">Class Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/dateFrequencyWithDay:">dateFrequencyWithDay:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/dateFrequencyWithHour:">dateFrequencyWithHour:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/dateFrequencyWithMinute:">dateFrequencyWithMinute:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/dateFrequencyWithMonth:">dateFrequencyWithMonth:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/dateFrequencyWithSecond:">dateFrequencyWithSecond:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/dateFrequencyWithWeek:">dateFrequencyWithWeek:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/dateFrequencyWithYear:">dateFrequencyWithYear:</a></span></li>
+	
+</ul></li>
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithDay:">initWithDay:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithHour:">initWithHour:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithMinute:">initWithMinute:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithMonth:">initWithMonth:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithSecond:">initWithSecond:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithWeek:">initWithWeek:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithYear:">initWithYear:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setDay:">setDay:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setHour:">setHour:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setMinute:">setMinute:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setMonth:">setMonth:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setSecond:">setSecond:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setWeek:">setWeek:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setYear:">setYear:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/toSeconds">toSeconds</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="SChartDateFrequency Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">SChartDateFrequency Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value">NSObject</td>
+</tr><tr>
+	<td class="specification-title">Conforms to</td>
+	<td class="specification-value">NSCopying</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">SChartDateFrequency.h</td>
+</tr><tr>
+	<td class="specification-title">Availability</td>
+	<td class="specification-value"></td>
+</tr><tr>
+	<td class="specification-title">Related samples</td>
+	<td class="specification-value"></td>
+</tr>
+						</tbody></table></div>
+					
+					
+					
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>An <code>SChartDateFrequency</code> is used to specify the desired frequency of tick marks on a <a href="../Classes/SChartDateTimeAxis.html"><code>SChartDateTimeAxis</code></a>. For example, a frequency of 2 hours will cause the axis to attempt to display a tick mark at every 2 hour mark. No class type other than <code>SChartDateFrequency</code> (or one of its subclasses) may be used to define a date frequency on the axis.</p>
+
+<p>A frequency of a particular calendar unit may be set from one of the following supported units: year, month, week, day, hour, minute, second. This can be done by either:</p>
+
+<ul>
+<li>Initialising an <code>SChartDateFrequency</code> object, then using the setter method for the appropriate unit of time (as listed above).</li>
+<li>Using one of the convenience init methods provided (such as <a href="#//api/name/initWithSecond:"><code>initWithSecond:</code></a>).</li>
+<li>Using one of the factory methods provided (such as <a href="#//api/name/dateFrequencyWithSecond:"><code>dateFrequencyWithSecond:</code></a>).</li>
+</ul>
+
+
+<p>A frequency can only be specified in terms of one type of calendar unit. For example - a frequency of 1 hour AND 3 minutes cannot be set. In this case the frequency can only be of the type hour or of the type minute and will be set to the last component specified. To specify partial units it is necessary to use the lowest denominator - in the case of 1 hour and 3 minutes we would create a frequency of 63 minutes.</p>
+
+<p>If an attempt is made to set frequency to a negative or zero value, a default of 1 for the given component will be set. For example, if an attempt is made to set a frequency of -9 years the actual frequency set will be 1 year.</p>
+
+<p>Once the frequency is created, it is given a frequency <a href="#//api/name/denomination">denomination</a>.  The available frequency denominations are:</p>
+
+<pre><code>typedef enum {
+    SChartDateFrequencyDenominationSeconds,
+    SChartDateFrequencyDenominationMinutes,
+    SChartDateFrequencyDenominationHours,
+    SChartDateFrequencyDenominationDays,
+    SChartDateFrequencyDenominationWeeks,
+    SChartDateFrequencyDenominationMonths,
+    SChartDateFrequencyDenominationYears
+} SChartDateFrequencyDenomination;
+</code></pre>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						<a title="Initialization" name="task_Initialization"></a>
+						<h3 class="subsubtitle task-title">Initialization</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/initWithYear:">&ndash;&nbsp;initWithYear:</a></code>
+		<span class="tooltip"><p>Initializes and returns a newly allocated date frequency object, with a frequency of the specified number of years.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/initWithMonth:">&ndash;&nbsp;initWithMonth:</a></code>
+		<span class="tooltip"><p>Initializes and returns a newly allocated date frequency object, with a frequency of the specified number of months.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/initWithWeek:">&ndash;&nbsp;initWithWeek:</a></code>
+		<span class="tooltip"><p>Initializes and returns a newly allocated date frequency object, with a frequency of the specified number of weeks.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/initWithDay:">&ndash;&nbsp;initWithDay:</a></code>
+		<span class="tooltip"><p>Initializes and returns a newly allocated date frequency object, with a frequency of the specified number of days.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/initWithHour:">&ndash;&nbsp;initWithHour:</a></code>
+		<span class="tooltip"><p>Initializes and returns a newly allocated date frequency object, with a frequency of the specified number of hours.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/initWithMinute:">&ndash;&nbsp;initWithMinute:</a></code>
+		<span class="tooltip"><p>Initializes and returns a newly allocated date frequency object, with a frequency of the specified number of minutes.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/initWithSecond:">&ndash;&nbsp;initWithSecond:</a></code>
+		<span class="tooltip"><p>Initializes and returns a newly allocated date frequency object, with a frequency of the specified number of seconds.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Factory methods" name="task_Factory methods"></a>
+						<h3 class="subsubtitle task-title">Factory methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/dateFrequencyWithYear:">+&nbsp;dateFrequencyWithYear:</a></code>
+		<span class="tooltip"><p>Returns a new date frequency object, with a frequency of the specified number of years.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/dateFrequencyWithMonth:">+&nbsp;dateFrequencyWithMonth:</a></code>
+		<span class="tooltip"><p>Returns a new date frequency object, with a frequency of the specified number of months.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/dateFrequencyWithWeek:">+&nbsp;dateFrequencyWithWeek:</a></code>
+		<span class="tooltip"><p>Returns a new date frequency object, with a frequency of the specified number of weeks.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/dateFrequencyWithDay:">+&nbsp;dateFrequencyWithDay:</a></code>
+		<span class="tooltip"><p>Returns a new date frequency object, with a frequency of the specified number of days.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/dateFrequencyWithHour:">+&nbsp;dateFrequencyWithHour:</a></code>
+		<span class="tooltip"><p>Returns a new date frequency object, with a frequency of the specified number of hours.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/dateFrequencyWithMinute:">+&nbsp;dateFrequencyWithMinute:</a></code>
+		<span class="tooltip"><p>Returns a new date frequency object, with a frequency of the specified number of minutes.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/dateFrequencyWithSecond:">+&nbsp;dateFrequencyWithSecond:</a></code>
+		<span class="tooltip"><p>Returns a new date frequency object, with a frequency of the specified number of seconds.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Setting a new frequency" name="task_Setting a new frequency"></a>
+						<h3 class="subsubtitle task-title">Setting a new frequency</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setYear:">&ndash;&nbsp;setYear:</a></code>
+		<span class="tooltip"><p>Set the date frequency to have a value of the specified number of years.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setMonth:">&ndash;&nbsp;setMonth:</a></code>
+		<span class="tooltip"><p>Set the date frequency to have a value of the specified number of months.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setWeek:">&ndash;&nbsp;setWeek:</a></code>
+		<span class="tooltip"><p>Set the date frequency to have a value of the specified number of weeks.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setDay:">&ndash;&nbsp;setDay:</a></code>
+		<span class="tooltip"><p>Set the date frequency to have a value of the specified number of days.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setHour:">&ndash;&nbsp;setHour:</a></code>
+		<span class="tooltip"><p>Set the date frequency to have a value of the specified number of hours.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setMinute:">&ndash;&nbsp;setMinute:</a></code>
+		<span class="tooltip"><p>Set the date frequency to have a value of the specified number of minutes.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setSecond:">&ndash;&nbsp;setSecond:</a></code>
+		<span class="tooltip"><p>Set the date frequency to have a value of the specified number of seconds.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Accessing the state of the date frequency object" name="task_Accessing the state of the date frequency object"></a>
+						<h3 class="subsubtitle task-title">Accessing the state of the date frequency object</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/toSeconds">&ndash;&nbsp;toSeconds</a></code>
+		<span class="tooltip"><p>Returns the frequency of the object, measured in seconds.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/denomination">&nbsp;&nbsp;denomination</a></code>
+		<span class="tooltip"><p>Returns the frequency denomination of the date frequency object.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/denomination" title="denomination"></a>
+	<h3 class="subsubtitle method-title">denomination</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns the frequency denomination of the date frequency object.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) SChartDateFrequencyDenomination denomination</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The available denominations are:</p>
+
+<pre><code>typedef enum {
+    SChartDateFrequencyDenominationSeconds,
+    SChartDateFrequencyDenominationMinutes,
+    SChartDateFrequencyDenominationHours,
+    SChartDateFrequencyDenominationDays,
+    SChartDateFrequencyDenominationWeeks,
+    SChartDateFrequencyDenominationMonths,
+    SChartDateFrequencyDenominationYears
+} SChartDateFrequencyDenomination;
+</code></pre>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartDateFrequency.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Class Methods" name="class_methods"></a>
+						<h2 class="subtitle subtitle-methods">Class Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/dateFrequencyWithDay:" title="dateFrequencyWithDay:"></a>
+	<h3 class="subsubtitle method-title">dateFrequencyWithDay:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns a new date frequency object, with a frequency of the specified number of days.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (id)dateFrequencyWithDay:(NSInteger)<em>newDay</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>newDay</em></dt>
+			<dd><p>The frequency to use, in days.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartDateFrequency.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/dateFrequencyWithHour:" title="dateFrequencyWithHour:"></a>
+	<h3 class="subsubtitle method-title">dateFrequencyWithHour:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns a new date frequency object, with a frequency of the specified number of hours.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (id)dateFrequencyWithHour:(NSInteger)<em>newHour</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>newHour</em></dt>
+			<dd><p>The frequency to use, in hours.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartDateFrequency.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/dateFrequencyWithMinute:" title="dateFrequencyWithMinute:"></a>
+	<h3 class="subsubtitle method-title">dateFrequencyWithMinute:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns a new date frequency object, with a frequency of the specified number of minutes.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (id)dateFrequencyWithMinute:(NSInteger)<em>newMinute</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>newMinute</em></dt>
+			<dd><p>The frequency to use, in minutes.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartDateFrequency.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/dateFrequencyWithMonth:" title="dateFrequencyWithMonth:"></a>
+	<h3 class="subsubtitle method-title">dateFrequencyWithMonth:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns a new date frequency object, with a frequency of the specified number of months.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (id)dateFrequencyWithMonth:(NSInteger)<em>newMonth</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>newMonth</em></dt>
+			<dd><p>The frequency to use, in months.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartDateFrequency.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/dateFrequencyWithSecond:" title="dateFrequencyWithSecond:"></a>
+	<h3 class="subsubtitle method-title">dateFrequencyWithSecond:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns a new date frequency object, with a frequency of the specified number of seconds.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (id)dateFrequencyWithSecond:(NSInteger)<em>newSecond</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>newSecond</em></dt>
+			<dd><p>The frequency to use, in seconds.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartDateFrequency.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/dateFrequencyWithWeek:" title="dateFrequencyWithWeek:"></a>
+	<h3 class="subsubtitle method-title">dateFrequencyWithWeek:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns a new date frequency object, with a frequency of the specified number of weeks.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (id)dateFrequencyWithWeek:(NSInteger)<em>newWeek</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>newWeek</em></dt>
+			<dd><p>The frequency to use, in weeks.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartDateFrequency.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/dateFrequencyWithYear:" title="dateFrequencyWithYear:"></a>
+	<h3 class="subsubtitle method-title">dateFrequencyWithYear:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns a new date frequency object, with a frequency of the specified number of years.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (id)dateFrequencyWithYear:(NSInteger)<em>newYear</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>newYear</em></dt>
+			<dd><p>The frequency to use, in years.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartDateFrequency.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/initWithDay:" title="initWithDay:"></a>
+	<h3 class="subsubtitle method-title">initWithDay:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Initializes and returns a newly allocated date frequency object, with a frequency of the specified number of days.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)initWithDay:(NSInteger)<em>newDay</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>newDay</em></dt>
+			<dd><p>The frequency of the new object, in days.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>An initialized date frequency object, or <code>nil</code> if the object couldn&rsquo;t be created.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartDateFrequency.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/initWithHour:" title="initWithHour:"></a>
+	<h3 class="subsubtitle method-title">initWithHour:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Initializes and returns a newly allocated date frequency object, with a frequency of the specified number of hours.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)initWithHour:(NSInteger)<em>newHour</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>newHour</em></dt>
+			<dd><p>The frequency of the new object, in hours.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>An initialized date frequency object, or <code>nil</code> if the object couldn&rsquo;t be created.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartDateFrequency.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/initWithMinute:" title="initWithMinute:"></a>
+	<h3 class="subsubtitle method-title">initWithMinute:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Initializes and returns a newly allocated date frequency object, with a frequency of the specified number of minutes.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)initWithMinute:(NSInteger)<em>newMinute</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>newMinute</em></dt>
+			<dd><p>The frequency of the new object, in minutes.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>An initialized date frequency object, or <code>nil</code> if the object couldn&rsquo;t be created.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartDateFrequency.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/initWithMonth:" title="initWithMonth:"></a>
+	<h3 class="subsubtitle method-title">initWithMonth:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Initializes and returns a newly allocated date frequency object, with a frequency of the specified number of months.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)initWithMonth:(NSInteger)<em>newMonth</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>newMonth</em></dt>
+			<dd><p>The frequency of the new object, in months.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>An initialized date frequency object, or <code>nil</code> if the object couldn&rsquo;t be created.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartDateFrequency.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/initWithSecond:" title="initWithSecond:"></a>
+	<h3 class="subsubtitle method-title">initWithSecond:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Initializes and returns a newly allocated date frequency object, with a frequency of the specified number of seconds.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)initWithSecond:(NSInteger)<em>newSecond</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>newSecond</em></dt>
+			<dd><p>The frequency of the new object, in seconds.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>An initialized date frequency object, or <code>nil</code> if the object couldn&rsquo;t be created.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartDateFrequency.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/initWithWeek:" title="initWithWeek:"></a>
+	<h3 class="subsubtitle method-title">initWithWeek:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Initializes and returns a newly allocated date frequency object, with a frequency of the specified number of weeks.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)initWithWeek:(NSInteger)<em>newWeek</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>newWeek</em></dt>
+			<dd><p>The frequency of the new object, in weeks.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>An initialized date frequency object, or <code>nil</code> if the object couldn&rsquo;t be created.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartDateFrequency.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/initWithYear:" title="initWithYear:"></a>
+	<h3 class="subsubtitle method-title">initWithYear:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Initializes and returns a newly allocated date frequency object, with a frequency of the specified number of years.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)initWithYear:(NSInteger)<em>newYear</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>newYear</em></dt>
+			<dd><p>The frequency of the new object, in years.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>An initialized date frequency object, or <code>nil</code> if the object couldn&rsquo;t be created.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartDateFrequency.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setDay:" title="setDay:"></a>
+	<h3 class="subsubtitle method-title">setDay:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Set the date frequency to have a value of the specified number of days.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)setDay:(NSInteger)<em>v</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>v</em></dt>
+			<dd><p>The new frequency to set, in days.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Before the new value is set, we clear any existing values in the object.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartDateFrequency.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setHour:" title="setHour:"></a>
+	<h3 class="subsubtitle method-title">setHour:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Set the date frequency to have a value of the specified number of hours.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)setHour:(NSInteger)<em>v</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>v</em></dt>
+			<dd><p>The new frequency to set, in hours.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Before the new value is set, we clear any existing values in the object.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartDateFrequency.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setMinute:" title="setMinute:"></a>
+	<h3 class="subsubtitle method-title">setMinute:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Set the date frequency to have a value of the specified number of minutes.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)setMinute:(NSInteger)<em>v</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>v</em></dt>
+			<dd><p>The new frequency to set, in minutes.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Before the new value is set, we clear any existing values in the object.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartDateFrequency.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setMonth:" title="setMonth:"></a>
+	<h3 class="subsubtitle method-title">setMonth:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Set the date frequency to have a value of the specified number of months.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)setMonth:(NSInteger)<em>v</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>v</em></dt>
+			<dd><p>The new frequency to set, in months.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Before the new value is set, we clear any existing values in the object.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartDateFrequency.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setSecond:" title="setSecond:"></a>
+	<h3 class="subsubtitle method-title">setSecond:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Set the date frequency to have a value of the specified number of seconds.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)setSecond:(NSInteger)<em>v</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>v</em></dt>
+			<dd><p>The new frequency to set, in seconds.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Before the new value is set, we clear any existing values in the object.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartDateFrequency.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setWeek:" title="setWeek:"></a>
+	<h3 class="subsubtitle method-title">setWeek:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Set the date frequency to have a value of the specified number of weeks.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)setWeek:(NSInteger)<em>v</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>v</em></dt>
+			<dd><p>The new frequency to set, in weeks.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Before the new value is set, we clear any existing values in the object.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartDateFrequency.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setYear:" title="setYear:"></a>
+	<h3 class="subsubtitle method-title">setYear:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Set the date frequency to have a value of the specified number of years.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)setYear:(NSInteger)<em>v</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>v</em></dt>
+			<dd><p>The new frequency to set, in years.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Before the new value is set, we clear any existing values in the object.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartDateFrequency.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/toSeconds" title="toSeconds"></a>
+	<h3 class="subsubtitle method-title">toSeconds</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns the frequency of the object, measured in seconds.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (double)toSeconds</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartDateFrequency.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2013 Scott Logic Ltd. All rights reserved. (Last updated: 2013-10-01)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 858)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

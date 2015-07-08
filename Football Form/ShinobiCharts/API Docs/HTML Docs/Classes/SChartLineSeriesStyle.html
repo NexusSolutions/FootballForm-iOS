@@ -1,0 +1,1043 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>SChartLineSeriesStyle Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.1 (build 858)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">ShinobiCharts </a></h1>
+				<a id="developerHome" href="../index.html">Scott Logic Ltd</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">SChartLineSeriesStyle Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/areaColor">&nbsp;&nbsp;&nbsp;&nbsp;areaColor</option>
+	
+	<option value="//api/name/areaColorBelowBaseline">&nbsp;&nbsp;&nbsp;&nbsp;areaColorBelowBaseline</option>
+	
+	<option value="//api/name/areaColorGradientBelowBaseline">&nbsp;&nbsp;&nbsp;&nbsp;areaColorGradientBelowBaseline</option>
+	
+	<option value="//api/name/areaColorLowGradient">&nbsp;&nbsp;&nbsp;&nbsp;areaColorLowGradient</option>
+	
+	<option value="//api/name/areaLineColor">&nbsp;&nbsp;&nbsp;&nbsp;areaLineColor</option>
+	
+	<option value="//api/name/areaLineColorBelowBaseline">&nbsp;&nbsp;&nbsp;&nbsp;areaLineColorBelowBaseline</option>
+	
+	<option value="//api/name/areaLineWidth">&nbsp;&nbsp;&nbsp;&nbsp;areaLineWidth</option>
+	
+	<option value="//api/name/fillWithGradient">&nbsp;&nbsp;&nbsp;&nbsp;fillWithGradient</option>
+	
+	<option value="//api/name/lineColor">&nbsp;&nbsp;&nbsp;&nbsp;lineColor</option>
+	
+	<option value="//api/name/lineColorBelowBaseline">&nbsp;&nbsp;&nbsp;&nbsp;lineColorBelowBaseline</option>
+	
+	<option value="//api/name/lineCrosshairTraceStyle">&nbsp;&nbsp;&nbsp;&nbsp;lineCrosshairTraceStyle</option>
+	
+	<option value="//api/name/lineWidth">&nbsp;&nbsp;&nbsp;&nbsp;lineWidth</option>
+	
+	<option value="//api/name/showFill">&nbsp;&nbsp;&nbsp;&nbsp;showFill</option>
+	
+	
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/supplementStyleFromStyle:">&nbsp;&nbsp;&nbsp;&nbsp;- supplementStyleFromStyle:</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Styling properties">Styling properties</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Crosshair styling">Crosshair styling</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/areaColor">areaColor</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/areaColorBelowBaseline">areaColorBelowBaseline</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/areaColorGradientBelowBaseline">areaColorGradientBelowBaseline</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/areaColorLowGradient">areaColorLowGradient</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/areaLineColor">areaLineColor</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/areaLineColorBelowBaseline">areaLineColorBelowBaseline</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/areaLineWidth">areaLineWidth</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/fillWithGradient">fillWithGradient</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/lineColor">lineColor</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/lineColorBelowBaseline">lineColorBelowBaseline</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/lineCrosshairTraceStyle">lineCrosshairTraceStyle</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/lineWidth">lineWidth</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/showFill">showFill</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/supplementStyleFromStyle:">supplementStyleFromStyle:</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="SChartLineSeriesStyle Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">SChartLineSeriesStyle Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value"><a href="../Classes/SChartScatterSeriesStyle.html">SChartScatterSeriesStyle</a> : <a href="../Classes/SChartPointSeriesStyle.html">SChartPointSeriesStyle</a> : <a href="../Classes/SChartSeriesStyle.html">SChartSeriesStyle</a> : NSObject</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">SChartLineSeriesStyle.h</td>
+</tr><tr>
+	<td class="specification-title">Availability</td>
+	<td class="specification-value">Standard<br />Premium</td>
+</tr><tr>
+	<td class="specification-title">Related samples</td>
+	<td class="specification-value">Area<br />LargeDataSet<br />LineChart</td>
+</tr>
+						</tbody></table></div>
+					
+					
+					
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>SChartLineSeriesStyle manages the appearance of an instance of <a href="../Classes/SChartLineSeries.html"><code>SChartLineSeries</code></a> on a chart.</p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						<a title="Styling properties" name="task_Styling properties"></a>
+						<h3 class="subsubtitle task-title">Styling properties</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/showFill">&nbsp;&nbsp;showFill</a></code>
+		<span class="tooltip"><p>Defines whether the area between the line and the axis is filled.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/fillWithGradient">&nbsp;&nbsp;fillWithGradient</a></code>
+		<span class="tooltip"><p>If <a href="#//api/name/showFill"><code>showFill</code></a> is set to <code>YES</code>, this adds a gradient to the area fill.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/lineColor">&nbsp;&nbsp;lineColor</a></code>
+		<span class="tooltip"><p>The color of the line</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/areaLineColor">&nbsp;&nbsp;areaLineColor</a></code>
+		<span class="tooltip"><p>The color for the line if the area is filled</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/lineColorBelowBaseline">&nbsp;&nbsp;lineColorBelowBaseline</a></code>
+		<span class="tooltip"><p>The color of the line below the baseline</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/areaLineColorBelowBaseline">&nbsp;&nbsp;areaLineColorBelowBaseline</a></code>
+		<span class="tooltip"><p>The color for the line if the area is filled</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/lineWidth">&nbsp;&nbsp;lineWidth</a></code>
+		<span class="tooltip"><p>The width of the line in pixels</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/areaLineWidth">&nbsp;&nbsp;areaLineWidth</a></code>
+		<span class="tooltip"><p>The width of the line in pixels, if the area is filled</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/areaColor">&nbsp;&nbsp;areaColor</a></code>
+		<span class="tooltip"><p>The color of the area fill between the line and the axis.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/areaColorLowGradient">&nbsp;&nbsp;areaColorLowGradient</a></code>
+		<span class="tooltip"><p>The second color which is used to form a gradient area fill.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/areaColorBelowBaseline">&nbsp;&nbsp;areaColorBelowBaseline</a></code>
+		<span class="tooltip"><p>The color of the fill between the line and the axis, when the line goes below the series baseline.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/areaColorGradientBelowBaseline">&nbsp;&nbsp;areaColorGradientBelowBaseline</a></code>
+		<span class="tooltip"><p>The second color which is used to form a gradient area fill when the line goes below the series baseline</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/supplementStyleFromStyle:">&ndash;&nbsp;supplementStyleFromStyle:</a></code>
+		<span class="tooltip"><p>Updates this style object using the configuration of the passed in style.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Crosshair styling" name="task_Crosshair styling"></a>
+						<h3 class="subsubtitle task-title">Crosshair styling</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/lineCrosshairTraceStyle">&nbsp;&nbsp;lineCrosshairTraceStyle</a></code>
+		<span class="tooltip"><p>The direction of the line data to allow the crosshair to traverse it smoothly</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/areaColor" title="areaColor"></a>
+	<h3 class="subsubtitle method-title">areaColor</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The color of the area fill between the line and the axis.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) UIColor *areaColor</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="#//api/name/showFill">@property showFill</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartLineSeriesStyle.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/areaColorBelowBaseline" title="areaColorBelowBaseline"></a>
+	<h3 class="subsubtitle method-title">areaColorBelowBaseline</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The color of the fill between the line and the axis, when the line goes below the series baseline.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) UIColor *areaColorBelowBaseline</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="#//api/name/showFill">@property showFill</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartLineSeriesStyle.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/areaColorGradientBelowBaseline" title="areaColorGradientBelowBaseline"></a>
+	<h3 class="subsubtitle method-title">areaColorGradientBelowBaseline</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The second color which is used to form a gradient area fill when the line goes below the series baseline</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) UIColor *areaColorGradientBelowBaseline</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="#//api/name/fillWithGradient">@property fillWithGradient</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartLineSeriesStyle.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/areaColorLowGradient" title="areaColorLowGradient"></a>
+	<h3 class="subsubtitle method-title">areaColorLowGradient</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The second color which is used to form a gradient area fill.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) UIColor *areaColorLowGradient</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="#//api/name/fillWithGradient">@property fillWithGradient</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartLineSeriesStyle.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/areaLineColor" title="areaLineColor"></a>
+	<h3 class="subsubtitle method-title">areaLineColor</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The color for the line if the area is filled</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) UIColor *areaLineColor</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>If the area isn&rsquo;t filled, <a href="#//api/name/lineColor"><code>lineColor</code></a> is used instead.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartLineSeriesStyle.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/areaLineColorBelowBaseline" title="areaLineColorBelowBaseline"></a>
+	<h3 class="subsubtitle method-title">areaLineColorBelowBaseline</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The color for the line if the area is filled</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) UIColor *areaLineColorBelowBaseline</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>If the area isn&rsquo;t filled, <a href="#//api/name/lineColorBelowBaseline"><code>lineColorBelowBaseline</code></a> is used instead.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartLineSeriesStyle.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/areaLineWidth" title="areaLineWidth"></a>
+	<h3 class="subsubtitle method-title">areaLineWidth</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The width of the line in pixels, if the area is filled</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) NSNumber *areaLineWidth</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>If the area isn&rsquo;t filled, <a href="#//api/name/lineWidth"><code>lineWidth</code></a> is used instead.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartLineSeriesStyle.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/fillWithGradient" title="fillWithGradient"></a>
+	<h3 class="subsubtitle method-title">fillWithGradient</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>If <a href="#//api/name/showFill"><code>showFill</code></a> is set to <code>YES</code>, this adds a gradient to the area fill.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic) BOOL fillWithGradient</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The gradient starts at <a href="#//api/name/areaColor"><code>areaColor</code></a> and finishes at <a href="#//api/name/areaColorLowGradient"><code>areaColorLowGradient</code></a>.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartLineSeriesStyle.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/lineColor" title="lineColor"></a>
+	<h3 class="subsubtitle method-title">lineColor</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The color of the line</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) UIColor *lineColor</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>This property is used as long as <a href="#//api/name/showFill"><code>showFill</code></a> isn&rsquo;t set to <code>YES</code>.  If the area is filled, <a href="#//api/name/areaLineColor"><code>areaLineColor</code></a> is used instead.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartLineSeriesStyle.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/lineColorBelowBaseline" title="lineColorBelowBaseline"></a>
+	<h3 class="subsubtitle method-title">lineColorBelowBaseline</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The color of the line below the baseline</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) UIColor *lineColorBelowBaseline</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>This property is used as long as <a href="#//api/name/showFill"><code>showFill</code></a> isn&rsquo;t set to <code>YES</code>.  If the area is filled, <a href="#//api/name/areaLineColorBelowBaseline"><code>areaLineColorBelowBaseline</code></a> is used instead.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartLineSeriesStyle.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/lineCrosshairTraceStyle" title="lineCrosshairTraceStyle"></a>
+	<h3 class="subsubtitle method-title">lineCrosshairTraceStyle</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The direction of the line data to allow the crosshair to traverse it smoothly</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic) SChartLineCrosshairTraceStyle lineCrosshairTraceStyle</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Line data points my be ordered from left to right (x-value sorted) or top to bottom (y-value sorted). This parameter lets the chart know in order to aid the tracing process.</p>
+
+<pre><code>typedef enum {
+    SChartLineCrosshairTraceStyleHorizontal,
+    SChartLineCrosshairTraceStyleVertical
+} SChartLineCrosshairTraceStyle;
+</code></pre>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartLineSeriesStyle.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/lineWidth" title="lineWidth"></a>
+	<h3 class="subsubtitle method-title">lineWidth</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The width of the line in pixels</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) NSNumber *lineWidth</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>This property is used as long as <a href="#//api/name/showFill"><code>showFill</code></a> isn&rsquo;t set to <code>YES</code>.  If the area is filled, <a href="#//api/name/areaLineWidth"><code>areaLineWidth</code></a> is used instead.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartLineSeriesStyle.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/showFill" title="showFill"></a>
+	<h3 class="subsubtitle method-title">showFill</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Defines whether the area between the line and the axis is filled.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic) BOOL showFill</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The color of the area fill is defined by <a href="#//api/name/areaColor"><code>areaColor</code></a> or <a href="#//api/name/areaColorBelowBaseline"><code>areaColorBelowBaseline</code></a>.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartLineSeriesStyle.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/supplementStyleFromStyle:" title="supplementStyleFromStyle:"></a>
+	<h3 class="subsubtitle method-title">supplementStyleFromStyle:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Updates this style object using the configuration of the passed in style.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)supplementStyleFromStyle:(SChartLineSeriesStyle *)<em>style</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>style</em></dt>
+			<dd><p>The new style with which to update this style object.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartLineSeriesStyle.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2013 Scott Logic Ltd. All rights reserved. (Last updated: 2013-10-01)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 858)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

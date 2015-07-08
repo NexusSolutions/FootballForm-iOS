@@ -1,0 +1,1567 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>SChartDonutSeries Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.1 (build 858)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">ShinobiCharts </a></h1>
+				<a id="developerHome" href="../index.html">Scott Logic Ltd</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">SChartDonutSeries Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/animationCurveType">&nbsp;&nbsp;&nbsp;&nbsp;animationCurveType</option>
+	
+	<option value="//api/name/animationDuration">&nbsp;&nbsp;&nbsp;&nbsp;animationDuration</option>
+	
+	<option value="//api/name/drawDirection">&nbsp;&nbsp;&nbsp;&nbsp;drawDirection</option>
+	
+	<option value="//api/name/gesturePanningEnabled">&nbsp;&nbsp;&nbsp;&nbsp;gesturePanningEnabled</option>
+	
+	<option value="//api/name/innerRadius">&nbsp;&nbsp;&nbsp;&nbsp;innerRadius</option>
+	
+	<option value="//api/name/outerRadius">&nbsp;&nbsp;&nbsp;&nbsp;outerRadius</option>
+	
+	<option value="//api/name/rotation">&nbsp;&nbsp;&nbsp;&nbsp;rotation</option>
+	
+	<option value="//api/name/rotationFriction">&nbsp;&nbsp;&nbsp;&nbsp;rotationFriction</option>
+	
+	<option value="//api/name/selectedPosition">&nbsp;&nbsp;&nbsp;&nbsp;selectedPosition</option>
+	
+	<option value="//api/name/selectionAnimation">&nbsp;&nbsp;&nbsp;&nbsp;selectionAnimation</option>
+	
+	<option value="//api/name/selectionEnabledDuringPanning">&nbsp;&nbsp;&nbsp;&nbsp;selectionEnabledDuringPanning</option>
+	
+	
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/createLabels:onChart:">&nbsp;&nbsp;&nbsp;&nbsp;- createLabels:onChart:</option>
+	
+	<option value="//api/name/drawSlice:ofTotal:fromAngle:toAngle:fromCentre:withInnerRadius:andOuterRadius:asSelected:inFrame:">&nbsp;&nbsp;&nbsp;&nbsp;- drawSlice:ofTotal:fromAngle:toAngle:fromCentre:withInnerRadius:andOuterRadius:asSelected:inFrame:</option>
+	
+	<option value="//api/name/getDonutCenter">&nbsp;&nbsp;&nbsp;&nbsp;- getDonutCenter</option>
+	
+	<option value="//api/name/getSliceCenter:">&nbsp;&nbsp;&nbsp;&nbsp;- getSliceCenter:</option>
+	
+	<option value="//api/name/indexOfSliceAtAngle:">&nbsp;&nbsp;&nbsp;&nbsp;- indexOfSliceAtAngle:</option>
+	
+	<option value="//api/name/rotateSliceAtIndex:toAngle:withAnimation:">&nbsp;&nbsp;&nbsp;&nbsp;- rotateSliceAtIndex:toAngle:withAnimation:</option>
+	
+	<option value="//api/name/selectedStyle">&nbsp;&nbsp;&nbsp;&nbsp;- selectedStyle</option>
+	
+	<option value="//api/name/setSelectedStyle:">&nbsp;&nbsp;&nbsp;&nbsp;- setSelectedStyle:</option>
+	
+	<option value="//api/name/setSlice:asSelected:">&nbsp;&nbsp;&nbsp;&nbsp;- setSlice:asSelected:</option>
+	
+	<option value="//api/name/setStyle:">&nbsp;&nbsp;&nbsp;&nbsp;- setStyle:</option>
+	
+	<option value="//api/name/style">&nbsp;&nbsp;&nbsp;&nbsp;- style</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Styling">Styling</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Information about the series">Information about the series</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Selection">Selection</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Panning">Panning</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Drawing the series">Drawing the series</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Rotate a slice">Rotate a slice</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/animationCurveType">animationCurveType</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/animationDuration">animationDuration</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/drawDirection">drawDirection</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/gesturePanningEnabled">gesturePanningEnabled</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/innerRadius">innerRadius</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/outerRadius">outerRadius</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/rotation">rotation</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/rotationFriction">rotationFriction</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/selectedPosition">selectedPosition</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/selectionAnimation">selectionAnimation</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/selectionEnabledDuringPanning">selectionEnabledDuringPanning</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/createLabels:onChart:">createLabels:onChart:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/drawSlice:ofTotal:fromAngle:toAngle:fromCentre:withInnerRadius:andOuterRadius:asSelected:inFrame:">drawSlice:ofTotal:fromAngle:toAngle:fromCentre:withInnerRadius:andOuterRadius:asSelected:inFrame:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getDonutCenter">getDonutCenter</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getSliceCenter:">getSliceCenter:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/indexOfSliceAtAngle:">indexOfSliceAtAngle:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/rotateSliceAtIndex:toAngle:withAnimation:">rotateSliceAtIndex:toAngle:withAnimation:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/selectedStyle">selectedStyle</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setSelectedStyle:">setSelectedStyle:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setSlice:asSelected:">setSlice:asSelected:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setStyle:">setStyle:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/style">style</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="SChartDonutSeries Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">SChartDonutSeries Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value"><a href="../Classes/SChartRadialSeries.html">SChartRadialSeries</a> : <a href="../Classes/SChartSeries.html">SChartSeries</a> : NSObject</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">SChartDonutSeries.h</td>
+</tr><tr>
+	<td class="specification-title">Companion guide</td>
+	<td class="specification-value"><a href="../docs/markdown_files/ChartsUserGuide.html">ChartsUserGuide</a></td>
+</tr><tr>
+	<td class="specification-title">Availability</td>
+	<td class="specification-value">Standard<br />Premium</td>
+</tr><tr>
+	<td class="specification-title">Related samples</td>
+	<td class="specification-value">PieChart</td>
+</tr>
+						</tbody></table></div>
+					
+					
+					
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p><code>SChartDonutSeries</code> displays magnitude data on the chart - the larger the value of the data point, the larger the slice representing that data point.</p>
+
+<p>A donut series contains an instance of <a href="../Classes/SChartDonutSeriesStyle.html"><code>SChartDonutSeriesStyle</code></a>, which manages its appearance.</p>
+
+<p>You can configure the radius of the slices in the chart, and how big the hole in the middle of the donut is.  See <a href="#//api/name/innerRadius"><code>innerRadius</code></a> and <a href="#//api/name/outerRadius"><code>outerRadius</code></a> for more information.</p>
+
+<p>When a slice is selected in the chart, it protrudes out of the donut, and rotates to a given position.  You can set the amount of protrusion which a selected slice has by setting the <a href="../Classes/SChartDonutSeriesStyle.html#//api/name/protrusion"><code>[SChartDonutSeriesStyle protrusion]</code></a> property on the series <a href="#//api/name/selectedStyle"><code>selectedStyle</code></a>.  You can set the position it rotates to using the <a href="#//api/name/selectedPosition"><code>selectedPosition</code></a> property.  The series contains an instance of <a href="../Classes/SChartAnimation.html"><code>SChartAnimation</code></a> which describes the motion of the slice as it rotates to its selected position.  See <a href="#//api/name/selectionAnimation"><code>selectionAnimation</code></a> for more information.</p>
+
+<p>You can enable panning on a donut series.  If panning is enabled, performing a swipe gesture on the series will cause it to rotate.  Whether panning is enabled is controlled by the <a href="#//api/name/gesturePanningEnabled"><code>gesturePanningEnabled</code></a> property.  This defaults to <code>NO</code>.</p>
+
+<p>Legends on donut charts show an entry for each data point, or slice, of the donut series.</p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						<a title="Styling" name="task_Styling"></a>
+						<h3 class="subsubtitle task-title">Styling</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/style">&ndash;&nbsp;style</a></code>
+		<span class="tooltip"><p>Manages the appearance of the donut series on the chart.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setStyle:">&ndash;&nbsp;setStyle:</a></code>
+		<span class="tooltip"><p>Sets the <a href="#//api/name/style">style</a> object for the donut series.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/selectedStyle">&ndash;&nbsp;selectedStyle</a></code>
+		<span class="tooltip"><p>Manages the appearance of the donut series when it is selected.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setSelectedStyle:">&ndash;&nbsp;setSelectedStyle:</a></code>
+		<span class="tooltip"><p>Sets the <a href="#//api/name/style">style</a> object for the scatter series when it is selected.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Information about the series" name="task_Information about the series"></a>
+						<h3 class="subsubtitle task-title">Information about the series</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/innerRadius">&nbsp;&nbsp;innerRadius</a></code>
+		<span class="tooltip"><p>The inner radius of the series, in points.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/outerRadius">&nbsp;&nbsp;outerRadius</a></code>
+		<span class="tooltip"><p>The outer radius of the series, in points.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/rotation">&nbsp;&nbsp;rotation</a></code>
+		<span class="tooltip"><p>The current rotation of the series, in radians.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/getDonutCenter">&ndash;&nbsp;getDonutCenter</a></code>
+		<span class="tooltip"><p>Returns the center of the donut, within the chart frame.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/getSliceCenter:">&ndash;&nbsp;getSliceCenter:</a></code>
+		<span class="tooltip"><p>Returns the center of the slice at a given index, within the chart frame.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/indexOfSliceAtAngle:">&ndash;&nbsp;indexOfSliceAtAngle:</a></code>
+		<span class="tooltip"><p>Returns the index of the slice in the donut series which is at the given angle in radians.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Selection" name="task_Selection"></a>
+						<h3 class="subsubtitle task-title">Selection</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/selectedPosition">&nbsp;&nbsp;selectedPosition</a></code>
+		<span class="tooltip"><p>The angle to which the slice will rotate once selected, in radians.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/animationDuration">&nbsp;&nbsp;animationDuration</a></code>
+		<span class="tooltip"><p>DEPRECATED - configure the <a href="#//api/name/selectionAnimation"><code>selectionAnimation</code></a> property instead.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/animationCurveType">&nbsp;&nbsp;animationCurveType</a></code>
+		<span class="tooltip"><p>DEPRECATED - configure the <a href="#//api/name/selectionAnimation"><code>selectionAnimation</code></a> property instead.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/selectionAnimation">&nbsp;&nbsp;selectionAnimation</a></code>
+		<span class="tooltip"><p>An animation object describing the motion of the donut series when a slice is selected.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setSlice:asSelected:">&ndash;&nbsp;setSlice:asSelected:</a></code>
+		<span class="tooltip"><p>Select or deselect a slice within the series.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Panning" name="task_Panning"></a>
+						<h3 class="subsubtitle task-title">Panning</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/gesturePanningEnabled">&nbsp;&nbsp;gesturePanningEnabled</a></code>
+		<span class="tooltip"><p>Defines whether or not panning is enabled on this series.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/selectionEnabledDuringPanning">&nbsp;&nbsp;selectionEnabledDuringPanning</a></code>
+		<span class="tooltip"><p>By default, tapping on a radial series during panning will just stop the pan.  If this property is enabled, tapping on a slice in the series will select that slice.  This property defaults to <code>NO</code>.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/rotationFriction">&nbsp;&nbsp;rotationFriction</a></code>
+		<span class="tooltip"><p>The amount of friction applied to this pie series after a <a href="#//api/name/rotation">rotation</a> (pan) gesture finishes, and the series begins to decelerate.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+						
+						<a title="Drawing the series" name="task_Drawing the series"></a>
+						<h3 class="subsubtitle task-title">Drawing the series</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/drawDirection">&nbsp;&nbsp;drawDirection</a></code>
+		<span class="tooltip"><p>The direction in which data is drawn around the centre of the plot.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/createLabels:onChart:">&ndash;&nbsp;createLabels:onChart:</a></code>
+		<span class="tooltip"><p>Creates the <a href="#//api/name/labels">labels</a> for the slices in the donut series, and displays them on the chart.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/drawSlice:ofTotal:fromAngle:toAngle:fromCentre:withInnerRadius:andOuterRadius:asSelected:inFrame:">&ndash;&nbsp;drawSlice:ofTotal:fromAngle:toAngle:fromCentre:withInnerRadius:andOuterRadius:asSelected:inFrame:</a></code>
+		<span class="tooltip"><p>DEPRECATED - This should be a private method, so will be taken off the public API in a future commit.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Rotate a slice" name="task_Rotate a slice"></a>
+						<h3 class="subsubtitle task-title">Rotate a slice</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/rotateSliceAtIndex:toAngle:withAnimation:">&ndash;&nbsp;rotateSliceAtIndex:toAngle:withAnimation:</a></code>
+		<span class="tooltip"><p>Rotates the specified slice to the specified angle in radians, with the provided animation.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/animationCurveType" title="animationCurveType"></a>
+	<h3 class="subsubtitle method-title">animationCurveType</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>DEPRECATED - configure the <a href="#//api/name/selectionAnimation"><code>selectionAnimation</code></a> property instead.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic) SChartAnimationCurve animationCurveType</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartDonutSeries.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/animationDuration" title="animationDuration"></a>
+	<h3 class="subsubtitle method-title">animationDuration</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>DEPRECATED - configure the <a href="#//api/name/selectionAnimation"><code>selectionAnimation</code></a> property instead.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic) float animationDuration</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartDonutSeries.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/drawDirection" title="drawDirection"></a>
+	<h3 class="subsubtitle method-title">drawDirection</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The direction in which data is drawn around the centre of the plot.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic) SChartRadialSeriesDrawDirection drawDirection</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<pre><code>typedef enum {
+    SChartRadialSeriesDrawDirectionClockwise,
+    SChartRadialSeriesDrawDirectionAntiClockwise
+} SChartRadialSeriesDrawDirection;
+</code></pre>
+
+<p>This defaults to <code>SChartRadialSeriesDrawDirectionAntiClockwise</code>.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartDonutSeries.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/gesturePanningEnabled" title="gesturePanningEnabled"></a>
+	<h3 class="subsubtitle method-title">gesturePanningEnabled</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Defines whether or not panning is enabled on this series.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic) BOOL gesturePanningEnabled</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>If panning is enabled, performing a swipe gesture on the series will cause it to rotate.
+The series will stay under your finger whilst your finger remains on the series.  Once you lift your finger, the series will begin to decelerate.  The <a href="#//api/name/rotationFriction"><code>rotationFriction</code></a> property controls the rate at which the series will decelerate.</p>
+
+<p>The default value for this property is <code>NO</code>.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartDonutSeries.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/innerRadius" title="innerRadius"></a>
+	<h3 class="subsubtitle method-title">innerRadius</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The inner radius of the series, in points.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic) float innerRadius</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartDonutSeries.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/outerRadius" title="outerRadius"></a>
+	<h3 class="subsubtitle method-title">outerRadius</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The outer radius of the series, in points.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic) float outerRadius</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartDonutSeries.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/rotation" title="rotation"></a>
+	<h3 class="subsubtitle method-title">rotation</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The current rotation of the series, in radians.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic) float rotation</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartDonutSeries.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/rotationFriction" title="rotationFriction"></a>
+	<h3 class="subsubtitle method-title">rotationFriction</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The amount of friction applied to this pie series after a <a href="#//api/name/rotation">rotation</a> (pan) gesture finishes, and the series begins to decelerate.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic) float rotationFriction</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The friction is defined as the percentage of decay of velocity per frame. The default value is 0.02, or 2%.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartDonutSeries.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/selectedPosition" title="selectedPosition"></a>
+	<h3 class="subsubtitle method-title">selectedPosition</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The angle to which the slice will rotate once selected, in radians.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) NSNumber *selectedPosition</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartDonutSeries.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/selectionAnimation" title="selectionAnimation"></a>
+	<h3 class="subsubtitle method-title">selectionAnimation</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>An animation object describing the motion of the donut series when a slice is selected.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) SChartAnimation *selectionAnimation</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The <code>angleCurve</code> of the animation describes any <a href="#//api/name/rotation">rotation</a> of the series from its current position to its selected position.
+The <code>radiusCurve</code> describes the animation of any increase or decrease in the protrusion of the slice as a result of being selected or deselected.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="../Classes/SChartAnimation.html">SChartAnimation</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartDonutSeries.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/selectionEnabledDuringPanning" title="selectionEnabledDuringPanning"></a>
+	<h3 class="subsubtitle method-title">selectionEnabledDuringPanning</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>By default, tapping on a radial series during panning will just stop the pan.  If this property is enabled, tapping on a slice in the series will select that slice.  This property defaults to <code>NO</code>.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) BOOL selectionEnabledDuringPanning</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>If this property is enabled, and <a href="#//api/name/selectedPosition"><code>selectedPosition</code></a> is not set to a value, the donut series will keep spinning whilst a slice moves out.  The same is true for the case where a slice moves in once it is deselected.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartDonutSeries.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/createLabels:onChart:" title="createLabels:onChart:"></a>
+	<h3 class="subsubtitle method-title">createLabels:onChart:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Creates the <a href="#//api/name/labels">labels</a> for the slices in the donut series, and displays them on the chart.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)createLabels:(id&lt;SChartDatasource&gt;)<em>datasource</em> onChart:(ShinobiChart *)<em>chart</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>datasource</em></dt>
+			<dd><p>The datasource for the chart.  The series gets the <a href="#//api/name/labels">labels</a> from the datasource, then displays them in the correct position on the chart.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>chart</em></dt>
+			<dd><p>The chart containing the donut series.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The <a href="#//api/name/labels">labels</a> are displayed on each slice in the series.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartDonutSeries.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/drawSlice:ofTotal:fromAngle:toAngle:fromCentre:withInnerRadius:andOuterRadius:asSelected:inFrame:" title="drawSlice:ofTotal:fromAngle:toAngle:fromCentre:withInnerRadius:andOuterRadius:asSelected:inFrame:"></a>
+	<h3 class="subsubtitle method-title">drawSlice:ofTotal:fromAngle:toAngle:fromCentre:withInnerRadius:andOuterRadius:asSelected:inFrame:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>DEPRECATED - This should be a private method, so will be taken off the public API in a future commit.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)drawSlice:(NSInteger)<em>sliceIndex</em> ofTotal:(NSInteger)<em>totalSlices</em> fromAngle:(float)<em>startAngle</em> toAngle:(float)<em>endAngle</em> fromCentre:(CGPoint)<em>centre</em> withInnerRadius:(float)<em>innerRadius</em> andOuterRadius:(float)<em>outerRadius</em> asSelected:(BOOL)<em>sel</em> inFrame:(CGRect)<em>frame</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Draw a slice of the series.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartDonutSeries.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/getDonutCenter" title="getDonutCenter"></a>
+	<h3 class="subsubtitle method-title">getDonutCenter</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns the center of the donut, within the chart frame.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (CGPoint)getDonutCenter</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartDonutSeries.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/getSliceCenter:" title="getSliceCenter:"></a>
+	<h3 class="subsubtitle method-title">getSliceCenter:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns the center of the slice at a given index, within the chart frame.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (CGPoint)getSliceCenter:(NSInteger)<em>sliceIndex</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>sliceIndex</em></dt>
+			<dd><p>The index of the slice in which we are interested.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartDonutSeries.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/indexOfSliceAtAngle:" title="indexOfSliceAtAngle:"></a>
+	<h3 class="subsubtitle method-title">indexOfSliceAtAngle:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns the index of the slice in the donut series which is at the given angle in radians.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSInteger)indexOfSliceAtAngle:(double)<em>rads</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>rads</em></dt>
+			<dd><p>The angle in radians at which we wish to find the donut slice.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartDonutSeries.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/rotateSliceAtIndex:toAngle:withAnimation:" title="rotateSliceAtIndex:toAngle:withAnimation:"></a>
+	<h3 class="subsubtitle method-title">rotateSliceAtIndex:toAngle:withAnimation:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Rotates the specified slice to the specified angle in radians, with the provided animation.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)rotateSliceAtIndex:(NSInteger)<em>index</em> toAngle:(double)<em>rads</em> withAnimation:(SChartAnimation *)<em>animation</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>index</em></dt>
+			<dd><p>The index of the slice in the series to rotate.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>rads</em></dt>
+			<dd><p>The angle to which to rotate the specified slice, in radians.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>animation</em></dt>
+			<dd><p>The animation to use during the <a href="#//api/name/rotation">rotation</a>.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartDonutSeries.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/selectedStyle" title="selectedStyle"></a>
+	<h3 class="subsubtitle method-title">selectedStyle</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Manages the appearance of the donut series when it is selected.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (SChartDonutSeriesStyle *)selectedStyle</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Style settings in this object will be applied when the series is marked as selected (or a slice is selected).</p>
+
+<p>The default settings of the <a href="#//api/name/style">style</a> are inherited from the chart theme.  You can tweak the appearance of the series by modifying the <a href="#//api/name/style">style</a>.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="../Classes/SChartDonutSeriesStyle.html">SChartDonutSeriesStyle</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartDonutSeries.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setSelectedStyle:" title="setSelectedStyle:"></a>
+	<h3 class="subsubtitle method-title">setSelectedStyle:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Sets the <a href="#//api/name/style">style</a> object for the scatter series when it is selected.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)setSelectedStyle:(SChartDonutSeriesStyle *)<em>selectedStyle</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>selectedStyle</em></dt>
+			<dd><p>The new <a href="#//api/name/style">style</a> object to use.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="#//api/name/selectedStyle">- selectedStyle</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartDonutSeries.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setSlice:asSelected:" title="setSlice:asSelected:"></a>
+	<h3 class="subsubtitle method-title">setSlice:asSelected:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Select or deselect a slice within the series.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)setSlice:(NSInteger)<em>sliceIndex</em> asSelected:(BOOL)<em>sel</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>sliceIndex</em></dt>
+			<dd><p>The index of the slice in the series to select or deselect.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>sel</em></dt>
+			<dd><p><code>YES</code> if we are selecting the slice.  <code>NO</code> otherwise.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartDonutSeries.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setStyle:" title="setStyle:"></a>
+	<h3 class="subsubtitle method-title">setStyle:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Sets the <a href="#//api/name/style">style</a> object for the donut series.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)setStyle:(SChartDonutSeriesStyle *)<em>style</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>style</em></dt>
+			<dd><p>The new <a href="#//api/name/style">style</a> object to use for the donut series.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="#//api/name/style">- style</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartDonutSeries.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/style" title="style"></a>
+	<h3 class="subsubtitle method-title">style</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Manages the appearance of the donut series on the chart.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (SChartDonutSeriesStyle *)style</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The default settings of the style are inherited from the chart theme.  You can tweak the appearance of the series by modifying the style.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="../Classes/SChartDonutSeriesStyle.html">SChartDonutSeriesStyle</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartDonutSeries.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2013 Scott Logic Ltd. All rights reserved. (Last updated: 2013-10-01)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 858)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

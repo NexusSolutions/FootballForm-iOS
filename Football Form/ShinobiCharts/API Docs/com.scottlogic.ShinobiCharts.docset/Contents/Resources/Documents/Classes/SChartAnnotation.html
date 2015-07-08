@@ -1,0 +1,920 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>SChartAnnotation Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.1 (build 858)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">ShinobiCharts </a></h1>
+				<a id="developerHome" href="../index.html">Scott Logic Ltd</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">SChartAnnotation Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/label">&nbsp;&nbsp;&nbsp;&nbsp;label</option>
+	
+	<option value="//api/name/position">&nbsp;&nbsp;&nbsp;&nbsp;position</option>
+	
+	<option value="//api/name/xAxis">&nbsp;&nbsp;&nbsp;&nbsp;xAxis</option>
+	
+	<option value="//api/name/xValue">&nbsp;&nbsp;&nbsp;&nbsp;xValue</option>
+	
+	<option value="//api/name/yAxis">&nbsp;&nbsp;&nbsp;&nbsp;yAxis</option>
+	
+	<option value="//api/name/yValue">&nbsp;&nbsp;&nbsp;&nbsp;yValue</option>
+	
+	
+	
+	
+	<option value="class_methods">Class Methods</option>
+	
+	<option value="//api/name/annotationWithText:andFont:withXAxis:andYAxis:atXPosition:andYPosition:withTextColor:withBackgroundColor:">&nbsp;&nbsp;&nbsp;&nbsp;+ annotationWithText:andFont:withXAxis:andYAxis:atXPosition:andYPosition:withTextColor:withBackgroundColor:</option>
+	
+	<option value="//api/name/horizontalBandAtPosition:andMaxY:withXAxis:andYAxis:withColor:">&nbsp;&nbsp;&nbsp;&nbsp;+ horizontalBandAtPosition:andMaxY:withXAxis:andYAxis:withColor:</option>
+	
+	<option value="//api/name/horizontalLineAtPosition:withXAxis:andYAxis:withWidth:withColor:">&nbsp;&nbsp;&nbsp;&nbsp;+ horizontalLineAtPosition:withXAxis:andYAxis:withWidth:withColor:</option>
+	
+	<option value="//api/name/verticalBandAtPosition:andMaxX:withXAxis:andYAxis:withColor:">&nbsp;&nbsp;&nbsp;&nbsp;+ verticalBandAtPosition:andMaxX:withXAxis:andYAxis:withColor:</option>
+	
+	<option value="//api/name/verticalLineAtPosition:withXAxis:andYAxis:withWidth:withColor:">&nbsp;&nbsp;&nbsp;&nbsp;+ verticalLineAtPosition:withXAxis:andYAxis:withWidth:withColor:</option>
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/updateViewWithCanvas:">&nbsp;&nbsp;&nbsp;&nbsp;- updateViewWithCanvas:</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Positioning the annotation">Positioning the annotation</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Creating standard pre-defined annotations">Creating standard pre-defined annotations</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Drawing the annotation">Drawing the annotation</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/label">label</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/position">position</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/xAxis">xAxis</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/xValue">xValue</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/yAxis">yAxis</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/yValue">yValue</a></span></li>
+	
+</ul></li>
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#class_methods">Class Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/annotationWithText:andFont:withXAxis:andYAxis:atXPosition:andYPosition:withTextColor:withBackgroundColor:">annotationWithText:andFont:withXAxis:andYAxis:atXPosition:andYPosition:withTextColor:withBackgroundColor:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/horizontalBandAtPosition:andMaxY:withXAxis:andYAxis:withColor:">horizontalBandAtPosition:andMaxY:withXAxis:andYAxis:withColor:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/horizontalLineAtPosition:withXAxis:andYAxis:withWidth:withColor:">horizontalLineAtPosition:withXAxis:andYAxis:withWidth:withColor:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/verticalBandAtPosition:andMaxX:withXAxis:andYAxis:withColor:">verticalBandAtPosition:andMaxX:withXAxis:andYAxis:withColor:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/verticalLineAtPosition:withXAxis:andYAxis:withWidth:withColor:">verticalLineAtPosition:withXAxis:andYAxis:withWidth:withColor:</a></span></li>
+	
+</ul></li>
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/updateViewWithCanvas:">updateViewWithCanvas:</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="SChartAnnotation Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">SChartAnnotation Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value">UIView</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">SChartAnnotation.h</td>
+</tr><tr>
+	<td class="specification-title">Companion guide</td>
+	<td class="specification-value"><a href="../docs/markdown_files/ChartsUserGuide.html">ChartsUserGuide</a></td>
+</tr><tr>
+	<td class="specification-title">Availability</td>
+	<td class="specification-value">Premium</td>
+</tr><tr>
+	<td class="specification-title">Related samples</td>
+	<td class="specification-value"></td>
+</tr>
+						</tbody></table></div>
+					
+					
+					
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>An <code>SChartAnnotation</code> is a UIView that can be displayed on a chart - maintaining aspect ratio at all times and <a href="#//api/name/position">position</a> in accordance with the panning of the data range (see below).</p>
+
+<p>There are several predefined annotations for convenience - these can be created using the methods below and are bands, lines and text.</p>
+
+<p>An <code>SChartAnnotation</code> is fixed to a single point on the chart which means that it will pan but will remain a fixed size regardless of zoom level. If you would like to annotate an area that will scale as the data range is zoomed use <a href="../Classes/SChartAnnotationZooming.html"><code>SChartAnnotationZooming</code></a>, which is anchored between two limits on either axis.</p>
+
+<p>An annotation can be attached to one of the x axes, and one of the y-axes in the chart.  This is done using the <a href="#//api/name/xAxis"><code>xAxis</code></a> and <a href="#//api/name/yAxis"><code>yAxis</code></a> properties on the annotation.  If an annotation is attached to an axis, the <a href="#//api/name/position">position</a> of the annotation on the chart will correspond to its value on that axis.  The <a href="#//api/name/position">position</a> of the annotation on the x axis will correspond to <a href="#//api/name/xValue"><code>xValue</code></a> and its <a href="#//api/name/position">position</a> on the y axis will correspond to <a href="#//api/name/yValue"><code>yValue</code></a>.</p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						<a title="Positioning the annotation" name="task_Positioning the annotation"></a>
+						<h3 class="subsubtitle task-title">Positioning the annotation</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/xAxis">&nbsp;&nbsp;xAxis</a></code>
+		<span class="tooltip"><p>The x axis that the annotation is attached to.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/yAxis">&nbsp;&nbsp;yAxis</a></code>
+		<span class="tooltip"><p>The y axis that the annotation is attached to.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/xValue">&nbsp;&nbsp;xValue</a></code>
+		<span class="tooltip"><p>The value on the given <a href="#//api/name/xAxis"><code>xAxis</code></a> that the annotation is going to be anchored to.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/yValue">&nbsp;&nbsp;yValue</a></code>
+		<span class="tooltip"><p>The value on the given <a href="#//api/name/yAxis"><code>yAxis</code></a> that the annotation is going to be anchored to.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/label">&nbsp;&nbsp;label</a></code>
+		<span class="tooltip"><p>If this is a text annotation, this property is an accessor for the text label. Otherwise it returns <code>nil</code>.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/position">&nbsp;&nbsp;position</a></code>
+		<span class="tooltip"><p>Determines if the annotation should be drawn in front of or underneath your chart data.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+						
+						<a title="Creating standard pre-defined annotations" name="task_Creating standard pre-defined annotations"></a>
+						<h3 class="subsubtitle task-title">Creating standard pre-defined annotations</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/annotationWithText:andFont:withXAxis:andYAxis:atXPosition:andYPosition:withTextColor:withBackgroundColor:">+&nbsp;annotationWithText:andFont:withXAxis:andYAxis:atXPosition:andYPosition:withTextColor:withBackgroundColor:</a></code>
+		<span class="tooltip"><p>Creates an annotation based on a UILabel with the given string at the given x and y axis positions.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/verticalLineAtPosition:withXAxis:andYAxis:withWidth:withColor:">+&nbsp;verticalLineAtPosition:withXAxis:andYAxis:withWidth:withColor:</a></code>
+		<span class="tooltip"><p>Creates a vertical line at the given x <a href="#//api/name/position">position</a> that spans the whole height of the y axis.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/horizontalLineAtPosition:withXAxis:andYAxis:withWidth:withColor:">+&nbsp;horizontalLineAtPosition:withXAxis:andYAxis:withWidth:withColor:</a></code>
+		<span class="tooltip"><p>Creates a horizontal line at the given y <a href="#//api/name/position">position</a> that spans the whole width of the x axis.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/verticalBandAtPosition:andMaxX:withXAxis:andYAxis:withColor:">+&nbsp;verticalBandAtPosition:andMaxX:withXAxis:andYAxis:withColor:</a></code>
+		<span class="tooltip"><p>Creates a vertical band that spans the given range on the x axis and spans the whole height of the y axis.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/horizontalBandAtPosition:andMaxY:withXAxis:andYAxis:withColor:">+&nbsp;horizontalBandAtPosition:andMaxY:withXAxis:andYAxis:withColor:</a></code>
+		<span class="tooltip"><p>Creates a horizontal band that spans the given range on the y axis and spans the whole width of the x axis.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Drawing the annotation" name="task_Drawing the annotation"></a>
+						<h3 class="subsubtitle task-title">Drawing the annotation</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/updateViewWithCanvas:">&ndash;&nbsp;updateViewWithCanvas:</a></code>
+		<span class="tooltip"><p>Updates the annotation on the chart.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/label" title="label"></a>
+	<h3 class="subsubtitle method-title">label</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>If this is a text annotation, this property is an accessor for the text label. Otherwise it returns <code>nil</code>.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) UILabel *label</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartAnnotation.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/position" title="position"></a>
+	<h3 class="subsubtitle method-title">position</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Determines if the annotation should be drawn in front of or underneath your chart data.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic) SChartAnnotationPosition position</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<pre><code>typedef enum {
+    SChartAnnotationAboveData,
+    SChartAnnotationBelowData,
+} SChartAnnotationPosition;
+</code></pre>
+
+<p>In most cases, we will want the annotation to be drawn in front of the chart data, so this defaults to <code>SChartAnnotationAboveData</code>.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartAnnotation.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/xAxis" title="xAxis"></a>
+	<h3 class="subsubtitle method-title">xAxis</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The x axis that the annotation is attached to.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) SChartAxis *xAxis</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>A <code>nil</code> value will cause the view to be displayed at the midpoint of the width of the chart plot area.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartAnnotation.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/xValue" title="xValue"></a>
+	<h3 class="subsubtitle method-title">xValue</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The value on the given <a href="#//api/name/xAxis"><code>xAxis</code></a> that the annotation is going to be anchored to.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) id xValue</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>A <code>nil</code> value will cause the view to be displayed at the midpoint of the width of the chart plot area.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartAnnotation.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/yAxis" title="yAxis"></a>
+	<h3 class="subsubtitle method-title">yAxis</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The y axis that the annotation is attached to.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) SChartAxis *yAxis</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>A <code>nil</code> value will cause the view to be displayed at the midpoint of the height of the chart plot area.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartAnnotation.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/yValue" title="yValue"></a>
+	<h3 class="subsubtitle method-title">yValue</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The value on the given <a href="#//api/name/yAxis"><code>yAxis</code></a> that the annotation is going to be anchored to.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) id yValue</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>A <code>nil</code> value will cause the view to be displayed at the midpoint of the height of the chart plot area.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartAnnotation.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Class Methods" name="class_methods"></a>
+						<h2 class="subtitle subtitle-methods">Class Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/annotationWithText:andFont:withXAxis:andYAxis:atXPosition:andYPosition:withTextColor:withBackgroundColor:" title="annotationWithText:andFont:withXAxis:andYAxis:atXPosition:andYPosition:withTextColor:withBackgroundColor:"></a>
+	<h3 class="subsubtitle method-title">annotationWithText:andFont:withXAxis:andYAxis:atXPosition:andYPosition:withTextColor:withBackgroundColor:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Creates an annotation based on a UILabel with the given string at the given x and y axis positions.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (SChartAnnotation *)annotationWithText:(NSString *)<em>text</em> andFont:(UIFont *)<em>font</em> withXAxis:(SChartAxis *)<em>xAxis</em> andYAxis:(SChartAxis *)<em>yAxis</em> atXPosition:(id)<em>xValue</em> andYPosition:(id)<em>yValue</em> withTextColor:(UIColor *)<em>textColor</em> withBackgroundColor:(UIColor *)<em>backgroundColor</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartAnnotation.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/horizontalBandAtPosition:andMaxY:withXAxis:andYAxis:withColor:" title="horizontalBandAtPosition:andMaxY:withXAxis:andYAxis:withColor:"></a>
+	<h3 class="subsubtitle method-title">horizontalBandAtPosition:andMaxY:withXAxis:andYAxis:withColor:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Creates a horizontal band that spans the given range on the y axis and spans the whole width of the x axis.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (SChartAnnotationZooming *)horizontalBandAtPosition:(id)<em>minY</em> andMaxY:(id)<em>maxY</em> withXAxis:(SChartAxis *)<em>xAxis</em> andYAxis:(SChartAxis *)<em>yAxis</em> withColor:(UIColor *)<em>color</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartAnnotation.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/horizontalLineAtPosition:withXAxis:andYAxis:withWidth:withColor:" title="horizontalLineAtPosition:withXAxis:andYAxis:withWidth:withColor:"></a>
+	<h3 class="subsubtitle method-title">horizontalLineAtPosition:withXAxis:andYAxis:withWidth:withColor:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Creates a horizontal line at the given y <a href="#//api/name/position">position</a> that spans the whole width of the x axis.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (SChartAnnotationZooming *)horizontalLineAtPosition:(id)<em>yValue</em> withXAxis:(SChartAxis *)<em>xAxis</em> andYAxis:(SChartAxis *)<em>yAxis</em> withWidth:(float)<em>width</em> withColor:(UIColor *)<em>color</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartAnnotation.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/verticalBandAtPosition:andMaxX:withXAxis:andYAxis:withColor:" title="verticalBandAtPosition:andMaxX:withXAxis:andYAxis:withColor:"></a>
+	<h3 class="subsubtitle method-title">verticalBandAtPosition:andMaxX:withXAxis:andYAxis:withColor:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Creates a vertical band that spans the given range on the x axis and spans the whole height of the y axis.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (SChartAnnotationZooming *)verticalBandAtPosition:(id)<em>minX</em> andMaxX:(id)<em>maxX</em> withXAxis:(SChartAxis *)<em>xAxis</em> andYAxis:(SChartAxis *)<em>yAxis</em> withColor:(UIColor *)<em>color</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartAnnotation.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/verticalLineAtPosition:withXAxis:andYAxis:withWidth:withColor:" title="verticalLineAtPosition:withXAxis:andYAxis:withWidth:withColor:"></a>
+	<h3 class="subsubtitle method-title">verticalLineAtPosition:withXAxis:andYAxis:withWidth:withColor:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Creates a vertical line at the given x <a href="#//api/name/position">position</a> that spans the whole height of the y axis.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (SChartAnnotationZooming *)verticalLineAtPosition:(id)<em>xValue</em> withXAxis:(SChartAxis *)<em>xAxis</em> andYAxis:(SChartAxis *)<em>yAxis</em> withWidth:(float)<em>width</em> withColor:(UIColor *)<em>color</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartAnnotation.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/updateViewWithCanvas:" title="updateViewWithCanvas:"></a>
+	<h3 class="subsubtitle method-title">updateViewWithCanvas:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Updates the annotation on the chart.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)updateViewWithCanvas:(SChartCanvas *)<em>canvas</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Override this method to provide custom updating of the annotation while it is being positioned on the chart.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartAnnotation.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2013 Scott Logic Ltd. All rights reserved. (Last updated: 2013-10-01)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 858)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

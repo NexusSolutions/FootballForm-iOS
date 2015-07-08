@@ -1,0 +1,507 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>SChartCrosshairMultiValueTooltip Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.1 (build 858)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">ShinobiCharts </a></h1>
+				<a id="developerHome" href="../index.html">Scott Logic Ltd</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">SChartCrosshairMultiValueTooltip Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/labels">&nbsp;&nbsp;&nbsp;&nbsp;labels</option>
+	
+	
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/keyValueDisplayPairsForDataPoint:onSeries:withXAxis:withYAxis:">&nbsp;&nbsp;&nbsp;&nbsp;- keyValueDisplayPairsForDataPoint:onSeries:withXAxis:withYAxis:</option>
+	
+	<option value="//api/name/mainLabelStringForDataPoint:onSeries:withXAxis:withYAxis:">&nbsp;&nbsp;&nbsp;&nbsp;- mainLabelStringForDataPoint:onSeries:withXAxis:withYAxis:</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Methods for Subclassing">Methods for Subclassing</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/labels">labels</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/keyValueDisplayPairsForDataPoint:onSeries:withXAxis:withYAxis:">keyValueDisplayPairsForDataPoint:onSeries:withXAxis:withYAxis:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/mainLabelStringForDataPoint:onSeries:withXAxis:withYAxis:">mainLabelStringForDataPoint:onSeries:withXAxis:withYAxis:</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="SChartCrosshairMultiValueTooltip Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">SChartCrosshairMultiValueTooltip Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value"><a href="../Classes/SChartCrosshairTooltip.html">SChartCrosshairTooltip</a> : UIView</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">SChartCrosshairMultiValueTooltip.h</td>
+</tr><tr>
+	<td class="specification-title">Availability</td>
+	<td class="specification-value"></td>
+</tr><tr>
+	<td class="specification-title">Related samples</td>
+	<td class="specification-value"></td>
+</tr>
+						</tbody></table></div>
+					
+					
+					
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>A tooltip that can handle the display of multi-value data points.</p>
+
+<p>To use a tooltip of this class type simply assign it to your chart&rsquo;s crosshair like so:</p>
+
+<p><code>chart.crosshair.tooltip = [[SChartCrosshairMultiValueTooltip new]autorelease]</code>;</p>
+
+<p>A tooltip of this type handles the multi-values of a datapoint by building a dictionary of key-value strings to be displayed. For example, a crosshair (with a tooltip of this type) that is tracking an OHLC series will likely read from multi-value datapoints such that the following dictionary of strings is to be displayed { Open : value1, High : value2, Low : value3, Close: value4 }. This dictionary is constructed via the method <a href="#//api/name/keyValueDisplayPairsForDataPoint:onSeries:withXAxis:withYAxis:"><code>keyValueDisplayPairsForDataPoint:onSeries:withXAxis:withYAxis:</code></a> (which can be overriden in a subclass if you wish to change the key-value pairs that the tooltip finally displays).</p>
+
+<p>A tooltip of this type is made up from an array of <a href="#//api/name/labels">labels</a> (one label for each key or value) and a main label (inherited from <a href="../Classes/SChartCrosshairTooltip.html">SChartCrosshairTooltip</a>) which will display any left over values that do not belong to the key-value pairs.</p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						
+						<h3 class="subsubtitle task-title">Other Methods</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/labels">&nbsp;&nbsp;labels</a></code>
+		<span class="tooltip"><p>An array of labels that contains a label for each display key and each display value (as dictated by <a href="#//api/name/keyValueDisplayPairsForDataPoint:onSeries:withXAxis:withYAxis:">keyValueDisplayPairsForDataPoint:onSeries:withXAxis:withYAxis:</a>).</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+						
+						<a title="Methods for Subclassing" name="task_Methods for Subclassing"></a>
+						<h3 class="subsubtitle task-title">Methods for Subclassing</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/keyValueDisplayPairsForDataPoint:onSeries:withXAxis:withYAxis:">&ndash;&nbsp;keyValueDisplayPairsForDataPoint:onSeries:withXAxis:withYAxis:</a></code>
+		<span class="tooltip"><p>Returns a dictionary of key-value pairs that will be displayed in this tooltip.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/mainLabelStringForDataPoint:onSeries:withXAxis:withYAxis:">&ndash;&nbsp;mainLabelStringForDataPoint:onSeries:withXAxis:withYAxis:</a></code>
+		<span class="tooltip"><p>Returns the string that will be used as the main label on this tooltip.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/labels" title="labels"></a>
+	<h3 class="subsubtitle method-title">labels</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>An array of labels that contains a label for each display key and each display value (as dictated by <a href="#//api/name/keyValueDisplayPairsForDataPoint:onSeries:withXAxis:withYAxis:">keyValueDisplayPairsForDataPoint:onSeries:withXAxis:withYAxis:</a>).</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) NSMutableArray *labels</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartCrosshairMultiValueTooltip.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/keyValueDisplayPairsForDataPoint:onSeries:withXAxis:withYAxis:" title="keyValueDisplayPairsForDataPoint:onSeries:withXAxis:withYAxis:"></a>
+	<h3 class="subsubtitle method-title">keyValueDisplayPairsForDataPoint:onSeries:withXAxis:withYAxis:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns a dictionary of key-value pairs that will be displayed in this tooltip.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSDictionary *)keyValueDisplayPairsForDataPoint:(id&lt;SChartData&gt;)<em>dataPoint</em> onSeries:(SChartSeries *)<em>series</em> withXAxis:(SChartAxis *)<em>xAxis</em> withYAxis:(SChartAxis *)<em>yAxis</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>dataPoint</em></dt>
+			<dd><p>The data point that the toolip is attempting to display values for.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>series</em></dt>
+			<dd><p>The series that dataPoint belongs to.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>xAxis</em></dt>
+			<dd><p>The x-axis that the series is linked to.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>yAxis</em></dt>
+			<dd><p>The y-axis that the series is linked to.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>A dictionary of NSString objects that are to be displayed in this tooltip.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>For example an OHLC series with a multi-y data point will return a dictionary with four entries. The keys will be &ldquo;Open&rdquo;, &ldquo;High&rdquo;, &ldquo;Low&rdquo;, &ldquo;Close&rdquo; as returned by the series method <a href="../Classes/SChartSeries.html#//api/name/stringForKey:withDataPoint:">[SChartSeries stringForKey:withDataPoint:]</a>, with corresponding values from the given data point.</p>
+
+<p>The default behaviour is to use the methods <a href="../Classes/SChartSeries.html#//api/name/stringForKey:withDataPoint:"><code>[SChartSeries stringForKey:withDataPoint:]</code></a> and <a href="../Classes/SChartSeries.html#//api/name/stringForValueWithKey:withDataPoint:usingAxis:"><code>[SChartSeries stringForValueWithKey:withDataPoint:usingAxis:]</code></a> to retrieve the desired display strings for each key and each value. This means that if you only need to change the text that is displayed for each key or value it is likely less work to subclass your series and override these methods.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartCrosshairMultiValueTooltip.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/mainLabelStringForDataPoint:onSeries:withXAxis:withYAxis:" title="mainLabelStringForDataPoint:onSeries:withXAxis:withYAxis:"></a>
+	<h3 class="subsubtitle method-title">mainLabelStringForDataPoint:onSeries:withXAxis:withYAxis:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns the string that will be used as the main label on this tooltip.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSString *)mainLabelStringForDataPoint:(id&lt;SChartData&gt;)<em>dataPoint</em> onSeries:(SChartSeries *)<em>series</em> withXAxis:(SChartAxis *)<em>xAxis</em> withYAxis:(SChartAxis *)<em>yAxis</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>dataPoint</em></dt>
+			<dd><p>The data point that the toolip requires the main label text for.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>series</em></dt>
+			<dd><p>The series that dataPoint belongs to.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>xAxis</em></dt>
+			<dd><p>The x-axis that the series is linked to.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>yAxis</em></dt>
+			<dd><p>The y-axis that the series is linked to.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>A string representing the text to be displayed in this tooltip&rsquo;s main label.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The default beahviour of this method is to return string representations of the x and y values, where no multi-values exist, as formatted by the appropriate axis.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartCrosshairMultiValueTooltip.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2013 Scott Logic Ltd. All rights reserved. (Last updated: 2013-10-01)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 858)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

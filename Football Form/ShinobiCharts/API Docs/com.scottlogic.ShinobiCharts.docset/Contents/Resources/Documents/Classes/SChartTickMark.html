@@ -1,0 +1,1004 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>SChartTickMark Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.1 (build 858)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">ShinobiCharts </a></h1>
+				<a id="developerHome" href="../index.html">Scott Logic Ltd</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">SChartTickMark Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/gridLineView">&nbsp;&nbsp;&nbsp;&nbsp;gridLineView</option>
+	
+	<option value="//api/name/gridStripeView">&nbsp;&nbsp;&nbsp;&nbsp;gridStripeView</option>
+	
+	<option value="//api/name/isMajor">&nbsp;&nbsp;&nbsp;&nbsp;isMajor</option>
+	
+	<option value="//api/name/tickEnabled">&nbsp;&nbsp;&nbsp;&nbsp;tickEnabled</option>
+	
+	<option value="//api/name/tickLabel">&nbsp;&nbsp;&nbsp;&nbsp;tickLabel</option>
+	
+	<option value="//api/name/tickMarkView">&nbsp;&nbsp;&nbsp;&nbsp;tickMarkView</option>
+	
+	<option value="//api/name/tickMarkX">&nbsp;&nbsp;&nbsp;&nbsp;tickMarkX</option>
+	
+	<option value="//api/name/tickMarkY">&nbsp;&nbsp;&nbsp;&nbsp;tickMarkY</option>
+	
+	<option value="//api/name/value">&nbsp;&nbsp;&nbsp;&nbsp;value</option>
+	
+	
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/compareForXAxis:">&nbsp;&nbsp;&nbsp;&nbsp;- compareForXAxis:</option>
+	
+	<option value="//api/name/compareForYAxis:">&nbsp;&nbsp;&nbsp;&nbsp;- compareForYAxis:</option>
+	
+	<option value="//api/name/disableTick:">&nbsp;&nbsp;&nbsp;&nbsp;- disableTick:</option>
+	
+	<option value="//api/name/initWithLabel:andText:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithLabel:andText:</option>
+	
+	<option value="//api/name/removeLabel">&nbsp;&nbsp;&nbsp;&nbsp;- removeLabel</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Initializing a new tickmark">Initializing a new tickmark</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Current status">Current status</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Sorting tick marks">Sorting tick marks</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Labelling the tick mark">Labelling the tick mark</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/gridLineView">gridLineView</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/gridStripeView">gridStripeView</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/isMajor">isMajor</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/tickEnabled">tickEnabled</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/tickLabel">tickLabel</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/tickMarkView">tickMarkView</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/tickMarkX">tickMarkX</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/tickMarkY">tickMarkY</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/value">value</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/compareForXAxis:">compareForXAxis:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/compareForYAxis:">compareForYAxis:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/disableTick:">disableTick:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithLabel:andText:">initWithLabel:andText:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/removeLabel">removeLabel</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="SChartTickMark Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">SChartTickMark Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value">NSObject</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">SChartTickMark.h</td>
+</tr><tr>
+	<td class="specification-title">Companion guide</td>
+	<td class="specification-value"><a href="../docs/markdown_files/ChartsUserGuide.html">ChartsUserGuide</a></td>
+</tr><tr>
+	<td class="specification-title">Availability</td>
+	<td class="specification-value">Standard<br />Premium</td>
+</tr><tr>
+	<td class="specification-title">Related samples</td>
+	<td class="specification-value"></td>
+</tr>
+						</tbody></table></div>
+					
+					
+					
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>An object that represents each tick mark on the chart. The label for the tick mark is also managed by this class.</p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						<a title="Initializing a new tickmark" name="task_Initializing a new tickmark"></a>
+						<h3 class="subsubtitle task-title">Initializing a new tickmark</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/initWithLabel:andText:">&ndash;&nbsp;initWithLabel:andText:</a></code>
+		<span class="tooltip"><p>Create a tick mark with a particular label.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Current status" name="task_Current status"></a>
+						<h3 class="subsubtitle task-title">Current status</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/tickEnabled">&nbsp;&nbsp;tickEnabled</a></code>
+		<span class="tooltip"><p>Is this tick mark visible on the chart?</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+						
+						<a title="Sorting tick marks" name="task_Sorting tick marks"></a>
+						<h3 class="subsubtitle task-title">Sorting tick marks</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/compareForXAxis:">&ndash;&nbsp;compareForXAxis:</a></code>
+		<span class="tooltip"><p>Compare the X values for this tick mark</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/compareForYAxis:">&ndash;&nbsp;compareForYAxis:</a></code>
+		<span class="tooltip"><p>Compare the Y values for this tick mark</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Labelling the tick mark" name="task_Labelling the tick mark"></a>
+						<h3 class="subsubtitle task-title">Labelling the tick mark</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/tickLabel">&nbsp;&nbsp;tickLabel</a></code>
+		<span class="tooltip"><p>The label object to visually represent the <a href="#//api/name/value">value</a> of this tick mark</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/removeLabel">&ndash;&nbsp;removeLabel</a></code>
+		<span class="tooltip"><p>Called when the axis wishes to remove this tick mark label.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/isMajor">&nbsp;&nbsp;isMajor</a></code>
+		<span class="tooltip"><p>Whether or not the tickmark is major</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/tickMarkX">&nbsp;&nbsp;tickMarkX</a></code>
+		<span class="tooltip"><p>The origin of the tickmark in X, in pixels.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/tickMarkY">&nbsp;&nbsp;tickMarkY</a></code>
+		<span class="tooltip"><p>The origin of the tickmark in Y, in pixels.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/value">&nbsp;&nbsp;value</a></code>
+		<span class="tooltip"><p>A double representing the location of the tickmark on the axis. It is from this value that the text of the tickmark is determined.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/tickMarkView">&nbsp;&nbsp;tickMarkView</a></code>
+		<span class="tooltip"><p>The UIView in which the tickmark is drawn.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/gridLineView">&nbsp;&nbsp;gridLineView</a></code>
+		<span class="tooltip"><p>The UIView that is the gridLine for the tickmark.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/gridStripeView">&nbsp;&nbsp;gridStripeView</a></code>
+		<span class="tooltip"><p>The UIView that is the gridStripe for the tickmark.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/disableTick:">&ndash;&nbsp;disableTick:</a></code>
+		<span class="tooltip"><p>Disables a tickmark, removing it completely from the owning axis.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/gridLineView" title="gridLineView"></a>
+	<h3 class="subsubtitle method-title">gridLineView</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The UIView that is the gridLine for the tickmark.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) UIView *gridLineView</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>This view sits underneath the plot area.
+  This will be nil is gridLines are not enabled.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartTickMark.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/gridStripeView" title="gridStripeView"></a>
+	<h3 class="subsubtitle method-title">gridStripeView</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The UIView that is the gridStripe for the tickmark.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) UIView *gridStripeView</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>This view sits underneath the plot area.
+This will be nil is gridStripes are not enabled.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartTickMark.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/isMajor" title="isMajor"></a>
+	<h3 class="subsubtitle method-title">isMajor</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Whether or not the tickmark is major</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic) BOOL isMajor</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartTickMark.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/tickEnabled" title="tickEnabled"></a>
+	<h3 class="subsubtitle method-title">tickEnabled</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Is this tick mark visible on the chart?</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic) BOOL tickEnabled</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartTickMark.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/tickLabel" title="tickLabel"></a>
+	<h3 class="subsubtitle method-title">tickLabel</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The label object to visually represent the <a href="#//api/name/value">value</a> of this tick mark</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) UILabel *tickLabel</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>If this is <code>nil</code> then no label will be displayed.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartTickMark.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/tickMarkView" title="tickMarkView"></a>
+	<h3 class="subsubtitle method-title">tickMarkView</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The UIView in which the tickmark is drawn.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) UIView *tickMarkView</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>This is the view in which the &lsquo;tick&rsquo; is drawn - the line between the axis and any associated ticklabel.
+Note that this view does not contain the label, gridLine, or gridStripe UIViews.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartTickMark.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/tickMarkX" title="tickMarkX"></a>
+	<h3 class="subsubtitle method-title">tickMarkX</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The origin of the tickmark in X, in pixels.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic) float tickMarkX</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartTickMark.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/tickMarkY" title="tickMarkY"></a>
+	<h3 class="subsubtitle method-title">tickMarkY</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The origin of the tickmark in Y, in pixels.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic) float tickMarkY</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartTickMark.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/value" title="value"></a>
+	<h3 class="subsubtitle method-title">value</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>A double representing the location of the tickmark on the axis. It is from this value that the text of the tickmark is determined.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic) double value</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Where the axis isn&rsquo;t numeric, the representation may vary:
+On an <a href="../Classes/SChartDateTimeAxis.html"><code>SChartDateTimeAxis</code></a>, this will be a number of seconds elapsed from a fixed point.
+On an <a href="../Classes/SChartCategoryAxis.html"><code>SChartCategoryAxis</code></a> this will be the integer index of the category represented</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartTickMark.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/compareForXAxis:" title="compareForXAxis:"></a>
+	<h3 class="subsubtitle method-title">compareForXAxis:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Compare the X values for this tick mark</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSComparisonResult)compareForXAxis:(SChartTickMark *)<em>tm</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartTickMark.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/compareForYAxis:" title="compareForYAxis:"></a>
+	<h3 class="subsubtitle method-title">compareForYAxis:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Compare the Y values for this tick mark</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSComparisonResult)compareForYAxis:(SChartTickMark *)<em>tm</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartTickMark.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/disableTick:" title="disableTick:"></a>
+	<h3 class="subsubtitle method-title">disableTick:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Disables a tickmark, removing it completely from the owning axis.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)disableTick:(SChartAxis *)<em>axis</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartTickMark.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/initWithLabel:andText:" title="initWithLabel:andText:"></a>
+	<h3 class="subsubtitle method-title">initWithLabel:andText:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Create a tick mark with a particular label.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)initWithLabel:(CGRect)<em>labelFrame</em> andText:(NSString *)<em>text</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartTickMark.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/removeLabel" title="removeLabel"></a>
+	<h3 class="subsubtitle method-title">removeLabel</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Called when the axis wishes to remove this tick mark label.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)removeLabel</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Override this to provide a custom exit routine for the label</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartTickMark.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2013 Scott Logic Ltd. All rights reserved. (Last updated: 2013-10-01)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 858)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

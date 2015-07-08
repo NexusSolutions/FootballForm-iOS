@@ -1,0 +1,1244 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>SChartDatasource Protocol Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.1 (build 858)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">ShinobiCharts </a></h1>
+				<a id="developerHome" href="../index.html">Scott Logic Ltd</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">SChartDatasource Protocol Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/getLabelsForRadialChartSeries:forIndex:">&nbsp;&nbsp;&nbsp;&nbsp;- getLabelsForRadialChartSeries:forIndex:</option>
+	
+	<option value="//api/name/numberOfSeriesInSChart:">&nbsp;&nbsp;&nbsp;&nbsp;- numberOfSeriesInSChart:</option>
+	
+	<option value="//api/name/sChart:dataPointAtIndex:forSeriesAtIndex:">&nbsp;&nbsp;&nbsp;&nbsp;- sChart:dataPointAtIndex:forSeriesAtIndex:</option>
+	
+	<option value="//api/name/sChart:dataPointsForSeriesAtIndex:">&nbsp;&nbsp;&nbsp;&nbsp;- sChart:dataPointsForSeriesAtIndex:</option>
+	
+	<option value="//api/name/sChart:labelForSliceAtIndex:inRadialSeries:">&nbsp;&nbsp;&nbsp;&nbsp;- sChart:labelForSliceAtIndex:inRadialSeries:</option>
+	
+	<option value="//api/name/sChart:majorTickValuesForAxis:">&nbsp;&nbsp;&nbsp;&nbsp;- sChart:majorTickValuesForAxis:</option>
+	
+	<option value="//api/name/sChart:numberOfDataPointsForSeriesAtIndex:">&nbsp;&nbsp;&nbsp;&nbsp;- sChart:numberOfDataPointsForSeriesAtIndex:</option>
+	
+	<option value="//api/name/sChart:seriesAtIndex:">&nbsp;&nbsp;&nbsp;&nbsp;- sChart:seriesAtIndex:</option>
+	
+	<option value="//api/name/sChart:xAxisForSeriesAtIndex:">&nbsp;&nbsp;&nbsp;&nbsp;- sChart:xAxisForSeriesAtIndex:</option>
+	
+	<option value="//api/name/sChart:yAxisForSeriesAtIndex:">&nbsp;&nbsp;&nbsp;&nbsp;- sChart:yAxisForSeriesAtIndex:</option>
+	
+	<option value="//api/name/sChartInnerRadiusForDataPoint:dataPointAtIndex:forSeriesAtIndex:">&nbsp;&nbsp;&nbsp;&nbsp;- sChartInnerRadiusForDataPoint:dataPointAtIndex:forSeriesAtIndex:</option>
+	
+	<option value="//api/name/sChartRadiusForDataPoint:dataPointAtIndex:forSeriesAtIndex:">&nbsp;&nbsp;&nbsp;&nbsp;- sChartRadiusForDataPoint:dataPointAtIndex:forSeriesAtIndex:</option>
+	
+	<option value="//api/name/sChartTextureForPoint:dataPointAtIndex:forSeriesAtIndex:">&nbsp;&nbsp;&nbsp;&nbsp;- sChartTextureForPoint:dataPointAtIndex:forSeriesAtIndex:</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Providing data to a ShinobiChart">Providing data to a ShinobiChart</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Custom tick marks">Custom tick marks</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Custom data points">Custom data points</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Custom data point radii">Custom data point radii</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Custom labels for radial charts">Custom labels for radial charts</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Assigning an axis to a series">Assigning an axis to a series</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getLabelsForRadialChartSeries:forIndex:">getLabelsForRadialChartSeries:forIndex:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/numberOfSeriesInSChart:">numberOfSeriesInSChart:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/sChart:dataPointAtIndex:forSeriesAtIndex:">sChart:dataPointAtIndex:forSeriesAtIndex:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/sChart:dataPointsForSeriesAtIndex:">sChart:dataPointsForSeriesAtIndex:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/sChart:labelForSliceAtIndex:inRadialSeries:">sChart:labelForSliceAtIndex:inRadialSeries:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/sChart:majorTickValuesForAxis:">sChart:majorTickValuesForAxis:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/sChart:numberOfDataPointsForSeriesAtIndex:">sChart:numberOfDataPointsForSeriesAtIndex:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/sChart:seriesAtIndex:">sChart:seriesAtIndex:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/sChart:xAxisForSeriesAtIndex:">sChart:xAxisForSeriesAtIndex:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/sChart:yAxisForSeriesAtIndex:">sChart:yAxisForSeriesAtIndex:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/sChartInnerRadiusForDataPoint:dataPointAtIndex:forSeriesAtIndex:">sChartInnerRadiusForDataPoint:dataPointAtIndex:forSeriesAtIndex:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/sChartRadiusForDataPoint:dataPointAtIndex:forSeriesAtIndex:">sChartRadiusForDataPoint:dataPointAtIndex:forSeriesAtIndex:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/sChartTextureForPoint:dataPointAtIndex:forSeriesAtIndex:">sChartTextureForPoint:dataPointAtIndex:forSeriesAtIndex:</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="SChartDatasource Protocol Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">SChartDatasource Protocol Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Conforms to</td>
+	<td class="specification-value">NSObject</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">SChartDatasource.h</td>
+</tr><tr>
+	<td class="specification-title">Companion guide</td>
+	<td class="specification-value"><a href="../docs/markdown_files/ChartsUserGuide.html">ChartsUserGuide</a></td>
+</tr><tr>
+	<td class="specification-title">Availability</td>
+	<td class="specification-value">Standard<br />Premium</td>
+</tr><tr>
+	<td class="specification-title">Related samples</td>
+	<td class="specification-value">Area<br />BarChart<br />ColumnChart<br />FinancialChart<br />LargeDataSet<br />LineChart<br />PieChart</td>
+</tr>
+						</tbody></table></div>
+					
+					
+					
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>The <code>SChartDatasource</code> protocol is adopted by an object that wishes to provide data for a <a href="../Classes/ShinobiChart.html"><code>ShinobiChart</code></a>. The data source provides the chart with the information it needs to construct the chart object. In general, styling and event response is handled by objects implementing the <a href="../Protocols/SChartDelegate.html"><code>SChartDelegate</code></a> protocol - the data source has minimal impact on the look and feel of the chart.</p>
+
+<p>The <em>required</em> methods provide the chart with information about all of the series to be displayed on that chart - and the data for those series. The relevant chart object is always returned - to support the option of using a single object as the data source for multiple charts.</p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						<a title="Providing data to a ShinobiChart" name="task_Providing data to a ShinobiChart"></a>
+						<h3 class="subsubtitle task-title">Providing data to a ShinobiChart</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/numberOfSeriesInSChart:">&ndash;&nbsp;numberOfSeriesInSChart:</a></code>
+		<span class="tooltip"><p>Returns the number of series in the given chart.</p></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/sChart:seriesAtIndex:">&ndash;&nbsp;sChart:seriesAtIndex:</a></code>
+		<span class="tooltip"><p>Returns the <a href="../Classes/SChartSeries.html"><code>SChartSeries</code></a> object at the given index in the specified chart.</p></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/sChart:numberOfDataPointsForSeriesAtIndex:">&ndash;&nbsp;sChart:numberOfDataPointsForSeriesAtIndex:</a></code>
+		<span class="tooltip"><p>Returns the number of data points in the specified series.</p></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/sChart:dataPointAtIndex:forSeriesAtIndex:">&ndash;&nbsp;sChart:dataPointAtIndex:forSeriesAtIndex:</a></code>
+		<span class="tooltip"><p>Returns the object that represents the data point at the given index in the specified chart series.</p></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li>
+						</ul>
+						
+						
+						<a title="Custom tick marks" name="task_Custom tick marks"></a>
+						<h3 class="subsubtitle task-title">Custom tick marks</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/sChart:majorTickValuesForAxis:">&ndash;&nbsp;sChart:majorTickValuesForAxis:</a></code>
+		<span class="tooltip"><p>Returns an array of major tick mark values, to be used by the given chart axis.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Custom data points" name="task_Custom data points"></a>
+						<h3 class="subsubtitle task-title">Custom data points</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/sChart:dataPointsForSeriesAtIndex:">&ndash;&nbsp;sChart:dataPointsForSeriesAtIndex:</a></code>
+		<span class="tooltip"><p>Returns an array containing the data points for the series at the given index.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/sChartTextureForPoint:dataPointAtIndex:forSeriesAtIndex:">&ndash;&nbsp;sChartTextureForPoint:dataPointAtIndex:forSeriesAtIndex:</a></code>
+		<span class="tooltip"><p>Returns an image to be displayed for the specified data point in the chart.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Custom data point radii" name="task_Custom data point radii"></a>
+						<h3 class="subsubtitle task-title">Custom data point radii</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/sChartRadiusForDataPoint:dataPointAtIndex:forSeriesAtIndex:">&ndash;&nbsp;sChartRadiusForDataPoint:dataPointAtIndex:forSeriesAtIndex:</a></code>
+		<span class="tooltip"><p>Returns the radius of the given data point, in points.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/sChartInnerRadiusForDataPoint:dataPointAtIndex:forSeriesAtIndex:">&ndash;&nbsp;sChartInnerRadiusForDataPoint:dataPointAtIndex:forSeriesAtIndex:</a></code>
+		<span class="tooltip"><p>Returns the inner radius of the given data point, in points.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Custom labels for radial charts" name="task_Custom labels for radial charts"></a>
+						<h3 class="subsubtitle task-title">Custom labels for radial charts</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/getLabelsForRadialChartSeries:forIndex:">&ndash;&nbsp;getLabelsForRadialChartSeries:forIndex:</a></code>
+		<span class="tooltip"><p>DEPRECATED - use <a href="#//api/name/sChart:labelForSliceAtIndex:inRadialSeries:">sChart:labelForSliceAtIndex:inRadialSeries:</a> instead.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/sChart:labelForSliceAtIndex:inRadialSeries:">&ndash;&nbsp;sChart:labelForSliceAtIndex:inRadialSeries:</a></code>
+		<span class="tooltip"><p>Returns a UILabel corresponding to a &lsquo;slice&rsquo; of a radial chart series.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Assigning an axis to a series" name="task_Assigning an axis to a series"></a>
+						<h3 class="subsubtitle task-title">Assigning an axis to a series</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/sChart:xAxisForSeriesAtIndex:">&ndash;&nbsp;sChart:xAxisForSeriesAtIndex:</a></code>
+		<span class="tooltip"><p>Returns the x axis for this series on the chart.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/sChart:yAxisForSeriesAtIndex:">&ndash;&nbsp;sChart:yAxisForSeriesAtIndex:</a></code>
+		<span class="tooltip"><p>The y-axis for this series on the chart</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/getLabelsForRadialChartSeries:forIndex:" title="getLabelsForRadialChartSeries:forIndex:"></a>
+	<h3 class="subsubtitle method-title">getLabelsForRadialChartSeries:forIndex:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>DEPRECATED - use <a href="#//api/name/sChart:labelForSliceAtIndex:inRadialSeries:">sChart:labelForSliceAtIndex:inRadialSeries:</a> instead.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (UILabel *)getLabelsForRadialChartSeries:(SChartSeries *)<em>series</em> forIndex:(NSInteger)<em>sliceIndex</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Returns a UILabel corresponding to the &lsquo;slice&rsquo; of the specified radial chart series at the given index.</p>
+
+<p>If this method is implemented and a non-nil UILabel is returned for a &lsquo;slice&rsquo; in a radial chart series, that UILabel will be added to the chart.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartDatasource.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/numberOfSeriesInSChart:" title="numberOfSeriesInSChart:"></a>
+	<h3 class="subsubtitle method-title">numberOfSeriesInSChart:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns the number of series in the given chart.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSInteger)numberOfSeriesInSChart:(ShinobiChart *)<em>chart</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>chart</em></dt>
+			<dd><p>The chart for which the datasource is providing data.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The chart can display multiple series, and can display series of different types at the same time. For each of these series, the chart will expect to receive a <a href="../Classes/SChartSeries.html"><code>SChartSeries</code></a> object from the datasource, through the <a href="#//api/name/sChart:seriesAtIndex:"><code>sChart:seriesAtIndex:</code></a> method.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartDatasource.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/sChart:dataPointAtIndex:forSeriesAtIndex:" title="sChart:dataPointAtIndex:forSeriesAtIndex:"></a>
+	<h3 class="subsubtitle method-title">sChart:dataPointAtIndex:forSeriesAtIndex:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns the object that represents the data point at the given index in the specified chart series.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id&lt;SChartData&gt;)sChart:(ShinobiChart *)<em>chart</em> dataPointAtIndex:(NSInteger)<em>dataIndex</em> forSeriesAtIndex:(NSInteger)<em>seriesIndex</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>chart</em></dt>
+			<dd><p>The chart on which the data point will be drawn.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>dataIndex</em></dt>
+			<dd><p>The index of the data point in the chart series which contains it.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>seriesIndex</em></dt>
+			<dd><p>The index of the series which contains the data point, in the chart.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The number of points in each series is set by the <a href="#//api/name/sChart:numberOfDataPointsForSeriesAtIndex:"><code>sChart:numberOfDataPointsForSeriesAtIndex:</code></a> method.</p>
+
+<p>The data point can be any object that implements the <a href="../Protocols/SChartData.html"><code>SChartData</code></a> protocol.  We provide a set of data point classes which can be used.  These are:</p>
+
+<ul>
+<li><a href="../Classes/SChartDataPoint.html"><code>SChartDataPoint</code></a> - used for simple cartesian data points.</li>
+<li><a href="../Classes/SChartRadialDataPoint.html"><code>SChartRadialDataPoint</code></a> - used for radial data points.</li>
+<li><a href="../Classes/SChartMultiYDataPoint.html"><code>SChartMultiYDataPoint</code></a> - used for cartesian data points with multiple y values.</li>
+<li><a href="../Classes/SChartMultiXDataPoint.html"><code>SChartMultiXDataPoint</code></a> - used for cartesian data points with multiple x values.</li>
+</ul>
+
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartDatasource.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/sChart:dataPointsForSeriesAtIndex:" title="sChart:dataPointsForSeriesAtIndex:"></a>
+	<h3 class="subsubtitle method-title">sChart:dataPointsForSeriesAtIndex:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns an array containing the data points for the series at the given index.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSArray *)sChart:(ShinobiChart *)<em>chart</em> dataPointsForSeriesAtIndex:(NSInteger)<em>seriesIndex</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>chart</em></dt>
+			<dd><p>The chart which will display the data points.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>seriesIndex</em></dt>
+			<dd><p>The index of the series in the chart.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>You can pre-create and cache the data points in an array, and present this array to the chart using this method.  This is more efficient than querying the datasource for its data points one at a time.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartDatasource.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/sChart:labelForSliceAtIndex:inRadialSeries:" title="sChart:labelForSliceAtIndex:inRadialSeries:"></a>
+	<h3 class="subsubtitle method-title">sChart:labelForSliceAtIndex:inRadialSeries:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns a UILabel corresponding to a &lsquo;slice&rsquo; of a radial chart series.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (UILabel *)sChart:(ShinobiChart *)<em>chart</em> labelForSliceAtIndex:(NSInteger)<em>sliceIndex</em> inRadialSeries:(SChartRadialSeries *)<em>series</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>chart</em></dt>
+			<dd><p>The chart containing the radial series.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>sliceIndex</em></dt>
+			<dd><p>The index of the slice of interest within the specified chart series.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>series</em></dt>
+			<dd><p>The chart series which contains the slice of interest.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>If this method is implemented and a non-nil UILabel is returned for the given &lsquo;slice&rsquo; in the radial chart series, that UILabel will be added to the chart.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartDatasource.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/sChart:majorTickValuesForAxis:" title="sChart:majorTickValuesForAxis:"></a>
+	<h3 class="subsubtitle method-title">sChart:majorTickValuesForAxis:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns an array of major tick mark values, to be used by the given chart axis.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSArray *)sChart:(ShinobiChart *)<em>chart</em> majorTickValuesForAxis:(SChartAxis *)<em>axis</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>chart</em></dt>
+			<dd><p>The chart containing the axis.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>axis</em></dt>
+			<dd><p>The axis for which we are setting the major tick values.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>If this method is implemented, the major tick marks on the axis will be fixed as the values in the array.  No other values will be calculated or interpolated.</p>
+
+<p>Objects in the array should be instances of the NSNumber class.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartDatasource.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/sChart:numberOfDataPointsForSeriesAtIndex:" title="sChart:numberOfDataPointsForSeriesAtIndex:"></a>
+	<h3 class="subsubtitle method-title">sChart:numberOfDataPointsForSeriesAtIndex:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns the number of data points in the specified series.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSInteger)sChart:(ShinobiChart *)<em>chart</em> numberOfDataPointsForSeriesAtIndex:(NSInteger)<em>seriesIndex</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>chart</em></dt>
+			<dd><p>The chart on which the series will be displayed.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>seriesIndex</em></dt>
+			<dd><p>The index of the given series in the chart, which will contain the data points.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>For each of the data points in the series, the chart will expect to receive an object that adopts the <a href="../Protocols/SChartData.html"><code>SChartData</code></a> protocol.  Data points will be provided to the chart either via the <a href="#//api/name/sChart:dataPointAtIndex:forSeriesAtIndex:"><code>sChart:dataPointAtIndex:forSeriesAtIndex:</code></a> method, or via the <a href="#//api/name/sChart:dataPointsForSeriesAtIndex:"><code>sChart:dataPointsForSeriesAtIndex:</code></a> method.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartDatasource.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/sChart:seriesAtIndex:" title="sChart:seriesAtIndex:"></a>
+	<h3 class="subsubtitle method-title">sChart:seriesAtIndex:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns the <a href="../Classes/SChartSeries.html"><code>SChartSeries</code></a> object at the given index in the specified chart.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (SChartSeries *)sChart:(ShinobiChart *)<em>chart</em> seriesAtIndex:(NSInteger)<em>index</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>chart</em></dt>
+			<dd><p>The chart on which the series will be displayed.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>index</em></dt>
+			<dd><p>The index of the given series in the chart.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The number of <a href="../Classes/SChartSeries.html"><code>SChartSeries</code></a> in the chart are specified by the <a href="#//api/name/numberOfSeriesInSChart:"><code>numberOfSeriesInSChart:</code></a> method.</p>
+
+<p>The order is important for some series layouts - lower index series are placed on the chart first and will be <em>behind</em> subsequent series.</p>
+
+<p>One of the concrete subclasses of <a href="../Classes/SChartSeries.html"><code>SChartSeries</code></a> will be returned here.  The available types are:</p>
+
+<ul>
+<li><a href="../Classes/SChartBarSeries.html"><code>SChartBarSeries</code></a></li>
+<li><a href="../Classes/SChartColumnSeries.html"><code>SChartColumnSeries</code></a></li>
+<li><a href="../Classes/SChartLineSeries.html"><code>SChartLineSeries</code></a></li>
+<li><a href="../Classes/SChartStepLineSeries.html"><code>SChartStepLineSeries</code></a></li>
+<li><a href="../Classes/SChartBandSeries.html"><code>SChartBandSeries</code></a></li>
+<li><a href="../Classes/SChartScatterSeries.html"><code>SChartScatterSeries</code></a></li>
+<li><a href="../Classes/SChartCandlestickSeries.html"><code>SChartCandlestickSeries</code></a></li>
+<li><a href="../Classes/SChartOHLCSeries.html"><code>SChartOHLCSeries</code></a></li>
+<li><a href="../Classes/SChartDonutSeries.html"><code>SChartDonutSeries</code></a></li>
+<li><a href="../Classes/SChartPieSeries.html"><code>SChartPieSeries</code></a></li>
+</ul>
+
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartDatasource.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/sChart:xAxisForSeriesAtIndex:" title="sChart:xAxisForSeriesAtIndex:"></a>
+	<h3 class="subsubtitle method-title">sChart:xAxisForSeriesAtIndex:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns the x axis for this series on the chart.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (SChartAxis *)sChart:(ShinobiChart *)<em>chart</em> xAxisForSeriesAtIndex:(NSInteger)<em>index</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>chart</em></dt>
+			<dd><p>The chart containing the axis.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>index</em></dt>
+			<dd><p>The index of the chart series within the chart.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>If this method is implemented the chart will look here for which axis to use when representing this series, otherwise this series will default to using the primary x axis on the chart.</p>
+
+<p>Hint: This is only needed on charts with multiple axes.</p>
+
+<p><em>Note: The <code>SChartAxis</code> returned should be referenced from an existing chart axis and not a new object. <em>eg: return chart.xAxis</em></em></p>
+
+<p>To specify an axis for some series and not for others, returning <code>nil</code> for a series index will revert to the default behaviour for that series.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartDatasource.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/sChart:yAxisForSeriesAtIndex:" title="sChart:yAxisForSeriesAtIndex:"></a>
+	<h3 class="subsubtitle method-title">sChart:yAxisForSeriesAtIndex:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The y-axis for this series on the chart</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (SChartAxis *)sChart:(ShinobiChart *)<em>chart</em> yAxisForSeriesAtIndex:(NSInteger)<em>index</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>chart</em></dt>
+			<dd><p>The chart containing the axis.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>index</em></dt>
+			<dd><p>The index of the chart series within the chart.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>If this method is implemented the chart will look here for which axis to use when representing this series, otherwise this series will default to using the primary y axis on the chart.</p>
+
+<p>Hint: This is only needed on charts with multiple axes.</p>
+
+<p><em>Note: The <code>SChartAxis</code> returned should be referenced from an existing chart axis and not a new object. <em>eg: return chart.yAxis</em></em></p>
+
+<p>To specifiy an axis for some series and not for others, returning <code>nil</code> for a series index will revert to the default behaviour for that series.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartDatasource.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/sChartInnerRadiusForDataPoint:dataPointAtIndex:forSeriesAtIndex:" title="sChartInnerRadiusForDataPoint:dataPointAtIndex:forSeriesAtIndex:"></a>
+	<h3 class="subsubtitle method-title">sChartInnerRadiusForDataPoint:dataPointAtIndex:forSeriesAtIndex:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns the inner radius of the given data point, in points.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (float)sChartInnerRadiusForDataPoint:(ShinobiChart *)<em>chart</em> dataPointAtIndex:(NSInteger)<em>dataIndex</em> forSeriesAtIndex:(NSInteger)<em>seriesIndex</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>chart</em></dt>
+			<dd><p>The chart containing the data point.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>dataIndex</em></dt>
+			<dd><p>The index of the data point in the series which contains it.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>seriesIndex</em></dt>
+			<dd><p>The index of the series in the chart which contains the data point.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>By default, data points on the chart are displayed as two circles, one inside the other.  The inner radius of a data point defines the radius of the inner circle in its representation on the chart.</p>
+
+<p>If you implement this method, and it returns a positive, non-zero value, that radius is used for the inner circle on the given data point in the specified series on the chart.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartDatasource.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/sChartRadiusForDataPoint:dataPointAtIndex:forSeriesAtIndex:" title="sChartRadiusForDataPoint:dataPointAtIndex:forSeriesAtIndex:"></a>
+	<h3 class="subsubtitle method-title">sChartRadiusForDataPoint:dataPointAtIndex:forSeriesAtIndex:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns the radius of the given data point, in points.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (float)sChartRadiusForDataPoint:(ShinobiChart *)<em>chart</em> dataPointAtIndex:(NSInteger)<em>dataIndex</em> forSeriesAtIndex:(NSInteger)<em>seriesIndex</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>chart</em></dt>
+			<dd><p>The chart containing the data point.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>dataIndex</em></dt>
+			<dd><p>The index of the data point in the series which contains it.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>seriesIndex</em></dt>
+			<dd><p>The index of the series in the chart which contains the data point.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>By default, data points on the chart are displayed as two circles, one inside the other.  The radius of a data point defines the radius of the outer circle in its representation on the chart.</p>
+
+<p>If you implement this method, and it returns a positive, non-zero value, that radius is used for the given data point in the specified series on the chart.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartDatasource.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/sChartTextureForPoint:dataPointAtIndex:forSeriesAtIndex:" title="sChartTextureForPoint:dataPointAtIndex:forSeriesAtIndex:"></a>
+	<h3 class="subsubtitle method-title">sChartTextureForPoint:dataPointAtIndex:forSeriesAtIndex:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns an image to be displayed for the specified data point in the chart.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (UIImage *)sChartTextureForPoint:(ShinobiChart *)<em>chart</em> dataPointAtIndex:(NSInteger)<em>dataIndex</em> forSeriesAtIndex:(NSInteger)<em>seriesIndex</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>chart</em></dt>
+			<dd><p>The chart containing the data point.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>dataIndex</em></dt>
+			<dd><p>The index of the data point within the series which contains it.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>seriesIndex</em></dt>
+			<dd><p>The index of the series in the chart which contains the data point.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>If you implement this method, and it returns a non-nil image for the specified data point, that image will be displayed for the data point in the chart.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartDatasource.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2013 Scott Logic Ltd. All rights reserved. (Last updated: 2013-10-01)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 858)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

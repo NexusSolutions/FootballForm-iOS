@@ -1,0 +1,697 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>SChartData Protocol Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.1 (build 858)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">ShinobiCharts </a></h1>
+				<a id="developerHome" href="../index.html">Scott Logic Ltd</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">SChartData Protocol Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/sChartDataPointIndex">&nbsp;&nbsp;&nbsp;&nbsp;sChartDataPointIndex</option>
+	
+	
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/sChartPointIsSelected">&nbsp;&nbsp;&nbsp;&nbsp;- sChartPointIsSelected</option>
+	
+	<option value="//api/name/sChartValueForKey:">&nbsp;&nbsp;&nbsp;&nbsp;- sChartValueForKey:</option>
+	
+	<option value="//api/name/sChartXValue">&nbsp;&nbsp;&nbsp;&nbsp;- sChartXValue</option>
+	
+	<option value="//api/name/sChartXValueForKey:">&nbsp;&nbsp;&nbsp;&nbsp;- sChartXValueForKey:</option>
+	
+	<option value="//api/name/sChartYValue">&nbsp;&nbsp;&nbsp;&nbsp;- sChartYValue</option>
+	
+	<option value="//api/name/sChartYValueForKey:">&nbsp;&nbsp;&nbsp;&nbsp;- sChartYValueForKey:</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Single value points">Single value points</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Axis independent values">Axis independent values</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Multi value points">Multi value points</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Selection">Selection</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Index">Index</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/sChartDataPointIndex">sChartDataPointIndex</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/sChartPointIsSelected">sChartPointIsSelected</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/sChartValueForKey:">sChartValueForKey:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/sChartXValue">sChartXValue</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/sChartXValueForKey:">sChartXValueForKey:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/sChartYValue">sChartYValue</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/sChartYValueForKey:">sChartYValueForKey:</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="SChartData Protocol Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">SChartData Protocol Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Conforms to</td>
+	<td class="specification-value">NSObject</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">SChartData.h</td>
+</tr><tr>
+	<td class="specification-title">Companion guide</td>
+	<td class="specification-value"><a href="../docs/markdown_files/ChartsUserGuide.html">ChartsUserGuide</a></td>
+</tr><tr>
+	<td class="specification-title">Availability</td>
+	<td class="specification-value">Standard<br />Premium</td>
+</tr><tr>
+	<td class="specification-title">Related samples</td>
+	<td class="specification-value"></td>
+</tr>
+						</tbody></table></div>
+					
+					
+					
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>The <code>SChartData</code> protocol allows any object to act as a datapoint within a series on a <a href="../Classes/ShinobiChart.html"><code>ShinobiChart</code></a>. The <a href="../Protocols/SChartDatasource.html#//api/name/sChart:dataPointAtIndex:forSeriesAtIndex:"><code>[SChartDatasource sChart:dataPointAtIndex:forSeriesAtIndex:]</code></a> method returns an object that implements this protocol. It can be your own object or an instance of the <a href="../Classes/SChartDataPoint.html"><code>SChartDataPoint</code></a> class that we supply.</p>
+
+<p>The protocol has two required methods, which return the x and y values for the object.  Radial data points return the name of the data point as the x value, and the value of the data point as the y value.</p>
+
+<p>It also has a set of optional methods and properties, which allow you to:</p>
+
+<ul>
+<li>Handle selection.</li>
+<li>Return x or y values for a given key.  This is used for multi-value data points.  Examples of these are <a href="../Classes/SChartMultiXDataPoint.html"><code>SChartMultiXDataPoint</code></a> and <a href="../Classes/SChartMultiYDataPoint.html"><code>SChartMultiYDataPoint</code></a>.</li>
+<li>Return the index of the data point within the instance of <a href="../Classes/SChartSeries.html"><code>SChartSeries</code></a> which contains it.</li>
+</ul>
+
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						<a title="Single value points" name="task_Single value points"></a>
+						<h3 class="subsubtitle task-title">Single value points</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/sChartXValue">&ndash;&nbsp;sChartXValue</a></code>
+		<span class="tooltip"><p>Returns the x value of the data point.</p></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/sChartYValue">&ndash;&nbsp;sChartYValue</a></code>
+		<span class="tooltip"><p>Returns the y value of the data point.</p></span>
+	</span>
+	
+	<span class="task-item-suffix">required method</span>
+</li>
+						</ul>
+						
+						
+						<a title="Axis independent values" name="task_Axis independent values"></a>
+						<h3 class="subsubtitle task-title">Axis independent values</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/sChartValueForKey:">&ndash;&nbsp;sChartValueForKey:</a></code>
+		<span class="tooltip"><p>This is used for series that require data values which are independent of the axes. The expected keys can be found on the series that is trying to render the data point.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Multi value points" name="task_Multi value points"></a>
+						<h3 class="subsubtitle task-title">Multi value points</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/sChartXValueForKey:">&ndash;&nbsp;sChartXValueForKey:</a></code>
+		<span class="tooltip"><p>Returns the x value corresponding to the provided key.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/sChartYValueForKey:">&ndash;&nbsp;sChartYValueForKey:</a></code>
+		<span class="tooltip"><p>Returns the y value corresponding to the provided key.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Selection" name="task_Selection"></a>
+						<h3 class="subsubtitle task-title">Selection</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/sChartPointIsSelected">&ndash;&nbsp;sChartPointIsSelected</a></code>
+		<span class="tooltip"><p>Returns <code>YES</code> if this data point is selected.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Index" name="task_Index"></a>
+						<h3 class="subsubtitle task-title">Index</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/sChartDataPointIndex">&nbsp;&nbsp;sChartDataPointIndex</a></code>
+		<span class="tooltip"><p>Returns the index of this data point in the chart series which contains it.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/sChartDataPointIndex" title="sChartDataPointIndex"></a>
+	<h3 class="subsubtitle method-title">sChartDataPointIndex</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns the index of this data point in the chart series which contains it.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic) NSInteger sChartDataPointIndex</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="../Classes/SChartSeries.html">SChartSeries</a></p></code></li>
+			
+			<li><code><p><a href="../Classes/SChartDataSeries.html">SChartDataSeries</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartData.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/sChartPointIsSelected" title="sChartPointIsSelected"></a>
+	<h3 class="subsubtitle method-title">sChartPointIsSelected</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns <code>YES</code> if this data point is selected.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)sChartPointIsSelected</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartData.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/sChartValueForKey:" title="sChartValueForKey:"></a>
+	<h3 class="subsubtitle method-title">sChartValueForKey:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>This is used for series that require data values which are independent of the axes. The expected keys can be found on the series that is trying to render the data point.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)sChartValueForKey:(NSString *)<em>key</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>An example of this is <a href="../Classes/SChartBubbleDataPoint.html">SChartBubbleDataPoint</a> which has a third data value relating to the size of the bubbles.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartData.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/sChartXValue" title="sChartXValue"></a>
+	<h3 class="subsubtitle method-title">sChartXValue</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns the x value of the data point.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)sChartXValue</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>This is used for series that require only a single x value. Series that require multiple x values should implement <a href="#//api/name/sChartXValueForKey:"><code>sChartXValueForKey:</code></a> and check the specific series class for the required keys.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartData.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/sChartXValueForKey:" title="sChartXValueForKey:"></a>
+	<h3 class="subsubtitle method-title">sChartXValueForKey:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns the x value corresponding to the provided key.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)sChartXValueForKey:(NSString *)<em>key</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>This is only required for series with more than one x value and keys are specified on the series type.  For example, OHLC keys include &ldquo;low&rdquo;, &ldquo;high&rdquo;, etc.  For series with just a single x value, use <a href="#//api/name/sChartXValue"><code>sChartXValue</code></a> instead.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartData.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/sChartYValue" title="sChartYValue"></a>
+	<h3 class="subsubtitle method-title">sChartYValue</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns the y value of the data point.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)sChartYValue</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>This is used for series that require only a single y value. Series that require multiple y values should implement <a href="#//api/name/sChartYValueForKey:"><code>sChartYValueForKey:</code></a> and check the specific series class for the required keys.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartData.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/sChartYValueForKey:" title="sChartYValueForKey:"></a>
+	<h3 class="subsubtitle method-title">sChartYValueForKey:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns the y value corresponding to the provided key.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)sChartYValueForKey:(NSString *)<em>key</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>This is only required for series with more than one y value and keys are specified on the series type.  For example, OHLC keys include &ldquo;low&rdquo;, &ldquo;high&rdquo;, etc. For series with just a single y value, use <a href="#//api/name/sChartYValue"><code>sChartYValue</code></a> instead.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartData.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2013 Scott Logic Ltd. All rights reserved. (Last updated: 2013-10-01)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 858)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

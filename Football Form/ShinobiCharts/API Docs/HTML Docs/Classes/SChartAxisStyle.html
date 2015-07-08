@@ -1,0 +1,969 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>SChartAxisStyle Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.1 (build 858)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">ShinobiCharts </a></h1>
+				<a id="developerHome" href="../index.html">Scott Logic Ltd</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">SChartAxisStyle Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/gridStripeStyle">&nbsp;&nbsp;&nbsp;&nbsp;gridStripeStyle</option>
+	
+	<option value="//api/name/interBarPadding">&nbsp;&nbsp;&nbsp;&nbsp;interBarPadding</option>
+	
+	<option value="//api/name/interBarSetPadding">&nbsp;&nbsp;&nbsp;&nbsp;interBarSetPadding</option>
+	
+	<option value="//api/name/interColumnPadding">&nbsp;&nbsp;&nbsp;&nbsp;interColumnPadding</option>
+	
+	<option value="//api/name/interColumnSetPadding">&nbsp;&nbsp;&nbsp;&nbsp;interColumnSetPadding</option>
+	
+	<option value="//api/name/interSeriesPadding">&nbsp;&nbsp;&nbsp;&nbsp;interSeriesPadding</option>
+	
+	<option value="//api/name/interSeriesSetPadding">&nbsp;&nbsp;&nbsp;&nbsp;interSeriesSetPadding</option>
+	
+	<option value="//api/name/lineColor">&nbsp;&nbsp;&nbsp;&nbsp;lineColor</option>
+	
+	<option value="//api/name/lineWidth">&nbsp;&nbsp;&nbsp;&nbsp;lineWidth</option>
+	
+	<option value="//api/name/majorGridLineStyle">&nbsp;&nbsp;&nbsp;&nbsp;majorGridLineStyle</option>
+	
+	<option value="//api/name/majorTickStyle">&nbsp;&nbsp;&nbsp;&nbsp;majorTickStyle</option>
+	
+	<option value="//api/name/minorTickStyle">&nbsp;&nbsp;&nbsp;&nbsp;minorTickStyle</option>
+	
+	<option value="//api/name/titleStyle">&nbsp;&nbsp;&nbsp;&nbsp;titleStyle</option>
+	
+	
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/supplementStyleFromStyle:">&nbsp;&nbsp;&nbsp;&nbsp;- supplementStyleFromStyle:</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Styling Properties">Styling Properties</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/gridStripeStyle">gridStripeStyle</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/interBarPadding">interBarPadding</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/interBarSetPadding">interBarSetPadding</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/interColumnPadding">interColumnPadding</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/interColumnSetPadding">interColumnSetPadding</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/interSeriesPadding">interSeriesPadding</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/interSeriesSetPadding">interSeriesSetPadding</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/lineColor">lineColor</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/lineWidth">lineWidth</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/majorGridLineStyle">majorGridLineStyle</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/majorTickStyle">majorTickStyle</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/minorTickStyle">minorTickStyle</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/titleStyle">titleStyle</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/supplementStyleFromStyle:">supplementStyleFromStyle:</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="SChartAxisStyle Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">SChartAxisStyle Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value">NSObject</td>
+</tr><tr>
+	<td class="specification-title">Conforms to</td>
+	<td class="specification-value">NSCopying</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">SChartAxisStyle.h</td>
+</tr><tr>
+	<td class="specification-title">Availability</td>
+	<td class="specification-value">Standard<br />Premium</td>
+</tr><tr>
+	<td class="specification-title">Related samples</td>
+	<td class="specification-value"></td>
+</tr>
+						</tbody></table></div>
+					
+					
+					
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>The axis style object controls the look and feel for the axis, tick marks and labels, gridlines and grid stripes.</p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						<a title="Styling Properties" name="task_Styling Properties"></a>
+						
+<h3 class="subsubtitle task-title">Styling Properties</h3>
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/lineColor">&nbsp;&nbsp;lineColor</a></code>
+		<span class="tooltip"><p>The UIColor for the axis line</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/lineWidth">&nbsp;&nbsp;lineWidth</a></code>
+		<span class="tooltip"><p>The width in pixels of the axis line</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/interSeriesPadding">&nbsp;&nbsp;interSeriesPadding</a></code>
+		<span class="tooltip"><p>The padding between datapoints of different series where they are plotted on the same axis value.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/interSeriesSetPadding">&nbsp;&nbsp;interSeriesSetPadding</a></code>
+		<span class="tooltip"><p>The padding between sets of series' datapoints on neighbouring axis values.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/interColumnPadding">&nbsp;&nbsp;interColumnPadding</a></code>
+		<span class="tooltip"><p>DEPRECATED - use <a href="#//api/name/interSeriesPadding">interSeriesPadding</a> instead of interColumnPadding.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/interColumnSetPadding">&nbsp;&nbsp;interColumnSetPadding</a></code>
+		<span class="tooltip"><p>DEPRECATED - use <a href="#//api/name/interSeriesSetPadding">interSeriesSetPadding</a> instead of interColumnSetPadding.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/interBarPadding">&nbsp;&nbsp;interBarPadding</a></code>
+		<span class="tooltip"><p>DEPRECATED - use <a href="#//api/name/interSeriesPadding">interSeriesPadding</a> instead of interBarPadding.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/interBarSetPadding">&nbsp;&nbsp;interBarSetPadding</a></code>
+		<span class="tooltip"><p>DEPRECATED - use <a href="#//api/name/interSeriesSetPadding">interSeriesSetPadding</a> instead of interBarSetPadding.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/majorTickStyle">&nbsp;&nbsp;majorTickStyle</a></code>
+		<span class="tooltip"><p>An <a href="../Classes/SChartTickStyle.html">SChartTickStyle</a> object containing styling preferences for the major tick marks</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/minorTickStyle">&nbsp;&nbsp;minorTickStyle</a></code>
+		<span class="tooltip"><p>An <a href="../Classes/SChartTickStyle.html">SChartTickStyle</a> object containing styling preferences for the minor tick marks</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/majorGridLineStyle">&nbsp;&nbsp;majorGridLineStyle</a></code>
+		<span class="tooltip"><p>An <a href="../Classes/SChartMajorGridlineStyle.html">SChartMajorGridlineStyle</a> object containing styling preferences for the major gridlines</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/gridStripeStyle">&nbsp;&nbsp;gridStripeStyle</a></code>
+		<span class="tooltip"><p>An <a href="../Classes/SChartGridStripeStyle.html">SChartGridStripeStyle</a> object containing styling preferences for the grid stripes</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/titleStyle">&nbsp;&nbsp;titleStyle</a></code>
+		<span class="tooltip"><p>An <a href="../Classes/SChartAxisTitleStyle.html">SChartAxisTitleStyle</a> object containing styling preferences for the axis title</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/supplementStyleFromStyle:">&ndash;&nbsp;supplementStyleFromStyle:</a></code>
+		<span class="tooltip"><p>Supplements this style object by taking styles this object doesn&rsquo;t have, from the argument, <code>style</code></p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/gridStripeStyle" title="gridStripeStyle"></a>
+	<h3 class="subsubtitle method-title">gridStripeStyle</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>An <a href="../Classes/SChartGridStripeStyle.html">SChartGridStripeStyle</a> object containing styling preferences for the grid stripes</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) SChartGridStripeStyle *gridStripeStyle</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartAxisStyle.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/interBarPadding" title="interBarPadding"></a>
+	<h3 class="subsubtitle method-title">interBarPadding</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>DEPRECATED - use <a href="#//api/name/interSeriesPadding">interSeriesPadding</a> instead of interBarPadding.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) NSNumber *interBarPadding</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The padding between bars of different series at a data point. A value between <code>0.0</code> and <code>1.0</code> as a percentage of the available space</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartAxisStyle.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/interBarSetPadding" title="interBarSetPadding"></a>
+	<h3 class="subsubtitle method-title">interBarSetPadding</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>DEPRECATED - use <a href="#//api/name/interSeriesSetPadding">interSeriesSetPadding</a> instead of interBarSetPadding.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) NSNumber *interBarSetPadding</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The padding between sets of bars on different data points. A value between <code>0.0</code> and <code>1.0</code> as a percentage of the available space</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartAxisStyle.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/interColumnPadding" title="interColumnPadding"></a>
+	<h3 class="subsubtitle method-title">interColumnPadding</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>DEPRECATED - use <a href="#//api/name/interSeriesPadding">interSeriesPadding</a> instead of interColumnPadding.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) NSNumber *interColumnPadding</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The padding between columns of different series at a data point. A value between <code>0.0</code> and <code>1.0</code> as a percentage of the available space</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartAxisStyle.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/interColumnSetPadding" title="interColumnSetPadding"></a>
+	<h3 class="subsubtitle method-title">interColumnSetPadding</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>DEPRECATED - use <a href="#//api/name/interSeriesSetPadding">interSeriesSetPadding</a> instead of interColumnSetPadding.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) NSNumber *interColumnSetPadding</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The padding between sets of columns on different data points. A value between <code>0.0</code> and <code>1.0</code> as a percentage of the available space</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartAxisStyle.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/interSeriesPadding" title="interSeriesPadding"></a>
+	<h3 class="subsubtitle method-title">interSeriesPadding</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The padding between datapoints of different series where they are plotted on the same axis value.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) NSNumber *interSeriesPadding</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>A value between <code>0.0</code> and <code>1.0</code> as a percentage of the available space</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartAxisStyle.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/interSeriesSetPadding" title="interSeriesSetPadding"></a>
+	<h3 class="subsubtitle method-title">interSeriesSetPadding</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The padding between sets of series' datapoints on neighbouring axis values.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) NSNumber *interSeriesSetPadding</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>A value between <code>0.0</code> and <code>1.0</code> as a percentage of the available space</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartAxisStyle.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/lineColor" title="lineColor"></a>
+	<h3 class="subsubtitle method-title">lineColor</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The UIColor for the axis line</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) UIColor *lineColor</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartAxisStyle.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/lineWidth" title="lineWidth"></a>
+	<h3 class="subsubtitle method-title">lineWidth</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The width in pixels of the axis line</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) NSNumber *lineWidth</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartAxisStyle.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/majorGridLineStyle" title="majorGridLineStyle"></a>
+	<h3 class="subsubtitle method-title">majorGridLineStyle</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>An <a href="../Classes/SChartMajorGridlineStyle.html">SChartMajorGridlineStyle</a> object containing styling preferences for the major gridlines</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) SChartMajorGridlineStyle *majorGridLineStyle</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartAxisStyle.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/majorTickStyle" title="majorTickStyle"></a>
+	<h3 class="subsubtitle method-title">majorTickStyle</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>An <a href="../Classes/SChartTickStyle.html">SChartTickStyle</a> object containing styling preferences for the major tick marks</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) SChartTickStyle *majorTickStyle</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartAxisStyle.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/minorTickStyle" title="minorTickStyle"></a>
+	<h3 class="subsubtitle method-title">minorTickStyle</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>An <a href="../Classes/SChartTickStyle.html">SChartTickStyle</a> object containing styling preferences for the minor tick marks</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) SChartTickStyle *minorTickStyle</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartAxisStyle.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/titleStyle" title="titleStyle"></a>
+	<h3 class="subsubtitle method-title">titleStyle</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>An <a href="../Classes/SChartAxisTitleStyle.html">SChartAxisTitleStyle</a> object containing styling preferences for the axis title</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) SChartAxisTitleStyle *titleStyle</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartAxisStyle.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/supplementStyleFromStyle:" title="supplementStyleFromStyle:"></a>
+	<h3 class="subsubtitle method-title">supplementStyleFromStyle:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Supplements this style object by taking styles this object doesn&rsquo;t have, from the argument, <code>style</code></p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)supplementStyleFromStyle:(SChartAxisStyle *)<em>style</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartAxisStyle.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2013 Scott Logic Ltd. All rights reserved. (Last updated: 2013-10-01)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 858)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

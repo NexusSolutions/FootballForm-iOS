@@ -1,0 +1,1254 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>SChartAnimation Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.1 (build 858)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">ShinobiCharts </a></h1>
+				<a id="developerHome" href="../index.html">Scott Logic Ltd</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">SChartAnimation Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/absoluteOriginX">&nbsp;&nbsp;&nbsp;&nbsp;absoluteOriginX</option>
+	
+	<option value="//api/name/absoluteOriginY">&nbsp;&nbsp;&nbsp;&nbsp;absoluteOriginY</option>
+	
+	<option value="//api/name/alphaCurve">&nbsp;&nbsp;&nbsp;&nbsp;alphaCurve</option>
+	
+	<option value="//api/name/angleCurve">&nbsp;&nbsp;&nbsp;&nbsp;angleCurve</option>
+	
+	<option value="//api/name/curve">&nbsp;&nbsp;&nbsp;&nbsp;curve</option>
+	
+	<option value="//api/name/duration">&nbsp;&nbsp;&nbsp;&nbsp;duration</option>
+	
+	<option value="//api/name/normalisedOriginX">&nbsp;&nbsp;&nbsp;&nbsp;normalisedOriginX</option>
+	
+	<option value="//api/name/normalisedOriginY">&nbsp;&nbsp;&nbsp;&nbsp;normalisedOriginY</option>
+	
+	<option value="//api/name/radiusCurve">&nbsp;&nbsp;&nbsp;&nbsp;radiusCurve</option>
+	
+	<option value="//api/name/xScaleCurve">&nbsp;&nbsp;&nbsp;&nbsp;xScaleCurve</option>
+	
+	<option value="//api/name/yScaleCurve">&nbsp;&nbsp;&nbsp;&nbsp;yScaleCurve</option>
+	
+	
+	
+	
+	<option value="class_methods">Class Methods</option>
+	
+	<option value="//api/name/fadeAnimation">&nbsp;&nbsp;&nbsp;&nbsp;+ fadeAnimation</option>
+	
+	<option value="//api/name/growAnimation">&nbsp;&nbsp;&nbsp;&nbsp;+ growAnimation</option>
+	
+	<option value="//api/name/growHorizontalAnimation">&nbsp;&nbsp;&nbsp;&nbsp;+ growHorizontalAnimation</option>
+	
+	<option value="//api/name/growVerticalAnimation">&nbsp;&nbsp;&nbsp;&nbsp;+ growVerticalAnimation</option>
+	
+	<option value="//api/name/radialSelection">&nbsp;&nbsp;&nbsp;&nbsp;+ radialSelection</option>
+	
+	<option value="//api/name/televisionAnimation">&nbsp;&nbsp;&nbsp;&nbsp;+ televisionAnimation</option>
+	
+	
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Creating Animations">Creating Animations</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Configuration Animation Curves">Configuration Animation Curves</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Configuration Animation Duration">Configuration Animation Duration</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Configuring the origin of the animation">Configuring the origin of the animation</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/absoluteOriginX">absoluteOriginX</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/absoluteOriginY">absoluteOriginY</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/alphaCurve">alphaCurve</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/angleCurve">angleCurve</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/curve">curve</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/duration">duration</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/normalisedOriginX">normalisedOriginX</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/normalisedOriginY">normalisedOriginY</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/radiusCurve">radiusCurve</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/xScaleCurve">xScaleCurve</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/yScaleCurve">yScaleCurve</a></span></li>
+	
+</ul></li>
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#class_methods">Class Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/fadeAnimation">fadeAnimation</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/growAnimation">growAnimation</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/growHorizontalAnimation">growHorizontalAnimation</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/growVerticalAnimation">growVerticalAnimation</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/radialSelection">radialSelection</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/televisionAnimation">televisionAnimation</a></span></li>
+	
+</ul></li>
+
+
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="SChartAnimation Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">SChartAnimation Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value">NSObject</td>
+</tr><tr>
+	<td class="specification-title">Conforms to</td>
+	<td class="specification-value">NSCopying</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">SChartAnimation.h</td>
+</tr><tr>
+	<td class="specification-title">Availability</td>
+	<td class="specification-value">Standard<br />Premium</td>
+</tr><tr>
+	<td class="specification-title">Related samples</td>
+	<td class="specification-value"></td>
+</tr>
+						</tbody></table></div>
+					
+					
+					
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>An <code>SChartAnimation</code> object determines how an <a href="../Classes/SChartSeries.html"><code>SChartSeries</code></a> is animated.</p>
+
+<p>Depending on the action which an animation is linked to, it may be triggered by different actions:</p>
+
+<ul>
+<li>Entry Animations are triggered upon the initial addition of the series to the chart and when a series is unhidden using its hidden property.</li>
+<li>Exit Animations are triggered when a series is hidden using its hidden property.</li>
+</ul>
+
+
+<p>The code snippet below demonstrates how to set a series to fade in when entering and fade out when exiting.  We set the <a href="#//api/name/duration">duration</a> of both animations to be 3 seconds:</p>
+
+<pre><code>SChartAnimation *animation = [ SChartAnimation fadeAnimation ];
+animation.duration = @3;
+series.entryAnimation = [ animation copy ];
+series.exitAnimation = [ animation copy ];
+</code></pre>
+
+<p>We updated the animation code in version 2.2 of charts.  As a result of these updates, the <a href="../Protocols/SChartAnimationCurve.html">SChartAnimationCurve</a> enum defined in earlier versions of charts has been deprecated.  Instead of using this, you should configure the properties of the animation to meet your needs.  The properties you can set on an animation are:</p>
+
+<ul>
+<li>The <a href="#//api/name/duration">duration</a> of the animation.  See <a href="#//api/name/duration"><code>duration</code></a> for more information.</li>
+<li>The origin point on the chart from where the series animates to its final position.  See <a href="#//api/name/absoluteOriginX"><code>absoluteOriginX</code></a>, <a href="#//api/name/absoluteOriginY"><code>absoluteOriginY</code></a>, <a href="#//api/name/normalisedOriginX"><code>normalisedOriginX</code></a> and <a href="#//api/name/normalisedOriginY"><code>normalisedOriginY</code></a> for more information.</li>
+<li>How the chart series scales as the animation progresses.  See <a href="#//api/name/xScaleCurve"><code>xScaleCurve</code></a>, <a href="#//api/name/yScaleCurve"><code>yScaleCurve</code></a> or <a href="#//api/name/radiusCurve"><code>radiusCurve</code></a> for more information.</li>
+<li>How the transparency of the series varies over the period of the animation.  See <a href="#//api/name/alphaCurve"><code>alphaCurve</code></a> for more information.</li>
+<li>For radial chart series, you can specify how the series rotates around the origin during the animation.  See <a href="#//api/name/angleCurve"><code>angleCurve</code></a> for more information.</li>
+</ul>
+
+
+<p>The <code>SChartAnimation</code> object is composed of several objects conforming to the <a href="../Protocols/SChartAnimationCurve.html"><code>SChartAnimationCurve</code></a> protocol,
+which each describe the transition of an aspect of the chart series from the start of the animation to the end.  We have defined concrete implementations of this protocol to support common animation use cases which you might have.  Some of the concrete animation <a href="#//api/name/curve">curve</a> classes are:</p>
+
+<ul>
+<li><a href="../Classes/SChartLinearAnimationCurve.html"><code>SChartLinearAnimationCurve</code></a> - a linear animation.</li>
+<li><a href="../Classes/SChartEaseInAnimationCurve.html"><code>SChartEaseInAnimationCurve</code></a> - animation which starts off gently, then accelerates in the second half of the animation.</li>
+<li><a href="../Classes/SChartEaseOutAnimationCurve.html"><code>SChartEaseOutAnimationCurve</code></a> - animation which starts off at a steady speed, then decelerates in the second half of the animation, creating a slow exit phase.</li>
+<li><a href="../Classes/SChartEaseInOutAnimationCurve.html"><code>SChartEaseInOutAnimationCurve</code></a> - animation which starts off gently, accelerates through the middle part of the animation, then decelerates at the end to finish gently.</li>
+<li><a href="../Classes/SChartBounceAnimationCurve.html"><code>SChartBounceAnimationCurve</code></a> - animation where the series goes past its final value, then bounces back to it at the end.</li>
+</ul>
+
+
+<p>Other animation curves are also available, see the API documentation for more information.</p>
+
+<p>To save you having to create animation classes from scratch, we&rsquo;ve provided some pre-defined types for you.  Have a look at the factory methods we&rsquo;ve provided in the &ldquo;Creating Animations&rdquo; sections of this page.</p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						<a title="Creating Animations" name="task_Creating Animations"></a>
+						<h3 class="subsubtitle task-title">Creating Animations</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/growAnimation">+&nbsp;growAnimation</a></code>
+		<span class="tooltip"><p>Returns an animation where the <a href="#//api/name/series">series</a> scales from its centre (the normalised X and Y are both set to 0.5f).</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/growHorizontalAnimation">+&nbsp;growHorizontalAnimation</a></code>
+		<span class="tooltip"><p>Returns an animation where the <a href="#//api/name/series">series</a> scales from its leftmost point.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/growVerticalAnimation">+&nbsp;growVerticalAnimation</a></code>
+		<span class="tooltip"><p>Returns an animation where the <a href="#//api/name/series">series</a> scales from its lowest point.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/fadeAnimation">+&nbsp;fadeAnimation</a></code>
+		<span class="tooltip"><p>Returns an animation where the <a href="#//api/name/series">series</a> fades.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/televisionAnimation">+&nbsp;televisionAnimation</a></code>
+		<span class="tooltip"><p>Returns an animation where the <a href="#//api/name/series">series</a> mimics the entrance/exit of the picture in an old television.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/radialSelection">+&nbsp;radialSelection</a></code>
+		<span class="tooltip"><p>Returns an animation where the <a href="#//api/name/series">series</a> rotates with a bounce and changes its protrusion with a bounce.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Configuration Animation Curves" name="task_Configuration Animation Curves"></a>
+						<h3 class="subsubtitle task-title">Configuration Animation Curves</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/curve">&nbsp;&nbsp;curve</a></code>
+		<span class="tooltip"><p>The overall animation curve for the animation.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/xScaleCurve">&nbsp;&nbsp;xScaleCurve</a></code>
+		<span class="tooltip"><p>The animation <a href="#//api/name/curve">curve</a> describing the transition of the <a href="#//api/name/series">series</a> parallel to the x axis.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/yScaleCurve">&nbsp;&nbsp;yScaleCurve</a></code>
+		<span class="tooltip"><p>The animation <a href="#//api/name/curve">curve</a> describing the transition of the <a href="#//api/name/series">series</a> parallel to the y axis.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/angleCurve">&nbsp;&nbsp;angleCurve</a></code>
+		<span class="tooltip"><p>This <a href="#//api/name/curve">curve</a> only applies to radial chart <a href="#//api/name/series">series</a>.  The animation <a href="#//api/name/curve">curve</a> describes the transition of the <a href="#//api/name/series">series</a> around its origin.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/radiusCurve">&nbsp;&nbsp;radiusCurve</a></code>
+		<span class="tooltip"><p>The animation <a href="#//api/name/curve">curve</a> describing how the radius/radii of the <a href="#//api/name/series">series</a> change during the animation.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/alphaCurve">&nbsp;&nbsp;alphaCurve</a></code>
+		<span class="tooltip"><p>The animation <a href="#//api/name/curve">curve</a> describing how the transparency of the <a href="#//api/name/series">series</a> changes during the animation.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+						
+						<a title="Configuration Animation Duration" name="task_Configuration Animation Duration"></a>
+						<h3 class="subsubtitle task-title">Configuration Animation Duration</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/duration">&nbsp;&nbsp;duration</a></code>
+		<span class="tooltip"><p>The duration of the animation.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+						
+						<a title="Configuring the origin of the animation" name="task_Configuring the origin of the animation"></a>
+						<h3 class="subsubtitle task-title">Configuring the origin of the animation</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/absoluteOriginX">&nbsp;&nbsp;absoluteOriginX</a></code>
+		<span class="tooltip"><p>If this property is set, this will be the origin value in x in data terms - a <a href="#//api/name/curve">curve</a> returning 0 maps to this value, whereas a <a href="#//api/name/curve">curve</a> returning 1 maps to the final true value of the <a href="#//api/name/series">series</a>.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/absoluteOriginY">&nbsp;&nbsp;absoluteOriginY</a></code>
+		<span class="tooltip"><p>If this property is set, this will be the origin value in y in data terms - a <a href="#//api/name/curve">curve</a> returning 0 maps to this value, whereas a <a href="#//api/name/curve">curve</a> returning 1 maps to the final true value.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/normalisedOriginX">&nbsp;&nbsp;normalisedOriginX</a></code>
+		<span class="tooltip"><p>This property enables you to set a normalised point of origin along the x axis for the animation.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/normalisedOriginY">&nbsp;&nbsp;normalisedOriginY</a></code>
+		<span class="tooltip"><p>This property enables you to set a normalised point of origin along the y axis for the animation.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/absoluteOriginX" title="absoluteOriginX"></a>
+	<h3 class="subsubtitle method-title">absoluteOriginX</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>If this property is set, this will be the origin value in x in data terms - a <a href="#//api/name/curve">curve</a> returning 0 maps to this value, whereas a <a href="#//api/name/curve">curve</a> returning 1 maps to the final true value of the <a href="#//api/name/series">series</a>.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (retain, nonatomic) id absoluteOriginX</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Points will scale from this value along the x axis in either direction.
+If this property is not set, the animation will use a normalised origin on x - see <a href="#//api/name/normalisedOriginX"><code>normalisedOriginX</code></a>.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartAnimation.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/absoluteOriginY" title="absoluteOriginY"></a>
+	<h3 class="subsubtitle method-title">absoluteOriginY</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>If this property is set, this will be the origin value in y in data terms - a <a href="#//api/name/curve">curve</a> returning 0 maps to this value, whereas a <a href="#//api/name/curve">curve</a> returning 1 maps to the final true value.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (retain, nonatomic) id absoluteOriginY</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Points will scale from this value along the y axis in either direction.
+If this property is not set, the animation will use a normalised origin on y - see <a href="#//api/name/normalisedOriginY"><code>normalisedOriginY</code></a>.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartAnimation.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/alphaCurve" title="alphaCurve"></a>
+	<h3 class="subsubtitle method-title">alphaCurve</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The animation <a href="#//api/name/curve">curve</a> describing how the transparency of the <a href="#//api/name/series">series</a> changes during the animation.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (retain, nonatomic) id&lt;SChartAnimationCurve&gt; alphaCurve</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>This <a href="#//api/name/curve">curve</a> describes how the alpha value of the colors of the <a href="#//api/name/series">series</a> scale from some initial alpha value at the start of the animation to some destination alpha at the end of the animation.
+We multiply the value returned by this <a href="#//api/name/curve">curve</a> with the colors set to the <a href="#//api/name/series">series</a>, therefore a <a href="#//api/name/curve">curve</a> value of 0 results in a completely transparent color and a value of 1 results in the final alpha value of the <a href="#//api/name/series">series</a> color.
+This <a href="#//api/name/curve">curve</a> applies to both cartesian and radial <a href="#//api/name/series">series</a>.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartAnimation.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/angleCurve" title="angleCurve"></a>
+	<h3 class="subsubtitle method-title">angleCurve</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>This <a href="#//api/name/curve">curve</a> only applies to radial chart <a href="#//api/name/series">series</a>.  The animation <a href="#//api/name/curve">curve</a> describes the transition of the <a href="#//api/name/series">series</a> around its origin.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (retain, nonatomic) id&lt;SChartAnimationCurve&gt; angleCurve</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>This <a href="#//api/name/curve">curve</a> describes how the points of the <a href="#//api/name/series">series</a> rotate around the centre of the <a href="#//api/name/series">series</a> from some initial angle at the start of the animation to a destination angle at the end of the animation.
+An angle scale value of 0 maps to the original angle whereas a value of 1 maps to the destination angle.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartAnimation.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/curve" title="curve"></a>
+	<h3 class="subsubtitle method-title">curve</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The overall animation curve for the animation.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (retain, nonatomic) id&lt;SChartAnimationCurve&gt; curve</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Setting this curve will set each of the other curves for the animation to this same curve.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartAnimation.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/duration" title="duration"></a>
+	<h3 class="subsubtitle method-title">duration</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The duration of the animation.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (retain, nonatomic) NSNumber *duration</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The time taken, in seconds, for the animation to progress from start to finish.
+The duration of the animations returned by the factory methods provided is 2.4 seconds.
+The duration of an animation created via alloc/init is 1/64 seconds (instant).
+Use this property to configure how long an animation should take to complete.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartAnimation.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/normalisedOriginX" title="normalisedOriginX"></a>
+	<h3 class="subsubtitle method-title">normalisedOriginX</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>This property enables you to set a normalised point of origin along the x axis for the animation.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic) float normalisedOriginX</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>This value is normalised using the range of the <a href="#//api/name/series">series</a> which the animation is applied to.
+For example, setting a <code>normalisedOriginX</code> of 0.f would cause the <a href="#//api/name/series">series</a> to animate from its left-most point.
+Setting a <code>normalisedOriginX</code> of 1.f would cause the <a href="#//api/name/series">series</a> to animate from its right-most point.
+If a value is set for <a href="#//api/name/absoluteOriginX"><code>absoluteOriginX</code></a>, this property will be ignored.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartAnimation.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/normalisedOriginY" title="normalisedOriginY"></a>
+	<h3 class="subsubtitle method-title">normalisedOriginY</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>This property enables you to set a normalised point of origin along the y axis for the animation.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic) float normalisedOriginY</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>This value is normalised using the range of the <a href="#//api/name/series">series</a> which the animation is applied to.
+For example, setting a <code>normalisedOriginY</code> of 0.f would cause the <a href="#//api/name/series">series</a> to animate from its lowest point.
+Setting a <code>normalisedOriginY</code> of 1.f would cause the <a href="#//api/name/series">series</a> to animate from its highest point.
+If a value is set for <a href="#//api/name/absoluteOriginY"><code>absoluteOriginY</code></a>, this property will be ignored.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartAnimation.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/radiusCurve" title="radiusCurve"></a>
+	<h3 class="subsubtitle method-title">radiusCurve</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The animation <a href="#//api/name/curve">curve</a> describing how the radius/radii of the <a href="#//api/name/series">series</a> change during the animation.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (retain, nonatomic) id&lt;SChartAnimationCurve&gt; radiusCurve</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>This <a href="#//api/name/curve">curve</a> describes how both the x values and the y values of a <a href="#//api/name/series">series</a> scale from some origin to their true values.
+It is mostly used for radial <a href="#//api/name/series">series</a>, often in conjunction with an origin at the centre of the radial <a href="#//api/name/series">series</a>.
+Setting this <a href="#//api/name/curve">curve</a> will override any previously set values for <a href="#//api/name/xScaleCurve"><code>xScaleCurve</code></a> and <a href="#//api/name/yScaleCurve"><code>yScaleCurve</code></a>.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartAnimation.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/xScaleCurve" title="xScaleCurve"></a>
+	<h3 class="subsubtitle method-title">xScaleCurve</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The animation <a href="#//api/name/curve">curve</a> describing the transition of the <a href="#//api/name/series">series</a> parallel to the x axis.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (retain, nonatomic) id&lt;SChartAnimationCurve&gt; xScaleCurve</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>This <a href="#//api/name/curve">curve</a> describes how the x values of the <a href="#//api/name/series">series</a> scale from some origin along the x axis at the start of the animation to their destination at the end of the animation.
+An xScale value of 0 maps a point at the animation origin whereas a value of 1 maps the point at it&rsquo;s true value perpendicular to the x axis.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartAnimation.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/yScaleCurve" title="yScaleCurve"></a>
+	<h3 class="subsubtitle method-title">yScaleCurve</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The animation <a href="#//api/name/curve">curve</a> describing the transition of the <a href="#//api/name/series">series</a> parallel to the y axis.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (retain, nonatomic) id&lt;SChartAnimationCurve&gt; yScaleCurve</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>This <a href="#//api/name/curve">curve</a> describes how the y values of the <a href="#//api/name/series">series</a> scale from some origin along the y axis at the start of the animation to their destination at the end of the animation.
+An yScale value of 0 maps a point at the animation origin whereas a value of 1 maps the point at it&rsquo;s true value perpendicular to the yAxis.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartAnimation.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Class Methods" name="class_methods"></a>
+						<h2 class="subtitle subtitle-methods">Class Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/fadeAnimation" title="fadeAnimation"></a>
+	<h3 class="subsubtitle method-title">fadeAnimation</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns an animation where the <a href="#//api/name/series">series</a> fades.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (SChartAnimation *)fadeAnimation</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartAnimation.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/growAnimation" title="growAnimation"></a>
+	<h3 class="subsubtitle method-title">growAnimation</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns an animation where the <a href="#//api/name/series">series</a> scales from its centre (the normalised X and Y are both set to 0.5f).</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (SChartAnimation *)growAnimation</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>This is the default entry &amp; exit animation for <a href="../Classes/SChartScatterSeries.html"><code>SChartScatterSeries</code></a>, <a href="../Classes/SChartDonutSeries.html"><code>SChartDonutSeries</code></a>, and <a href="../Classes/SChartPieSeries.html"><code>SChartPieSeries</code></a>.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartAnimation.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/growHorizontalAnimation" title="growHorizontalAnimation"></a>
+	<h3 class="subsubtitle method-title">growHorizontalAnimation</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns an animation where the <a href="#//api/name/series">series</a> scales from its leftmost point.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (SChartAnimation *)growHorizontalAnimation</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>This is the default entry &amp; exit animation for <a href="../Classes/SChartBarSeries.html"><code>SChartBarSeries</code></a>.
+If a baseline is set on a bar <a href="#//api/name/series">series</a>, and a custom origin has not been set for the animation, the baseline will be used as the origin instead.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartAnimation.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/growVerticalAnimation" title="growVerticalAnimation"></a>
+	<h3 class="subsubtitle method-title">growVerticalAnimation</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns an animation where the <a href="#//api/name/series">series</a> scales from its lowest point.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (SChartAnimation *)growVerticalAnimation</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>This is the default entry &amp; exit animation for <a href="../Classes/SChartColumnSeries.html"><code>SChartColumnSeries</code></a>, <a href="../Classes/SChartOHLCSeries.html"><code>SChartOHLCSeries</code></a>, and <a href="../Classes/SChartCandlestickSeries.html"><code>SChartCandlestickSeries</code></a>.
+If a baseline is set on a column, OHLC, or candlestick <a href="#//api/name/series">series</a>, and a custom origin has not been set on the animation, the baseline will be used as the origin instead.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartAnimation.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/radialSelection" title="radialSelection"></a>
+	<h3 class="subsubtitle method-title">radialSelection</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns an animation where the <a href="#//api/name/series">series</a> rotates with a bounce and changes its protrusion with a bounce.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (SChartAnimation *)radialSelection</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>This is the default selection animation for <a href="../Classes/SChartDonutSeries.html"><code>SChartDonutSeries</code></a> and <a href="../Classes/SChartPieSeries.html"><code>SChartPieSeries</code></a>.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartAnimation.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/televisionAnimation" title="televisionAnimation"></a>
+	<h3 class="subsubtitle method-title">televisionAnimation</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns an animation where the <a href="#//api/name/series">series</a> mimics the entrance/exit of the picture in an old television.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>+ (SChartAnimation *)televisionAnimation</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>By default, the point of entry/exit is the centre of the <a href="#//api/name/series">series</a> (the normalised X and Y are both set to 0.5f).
+This is the default entry &amp; exit animation for <a href="../Classes/SChartLineSeries.html"><code>SChartLineSeries</code></a>, <a href="../Classes/SChartStepLineSeries.html"><code>SChartStepLineSeries</code></a>, and <a href="../Classes/SChartBandSeries.html"><code>SChartBandSeries</code></a>.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartAnimation.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2013 Scott Logic Ltd. All rights reserved. (Last updated: 2013-10-01)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 858)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

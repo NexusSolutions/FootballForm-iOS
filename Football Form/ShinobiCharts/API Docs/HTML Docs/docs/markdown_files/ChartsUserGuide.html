@@ -1,0 +1,1573 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>ChartsUserGuide Document</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<link rel="stylesheet" type="text/css" href="../../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../../css/stylesPrint.css" />	
+		<meta name="generator" content="appledoc 2.1 (build 858)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+                
+				<a id="backToIndex" href="../../index.html">&lt; Back to Index</a>
+				<h1><a id="libraryTitle" href="../../index.html">ShinobiCharts </a></h1>
+				<a id="developerHome" href="http://www.shinobicontrols.com/">Scott Logic Ltd</a>
+                
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode" id="pageTitleHeader">ChartsUserGuide Document</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar"></ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="ChartsUserGuide Document" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">ChartsUserGuide Document</h1>
+					</div>
+				</div>
+			
+				<div id="container">	
+					<h3>Overview</h3>
+
+<p>This document provides an overview of the <a href="../../Classes/ShinobiCharts.html">ShinobiCharts</a> control.  It describes the features of the control and its associated concepts.</p>
+
+<p><a href="../../Classes/ShinobiCharts.html">ShinobiCharts</a> provides a quick and effective way to visually represent data in an iOS application.  The chart contains a plot area, upon which a set of chart series (such as line, bar, OHLC, etc.) are displayed.  Each series contains a set of data points.  A chart can display a number of different types of chart series simultaneously.</p>
+
+<p>The plot area is surrounded by axes which define the dimensions of the data specified.  Each axis has a range describing the data being displayed.  Furthermore, <a href="../../Classes/ShinobiCharts.html">ShinobiCharts</a> allows the modification of the axis display by providing zoom and pan interaction out of the box.</p>
+
+<p>If you simply want to get up and running, follow the <a href="#Quick%20Start%20Guide">Quick Start Guide</a>, alternatively, for a more detailed description of how the chart works and the features it presents, head over to the <a href="#ShinobiChart%20Control%20Overview">ShinobiChart Control Overview</a>. Finally, for guides that tackle specific usage scenarios, head on over to the <a href="#ShinobiChart%20How-to%20Guides">ShinobiChart How-to Guides</a>.</p>
+
+<p>The chart has a complete set of Xamarin.iOS bindings, allowing you to make use of all of its features from within applications written in C#. In order to get up and running, follow the <a href="#Quick%20Start%20Guide%20for%20Xamarin.iOS">Quick Start Guide for Xamarin iOS</a>.</p>
+
+<h2>Quick Start Guide</h2>
+
+<h3>Introduction</h3>
+
+<p>This is a brief introduction to using the <a href="../../Classes/ShinobiCharts.html">ShinobiCharts</a> component. This quick start guide will walk you through a series of simple steps introducing the key features of the charting library which includes supplying data to the chart via the datasource, simple styling and configuration of the labels, title and axes.</p>
+
+<p>At the end of this guide you will have created the following chart:</p>
+
+<p><img src="Images/quickstart1.png" alt="What we're aiming for"/></p>
+
+<h3>Installation</h3>
+
+<p><a href="../../Classes/ShinobiCharts.html">ShinobiCharts</a> now ships with an installer, to make it easier to get started. To run the installer open the &lsquo;<a href="../../Classes/ShinobiCharts.html">ShinobiCharts</a>.dmg&rsquo; file which you downloaded from ShinobiControls and run &lsquo;install.pkg&rsquo;. When it opens up, it should look as below.</p>
+
+<p><img src="Images/ShinobiChartsInstaller.png"/></p>
+
+<p>The easiest way to install the <a href="../../Classes/ShinobiCharts.html">ShinobiCharts</a> framework is to run the &lsquo;install.pkg&rsquo; file. This will install the framework into Xcode for you, along with the framework documentation. This means you can add the framework to your project in the same way as you would any of the frameworks which are automatically shipped with Xcode.</p>
+
+<p>If you don&rsquo;t want to run the installer, the framework is also contained within the &lsquo;ShinobiCharts&rsquo; folder in the disk image. Regardless of whether you ran the installer, you should copy this folder onto your machine. Drag the &lsquo;ShinobiCharts&rsquo; folder onto the Desktop icon in the disk image. This will copy the folder onto your desktop.</p>
+
+<p><img src="Images/ShinobiChartsFolder.png"/></p>
+
+<p>The &lsquo;ShinobiCharts&rsquo; folder contains:</p>
+
+<ul>
+<li>A copy of the framework.</li>
+<li>A copy of the documentation for the framework.</li>
+<li>A set of samples to demonstrate getting started with <a href="../../Classes/ShinobiCharts.html">ShinobiCharts</a>.</li>
+<li>An uninstall script for uninstalling the <a href="../../Classes/ShinobiCharts.html">ShinobiCharts</a> framework &amp; documentation from Xcode.</li>
+<li>The Xamarin.ios version of the framework (only available with the Premium framework).</li>
+<li>A README file with setup steps.</li>
+<li>A change log stating the changes made in each release.</li>
+<li>A copy of the <a href="../../Classes/ShinobiCharts.html">ShinobiCharts</a> Standard Licence.</li>
+<li>A text file containing the version number of the framework.</li>
+</ul>
+
+
+<h3>Draw a Simple Chart</h3>
+
+<p>Start-up Xcode and create a new project via <strong>File / New / Single View Application</strong> – selecting the option to use Automatic Reference Counting.</p>
+
+<p><img src="Images/ShinobiTipArc.png" alt="Tip ARC"/></p>
+
+<p>Within your newly created project add a reference to the <a href="../../Classes/ShinobiCharts.html">ShinobiCharts</a> framework. If you&rsquo;ve installed <a href="../../Classes/ShinobiCharts.html">ShinobiCharts</a> using our installer, you can add this in the same way as you would any of the standard Apple frameworks.  Select your project target, and switch to the Build Phases tab.  Open the Link Binary With Libraries section, click the Plus button, find the entry for <strong><a href="../../Classes/ShinobiCharts.html">ShinobiCharts</a>.framework</strong>, and click Add.</p>
+
+<p>If you have just copied the framework onto your machine, the easiest way to add it to your project is to locate the <strong><a href="../../Classes/ShinobiCharts.html">ShinobiCharts</a>.framework</strong> and drag it directly into your project.</p>
+
+<p><a href="../../Classes/ShinobiCharts.html">ShinobiCharts</a> makes use of a few other frameworks, so add the following as well:</p>
+
+<ul>
+<li> Security.framework (Trial Version only)</li>
+<li> QuartzCore.framework</li>
+<li> OpenGLES.framework</li>
+<li> CoreText.framework</li>
+<li> libstdc++.dylib</li>
+</ul>
+
+
+<p>The first step is to create an instance of the chart and add it to the view. Open up the <strong>ViewController.m</strong> file and add the following import statement</p>
+
+<pre><code>#import &lt;ShinobiCharts/ShinobiChart.h&gt;
+</code></pre>
+
+<p>Further down the same file add an instance variable for the chart:</p>
+
+<pre><code>@implementation ViewController
+{
+    ShinobiChart* _chart;
+}
+</code></pre>
+
+<p>Within the same file add the following to the <code>viewDidLoad</code> method:</p>
+
+<pre><code>self.view.backgroundColor = [UIColor whiteColor];
+CGFloat margin = (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone) ? 10.0 : 50.0;
+_chart = [[ShinobiChart alloc] initWithFrame:CGRectInset(self.view.bounds, margin, margin)];
+_chart.title = @"Trigonometric Functions";
+
+_chart.licenseKey = @""; // TODO: add your trial licence key here!
+</code></pre>
+
+<p>This instantiates the chart object, and sets its title. Note that the margin around that chart depends on the device form factor. For the iPad a larger margin is used.</p>
+
+<p>If you have downloaded a trial version of the <a href="../../Classes/ShinobiCharts.html">ShinobiCharts</a> you will have been issued with a trial license key. Add the key that you were supplied with at the location indicated above.</p>
+
+<p>The <code>ShinobiChart</code> object is a <code>UIView</code> subclass, so honors resizing masks and auto-layout. Further down the same method add the following:</p>
+
+<pre><code>chart.autoresizingMask = ~UIViewAutoresizingNone;
+</code></pre>
+
+<p>This ensures that the chart frame is adjusted when the device orientation changes.</p>
+
+<p>The next step is to add the axes to the chart. In this example both the X and Y axes are linear, although the chart also supports date-time and category axes. Further down the same method add the following:</p>
+
+<pre><code>// add a pair of axes
+SChartNumberAxis *xAxis = [[SChartNumberAxis alloc] init];
+_chart.xAxis = xAxis;
+
+SChartNumberAxis *yAxis = [[SChartNumberAxis alloc] init];
+_chart.yAxis = yAxis;
+</code></pre>
+
+<p>Now that the chart is configured, the final step is to add it to the view. Add the following to the end of the method:</p>
+
+<pre><code>// Add the chart to the view controller
+[self.view addSubview:_chart];
+</code></pre>
+
+<p>Before you can see the chart in action, you need to supply some data, which brings us onto the next step &hellip;</p>
+
+<h3>Adding a Datasource</h3>
+
+<p>In order to render your data within the chart you need to supply a ‘datasource’, this is a class that adopts the SChartDatasource protocol methods.</p>
+
+<p><img src="Images/ShinobiTipDatasource.png" alt="Tip Datasource"/></p>
+
+<p>Within <strong>ViewController.m</strong> adopt the datasource protocol via the class extension, that Xcode generated for you, as follows:</p>
+
+<pre><code>@interface ViewController () &lt;SChartDatasource&gt;
+</code></pre>
+
+<p>The SChartDatasource protocol has four required methods. We&rsquo;ll take a look at each of them in turn.</p>
+
+<p>The first method <code>numberOfSeriesInSChart:</code> is used to inform the chart how many series you wish to render. Add the following implementation, with a hard-coded value of two:</p>
+
+<pre><code>- (NSInteger)numberOfSeriesInSChart:(ShinobiChart *)chart {
+    return 2;
+} 
+</code></pre>
+
+<p>The next method, <code>sChart:seriesAtIndex:</code> is used to supply each series to the chart. The series objects describe the visual appearance of each series, but not their actual data values. Add the following to the view controller in order to return two different line series:</p>
+
+<pre><code>-(SChartSeries *)sChart:(ShinobiChart *)chart seriesAtIndex:(NSInteger)index {
+
+    SChartLineSeries *lineSeries = [[SChartLineSeries alloc] init];
+
+    // the first series is a cosine curve, the second is a sine curve
+    if (index == 0) {
+        lineSeries.title = [NSString stringWithFormat:@"y = cos(x)"];
+    } else {
+        lineSeries.title = [NSString stringWithFormat:@"y = sin(x)"];
+    }
+
+    return lineSeries;
+}
+</code></pre>
+
+<p>The next method, <code>sChart:numberOfDataPointsForSeriesAtIndex:</code>, is used to specify the number of data points within a specific series. Add the following implementation below:</p>
+
+<pre><code>- (NSInteger)sChart:(ShinobiChart *)chart numberOfDataPointsForSeriesAtIndex:(NSInteger)seriesIndex {
+    return 100;
+}
+</code></pre>
+
+<p>In this example, both series have 100 points, but they do not have to have the same number.</p>
+
+<p>The last required method required by the protocol is <code>sChart:dataPointAtIndex:forSeriesAtIndex:</code>, which the chart uses to request the value of each individual datapoint for each series. The returned datapoint must adopt the <code>SChartData</code> protocol, which specifies <code>xValue</code> and <code>yValue</code> properties. The charting framework supplies a concrete implementation of this protocol, <code>SChartDataPoint</code>, however, you have the option of implementing this protocol with your own data-objects in order to avoid the need to maintain two copies of your data.</p>
+
+<p>Add the following implementation:</p>
+
+<pre><code>- (id&lt;SChartData&gt;)sChart:(ShinobiChart *)chart dataPointAtIndex:(NSInteger)dataIndex forSeriesAtIndex:(NSInteger)seriesIndex {
+
+    SChartDataPoint *datapoint = [[SChartDataPoint alloc] init];
+
+    // both functions share the same x-values
+    double xValue = dataIndex / 10.0;
+    datapoint.xValue = [NSNumber numberWithDouble:xValue];
+
+    // compute the y-value for each series
+    if (seriesIndex == 0) {
+        datapoint.yValue = [NSNumber numberWithDouble:cosf(xValue)];
+    } else {
+        datapoint.yValue = [NSNumber numberWithDouble:sinf(xValue)];
+    }
+
+    return datapoint;
+}
+</code></pre>
+
+<p>Now that the datasource is implemented, you can add the following to <code>viewDidLoad</code>:</p>
+
+<pre><code>_chart.datasource = self;
+</code></pre>
+
+<p>At this point if you build and run, you should see a couple of series:</p>
+
+<p><img src="Images/quickstart2.png" alt="Basic chart"/></p>
+
+<p>With the current implementation each individual datapoint is requested via the datasource. If you have a lot of data, and it is already present in memory, you can optionally make use of the <code>sChart:dataPointsForSeriesAtIndex:</code> protocol method. Your implementation of this method should return all the points for a given series, and this method will be used instead of <code>sChart:dataPointAtIndex:forSeriesAtIndex:</code>.</p>
+
+<h3>Adding Labels and Basic Styling</h3>
+
+<p>The chart in its current state is a little plain! This section will build on the simple chart that you have created and add a bit more style.</p>
+
+<p>Firstly, the axes could do with having some labels. Also, the Y axis could do with a bit of padding around the top and bottom values to make it easier to see the top and bottom of the curves.</p>
+
+<p>Open up <strong>ViewController.m</strong> and edit the axis creation code as follows:</p>
+
+<pre><code>// add a pair of axes
+SChartNumberAxis *xAxis = [[SChartNumberAxis alloc] init];
+xAxis.title = @"X Value";
+_chart.xAxis = xAxis;
+
+SChartNumberAxis *yAxis = [[SChartNumberAxis alloc] init];
+yAxis.title = @"Y Value";
+yAxis.rangePaddingLow = @(0.1);
+yAxis.rangePaddingHigh = @(0.1);
+_chart.yAxis = yAxis;
+</code></pre>
+
+<p>It would be nice to see the legend on the iPad, where there is much more screen space to play with. Add the following to the <code>viewDidLoad</code> method:</p>
+
+<pre><code>_chart.legend.hidden = (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone);
+</code></pre>
+
+<p>One of the most powerful features of the Shinobi charts is their gesture-based interactions. Enable pan and zoom on each axis by adding the following code:</p>
+
+<pre><code>// enable gestures
+yAxis.enableGesturePanning = YES;
+yAxis.enableGestureZooming = YES;
+xAxis.enableGesturePanning = YES;
+xAxis.enableGestureZooming = YES;
+</code></pre>
+
+<p>These properties allow the user to pan the chart with a single-finger pan gesture, and zoom using two-finger pinch.</p>
+
+<p>Finally, enable area fill by adding the following just after each series is created within <code>sChart:seriesAtIndex:</code> …</p>
+
+<pre><code>lineSeries.style.showFill = YES;
+</code></pre>
+
+<p>Each series has a style object associated with it, where the style type depends on the series type. A line series has a style object of type <code>SChartLineSeriesStyle</code>. These objects have a a number of properties which you can adjust including line color, thickness and the colors used for gradient fill.</p>
+
+<p>To see the effect of the few simple changes you have just made, build and run:</p>
+
+<p><img src="Images/quickstart1.png" alt="What we're aiming for"/></p>
+
+<p>Now that you have created a simple chart, why not have a go at creating a column, or pie chart?</p>
+
+<h2>Quick Start Guide for Xamarin.iOS</h2>
+
+<h3>Introduction</h3>
+
+<p>This is a brief introduction to using the <a href="../../Classes/ShinobiCharts.html">ShinobiCharts</a> component with the Xamarin.iOS bindings. This quick start guide will walk you through a series of simple steps introducing the key features of the charting library which includes supplying data to the chart via the datasource, simple styling and configuration of the labels, title and axes.</p>
+
+<p>At the end of this guide you will have created the following chart:</p>
+
+<p><img src="Images/quickstart1.png" alt="What we're aiming for"/></p>
+
+<p>If you have any trouble following the guide, the final project is provided with your download of <a href="../../Classes/ShinobiCharts.html">ShinobiCharts</a> in the Xamarin.iOS samples folder under the name <strong>GettingStarted.sln</strong>.</p>
+
+<h3>Getting Set Up</h3>
+
+<p>Start-up Xamarin Studio and create a new project via <strong>File / New / Solution</strong>, then select <strong>C# / iOS / Universal / Single View Application</strong> as your solution type. Name your solution <strong>ChartsGettingStarted</strong>.</p>
+
+<p>Within your newly created project, add a reference to the <a href="../../Classes/ShinobiCharts.html">ShinobiCharts</a>.dll. To do this, right click the References folder under your newly create project and choose <strong>Edit References…</strong>, then select <strong>.Net Assembly</strong> and browse to where you saved the <strong><a href="../../Classes/ShinobiCharts.html">ShinobiCharts</a>.dll</strong>. Be sure to click <strong>Add</strong> after selecting the dll to add it to your project, and close the window.</p>
+
+<p>To check you have done all of this correctly, expand the References folder in the Solution Pad and you should see the <strong><a href="../../Classes/ShinobiCharts.html">ShinobiCharts</a>.dll</strong> listed as a reference.</p>
+
+<h3>Draw a Simple Chart</h3>
+
+<p>The first step is to create an instance of the chart and add it to the view. Open up the <strong>GettingStartedViewController.cs</strong> file and add the following using statement:</p>
+
+<pre><code>using ShinobiCharts;
+</code></pre>
+
+<p>Further down the same file add a member variable for the chart:</p>
+
+<pre><code>public partial class ChartsGettingStartedViewController : UIViewController
+{
+    ...
+    ShinobiChart chart;
+</code></pre>
+
+<p>Within the same file add the following to the <code>ViewDidLoad</code> method:</p>
+
+<pre><code>View.BackgroundColor = UIColor.White;
+
+// Create the chart
+float margin = UserInterfaceIdiomIsPhone ? 10 : 50;
+chart = new ShinobiChart (new RectangleF (margin, margin, View.Bounds.Width - 2 * margin, View.Bounds.Height - 2 * margin)) {
+    Title = "Trigonometric Functions",
+    LicenseKey = "" // TODO: Add your trail licence key here!
+};
+</code></pre>
+
+<p>This instantiates the chart object, and sets its title. Note that the margin around that chart depends on the device form factor. For the iPad a larger margin is used.</p>
+
+<p>If you have downloaded a trial version of the <a href="../../Classes/ShinobiCharts.html">ShinobiCharts</a> you will have been issued with a trial license key. Add the key that you were supplied with at the location indicated above.</p>
+
+<p>The <code>ShinobiChart</code> object is a <code>UIView</code> subclass, so honors resizing masks and auto-layout. Further down the same method add the following:</p>
+
+<pre><code>chart.AutoresizingMask = ~UIViewAutoresizing.None;
+</code></pre>
+
+<p>This ensures that the chart frame is adjusted when the device orientation changes.</p>
+
+<p>The next step is to add the axes to the chart. In this example both the X and Y axes are linear, although the chart also supports date-time and category axes. Further down the same method add the following:</p>
+
+<pre><code>// Add a pair of axes
+SChartNumberAxis xAxis = new SChartNumberAxis ();
+chart.XAxis = xAxis;
+
+SChartNumberAxis yAxis = new SChartNumberAxis ();
+chart.YAxis = yAxis;
+</code></pre>
+
+<p>Now that the chart is configured, the final step is to add it to the view. Add the following to the end of the method:</p>
+
+<pre><code>// Add to the view
+View.AddSubview (chart);
+</code></pre>
+
+<p>Before you can see the chart in action, you need to supply some data, which brings us onto the next step &hellip;</p>
+
+<h3>Adding a Datasource</h3>
+
+<p>In order to render your data within the chart you need to supply a ‘datasource’, this is a class that inherits from <code>SChartDataSource</code>.</p>
+
+<p><img src="Images/ShinobiTipDatasource.png" alt="Tip Datasource"/></p>
+
+<p>Create a new class for your datasource by selecting <strong>File / New / File…</strong> and the choosing <strong>Empty Class</strong> as the type of file to create. Call this new class <strong>GettingStartedDataSource.cs</strong>, and then open it up and add the <code>SChartDataSource</code> as the superclass:</p>
+
+<pre><code>public class GettingStartedDataSource : SChartDataSource
+{
+}
+</code></pre>
+
+<p>The <a href="../../Protocols/SChartDatasource.html">SChartDatasource</a> protocol has four required methods. We&rsquo;ll take a look at each of them in turn.</p>
+
+<p>The first method <code>GetNumberOfSeries (ShinobiChart)</code> is used to inform the chart how many series you wish to render. Add the following implementation, with a hard-coded value of two:</p>
+
+<pre><code>public override int GetNumberOfSeries (ShinobiChart chart)
+{
+    return 2;
+}
+</code></pre>
+
+<p>The next method, <code>GetSeries (ShinobiChart, int)</code> is used to supply each series to the chart. The series objects describe the visual appearance of each series, but not their actual data values. Add the following to the data source in order to return two different line series:</p>
+
+<pre><code>public override SChartSeries GetSeries (ShinobiChart chart, int dataSeriesIndex)
+{
+    SChartLineSeries series = new SChartLineSeries ();
+
+    // The first series is a cosine curve, the second is a sine curve
+    series.Title = dataSeriesIndex == 0 ? "y = cos(x)" : "y = sin(x)";
+
+    return series;
+}
+</code></pre>
+
+<p>The next method, <code>GetNumberOfDataPoints (ShinobiChart, int)</code>, is used to specify the number of data points within a specific series. Add the following implementation below:</p>
+
+<pre><code>public override int GetNumberOfDataPoints (ShinobiChart chart, int dataSeriesIndex)
+{
+    return 100;
+}
+</code></pre>
+
+<p>In this example, both series have 100 points, but they don&rsquo;t have to have the same number of data points.</p>
+
+<p>The last required method required by the protocol is <code>GetDataPoint (ShinobiChart, int, int)</code>, which the chart uses to request the value of each individual datapoint for each series. The returned datapoint must inherit from <code>SChartData</code>, which specifies <code>XValue</code> and <code>YValue</code> properties. The charting framework supplies a concrete implementation of this protocol, <code>SChartDataPoint</code>, however, you have the option of inheriting from this abstract base class with your own data-objects in order to avoid the need to maintain two copies of your data.</p>
+
+<p>Add the following implementation:</p>
+
+<pre><code>public override SChartData GetDataPoint (ShinobiChart chart, int dataIndex, int dataSeriesIndex)
+{
+    SChartDataPoint datapoint = new SChartDataPoint ();
+
+    // both functions share the same x-values
+    double xValue = dataIndex / 10.0;
+    datapoint.XValue = new NSNumber(xValue);
+
+    // compute the y-value for each series
+    datapoint.YValue = new NSNumber(dataSeriesIndex == 0 ? Math.Cos(xValue) : Math.Sin(xValue));
+
+    return datapoint;
+}
+</code></pre>
+
+<p>Now that the datasource is implemented, you can go back to <strong>GettingStartedViewController.cs</strong> add the following to <code>ViewDidLoad</code>:</p>
+
+<pre><code>chart.DataSource = new GettingStartedDataSource();
+</code></pre>
+
+<p>At this point if you build and run, you should see a couple of series:</p>
+
+<p><img src="Images/quickstart2.png" alt="Basic chart"/></p>
+
+<p>With the current implementation each individual datapoint is requested via the datasource. If you have a lot of data, and it is already present in memory, you can optionally make use of the <code>GetDataPoints (ShinobiChart, int)</code> method. Your implementation of this method should return all the points for a given series, and this method will be used instead of <code>GetDataPoint (ShinobiChart, int, int)</code>.</p>
+
+<h3>Adding Labels and Basic Styling</h3>
+
+<p>The chart in its current state is a little plain! This section will build on the simple chart that you have created and add a bit more style.</p>
+
+<p>Firstly, the axes could do with having some labels. Also, the Y axis could do with a bit of padding around the top and bottom values to make it easier to see the top and bottom of the curves.</p>
+
+<p>Open up <strong>GettingStartedViewController.cs</strong> and edit the axis creation code as follows:</p>
+
+<pre><code>// Add a pair of axes
+SChartNumberAxis xAxis = new SChartNumberAxis () {
+    Title = "X Value"
+};
+chart.XAxis = xAxis;
+
+SChartNumberAxis yAxis = new SChartNumberAxis () {
+    Title = "Y Value",
+    RangePaddingLow = new NSNumber(0.1),
+    RangePaddingHigh = new NSNumber(0.1)
+};
+chart.YAxis = yAxis;
+</code></pre>
+
+<p>It would be nice to see the legend on the iPad, where there is much more screen space to play with. Add the following to the <code>ViewDidLoad</code> method:</p>
+
+<pre><code>chart.Legend.Hidden = UIDevice.CurrentDevice.UserInterfaceIdiom == UIUserInterfaceIdiom.Phone;
+</code></pre>
+
+<p>One of the most powerful features of the Shinobi charts is their gesture-based interactions. Enable pan and zoom on each axis by adding the following code:</p>
+
+<pre><code>// Enable gestures
+xAxis.EnableGesturePanning = true;
+xAxis.EnableGestureZooming = true;
+yAxis.EnableGesturePanning = true;
+yAxis.EnableGestureZooming = true;
+</code></pre>
+
+<p>These properties allow the user to pan the chart with a single-finger pan gesture, and zoom using two-finger pinch.</p>
+
+<p>Finally, enable area fill by adding the following to <strong>GettingStartedDataSource.cs</strong> just after each series is created within <code>GetSeries (ShinobiChart, int)</code> &hellip;</p>
+
+<pre><code>series.Style.ShowFill = true;
+</code></pre>
+
+<p>Each series has a style object associated with it, where the style type depends on the series type. A line series has a style object of type <code>SChartLineSeriesStyle</code>. These objects have a a number of properties which you can adjust including line color, thickness and the colors used for gradient fill.</p>
+
+<p>To see the effect of the few simple changes you have just made, build and run:</p>
+
+<p><img src="Images/quickstart1.png" alt="What we're aiming for"/></p>
+
+<p>Now that you have created a simple chart, why not have a go at creating a column, or pie chart?</p>
+
+<h1>Shinobi Chart Control Overview</h1>
+
+<p>The <a href="../../Classes/ShinobiChart.html">ShinobiChart</a> provides a powerful and flexible way to represent data visually. The chart comes with a number of interactions such as pan and zoom that are optimised for touch interfaces.  The highly performant nature of the chart lends itself to the mobile environment and provides a super smooth user experience.</p>
+
+<p>This section describes the features and concepts which constitute a chart.</p>
+
+<h2>The Anatomy of the chart</h2>
+
+<p>There are a number of core components which make up a chart.  Several of these are highlighted below:</p>
+
+<p><img src="Images/userguide_anatomy.png" alt="End result"/></p>
+
+<ul>
+<li><strong>Title</strong>: Each chart can have a single title which may be displayed at the top of the chart.</li>
+<li><strong>Plot Area</strong>: The main area of the chart in which the data is rendered is referred to as the plot area.</li>
+<li><strong>Chart Series</strong>: The chart renders the data provided to it via one or more chart series.  These are components which determine the visual representation of the data. For example, a line series will render the data as a line chart, a column series will render it as vertical bars, and so on.  Multiple different chart series may be added to the same chart simultaneously. These are rendered in the plot area - the above image shows several line series.</li>
+<li><strong>Axes</strong>: A cartesian chart must have at least one X and one Y axis, but may have an arbitrary number of either, on either side of the chart. These border the plot area and an x-axis is highlighted in the image above.</li>
+<li><strong>Legend</strong>: A chart may optionally display a legend associating a series with a title for additional information. There are several options for position.</li>
+<li><strong>Annotations</strong>: <a href="../../Classes/ShinobiCharts.html">ShinobiCharts</a> supports additional visual cues being overlaid on the chart through the use of annotations.  These could take the form of shapes, markers, text or other visual display.  These are only supported in the premium version of <a href="../../Classes/ShinobiCharts.html">ShinobiCharts</a> and display in the plot area - either above or below the data.</li>
+<li><strong>Datasource</strong>: The datasource is the class responsible for supplying the raw data to the chart.</li>
+<li><strong>Delegate</strong>: This is an optional protocol that can be adopted and attached to the chart to be notified of key events taking place on the chart.</li>
+</ul>
+
+
+<p>In order to use the chart you will typically perform the following tasks:</p>
+
+<ul>
+<li>Set the chart <code>datasource</code> property - this is used to provide data to the chart and construct appropriate chart series to display that data.</li>
+<li>Set the axes on the chart.  For cartesian charts, the chart needs at least one x-axis and one y-axis in order to display properly.</li>
+<li>(Optionally) Set the chart <code>delegate</code> property - this is used to respond to a user&rsquo;s interactions with the chart.</li>
+</ul>
+
+
+<h3>The Datasource</h3>
+
+<p>In order to render data within the chart you need to supply that data to the chart.  The <code>datasource</code> is responsible for taking data from your data provider (simply an array or a complex web service, etc) and matching this data with the series objects that will display it on the chart.</p>
+
+<p>You supply the object which acts as the datasource to the chart by setting the <code>datasource</code> property.  This object must adopt the <a href="../../Protocols/SChartDatasource.html"><code>SChartDatasource</code></a> protocol and respond to minimum set of required methods.</p>
+
+<p><img src="Images/userguide_datasource_note.png" alt="The datasource concept is very similar to UITableView"/></p>
+
+<p>The required methods that must be implemented are as follows (note that each series and datapoint is referenced by an index just like UITableView):</p>
+
+<ul>
+<li><strong>numberOfSeriesInSChart</strong> This informs the chart of how many series it will be displaying.</li>
+<li><strong>sChart:seriesAtIndex:</strong> The datasource links the data you provide to a series type. Return the series type here.</li>
+<li><strong>sChart:numberOfDataPointsForSeriesAtIndex:</strong> The different series in a chart can each contain a different number of data points.  This returns the number of data points in the series at the specified index in the chart.</li>
+<li><strong>sChart:dataPointAtIndex:forSeriesAtIndex:</strong> This returns the data point at the specified index from the specified series in the chart.</li>
+</ul>
+
+
+<p>The <a href="../../Protocols/SChartDatasource.html"><code>SChartDatasource</code></a> protocol also has optional methods to allow you to specify custom behavior for series in the chart, determine which series are rendered against which axes and optionally provide all the data for a series in a single array rather than point by point.  See the <a href="../../Protocols/SChartDatasource.html">SChartDatasource</a> API documentation for more details on this.</p>
+
+<h3>Data Points</h3>
+
+<p>The <code>datasource</code> for the chart requires you to pass in data points that contain appropriate data for each series. <a href="../../Classes/ShinobiCharts.html">ShinobiCharts</a> comes with four types of datapoint:</p>
+
+<ul>
+<li><strong><a href="../../Classes/SChartDataPoint.html">SChartDataPoint</a></strong> for simple, single value x and y values (eg: line, bar)</li>
+<li><strong><a href="../../Classes/SChartMultiXDataPoint.html">SChartMultiXDataPoint</a></strong> for series with multiple x values for a single y value (vertical band)</li>
+<li><strong><a href="../../Classes/SChartMultiYDataPoint.html">SChartMultiYDataPoint</a></strong> for series with multiple y values for a single x value (eg: OHLC, candlestick)</li>
+<li><strong><a href="../../Classes/SChartBubbleDataPoint.html">SChartBubbleDataPoint</a></strong> to be used with <a href="../../Classes/SChartBubbleSeries.html">SChartBubbleSeries</a></li>
+</ul>
+
+
+<p>Using <a href="../../Classes/SChartDataPoint.html"><code>SChartDataPoint</code></a> is as simple as creating an instance and assigning the <code>xValue</code> and <code>yValue</code> properties. For series that are expecting multiple x or y values, you should use <a href="../../Classes/SChartMultiXDataPoint.html"><code>SChartMultiXDataPoint</code></a> or <a href="../../Classes/SChartMultiYDataPoint.html"><code>SChartMultiYDataPoint</code></a> and add data to <code>xValues</code> or <code>yValues</code> (respectively) for each key the series is expecting.  A list of the expected keys is available through the <code>xValueKeys</code> and <code>yValueKeys</code> methods on <a href="../../Classes/SChartSeries.html"><code>SChartSeries</code></a>.</p>
+
+<p><a href="../../Classes/SChartBubbleDataPoint.html"><code>SChartBubbleDataPoint</code></a> is a special datapoint that also contains an <code>area</code> property in addition to <code>xValue</code> and <code>yValue</code>.</p>
+
+<p>It is also possible to use your own objects as data points by conforming to the <a href="../../Protocols/SChartData.html"><code>SChartData</code></a> protocol . This is useful as existing model objects can be made to conform to the protocol and then given directly to the chart to avoid duplication of memory. The protocol ensures that you return a default x and y value.  The protocol also provides the option of returning additional x and y values based on a given key - useful for series types which require multiple data values, such as OHLC, candlestick and bubble charts.</p>
+
+<h3>The Axes</h3>
+
+<p>Axes are used to control the view of the data and a chart must have a minimum of two: one x-axis (horizontal) and one y-axis (vertical). Radial charts do not need axes to render the pie or donut series.</p>
+
+<p>Axes on a <a href="../../Classes/ShinobiChart.html">ShinobiChart</a> are instances of the <a href="../../Classes/SChartAxis.html"><code>SChartAxis</code></a> base class. However, you should always use one of the subclasses as they are designed for specific types of data. These are:</p>
+
+<ul>
+<li><a href="../../Classes/SChartCategoryAxis.html"><code>SChartCategoryAxis</code></a> works with discrete data points that have no linear correlation between their values (often strings).</li>
+<li><a href="../../Classes/SChartDateTimeAxis.html"><code>SChartDateTimeAxis</code></a> works with time-based data points that use NSDate as their axis value.</li>
+<li><a href="../../Classes/SChartDiscontinuousDateTimeAxis.html"><code>SChartDiscontinuousDateTimeAxis</code></a> is a subclass of <a href="../../Classes/SChartDateTimeAxis.html"><code>SChartDateTimeAxis</code></a> that allows the specification of time periods to exclude <em>(Premium Edition only)</em>.</li>
+<li><a href="../../Classes/SChartNumberAxis.html"><code>SChartNumberAxis</code></a> works with numeric data points that use NSNumber as their axis value.</li>
+<li><a href="../../Classes/SChartDiscontinuousNumberAxis.html"><code>SChartDiscontinuousNumberAxis</code></a> is a subclass of <a href="../../Classes/SChartNumberAxis.html"><code>SChartNumberAxis</code></a> that allows the specification of number ranges to exclude. <em>(Premium Edition only)</em></li>
+<li><a href="../../Classes/SChartLogarithmicAxis.html"><code>SChartLogarithmicAxis</code></a> a subclass of <a href="../../Classes/SChartNumberAxis.html"><code>SChartNumberAxis</code></a> that shows numeric values on a logarithmic scale <em>(Premium Edition only)</em>.</li>
+</ul>
+
+
+<p>When you create a chart you should specify the primary x-axis and primary y-axis.  The following code demonstrates setting the axis types for number based data:</p>
+
+<pre><code>chart.xAxis = [[SChartNumberAxis alloc] init];
+chart.yAxis = [[SChartNumberAxis alloc] init];
+</code></pre>
+
+<p>As the axes are rendered, the chart will assign enough room to visually accommodate them  at their current range. This will vary depending upon the length of the tick lines and the labels, etc. As the axis range changes, the width of the axis may also vary as the tickmarks labels change length to accommodate different values. Set the <code>width</code> property on the axis to assign a fixed width of your choosing.</p>
+
+<p><img src="Images/userguide_axis_width.png" alt="Using the axis width to align charts"/></p>
+
+<p>By default, the axes will remain positioned on the border of the plot area regardless of current ranges. However, it is possible to set the point of intersection between two axes using the <code>axisPositionValue</code>. The following code would set the primary x-axis to always intersect the value 0 on the y-axis. The x-axis will move over the plot area to keep the point of intersection at 0. If 0 is outside of the current y-axis range the x-axis will be pinned at the top or bottom of the plot area.</p>
+
+<pre><code>chart.xAxis.axisPositionValue = @0;
+</code></pre>
+
+<p>As the axis moves across the chart, the labels and tickmarks may obstruct the data chart series. Setting the <code>axisLabelsAreFixed</code> property will fix the labels and tickmarks on edge of the plot area.</p>
+
+<p>The axes can have a <em>title</em> which is a label positioned adjacent to the axis. To set the title text simply use the <code>title</code> string property. You can style the title via the axis <code>style</code> property, or, you can make changes to the label element directly via the <code>titleLabel</code> property.</p>
+
+<h4>Rendering Data</h4>
+
+<p>The axes are responsible for mapping the data values you provide into pixel values for display on the device screen. It is sometimes useful to make use of this mapping for adding additional elements to the chart. We highly recommend using our <a href="../../Classes/SChartAnnotation.html">SChartAnnotation</a> feature for this, as it fully supports the panning and zooming features. However, the <code>pixelValueForDataValue:</code> and <code>dataValueForPixelValue</code> methods support the conversion between data and pixel values.</p>
+
+<p>The axis must also know how to present a data value for display on the chart as a tickmark or in the crosshair. The method <code>stringForId:</code> will take a data object and convert it into a string using the appropriate formatters. This method is useful when subclassing to have definitive control over the conversion of data to string.</p>
+
+<h4>Data Ranges</h4>
+
+<p>There are several &ldquo;ranges of data&rdquo; associated with a chart axis at any one time.</p>
+
+<ul>
+<li><code>axisRange</code>: the current range displayed on the axis. This will be changed by panning and zooming actions or programmatic range changes.</li>
+<li><code>dataRange</code>: the absolute minimum and maximum values across all data series represented by this axis.</li>
+<li><code>defaultRange</code>: the range displayed after initial load or when zoom is reset. Set to the dataRange by default but can also be set when initializing the axis.</li>
+</ul>
+
+
+<p>The ranges represent a minimum and maximum value, with <a href="../../Classes/SChartNumberAxis.html"><code>SChartNumberAxis</code></a> and <a href="../../Classes/SChartDateTimeAxis.html"><code>SChartDateTimeAxis</code></a> each having their own range type: <a href="../../Classes/SChartNumberRange.html"><code>SChartNumberRange</code></a> and <a href="../../Classes/SChartDateRange.html"><code>SChartDateRange</code></a> respectively. <a href="../../Classes/SChartCategoryAxis.html"><code>SChartCategoryAxis</code></a> uses <a href="../../Classes/SChartNumberRange.html"><code>SChartNumberRange</code></a> where the range is applied to the integer indexes of the items.</p>
+
+<p>By default, an axis will display the whole data range when it initially renders. You should set your own default range if you would like a different initial range:</p>
+
+<pre><code>SChartNumberRange *range = [[SChartNumberRange alloc] initWithMinimum:@0 andMaximum:@100];
+chart.xAxis = [[SChartNumberAxis alloc] initWithRange:range];
+</code></pre>
+
+<p>Once the chart has rendered, you should make any changes to the current visible range (<code>axisRange</code>) using the following method (there are several variants):</p>
+
+<pre><code>[chart.xAxis setRangeWithMinimum:@10 andMaximum:@40];
+</code></pre>
+
+<p><img src="Images/userguide_category_axis_range.png" alt="Setting a non-integer category axis range"/></p>
+
+<p>It may not be desirable for the axis to render the data range absolutely, as this can result in partially obscured datapoints at the min and max values. You should set the <code>rangePaddingHigh</code> and <code>rangePaddingLow</code> properties to add a fixed margin at each end of the range.</p>
+
+<h4>Tickmarks</h4>
+
+<p>The chart axis can display a set of tick marks and their labels that show the current range of data.  There are two levels of tickmark: major and minor; both can be auto-calculated.</p>
+
+<p>To configure the display and style of tickmarks on the chart, use the properties on the axis style object - this includes choosing the orientation of the tick labels. The following code, for example, will hide the tick lines for all major tickmarks:</p>
+
+<pre><code>axis.style.majorTickStyle.showTicks = NO; 
+</code></pre>
+
+<p>To prevent auto-calculation and provide your own frequencies for the tickmarks, set the following properties:  <code>majorTickFrequency</code> and <code>minorTickFrequency</code>.  If <code>majorTickFrequency</code> is set the chart will only display a major tick mark at this frequency, regardless of zoom level.  The same pattern is followed for minor tick marks if <code>minorTickFrequency</code> is set.</p>
+
+<p>Once the <code>majorTickFrequency</code> has been set or auto-calculated, tickmarks with regular spacing will be generated and by default  will start with the minimum value of <code>dataRange</code>. You can set the <code>anchorPoint</code> property to change the start point for the tickmark calculations. For example, a frequency of 2 with an anchor point of 1 will result in tickmarks at -3,-1,1,3,5,7 etc.</p>
+
+<p>If you have a particular set of tickmarks for the axis, rather than a frequency, you should use the following delegate method to return a set of major tickmark values:</p>
+
+<pre><code>- (NSArray *)sChart:(ShinobiChart*)chart majorTickValuesForAxis:(SChartAxis *)axis;
+</code></pre>
+
+<p>Once the values of the tickmarks have been established they must be formatted to appear as strings on the chart. Each axis has a <code>labelFormatter</code> property that will convert the tickmark value to a string. For numeric axes, you can retrieve the NSNumberFormatter:</p>
+
+<pre><code>NSNumberFormatter *nf = axis.labelFormatter.numberFormatter;
+</code></pre>
+
+<p>For date based axes, use <code>axis.labelFormatter.dateFormatter</code> to configure the NSDateFormatter. Labels will be generated according to the conditions set on the formatter.</p>
+
+<p>It is possible to take advantage of all of the tickmark configuration and calculations performed by the chart, but still customize individual tickmarks. You should update the tickmark object provided by the following delegate method just before it is added to the chart:</p>
+
+<pre><code>-(void)sChart:(ShinobiChart *)chart alterTickMark:(SChartTickMark *)tickMark beforeAddingToAxis:(SChartAxis *)axis;
+</code></pre>
+
+<p>Tick marks on an axis are instances of <a href="../../Classes/SChartTickMark.html"><code>SChartTickMark</code></a>.  This class contains the view for the tick mark, and the label for the tick mark. For example, to change the label background colour you would use the following code:</p>
+
+<pre><code>[tickMark.tickLabel setBackgroundColor:[UIColor redColor]];
+</code></pre>
+
+<p>Once the tickmarks are placed on the chart, a suitable behaviour near to the edge of the axis can be configured. The <code>tickLabelClippingModeHigh</code> and <code>tickLabelClippingModeLow</code> properties control how the tickmarks appear and disappear at the edge of the axis range, which will change during pan and zoom operations.</p>
+
+<h4>Multiple Axes</h4>
+
+<p>Whilst the chart must have a minimum of one x-axis and one y-axis, there is no maximum limit. Additional X-axes can be added along the bottom (default) or top of the plot area. Y-axes can be added on the left (default) or right edge of the plot area. If an axis already exists in this location, the chart will stack the axes with the first axis innermost and the last axis outermost.</p>
+
+<p>Add an additional y-axis on the right side of the chart as follows:</p>
+
+<pre><code>SChartNumberAxis *rightY = [SChartNumberAxis new];
+rightY.axisPosition = SChartAxisPositionReverse;
+[self.chart addYAxis:rightY];
+</code></pre>
+
+<p>After you have added an additional axis, you will want to assign a particular series to it (the default assignment for a series is the primary axis). Use the <code>sChart:xAxisForSeriesAtIndex:</code> and <code>sChart:yAxisForSeriesAtIndex:</code> methods on the datasource to return the reference to the axis for the series. It is important to return the reference of an existing axis object,  the <code>allXAxes</code> and <code>allYAxes</code> array properties on the chart provide these:</p>
+
+<pre><code>- (SChartAxis*)sChart:(ShinobiChart*)chart xAxisForSeriesAtIndex:(NSInteger)index {
+    return [chart.allXAxes objectAtIndex:0];
+}     
+</code></pre>
+
+<h3>Zooming and Panning</h3>
+
+<p>The current range of each axis defines a window of data on the chart. This window can grow smaller or larger using <em>zoom</em> operations or translated using <em>pan</em> operations. A pinch gesture on the plot area will result in a <em>zoom</em> and a drag gesture a <em>pan</em>. Gestures can be combined, just like they are on popular mapping kits, to produce combinations of pans and zooms. ShinobiCharts comes fully equipped with a comprehensive set of gestures for manipulating axis ranges.</p>
+
+<p>Panning and zooming is enabled on a per axis basis, allowing full control over the <em>window</em> view of the data. The following code enables both panning and zooming for an x-axis:</p>
+
+<pre><code>chart.xAxis.enableGestureZooming = YES;
+chart.xAxis.enableGesturePanning = YES;
+</code></pre>
+
+<p>Despite configuring the axes individually, the aspect ratio for the chart as a whole can be fixed. The ratio will be locked at the point of initial render:</p>
+
+<pre><code>chart.gesturePinchAspectLock = YES;
+</code></pre>
+
+<p> To give the pan and zoom gestures a more natural feel, you should enable the momentum effect. This will trigger a <em>deceleration</em> at the end of any one or combination of gestures:</p>
+
+<pre><code>chart.xAxis.enableMomentumPanning = YES;
+chart.xAxis.enableMomentumZooming = YES;
+</code></pre>
+
+<p>There is a third gesture type that affects the current axis range, <code>gestureDoubleTapResetsZoom</code>. When set to <code>YES</code>, a double tap gesture will reset the axis ranges to the <code>defaultRange</code>, or if not set, <code>dataRange</code>. Setting this feature to <code>NO</code> will cause a double tap gesture on the plot area to zoom an arbitrary amount in the direction of the tap. This effect is very similar to the behaviour of a map kit and is the default.</p>
+
+<p>The last gesture type that can be used to control the current view of the chart plot area is the <em>box zoom</em>. A touch and drag with one or two fingers will superimpose a box on the plot area. As soon as the gesture is complete (the fingers are lifted clear) the chart will attempt to zoom and pan the plot area to cover the same area as the box. We recommend that the double tap gesture be configured to <em>reset the zoom level</em> when using the box gesture.</p>
+
+<p>There are a large number of methods provided by the chart delegate that will notify you before, during and after pan and zoom operations. You should use these methods to manage any fixed zoom or pan limits. For example, use the <code>sChartIsZooming:</code> method to monitor the relevant <code>axisRange</code> and restrict it to a minimum/maximum range.</p>
+
+<h4>Disabling the Gestures</h4>
+
+<p>There are times, such as embedding charts in a scroll view, when you will not want the chart to consume certain gestures. In ShinobiCharts, a chart gesture recognizer will be disabled when the configuration means it is no longer needed.</p>
+
+<h4>Panning a Radial Chart</h4>
+
+<p>Whilst the radial charts don&rsquo;t have axes, they do support a <em>pan</em> gesture. Individual pie and donut series can be set to allow rotation around their centre point through the <code>gesturePanningEnabled</code> property on each series. There are two key properties that support panning: use <code>rotationFriction</code> to control the momentum after a pan; set <code>selectionEnabledDuringPanning</code> off to allow the user to <em>stop</em> the pan momentum without any selection animations triggering.</p>
+
+<p>The delegate provides the expected set of methods to respond to the radial pan events, however, there are several key properties and methods on the series that are useful tools. The current rotation of the series (from the original origin) is available through the <code>rotation</code> property and should be set through the method <code>rotateSliceAtIndex:toAngle:withAnimation:</code>. The <code>indexOfSliceAtAngle:</code> method should be used when you are detecting the current slice at a particular angle, recommended if you are using an indicator such as a needle to highlight slices.</p>
+
+<h4>Panning and Zooming Programatically</h4>
+
+<p>The fundamental effect of pan and zoom operations is a range change on one or more axes. Therefore, you should use one of the <code>setRange…</code> method variants on the axes to set the ranges to achieve the desired effect.</p>
+
+<p>Quickly panning to a set location can be achieved using the <code>panTo:</code> method on the axis, where there are options to jump to the start, end or center of the <code>dataRange</code>. Zooming by a relative amount, such as half of or double the current range, should be accomplished using the <code>setZoomLevel:</code> method.</p>
+
+<h3>The Chart&rsquo;s Series</h3>
+
+<p>The series on a chart define how the data should be visually represented on the plot area of the chart. You will have one or more series displayed on the chart at one time; all of which will be a subclass of <code>SChartSeries</code>.</p>
+
+<p>There are two distinct type of series: <code>SChartCartesianSeries</code> display series types where data is based on x and y coordinates; <code>SChartRadialSeries</code> display data based on radius and angle.</p>
+
+<p><em>Pie and donut chart series are special cases of radial series. Their data points only have an angle and they have a fixed radius. The <code>xValue</code> of a datapoint given to a Pie/Donut Series is used as the name of the slice, and the yValue is used as its magnitude (converted to an angle in relation to the other data in the same series). Currently pie and donut are the only radial series supported.</em></p>
+
+<h4>Series Types</h4>
+
+<p>There are many series types available. These are that classes that you will use in your chart <code>datasource</code>:</p>
+
+<ul>
+<li><strong>Cartesian</strong>:
+
+<ul>
+<li><code>SChartLineSeries</code> draws data points and connects them, in the order given, using a line.  The display of individual points may be enabled or disabled as required.  Similarly the area fill under the line may be enabled or disabled as required to form <strong>Area Series</strong>.</li>
+<li><code>SChartScatterSeries</code> draws data points independently on the chart, with no connections.</li>
+<li> <code>SChartBubbleSeries</code> draws bubbles that are placed at the x and y values of the data. A third property, <strong>Area</strong>, controls the magnitude of the bubble at each point. <em>Use <code>SChartBubbleDataPoint</code> for this series.</em></li>
+<li><code>SChartColumnSeries</code> draws data points as vertical columns on the chart.</li>
+<li><code>SChartBarSeries</code> draws data points as horizontal bars on the chart.</li>
+<li><code>SChartBandSeries</code> draws two lines (high and low) and can shade the area between them. <strong><em>(Premium Edition only)</em></strong>.</li>
+<li><code>SChartCandleStickSeries</code> draws candlestick data points <strong><em>(Premium Edition only)</em></strong>.</li>
+<li><code>SChartOHLCSeries</code> draws Open High Low Close data points <strong><em>(Premium Edition only)</em></strong>.</li>
+<li><code>SChartStepLineSeries</code> draws a line chart where the connecting line will only travel in a vertical or horizontal direction to connect the data points.</li>
+</ul>
+</li>
+<li><strong>Radial</strong>:
+
+<ul>
+<li><code>SChartPieSeries</code> draws data points as pie slices around a central point.</li>
+<li><code>SChartDonutSeries</code> draws data points as donut slices around a central point.</li>
+</ul>
+</li>
+</ul>
+
+
+<p>Most of the series will only require a single <code>xValue</code> and a single <code>yValue</code> for each data point to render. For these data points you should use <code>SChartDataPoint</code> or provide your own implementation conforming to  the <code>SChartData</code> protocol. The chart will only use <code>xValue</code> and <code>yValue</code> when loading data.</p>
+
+<p><code>SChartBandSeries</code>, <code>SChartCandlestickSeries</code> and <code>SChartOHLCSeries</code> require multiple values on one axis to render. For these series types you should use <code>SChartMultiXDataPoint</code> or <code>SChartMultiYDataPoint</code>. These require you to add data to the <code>xValues</code> or <code>yValues</code> dictionaries respectively. The keys that the chart will expect for a particular series are available on the series using the <code>xValueKeys</code> and <code>yValuekeys</code> respectively.</p>
+
+<p><em><code>SChartBubbleSeries</code> has its own data point class, <code>SChartBubbleDatapoint</code>, which should be used for this series type.</em></p>
+
+<h4>Styling the series</h4>
+
+<p>The series dictate how the data will be rendered on chart plot area. The <em>type</em> of series defines the structure of the series - but the style properties define the look. Each series has a <code>style</code> and <code>selectedStyle</code> property that contains all of the properties used to alter the look of the series when rendered. The <code>style</code> property is used when the series is not selected and the <code>selectedStyle</code> is used when the series has been selected.</p>
+
+<p>For example, the following code will set the line color and thickness for a <code>SChartLineSeries</code>:</p>
+
+<pre><code> lineSeries.style.lineColor = [UIColor redColor];
+ lineSeries.style.lineWidth = @2;
+</code></pre>
+
+<h4>Stacking series</h4>
+
+<p>By default, series are independent of each other and will render without any regard for the other series on the plot area. However, if you desire certain series to be grouped together and their values to be summed cumulatively you should set their <code>stackIndex</code> property to be the same value.</p>
+
+<p>The actual value of <code>stackIndex</code> is not important, series with the same stackIndex value will be grouped into <em>stacks</em> with the first series (lowest series index in datasource) at the bottom.</p>
+
+<p><em>Series in the same stack must have <strong>all positive</strong> or <strong>all negative</strong> values and be ordered to produce reliable stacked data</em></p>
+
+<h4>Selection</h4>
+
+<p>Series can be switched to a <em>selected</em> state that will trigger a change in appearance using the <code>selectedStyle</code> and use the delegate to notify of this change. Selection is triggered by a single touch event on the plot area with the nearest series being selected or de-selected.</p>
+
+<p>You should set the <code>selectionMode</code> property to one of <em>none</em>, <em>series</em> or <em>point</em>. <em>Series</em> selection will ensure that the whole series will be selected, whereas <em>point</em> mode will only set the nearest point as selected. If the intention is for only a single series to be in the selected state at any one time, you should ensure that the <code>toggleSelection</code> and <code>togglePointSelection</code> properties are set to <code>YES</code>.</p>
+
+<p>If you have a delegate, it will be notified of any selection events. <em>Note: Bar, Column, Candlestick and OHLC series do not support individual point styling - therefore, whilst a selection event will be triggered for a particular point, individual point styling will have no effect.</em></p>
+
+<p>Pie and Donut series have additional properties pertaining to selection events. Upon selection the Pie or Donut can rotate the selected slice to a particular angle given by the <code>selectedPosition</code> property (radians). The rotation can also be animated, the <code>selectionAnimation</code> property should be used to control this animation.</p>
+
+<h4>Legend entries</h4>
+
+<p>If the <code>showInLegend</code> property is set to <code>YES</code>, the series will display in the legend. The <code>title</code> property should be used to control the text description of the series in the legend. The <code>SChartSeries</code> class conforms to the <code>SChartLegendItem</code> protocol, You should subclass the relevant series class to modify standard behaviour and customize legend appearance.</p>
+
+<h4>Displaying and Animation</h4>
+
+<p>The display of series is controlled by the <code>hidden</code> property.  When a series is initially rendered, or <code>hidden</code> is set to <code>YES</code> after being <code>NO</code>, the <code>SChartAnimation</code> assigned to the <code>entryAnimation</code> property will be used to animate the series onto the plot area. The <code>exitAnimation</code> is used to remove the series from the plot area. Disable animation effects using the <code>animationEnabled</code> property.</p>
+
+<h3>Legend</h3>
+
+<p>The chart&rsquo;s legend is a view that displays a representation of the series on the chart (series can be configured not to appear in the legend). Enable the legend by setting the hidden property:</p>
+
+<pre><code>chart.legend.hidden = NO;
+</code></pre>
+
+<p>The legend can be rendered in a number of locations on the chart using the <code>position</code> property. The <code>position</code> can be relative to either the plot area or the chart by setting the <code>placement</code> property.</p>
+
+<p><em>For Pie and Donut charts, an entry for each slice (data point) rather than each series is added to the legend. Only the first series is displayed</em></p>
+
+<h3>Crosshair</h3>
+
+<p>The crosshair on the chart is used to identify specific values on chart series. It is enabled using a long press gesture on the plot area and will track the nearest series for which tracking is enabled. The crosshair is enabled <em>per series</em>:</p>
+
+<pre><code>series.crosshairEnabled = YES;
+</code></pre>
+
+<p>The <code>SChartCrosshair</code> provides a small circle target with lines that extend to the axis and is enabled with a tap-and-hold gesture. The crosshair will appear on the nearest series and will remain on this series during drag gestures if the <code>mode</code> property is set to <code>SChartCrosshairModeSingleSeries</code>; otherwise it will track the nearest point on any enabled series. The crosshair will snap to data points if the <code>interpolatePoints</code> property is set to <code>NO</code>. If set to <code>YES</code> the crosshair will move smoothly between points when tracking a line series.</p>
+
+<p>The drawing of the lines and target circle is performed in the method <code>drawCrosshairLines</code>; you should subclass <code>SChartCrosshair</code> and replace this method to customize the drawing of these elements. Replace <code>chart.legend</code> instance with your own subclass instance.</p>
+
+<p>The most common customization of the crosshair is the tooltip that accompanies the lines and target circle. The tooltip (<code>SChartCrosshairTooltip</code>) displays the information about the data point. Modify the existing instance at <code>legend.crosshair.tooltip</code> or assign an instance of your own subclass.</p>
+
+<h3>The Delegate</h3>
+
+<p>The chart reports actions and events to the optionally assigned delegate. The full list of methods can be found on the <code>SChartDelegate</code> protocol; common interactions reported include:</p>
+
+<ul>
+<li>Zooming.</li>
+<li>Panning.</li>
+<li>Touch events.</li>
+<li>Crosshair tracking.</li>
+<li>Rendering of data in the chart.</li>
+<li>Chart series animation.</li>
+<li>Data loading.</li>
+</ul>
+
+
+<h4>Common use cases</h4>
+
+<ul>
+<li><code>sChartWillStartLoadingData:</code> This is called before the chart starts loading its data from its datasource.  At this point, the chart has been created, but it either doesn&rsquo;t contain any data, or it is about to reload its data.  You shouldn&rsquo;t do anything with chart axes at this point, as they will be out of date with the new data.  A common use case for this method would be to pop up an activity indicator if you think the data will take a long time to load.</li>
+<li><code>sChartDidFinishLoadingData:</code> This is called once the chart has finished loading its data, and before it starts rendering its plot area and axes.  A common use of this method would be to close the activity indicator if you popped one up during loading.  At this point, the chart axes will have been refreshed from the new data, so you could update the chart axes here before they are rendered.  It is important to note that this method is only called when we load data, rather than each time the chart is rendered.</li>
+<li><code>sChartRenderStarted:withFullRedraw:</code> This is called before the chart starts rendering its data.  At this point, the chart axes will be up to date with your data, so a common use case of this method would be to update the chart axes before they are rendered, for example to modify the axis title or range.</li>
+<li><code>sChartRenderFinished:</code> This is called once the chart has finished rendering its data.  A common use case for this method would be to display the crosshair on the chart after it has rendered, or to add annotations onto the chart.  You could also update other UI elements in your application so that they reflect the new state of the chart.  You shouldn&rsquo;t modify the chart plot area or its axes here, as any changes won&rsquo;t be visualized until the next time that the chart is rendered.</li>
+</ul>
+
+
+<h2>Styling a Chart</h2>
+
+<p>The charts offer a flexible styling interface to change the look and feel of the UI elements. The following section details the key methods, which can be used interchangeably to achieve the desired effects and suit the structure of your app. The chart will always use the properties of each style object for its appearance, the following explains how they are set.</p>
+
+<h3>Themes</h3>
+
+<p>When a chart first loads, it will use a theme object to define its appearance. The theme sets the style properties of each chart element to predefined values. There are three themes:</p>
+
+<ul>
+<li><code>SChartLightTheme</code> is brighter colors based on a white background</li>
+<li><code>SChartDarkTheme</code> is based on softer colors on a black background</li>
+<li><code>SChartiOS7Theme</code> is based on the sharp and brightly coloured style used in iOS 7</li>
+</ul>
+
+
+<p>By default, with no theme explicitly set, the chart will take its theme from the global <code>ShinobiCharts</code> object. This is determined by the iOS version of the device; with iOS6 (and lower) devices using the <code>SChartLightTheme</code> and iOS7+ devices using <code>SChartiOS7Theme</code>. To set a theme that all of your charts universally adopt, you should set the theme on the <code>ShinobiCharts</code> object:</p>
+
+<pre><code>[ShinobiCharts setTheme:[SChartDarkTheme new]];
+</code></pre>
+
+<p>You should do this before any charts are created, as the chart will query this object when it is first initialized - the app delegate is a good location.</p>
+
+<p>If you&rsquo;d like to use a different theme to style each charts, you should use the <code>applyTheme</code> method on each instance:</p>
+
+<pre><code>[myChart applyTheme:[SChartDarkTheme new]];
+</code></pre>
+
+<p>The above code will set all of the style object properties to match those specified by the darker theme. <strong>This will override any previously set values for the style objects!</strong> Be sure to make any direct customizations of the style objects <em>after</em> you call <code>applyTheme</code>.</p>
+
+<h3>Styles</h3>
+
+<p>Most UI elements on the chart have a style property that defines its look. These are set by a theme, but should be modified to achieve a custom look. <em>Calling <code>applyTheme</code> will set these properties, whihch means it is important to make any direct style changes <strong>after</strong> you have applied your theme.</em></p>
+
+<p>Here is an example of setting the axis line color:</p>
+
+<pre><code>chart.yAxis.style.lineColor = [UIColor redColor];
+</code></pre>
+
+<p>Some objects may have more than one style object. For example, a series has a <code>style</code> and a <code>selectedStyle</code>. These contain the same properties but are used in the appropriate context.</p>
+
+<p><strong><em>Check the style classes in the API documentation for detailed descriptions of each style and it&rsquo;s properties.</em></strong></p>
+
+<h2>Lifecycle of a Chart</h2>
+
+<p>In this section we will describe what happens when you add a chart to your application.</p>
+
+<p>The first time a chart renders, or if you have told the chart to reload its data, it will query the datasource for the data to draw the chart.  This involves the following steps:</p>
+
+<ul>
+<li>The chart calls <code>sChartWillStartLoadingData:</code> on its delegate.</li>
+<li>The chart queries its datasource for the number of series.</li>
+<li><p>The chart then queries the datasource for the data in each series.  For each series, it goes through the following steps:</p>
+
+<ul>
+<li>First it calls <code>sChart:seriesAtIndex:</code> on the datasource to get the series object.</li>
+<li>Then it calls <code>sChart:numberOfDataPointsForSeriesAtIndex:</code> on the datasource to get the number of data points in the series.</li>
+<li>Once the chart knows the number of data points in the series, it gets the data points from the datasource.  If the datasource provides the data points as an array, it gets this array from the datasource by calling <code>sChart:dataPointsForSeriesAtIndex:</code>.  If not, the chart loops through and calls <code>sChart:dataPointAtIndex:forSeriesAtIndex:</code> for each data point.  The chart populates the series with these data points.</li>
+</ul>
+</li>
+</ul>
+
+
+<p>Once the chart has loaded all its data from its datasource, it does the following:</p>
+
+<ul>
+<li>The chart updates its axes from the new data.</li>
+<li>The chart calls <code>SChartDidFinishLoadingData:</code> on its delegate.</li>
+</ul>
+
+
+<p>Once the data is loaded, and the axes have been updated, the chart renders its plot area.</p>
+
+<ul>
+<li>First, it calls <code>sChartRenderStarted:withFullRedraw:</code> on its delegate.  The second argument indicates whether the chart is recalculating the layout of its elements.  The chart will perform calculations on the data if it has loaded new data or if this is the first time it is rendering.</li>
+<li>The chart then uses the calculated data to render the series.</li>
+<li>Once all the data has been rendered, the chart calls <code>sChartRenderFinished:</code> on its delegate.</li>
+</ul>
+
+
+<h1><a href="../../Classes/ShinobiCharts.html">ShinobiCharts</a> How-to Guides</h1>
+
+<h2>How to: Render a Column Chart</h2>
+
+<p>This how-to guide will lead you through the steps required to render a simple column chart.</p>
+
+<p><img src="Images/ColumnChart.png"/></p>
+
+<p>In order to render a column chart you need to do the following:</p>
+
+<ol>
+<li>Create a chart with a numeric Y axis and a category X axis</li>
+<li>Implement the datasource, as follows:
+
+<ol>
+<li>Return a <code>SChartColumnSeries</code> in response to the <code>sChart:seriesAtIndex:</code> datasource method.</li>
+<li>When the datasource requests a datapoint, provide a datapoint with an <code>NSString</code> for the x-value and an <code>NSNumber</code> for the y-value.</li>
+</ol>
+</li>
+</ol>
+
+
+<p>Depending on the type of data you are rendering, you have to select an appropriate axis type. Currently <a href="../../Classes/ShinobiChart.html">ShinobiChart</a> has numeric  (both linear and logarithmic), date-time and category axis types.</p>
+
+<p>When rendering column series, your data will most often be in the form of string &lsquo;categories&rsquo; mapped to numeric values. For example, you could use a couple of dictionaries to record the sales for various categories of product for a number of years:</p>
+
+<pre><code>NSDictionary* _sales[2];
+
+_sales[0] = @{@"Broccoli" : @5.65, @"Carrots" : @12.6, @"Mushrooms" : @8.4};
+_sales[1] = @{@"Broccoli" : @4.35, @"Carrots" : @13.2, @"Mushrooms" : @4.6, @"Okra" : @0.6};
+</code></pre>
+
+<p>Note, that if you have multiple column series you do not have to have the same category values in each series.</p>
+
+<p>The category axis type has a couple of properties that relate to how the columns are positioned with respect to each other:</p>
+
+<pre><code>// add a pair of axes
+SChartCategoryAxis *xAxis = [[SChartCategoryAxis alloc] init];
+xAxis.style.interSeriesPadding = @1.0;
+_chart.xAxis = xAxis;
+
+SChartAxis *yAxis = [[SChartNumberAxis alloc] init];
+yAxis.title = @"Sales (1000s)";
+yAxis.rangePaddingHigh = @1.0;
+_chart.yAxis = yAxis;
+</code></pre>
+
+<p>In the above code the <code>interSeriesPadding</code> is set to 1.0, so that the columns in each series touch their neighbors. You can also modify the <code>interSeriesSetPadding</code> to configure the distance between the groups of series within each category.</p>
+
+<p>In this example the data point returned by the datasource simply returns the key-value pairs from the dictionary:</p>
+
+<pre><code>- (idSChartData)sChart:(ShinobiChart *)chart dataPointAtIndex:(NSInteger)dataIndex forSeriesAtIndex:(NSInteger)seriesIndex {
+    SChartDataPoint *datapoint = [[SChartDataPoint alloc] init];
+    NSString* key = _sales[seriesIndex].allKeys[dataIndex];
+    datapoint.xValue = key;
+    datapoint.yValue = _sales[seriesIndex][key];
+    return datapoint;
+}
+</code></pre>
+
+<p>See related code sample: <strong>ColumnSeries.xcodeproject</strong></p>
+
+<h2>How to: Render a Pie or Donut Chart</h2>
+
+<p>This how-to guide will lead you through the steps required to render a simple pie or donut chart.</p>
+
+<p><img src="Images/PieChart.png"/></p>
+
+<p>In order to render a pie chart you need to do the following:</p>
+
+<ol>
+<li>Create a chart without providing an explicit axis.</li>
+<li>Implement the datasource, as follows:
+
+<ol>
+<li>Return a <a href="../../Classes/SChartPieSeries.html"><code>SChartPieSeries</code></a> in response to the <code>sChart:seriesAtIndex:</code> datasource method.</li>
+<li>When the datasource requests a data point, provide a <a href="../../Classes/SChartRadialDataPoint.html"><code>SChartRadialDataPoint</code></a> instance for each datapoint. This data point type has a <code>name</code> property which is used to provide the name for each slice, and a <code>value</code> property which provides the size of each slice.</li>
+</ol>
+</li>
+</ol>
+
+
+<p>Shinobi charts can be used to plot cartesian (i.e. X/Y valued) or radial (i.e. pie or donut) charts. To render pie or donut charts create an instance of the <a href="../../Classes/ShinobiChart.html"><code>ShinobiChart</code></a> without providing an explicit axis. The chart will determine that it is rendering radial data from the type of the data points returned via the datasource.</p>
+
+<p>When rendering pie charts your data will often be in the form of a dictionary that maps categories of data to their value. Here is an example of a dataset which shows the area of the six largest countries:</p>
+
+<pre><code>NSDictionary* _countrySize;
+
+ _countrySize = @{@"Russia" : @17, @"Canada" : @9.9, @"USA" : @9.6,
+                  @"China" : @9.5, @"Brazil" : @8.5, @"Australia" : @7.6};
+</code></pre>
+
+<p>For a pie chart the datasource implementation must return a <code>SChartPieSeries</code>:</p>
+
+<pre><code>-(SChartSeries *)sChart:(ShinobiChart *)chart seriesAtIndex:(NSInteger)index {
+    SChartPieSeries* pieSeries = [[SChartPieSeries alloc] init];
+    return pieSeries;
+}
+</code></pre>
+
+<p>And the datasource method that requests data points must return <a href="../../Classes/SChartRadialDataPoint.html"><code>SChartRadialDataPoint</code></a> instances:</p>
+
+<pre><code>- (idSChartData)sChart:(ShinobiChart *)chart dataPointAtIndex:(NSInteger)dataIndex forSeriesAtIndex:(NSInteger)seriesIndex {
+    SChartRadialDataPoint *datapoint = [[SChartRadialDataPoint alloc] init];
+    NSString* key = _countrySize.allKeys[dataIndex];
+    datapoint.name = key;
+    datapoint.value = _countrySize[key];
+    return datapoint;
+}
+</code></pre>
+
+<p>Rendering a pie chart is really that simple!</p>
+
+<p>When creating the <code>SChartPieSeries</code> you have the opportunity to change the style and selection behaviour of the series. For example, you can modify the &lsquo;protrusion&rsquo; of the selected slices, which causes them to move out from the centre on selection. You can set the <code>selectedPosition</code> which causes the selected slice to rotate to the given angle. You can also customize the selection animation, changing its duration, or replacing it with one of the other <code>SChartAnimation</code> instances that are part of the chart API:</p>
+
+<pre><code>-(SChartSeries *)sChart:(ShinobiChart *)chart seriesAtIndex:(NSInteger)index {
+    SChartPieSeries* pieSeries = [[SChartPieSeries alloc] init];
+    pieSeries.selectedStyle.protrusion = 10.0f;
+    pieSeries.selectionAnimation.duration = @0.4;
+    pieSeries.selectedPosition = @0.0;
+    return pieSeries;
+}
+</code></pre>
+
+<p>There are many more ways in which you can change the style of the pie series, see the <a href="../../Classes/SChartPieSeriesStyle.html"><code>SChartPieSeriesStyle</code></a> class for more details.</p>
+
+<p>To determine which slice was selected, simply adopt the <a href="../../Protocols/SChartDelegate.html"><code>SChartDelegate</code></a> protocol and implement the &lsquo;toggleSelection&rsquo; method as follows:</p>
+
+<pre><code>- (void)sChart:(ShinobiChart *)chart toggledSelectionForRadialPoint:(SChartRadialDataPoint *)dataPoint   inSeries:(SChartRadialSeries *)series atPixelCoordinate:(CGPoint)pixelPoint{
+    NSLog(@"Selected country: %@", dataPoint.name);
+}
+</code></pre>
+
+<p>If you want to render a donut chart, which is basically a pie chart with a hole in the centre, simply change the series type from <code>SChartPieSeries</code> to <code>SChartDonutSeries</code>.</p>
+
+<p>See related code sample: <strong>PieChart.xcodeproject</strong></p>
+
+<h2>How to: Render a Time Series Chart</h2>
+
+<p>This how-to guide will lead you through the steps required to render a time series chart, i.e. a chart with a date axis.</p>
+
+<p><img src="Images/TimeSeries.png"/></p>
+
+<p>In order to render a time series you need to do the following:</p>
+
+<ol>
+<li>Create a chart with a numeric Y axis and a <code>SChartDateTimeAxis</code> or <code>SChartDiscontinuousDateTimeAxis</code> X axis</li>
+<li>Add data points which have X values of type <code>NSDate</code> and Y values of type <code>NSNumber</code>.</li>
+<li>Optionally add discontinuities to the chart that exclude weekends or holidays.</li>
+</ol>
+
+
+<p>The Shinobi Chart supports rendering of data against a date / time axis via either the <code>SChartDateTimeAxis</code> or <code>SChartDiscontinuousDateTimeAxis</code> axis types. Both of these expect the data points to have values of type <code>NSDate</code>. The date / time axes have special tick mark calculation logic which presents ticks as years, months, weeks, days etc … based on the current visible range.</p>
+
+<p>Regular axes are &lsquo;continuous&rsquo;, every point between their upper and lower range values is present on the axis. A discontinuous axis is one which supports one or more &lsquo;exclusions&rsquo;, i.e. ranges of values that are omitted from the axis. This is typically used for time series in order to omit weekends or bank holidays.</p>
+
+<p>With the <code>SChartDiscontinuousDateTimeAxis</code> you can specify time periods which you wish to exclude from the axis. These can either be a single time period, for example, a bank holiday, or a repeated time period, such as weekends, or non-working hours.</p>
+
+<p>For example, if you wish to remove the weekends from a time series chart add the following repeated exclusion:</p>
+
+<pre><code>// add a discontinuous date axis
+SChartDiscontinuousDateTimeAxis *xAxis = [[SChartDiscontinuousDateTimeAxis alloc] init];
+
+// a time period that defines the weekends
+SChartRepeatedTimePeriod* weekends = [[SChartRepeatedTimePeriod alloc] initWithStart:[self dateFromString:@"02-01-2010"]
+                                                                          andLength:[SChartDateFrequency dateFrequencyWithDay:2]
+                                                                       andFrequency:[SChartDateFrequency dateFrequencyWithWeek:1]];
+[xAxis addExcludedRepeatedTimePeriod:weekends];
+</code></pre>
+
+<p><strong>NOTE:</strong> The <code>SChartDiscontinuousDateTimeAxis</code> is a premium charts feature, whereas <code>SChartDateTimeAxis</code> is available in the standard edition.</p>
+
+<p>See related code sample: <strong>TimeSeries.xcodeproject</strong></p>
+
+<h2>How to: Render a Candlestick Chart</h2>
+
+<p>This how-to guide will lead you through the steps required to render a candlestick chart - this is one of a class of series types that have multiple X or Y values.</p>
+
+<p><strong>NOTE:</strong> Candlestick series are a premium charts feature.</p>
+
+<p><img src="Images/CandlestickChart.png"/></p>
+
+<p>In order to render a candlestick series you need to do the following:</p>
+
+<ol>
+<li>Create a chart with a numeric Y axis and a numeric or date / time X axis. (NOTE: you can render candlestick series vertically or horizontally, however, horizontal is the most common configuration)</li>
+<li>Add a <code>SChartCandlestickSeries</code> series to the chart via the <code>sChart:seriesAtIndex:</code> datasource method.</li>
+<li>Add data points that have multiple Y values corresponding to the value keys for the candlestick series, e.g. <code>SChartCandlestickKeyOpen</code>, <code>SChartCandlestickKeyClose</code> …</li>
+</ol>
+
+
+<p>Shinobi Charts has a number of series that expect multiple values, this includes <code>SChartBandSeries</code>, <code>SChartCandlestickSeries</code> and <code>SChartOHLCSeries</code>. When rendering a chart using one of these series types your data points must provide multiple X or Y values (depending on the chart orientation).</p>
+
+<p>The <code>SChartData</code> protocol, which is used to describe data points, has optional methods defined that allow the chart to request data point values by name, for example <code>sChartYValueForKey:</code>. You can adopt this protocol with your own data objects, or use one of the provided implementations such as <code>SChartMultiYDataPoint</code>.</p>
+
+<p>For example, to populate a data series from JSON data for rendering with a candlestick series, you could do the following:</p>
+
+<pre><code>// load the JSON data into an array
+NSString* filePath = [[NSBundle mainBundle] pathForResource:@"AppleStock" ofType:@"json"];
+NSData* json = [NSData dataWithContentsOfFile:filePath];
+NSArray* data = [NSJSONSerialization JSONObjectWithData:json
+                                                options:NSJSONReadingAllowFragments
+                                                  error:nil];
+
+// iterate over the array, creating a datapoint for each value.
+for (NSDictionary* jsonPoint  in data) {
+    SChartMultiYDataPoint* datapoint = [SChartMultiYDataPoint new];
+    datapoint.xValue = [self dateFromString:jsonPoint[@"date"]];
+    NSDictionary* yValues = @{SChartCandlestickKeyOpen: jsonPoint[@"open"],
+                              SChartCandlestickKeyHigh: jsonPoint[@"high"],
+                              SChartCandlestickKeyLow: jsonPoint[@"low"],
+                              SChartCandlestickKeyClose: jsonPoint[@"close"]};
+    datapoint.yValues = [NSMutableDictionary dictionaryWithDictionary:yValues];
+    [_timeSeries addObject:datapoint];
+}
+</code></pre>
+
+<p>See related code sample: <strong>CandlestickChart.xcodeproject</strong></p>
+
+<h2>How to: Render a Bubble Chart</h2>
+
+<p>This how-to guide will lead you through the steps required in order to render a bubble chart, an x/y scatter chart where the size of each datapoint is configurable.</p>
+
+<p><img src="Images/BubbleSeries.png"/></p>
+
+<p>In order to render a bubble chart you need to do the following:</p>
+
+<ol>
+<li>Create a chart and assign a datasource that provides your &lsquo;bubble&rsquo; data.</li>
+<li>Implement the <code>SChartDatasource</code> protocol as follows:
+
+<ol>
+<li>Return an <code>SChartBubbleSeries</code> instance in response to the <code>sChart:seriesAtIndex:</code> delegate method.</li>
+<li>Return <code>SChartBubbleDataPoint</code> instances in response to the  <code>sChart:dataPointAtIndex:forSeriesAtIndex:</code> delegate method, where the <code>area</code> property value details the size of the bubble at the given x and y location.</li>
+</ol>
+</li>
+</ol>
+
+
+<p>A bubble series is a variation of the x/y scatter series where each datapoint is rendered as a &lsquo;bubble&rsquo; of varying size.</p>
+
+<p>The rendered size of each bubble is determined by a multiplying the <code>area</code> property of the <code>SChartBubbleDataPoint</code> instance that the bubble represents with the <code>scale</code> property of the <code>SChartBubbleSeries</code>. The product of these two values determines the area (in pixels) of the rendered bubble. This means that the data you supply via your <code>SChartBubbleDataPoint</code> can be expressed in units that are independent from the size of your chart - e.g. you might create a bubble series where each bubble represents the surface area of a country.</p>
+
+<p>Rather then explicitly supplying a scale for the bubble series, it can be easier to simply inform the series of the size you want for the largest bubble. If you set the <code>biggestBubbleDiameterForAutoScaling</code> property on the series it will compute a suitable scale based on the data you supply via the datasource.</p>
+
+<p>See related code sample: <strong>BubbleSeries.xcodeproject</strong></p>
+
+<h2>How to: Add Annotations to a Chart</h2>
+
+<p>This how-to guide will lead you through the steps required in order to add annotations to a chart.</p>
+
+<p><strong>NOTE:</strong> Annotations are a premium charts feature.</p>
+
+<p><img src="Images/Annotations.png"/></p>
+
+<p>In order to add annotations to a chart you need to do the following:</p>
+
+<ol>
+<li>Create a chart and populate it with data, as per the Getting Started guide.</li>
+<li>Add an implementation of the chart&rsquo;s delegate - <code>SChartDelegate</code>.</li>
+<li>Within the <code>sChartRenderFinished:</code> method, add one or more annotations to the chart via the <code>addAnnotation:</code> method.</li>
+</ol>
+
+
+<p>Annotations are <code>SChartAnnotation</code> (a <code>UIView</code> subclass) instances  that are &lsquo;pinned&rsquo; to an X / Y location on the chart. As a result, the annotation will move as the users pans or zooms. You can also define annotations that are anchored at all four corners via <code>SChartAnnotationZooming</code>, as the user pans / zooms the chart the annotation will be stretched / deformed.</p>
+
+<p>Annotations can only be added once the chart has performed an initial render. Hence, annotations should be added the first time the <code>sChartRenderFinished:</code> delegate method is called by the chart.</p>
+
+<p><code>SChartAnnotation</code> has a number of convenience methods for creating common annotation types such as lines and text. For example, to add a text annotation you can use the following:</p>
+
+<pre><code>// add a text annotation
+SChartAnnotation *releaseLabel = [SChartAnnotation
+                               annotationWithText:text
+                                          andFont:[UIFont systemFontOfSize:14.f]
+                                        withXAxis:_chart.xAxis
+                                         andYAxis:_chart.yAxis
+                                      atXPosition:date
+                                     andYPosition:yValue
+                                    withTextColor:[UIColor blackColor]
+                                withBackgroundColor:_chart.plotAreaBackgroundColor];
+[_chart addAnnotation:releaseLabel];
+</code></pre>
+
+<p>You can use any content you like as an annotation, simply create an annotation and add your content as a subview:</p>
+
+<pre><code>// create an annotation
+SChartAnnotationZooming* an = [[SChartAnnotationZooming alloc] init];
+an.xAxis = _chart.xAxis;
+an.yAxis = _chart.yAxis;
+
+// set its location - using the data coordinate system
+an.xValue = [self dateFromString:@"01-01-2009"];
+an.yValue = @250;
+
+// pin all four corners of the annotation so that is stretches
+an.xValueMax = [self dateFromString:@"01-01-2011"];
+an.yValueMax = @550;
+
+// set bounds
+an.bounds = CGRectMake(0,0,50,50);
+an.position = SChartAnnotationBelowData;
+
+// Add some custom content to the annotation
+UIImage* image = [UIImage imageNamed:@"Apple.png"];
+UIImageView* imageView = [[UIImageView alloc] initWithImage:image];
+imageView.alpha = 0.1f;
+[an addSubview:imageView];
+
+// add to the chart
+[_chart addAnnotation:an];
+</code></pre>
+
+<p>Note in the above example the chart&rsquo;s X axis is a date-time axis, hence the X values for the annotation are defined as dates.</p>
+
+<p>See related code sample: <strong>AddingAnnotations.xcodeproject</strong></p>
+
+<h2>How to: Handle Selection</h2>
+
+<p>This how-to guide will lead you through the steps required in order to handle series or point selection.</p>
+
+<p><img src="Images/HandlingSelection.png"/></p>
+
+<p>In order to handle selection you need to do the following:</p>
+
+<ol>
+<li>Create a chart and populate it with data, as per the Getting Started guide.</li>
+<li>Enable selection for one or more series by setting their <code>selectionMode</code> property to a value other than <code>SChartSelectionNone</code>.</li>
+<li>Provide an implementation of the <code>SChartDelegate</code> protocol and set it as the <code>delegate</code> for the chart.</li>
+<li>Implement the respective selection method, for example <code>sChart:toggledSelectionForSeries:nearPoint:atPixelCoordinate:</code>.</li>
+</ol>
+
+
+<p>The chart supports selection of entire series, or in the case of line and pie / donut series, the selection of individual points. You can enable selection by setting the <code>selectionMode</code> property of a series when it is requested via the datasource.</p>
+
+<p>The chart will handle the user interaction in order to determine which series or point has been selected, with the delegate selection methods being invoked with the resulting selection state.</p>
+
+<p>You can also set the selection state for a series programmatically by setting the <code>selected</code> property.</p>
+
+<p>The style for a series when it is in a selected state is determined by the <code>selectedStyle</code> property.</p>
+
+<p>See related code sample: <strong>HandlingSelection.xcodeproject</strong></p>
+
+<h2>How to: Render a Chart with Multiple Axes</h2>
+
+<p>This how-to guide will lead you through the steps required in order to render a chart with multiple axes.</p>
+
+<p><img src="Images/MultiAxis.png"/></p>
+
+<p>In order to render a chart with multiple Y axes you need to do the following:</p>
+
+<ol>
+<li>Create a chart and implement the datasource methods as per the Getting Started guide.</li>
+<li>Add a secondary y-axis via the <code>addYAxis</code> method. You can optionally render the secondary axis on the right-hand side of the chart by setting its <code>axisPosition</code> property to <code>SChartAxisPositionReverse</code>.</li>
+<li>Implement the optional <code>sChart:yAxisForSeriesAtIndex:</code> datasource method in order to inform the chart which axis to use for each series.</li>
+</ol>
+
+
+<p>The chart supports multiple X and Y axes allowing you to plot data against different data value ranges. For example, you can plot two series, one representing the price of a stock (in US Dollars) and the other representing traded volume (in millions-of-trades) on the same chart by using multiple Y axes.</p>
+
+<p>You can add multiple axes to the chart via the <code>addYAxis</code> and <code>addXAxis</code> methods:</p>
+
+<pre><code>// add a primary y-axis
+SChartNumberAxis* yAxis = [[SChartNumberAxis alloc] init];
+_chart.yAxis = yAxis;
+
+// add a secondary y-axis
+SChartNumberAxis* volumeAxis = [SChartNumberAxis new];
+// render on the right-hand side
+volumeAxis.axisPosition = SChartAxisPositionReverse;
+[_chart addYAxis:volumeAxis];
+</code></pre>
+
+<p>Note that setting <code>yAxis</code> property has the same effect as adding the first axis via the <code>addYAxis</code> method. The property simply provides a convenient method for working with single axes.</p>
+
+<p>Whilst a chart can have multiple X and Y axis, each series must be associated with a single X axis and a single Y axis. By default each series will be associated with the first X and first Y axis added to the chart. In order to specify a different axis you must implement the optional delegate methods, <code>sChart:yAxisForSeriesAtIndex:</code> or <code>sChart:xAxisForSeriesAtIndex:</code>.</p>
+
+<p>For example, to assign each series to a unique axis, the delegate methods can be implemented as follows:</p>
+
+<pre><code>- (SChartAxis *)sChart:(ShinobiChart *)chart yAxisForSeriesAtIndex:(NSInteger)index {
+    return chart.allYAxes[index];
+}
+</code></pre>
+
+<p>See related code sample: <strong>MultipleAxis.xcodeproject</strong></p>
+
+<h2>How to: Append Data to a Chart</h2>
+
+<p>This how-to guide will lead you through the steps required to dynamically add data to your chart, without requiring a reload of the existing data points.</p>
+
+<p>In order to append data to a chart, you need to do the following:</p>
+
+<ol>
+<li>Provide a data source to the chart which streams new data in.</li>
+<li>Notify the chart when new data points are added to the end of a chart series, and when old ones are removed from the start.</li>
+<li>Tell the chart to redraw.  It will just draw the sections of the chart which have changed.</li>
+</ol>
+
+
+<p>To notify the chart that new data points have been added to the end of a chart series, call the <code>appendNumberOfDataPoints:toEndOfSeriesAtIndex:</code> method.  To notify the chart that data points have been removed from the start of a chart series, call the <code>removeNumberOfDataPoints:fromStartOfSeriesAtIndex:</code> method.</p>
+
+<p>The snippet below shows how to notify the chart that a new data point has been added, and the first data point in the series has been removed:</p>
+
+<pre><code>[self.chart removeNumberOfDataPoints:1 fromStartOfSeriesAtIndex:0];
+[self.chart appendNumberOfDataPoints:1 toEndOfSeriesAtIndex:0];
+[self.chart redrawChart];
+</code></pre>
+
+<p>In the next draw cycle, the chart will update to display the new data points.</p>
+
+<p>If you would like to see a ready-made example of streaming data into a chart, take a look at the related code sample: <strong>AppendData.xcodeproj</strong>.</p>
+
+<p><img src="Images/[ShinobiCharts](../../Classes/ShinobiCharts.html)_auto_calculate_message.png" alt="Turn off auto-calculation of axis ranges"/></p>
+				</div>
+
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2013 Scott Logic Ltd. All rights reserved. (Last updated: 2013-10-01)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 858)</a>.</span></p>
+						
+					
+					</div>
+				</div>
+			</div>
+		</article>
+
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			// Creates a table of contents item based on the name and adds it to the parent LI tag given.
+			function addTocItemToLi(parentLi, itemName) {
+				var disclosureSpan = document.createElement("SPAN");
+				disclosureSpan.setAttribute('class', 'nodisclosure');
+				parentLi.appendChild(disclosureSpan);
+
+                var sectionNameSpan = document.createElement("SPAN");
+                sectionNameSpan.setAttribute('class', 'sectionName');
+
+                var newA = document.createElement("A");
+                newA.setAttribute('href', '#'+itemName);
+                newA.innerHTML = itemName;
+                sectionNameSpan.appendChild(newA);
+
+                parentLi.appendChild(sectionNameSpan);
+			}
+	
+			// Creates a parent table of contents item given a target list and a name. Based on H2 tag.
+            function addParentTocItem(targetList, itemName) {
+                var newLI = document.createElement("LI");
+                newLI.setAttribute('role', 'treeItem');
+                newLI.setAttribute('class', 'children');
+                
+				addTocItemToLi(newLI, itemName);
+				targetList.appendChild(newLI);
+
+                return newLI;
+            }
+            
+			// Creates a child table of contents item given a target list and a name. Based on H3 tag.
+			function addTocChild(targetList, itemName, parent) {
+				parent.firstChild.setAttribute("class", "disclosure");
+
+				var parentUL;
+				
+				if(parent.getElementsByTagName("ul").length === 0) {
+					parentUL = document.createElement("UL");
+					parent.appendChild(parentUL);
+				}
+				else {
+					parentUL = parent.getElementsByTagName("ul")[0];
+				}
+				
+                var newLI = document.createElement("LI");
+                
+                addTocItemToLi(newLI, itemName);
+                                
+               	parentUL.appendChild(newLI);
+    		}
+
+			// Finds all tags specified in the tag_names array in the root element.
+			function findTags(root) {
+				if( root.nodeType === 1 && root.nodeName !== 'script' ) {
+				
+					if( tag_names.hasOwnProperty(root.nodeName.toLowerCase()) ) {
+						headings.push( root );
+					} 
+					else {
+						for( var i = 0; i < root.childNodes.length; i++ ) {
+							findTags(root.childNodes[i]);
+						}
+					}
+				}
+			}
+			
+			// Adds click listeners to every link in the table of contents.
+			function setupTocClicks () {
+				var tocList = document.getElementById('toc');
+
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+			}
+			
+			var headings = [];
+			var tag_names = {
+                    h1:1,
+    				h2:1,
+    				h3:1,
+				};
+			
+			
+			function init() {
+				findTags(document.body);
+				
+				var lastH2;
+				for( var i = 0; i < headings.length; i++ ) {
+   					var hName = headings[i].innerHTML;
+   					
+   					var newA = document.createElement("A");
+					newA.setAttribute('name', hName);
+					headings[i].parentNode.insertBefore(newA, headings[i]);
+   					
+   					if(headings[i].nodeName.toLowerCase() === "h1") {
+                        if (headings[i].id.toLowerCase() != "pagetitleheader" &&
+                            (headings[i].className == undefined || headings[i].className != "title title-header")) {
+   					   	   lastH2 = addParentTocItem(document.getElementById("toc"), hName);
+                        }
+   					}
+   					else if (lastH2 && headings[i].nodeName.toLowerCase() === "h2") {
+   						addTocChild(document.getElementById("toc"), hName, lastH2);
+   					}
+				}
+				
+				setupTocClicks();
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+
+
+	</body>
+</html>

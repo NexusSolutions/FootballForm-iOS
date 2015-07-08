@@ -1,0 +1,4762 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>SChartAxis Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.1 (build 858)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">ShinobiCharts </a></h1>
+				<a id="developerHome" href="../index.html">Scott Logic Ltd</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">SChartAxis Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/allowPanningOutOfDefaultRange">&nbsp;&nbsp;&nbsp;&nbsp;allowPanningOutOfDefaultRange</option>
+	
+	<option value="//api/name/allowPanningOutOfMaxRange">&nbsp;&nbsp;&nbsp;&nbsp;allowPanningOutOfMaxRange</option>
+	
+	<option value="//api/name/anchorPoint">&nbsp;&nbsp;&nbsp;&nbsp;anchorPoint</option>
+	
+	<option value="//api/name/animationEdgeBouncing">&nbsp;&nbsp;&nbsp;&nbsp;animationEdgeBouncing</option>
+	
+	<option value="//api/name/animationEnabled">&nbsp;&nbsp;&nbsp;&nbsp;animationEnabled</option>
+	
+	<option value="//api/name/axisFrame">&nbsp;&nbsp;&nbsp;&nbsp;axisFrame</option>
+	
+	<option value="//api/name/axisLabelsAreFixed">&nbsp;&nbsp;&nbsp;&nbsp;axisLabelsAreFixed</option>
+	
+	<option value="//api/name/axisOrientation">&nbsp;&nbsp;&nbsp;&nbsp;axisOrientation</option>
+	
+	<option value="//api/name/axisPosition">&nbsp;&nbsp;&nbsp;&nbsp;axisPosition</option>
+	
+	<option value="//api/name/axisPositionValue">&nbsp;&nbsp;&nbsp;&nbsp;axisPositionValue</option>
+	
+	<option value="//api/name/axisRange">&nbsp;&nbsp;&nbsp;&nbsp;axisRange</option>
+	
+	<option value="//api/name/barColMax">&nbsp;&nbsp;&nbsp;&nbsp;barColMax</option>
+	
+	<option value="//api/name/barColMin">&nbsp;&nbsp;&nbsp;&nbsp;barColMin</option>
+	
+	<option value="//api/name/barColSpacing">&nbsp;&nbsp;&nbsp;&nbsp;barColSpacing</option>
+	
+	<option value="//api/name/barColumnsConfigured">&nbsp;&nbsp;&nbsp;&nbsp;barColumnsConfigured</option>
+	
+	<option value="//api/name/calculateMajorTickFrequencyFromDiscontinuousRange">&nbsp;&nbsp;&nbsp;&nbsp;calculateMajorTickFrequencyFromDiscontinuousRange</option>
+	
+	<option value="//api/name/chart">&nbsp;&nbsp;&nbsp;&nbsp;chart</option>
+	
+	<option value="//api/name/dataRange">&nbsp;&nbsp;&nbsp;&nbsp;dataRange</option>
+	
+	<option value="//api/name/defaultRange">&nbsp;&nbsp;&nbsp;&nbsp;defaultRange</option>
+	
+	<option value="//api/name/discontinuousTickLabelClipping">&nbsp;&nbsp;&nbsp;&nbsp;discontinuousTickLabelClipping</option>
+	
+	<option value="//api/name/enableGesturePanning">&nbsp;&nbsp;&nbsp;&nbsp;enableGesturePanning</option>
+	
+	<option value="//api/name/enableGestureZooming">&nbsp;&nbsp;&nbsp;&nbsp;enableGestureZooming</option>
+	
+	<option value="//api/name/enableMomentumPanning">&nbsp;&nbsp;&nbsp;&nbsp;enableMomentumPanning</option>
+	
+	<option value="//api/name/enableMomentumZooming">&nbsp;&nbsp;&nbsp;&nbsp;enableMomentumZooming</option>
+	
+	<option value="//api/name/isMomentumPanning">&nbsp;&nbsp;&nbsp;&nbsp;isMomentumPanning</option>
+	
+	<option value="//api/name/isMomentumZooming">&nbsp;&nbsp;&nbsp;&nbsp;isMomentumZooming</option>
+	
+	<option value="//api/name/labelFormatString">&nbsp;&nbsp;&nbsp;&nbsp;labelFormatString</option>
+	
+	<option value="//api/name/labelFormatter">&nbsp;&nbsp;&nbsp;&nbsp;labelFormatter</option>
+	
+	<option value="//api/name/majorTickFrequency">&nbsp;&nbsp;&nbsp;&nbsp;majorTickFrequency</option>
+	
+	<option value="//api/name/minorTickFrequency">&nbsp;&nbsp;&nbsp;&nbsp;minorTickFrequency</option>
+	
+	<option value="//api/name/panMomentumDelay">&nbsp;&nbsp;&nbsp;&nbsp;panMomentumDelay</option>
+	
+	<option value="//api/name/panMomentumFactor">&nbsp;&nbsp;&nbsp;&nbsp;panMomentumFactor</option>
+	
+	<option value="//api/name/rangePaddingHigh">&nbsp;&nbsp;&nbsp;&nbsp;rangePaddingHigh</option>
+	
+	<option value="//api/name/rangePaddingLow">&nbsp;&nbsp;&nbsp;&nbsp;rangePaddingLow</option>
+	
+	<option value="//api/name/recalculateBarColumnsRequired">&nbsp;&nbsp;&nbsp;&nbsp;recalculateBarColumnsRequired</option>
+	
+	<option value="//api/name/secondaryAxisOffset">&nbsp;&nbsp;&nbsp;&nbsp;secondaryAxisOffset</option>
+	
+	<option value="//api/name/style">&nbsp;&nbsp;&nbsp;&nbsp;style</option>
+	
+	<option value="//api/name/tickLabelClippingModeHigh">&nbsp;&nbsp;&nbsp;&nbsp;tickLabelClippingModeHigh</option>
+	
+	<option value="//api/name/tickLabelClippingModeLow">&nbsp;&nbsp;&nbsp;&nbsp;tickLabelClippingModeLow</option>
+	
+	<option value="//api/name/title">&nbsp;&nbsp;&nbsp;&nbsp;title</option>
+	
+	<option value="//api/name/titleLabel">&nbsp;&nbsp;&nbsp;&nbsp;titleLabel</option>
+	
+	<option value="//api/name/width">&nbsp;&nbsp;&nbsp;&nbsp;width</option>
+	
+	<option value="//api/name/zoomMomentumDelay">&nbsp;&nbsp;&nbsp;&nbsp;zoomMomentumDelay</option>
+	
+	<option value="//api/name/zoomMomentumFactor">&nbsp;&nbsp;&nbsp;&nbsp;zoomMomentumFactor</option>
+	
+	
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/alterTickMark:">&nbsp;&nbsp;&nbsp;&nbsp;- alterTickMark:</option>
+	
+	<option value="//api/name/configureBars:withMinY:withMaxY:">&nbsp;&nbsp;&nbsp;&nbsp;- configureBars:withMinY:withMaxY:</option>
+	
+	<option value="//api/name/configureColumns:withMinX:withMaxX:">&nbsp;&nbsp;&nbsp;&nbsp;- configureColumns:withMinX:withMaxX:</option>
+	
+	<option value="//api/name/currentMajorTickFrequency">&nbsp;&nbsp;&nbsp;&nbsp;- currentMajorTickFrequency</option>
+	
+	<option value="//api/name/currentMinorTickFrequency">&nbsp;&nbsp;&nbsp;&nbsp;- currentMinorTickFrequency</option>
+	
+	<option value="//api/name/dataValueForPixelValue:">&nbsp;&nbsp;&nbsp;&nbsp;- dataValueForPixelValue:</option>
+	
+	<option value="//api/name/getNewRangeWithMinimum:withMaximum:">&nbsp;&nbsp;&nbsp;&nbsp;- getNewRangeWithMinimum:withMaximum:</option>
+	
+	<option value="//api/name/init">&nbsp;&nbsp;&nbsp;&nbsp;- init</option>
+	
+	<option value="//api/name/initWithRange:">&nbsp;&nbsp;&nbsp;&nbsp;- initWithRange:</option>
+	
+	<option value="//api/name/offsetForDataValue:inSeries:">&nbsp;&nbsp;&nbsp;&nbsp;- offsetForDataValue:inSeries:</option>
+	
+	<option value="//api/name/offsetForSeries:">&nbsp;&nbsp;&nbsp;&nbsp;- offsetForSeries:</option>
+	
+	<option value="//api/name/panByValue:">&nbsp;&nbsp;&nbsp;&nbsp;- panByValue:</option>
+	
+	<option value="//api/name/panByValue:withAnimation:">&nbsp;&nbsp;&nbsp;&nbsp;- panByValue:withAnimation:</option>
+	
+	<option value="//api/name/panByValue:withAnimation:withBounceLimits:">&nbsp;&nbsp;&nbsp;&nbsp;- panByValue:withAnimation:withBounceLimits:</option>
+	
+	<option value="//api/name/panByValue:withAnimation:withBounceLimits:andRedraw:">&nbsp;&nbsp;&nbsp;&nbsp;- panByValue:withAnimation:withBounceLimits:andRedraw:</option>
+	
+	<option value="//api/name/panTo:">&nbsp;&nbsp;&nbsp;&nbsp;- panTo:</option>
+	
+	<option value="//api/name/pixelValueForDataValue:">&nbsp;&nbsp;&nbsp;&nbsp;- pixelValueForDataValue:</option>
+	
+	<option value="//api/name/resetZoomLevel">&nbsp;&nbsp;&nbsp;&nbsp;- resetZoomLevel</option>
+	
+	<option value="//api/name/resetZoomLevelWithAnimation:">&nbsp;&nbsp;&nbsp;&nbsp;- resetZoomLevelWithAnimation:</option>
+	
+	<option value="//api/name/setRangeWithMinimum:andMaximum:">&nbsp;&nbsp;&nbsp;&nbsp;- setRangeWithMinimum:andMaximum:</option>
+	
+	<option value="//api/name/setRangeWithMinimum:andMaximum:withAnimation:">&nbsp;&nbsp;&nbsp;&nbsp;- setRangeWithMinimum:andMaximum:withAnimation:</option>
+	
+	<option value="//api/name/setZoom:">&nbsp;&nbsp;&nbsp;&nbsp;- setZoom:</option>
+	
+	<option value="//api/name/setZoom:fromPosition:">&nbsp;&nbsp;&nbsp;&nbsp;- setZoom:fromPosition:</option>
+	
+	<option value="//api/name/setZoom:fromPosition:withAnimation:">&nbsp;&nbsp;&nbsp;&nbsp;- setZoom:fromPosition:withAnimation:</option>
+	
+	<option value="//api/name/setZoom:fromPosition:withAnimation:andBounceLimits:">&nbsp;&nbsp;&nbsp;&nbsp;- setZoom:fromPosition:withAnimation:andBounceLimits:</option>
+	
+	<option value="//api/name/setZoom:withAnimation:">&nbsp;&nbsp;&nbsp;&nbsp;- setZoom:withAnimation:</option>
+	
+	<option value="//api/name/setZoomLevel:">&nbsp;&nbsp;&nbsp;&nbsp;- setZoomLevel:</option>
+	
+	<option value="//api/name/spaceRequiredToDrawWithTitle:">&nbsp;&nbsp;&nbsp;&nbsp;- spaceRequiredToDrawWithTitle:</option>
+	
+	<option value="//api/name/stringForId:">&nbsp;&nbsp;&nbsp;&nbsp;- stringForId:</option>
+	
+	<option value="//api/name/visibleRange">&nbsp;&nbsp;&nbsp;&nbsp;- visibleRange</option>
+	
+	<option value="//api/name/zoom">&nbsp;&nbsp;&nbsp;&nbsp;- zoom</option>
+	
+	<option value="//api/name/zoomToPoint:withRange:">&nbsp;&nbsp;&nbsp;&nbsp;- zoomToPoint:withRange:</option>
+	
+	<option value="//api/name/zoomToPoint:withRange:withAnimation:usingBounceLimits:">&nbsp;&nbsp;&nbsp;&nbsp;- zoomToPoint:withRange:withAnimation:usingBounceLimits:</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Initializing the axis">Initializing the axis</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Positioning the Axis">Positioning the Axis</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Styling">Styling</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Ranges">Ranges</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Tickmarks and labels">Tickmarks and labels</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_BarColumn Series">BarColumn Series</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Zooming">Zooming</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Panning">Panning</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Data - Pixel Conversions">Data - Pixel Conversions</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Values in Data Terms">Values in Data Terms</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Drawing">Drawing</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/allowPanningOutOfDefaultRange">allowPanningOutOfDefaultRange</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/allowPanningOutOfMaxRange">allowPanningOutOfMaxRange</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/anchorPoint">anchorPoint</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/animationEdgeBouncing">animationEdgeBouncing</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/animationEnabled">animationEnabled</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/axisFrame">axisFrame</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/axisLabelsAreFixed">axisLabelsAreFixed</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/axisOrientation">axisOrientation</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/axisPosition">axisPosition</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/axisPositionValue">axisPositionValue</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/axisRange">axisRange</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/barColMax">barColMax</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/barColMin">barColMin</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/barColSpacing">barColSpacing</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/barColumnsConfigured">barColumnsConfigured</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/calculateMajorTickFrequencyFromDiscontinuousRange">calculateMajorTickFrequencyFromDiscontinuousRange</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/chart">chart</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/dataRange">dataRange</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/defaultRange">defaultRange</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/discontinuousTickLabelClipping">discontinuousTickLabelClipping</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/enableGesturePanning">enableGesturePanning</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/enableGestureZooming">enableGestureZooming</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/enableMomentumPanning">enableMomentumPanning</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/enableMomentumZooming">enableMomentumZooming</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/isMomentumPanning">isMomentumPanning</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/isMomentumZooming">isMomentumZooming</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/labelFormatString">labelFormatString</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/labelFormatter">labelFormatter</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/majorTickFrequency">majorTickFrequency</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/minorTickFrequency">minorTickFrequency</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/panMomentumDelay">panMomentumDelay</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/panMomentumFactor">panMomentumFactor</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/rangePaddingHigh">rangePaddingHigh</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/rangePaddingLow">rangePaddingLow</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/recalculateBarColumnsRequired">recalculateBarColumnsRequired</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/secondaryAxisOffset">secondaryAxisOffset</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/style">style</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/tickLabelClippingModeHigh">tickLabelClippingModeHigh</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/tickLabelClippingModeLow">tickLabelClippingModeLow</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/title">title</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/titleLabel">titleLabel</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/width">width</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/zoomMomentumDelay">zoomMomentumDelay</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/zoomMomentumFactor">zoomMomentumFactor</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/alterTickMark:">alterTickMark:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/configureBars:withMinY:withMaxY:">configureBars:withMinY:withMaxY:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/configureColumns:withMinX:withMaxX:">configureColumns:withMinX:withMaxX:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/currentMajorTickFrequency">currentMajorTickFrequency</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/currentMinorTickFrequency">currentMinorTickFrequency</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/dataValueForPixelValue:">dataValueForPixelValue:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/getNewRangeWithMinimum:withMaximum:">getNewRangeWithMinimum:withMaximum:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/init">init</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/initWithRange:">initWithRange:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/offsetForDataValue:inSeries:">offsetForDataValue:inSeries:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/offsetForSeries:">offsetForSeries:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/panByValue:">panByValue:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/panByValue:withAnimation:">panByValue:withAnimation:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/panByValue:withAnimation:withBounceLimits:">panByValue:withAnimation:withBounceLimits:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/panByValue:withAnimation:withBounceLimits:andRedraw:">panByValue:withAnimation:withBounceLimits:andRedraw:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/panTo:">panTo:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/pixelValueForDataValue:">pixelValueForDataValue:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/resetZoomLevel">resetZoomLevel</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/resetZoomLevelWithAnimation:">resetZoomLevelWithAnimation:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setRangeWithMinimum:andMaximum:">setRangeWithMinimum:andMaximum:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setRangeWithMinimum:andMaximum:withAnimation:">setRangeWithMinimum:andMaximum:withAnimation:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setZoom:">setZoom:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setZoom:fromPosition:">setZoom:fromPosition:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setZoom:fromPosition:withAnimation:">setZoom:fromPosition:withAnimation:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setZoom:fromPosition:withAnimation:andBounceLimits:">setZoom:fromPosition:withAnimation:andBounceLimits:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setZoom:withAnimation:">setZoom:withAnimation:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/setZoomLevel:">setZoomLevel:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/spaceRequiredToDrawWithTitle:">spaceRequiredToDrawWithTitle:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/stringForId:">stringForId:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/visibleRange">visibleRange</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/zoom">zoom</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/zoomToPoint:withRange:">zoomToPoint:withRange:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/zoomToPoint:withRange:withAnimation:usingBounceLimits:">zoomToPoint:withRange:withAnimation:usingBounceLimits:</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="SChartAxis Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">SChartAxis Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value">NSObject</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">SChartAxis.h</td>
+</tr><tr>
+	<td class="specification-title">Companion guide</td>
+	<td class="specification-value"><a href="../docs/markdown_files/ChartsUserGuide.html">ChartsUserGuide</a></td>
+</tr><tr>
+	<td class="specification-title">Availability</td>
+	<td class="specification-value">Standard<br />Premium</td>
+</tr><tr>
+	<td class="specification-title">Related samples</td>
+	<td class="specification-value">Area<br />BarChart<br />ColumnChart<br />FinancialChart<br />LargeDataSet<br />LineChart</td>
+</tr>
+						</tbody></table></div>
+					
+					
+					
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>The SChartAxis is responsible for managing the coordinate space of the <a href="#//api/name/chart">chart</a>. It is the link between the set of real data in a series and the laying down of that series on a <a href="#//api/name/chart">chart</a> in a desired manner. Each series on the <a href="#//api/name/chart">chart</a> is linked to an axis and this SChartAxis is responsible for managing all of the series linked to it.</p>
+
+<p>For cartesian series, it is expected that you will provide instances of <i>a subclass of</i> SChartAxis each for the <code>xAxis</code> and <code>yAxis</code> of the <a href="#//api/name/chart">chart</a>. If not set, both axes will default to instances of <a href="../Classes/SChartNumberAxis.html"><code>SChartNumberAxis</code></a>.</p>
+
+<p>The axis range can be set to a desired range or left to calculate its own minimum and maximum. When auto-calculating the range, it will consider all data series associated with it.</p>
+
+<p>The axis is also the home of the tick marks and their labels. These can be auto-calculated or set to specific values.</p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						<a title="Initializing the axis" name="task_Initializing the axis"></a>
+						<h3 class="subsubtitle task-title">Initializing the axis</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/init">&ndash;&nbsp;init</a></code>
+		<span class="tooltip"><p>Create an axis for a given <a href="#//api/name/chart">chart</a> area.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/initWithRange:">&ndash;&nbsp;initWithRange:</a></code>
+		<span class="tooltip"><p>Create an axis for a given <a href="#//api/name/chart">chart</a> area with a default range.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/chart">&nbsp;&nbsp;chart</a></code>
+		<span class="tooltip"><p>A pointer to the parent chart</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+						
+						<a title="Positioning the Axis" name="task_Positioning the Axis"></a>
+						<h3 class="subsubtitle task-title">Positioning the Axis</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/axisPosition">&nbsp;&nbsp;axisPosition</a></code>
+		<span class="tooltip"><p>The <code>SChartAxisPosition</code> defines whether the axis will be positioned at the normal or reverse location.
+For xAxes, the &lsquo;normal&rsquo; position is below the plot area, with the &lsquo;reverse&rsquo; location above.
+For yAxes, the &lsquo;normal&rsquo; position is to the left of the plot area and the &lsquo;reverse&rsquo; position is to the right.
+Often, it is a good idea when adding a secondary axis, using <code>addXAxis</code> or <code>addYAxis</code>, to position one axis in each position.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/axisPositionValue">&nbsp;&nbsp;axisPositionValue</a></code>
+		<span class="tooltip"><p>The value at which an axis intersects with the opposite axis. For example, if this is set to 0 on a yAxis, it will intersect with the xAxis at the point which corresponds to a value of 0 in data terms.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/axisLabelsAreFixed">&nbsp;&nbsp;axisLabelsAreFixed</a></code>
+		<span class="tooltip"><p>This property determines whether the axis labels will move with the axis lines and tick marks when an axis position value has been set.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+						
+						<a title="Styling" name="task_Styling"></a>
+						<h3 class="subsubtitle task-title">Styling</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/style">&nbsp;&nbsp;style</a></code>
+		<span class="tooltip"><p>The <a href="../Classes/SChartAxisStyle.html"><code>SChartAxisStyle</code></a> object that manages the appearance of the axis.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/width">&nbsp;&nbsp;width</a></code>
+		<span class="tooltip"><p>Specifies a fixed width for the axis area that won&rsquo;t change.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/title">&nbsp;&nbsp;title</a></code>
+		<span class="tooltip"><p>The text to display in the axis title</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/titleLabel">&nbsp;&nbsp;titleLabel</a></code>
+		<span class="tooltip"><p>The <a href="#//api/name/title">title</a> for the axis</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+						
+						<a title="Ranges" name="task_Ranges"></a>
+						<h3 class="subsubtitle task-title">Ranges</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/axisRange">&nbsp;&nbsp;axisRange</a></code>
+		<span class="tooltip"><p>The current <em>displayed</em>  range of the axis.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/dataRange">&nbsp;&nbsp;dataRange</a></code>
+		<span class="tooltip"><p>A readonly property indicating the total data range across all series represented by this axis.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/defaultRange">&nbsp;&nbsp;defaultRange</a></code>
+		<span class="tooltip"><p>This is the range that will be displayed after the <a href="#//api/name/chart">chart</a> initially loads - and if the <a href="#//api/name/zoom">zoom</a> is reset.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/rangePaddingLow">&nbsp;&nbsp;rangePaddingLow</a></code>
+		<span class="tooltip"><p>In data terms, the amount by which the lower limit of the axis range will be lowered past the range of the data.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/rangePaddingHigh">&nbsp;&nbsp;rangePaddingHigh</a></code>
+		<span class="tooltip"><p>In data terms, the amount by which the upper limit of the axis range will be raised past the range of the data.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/allowPanningOutOfDefaultRange">&nbsp;&nbsp;allowPanningOutOfDefaultRange</a></code>
+		<span class="tooltip"><p>Whether or not the user is permitted to pan outside of the user-set default range.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/allowPanningOutOfMaxRange">&nbsp;&nbsp;allowPanningOutOfMaxRange</a></code>
+		<span class="tooltip"><p>Whether or not the user is permitted to pan outside of the union of the data range and the default range</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/animationEdgeBouncing">&nbsp;&nbsp;animationEdgeBouncing</a></code>
+		<span class="tooltip"><p>Whether or not the axis allows the range to temporarily go past the limit specified before bouncing back in</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/animationEnabled">&nbsp;&nbsp;animationEnabled</a></code>
+		<span class="tooltip"><p>Whether or not the axis animates when zooming programmatically, or via double-tap on box gesture.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/axisFrame">&nbsp;&nbsp;axisFrame</a></code>
+		<span class="tooltip"><p>The frame bounding the area where the axis is drawn.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/axisOrientation">&nbsp;&nbsp;axisOrientation</a></code>
+		<span class="tooltip"><p>The orientation of the axis.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/secondaryAxisOffset">&nbsp;&nbsp;secondaryAxisOffset</a></code>
+		<span class="tooltip"><p>The offset to the axis object from the edge of the canvas, in points.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setRangeWithMinimum:andMaximum:">&ndash;&nbsp;setRangeWithMinimum:andMaximum:</a></code>
+		<span class="tooltip"><p>Attempts to set the current visible range <a href="#//api/name/axisRange"><code>axisRange</code></a> to a range with the given minimum and maximum values.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setRangeWithMinimum:andMaximum:withAnimation:">&ndash;&nbsp;setRangeWithMinimum:andMaximum:withAnimation:</a></code>
+		<span class="tooltip"><p>Attempts to set the current visible range <a href="#//api/name/axisRange"><code>axisRange</code></a> to a range with the given minimum and maximum values.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/getNewRangeWithMinimum:withMaximum:">&ndash;&nbsp;getNewRangeWithMinimum:withMaximum:</a></code>
+		<span class="tooltip"><p>Creates a new range object with the given maximum and minimum</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/visibleRange">&ndash;&nbsp;visibleRange</a></code>
+		<span class="tooltip"><p>Returns a range within which all the visible (non-hidden) series on this axis will be displayed.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Tickmarks and labels" name="task_Tickmarks and labels"></a>
+						<h3 class="subsubtitle task-title">Tickmarks and labels</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/majorTickFrequency">&nbsp;&nbsp;majorTickFrequency</a></code>
+		<span class="tooltip"><p>An appropriate object representing the major tick mark frequency</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/minorTickFrequency">&nbsp;&nbsp;minorTickFrequency</a></code>
+		<span class="tooltip"><p>An appropriate object representing the minor tick mark frequency</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/currentMajorTickFrequency">&ndash;&nbsp;currentMajorTickFrequency</a></code>
+		<span class="tooltip"><p>Returns the current major tick frequency in use by this axis.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/currentMinorTickFrequency">&ndash;&nbsp;currentMinorTickFrequency</a></code>
+		<span class="tooltip"><p>Returns the current minor tick frequency in use by this axis.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/anchorPoint">&nbsp;&nbsp;anchorPoint</a></code>
+		<span class="tooltip"><p>The start point for the calculation of tick marks.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/labelFormatString">&nbsp;&nbsp;labelFormatString</a></code>
+		<span class="tooltip"><p><em>DEPRECATED</em> - use <a href="#//api/name/labelFormatter"><code>labelFormatter</code></a> to specify formatting.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/labelFormatter">&nbsp;&nbsp;labelFormatter</a></code>
+		<span class="tooltip"><p>A label formatter for tick mark labels.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/tickLabelClippingModeHigh">&nbsp;&nbsp;tickLabelClippingModeHigh</a></code>
+		<span class="tooltip"><p>This property allows you to alter the tick label clipping mode for the upper end of an axis.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/tickLabelClippingModeLow">&nbsp;&nbsp;tickLabelClippingModeLow</a></code>
+		<span class="tooltip"><p>This property allows you to alter the tick label clipping mode for the lower end of an axis.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/discontinuousTickLabelClipping">&nbsp;&nbsp;discontinuousTickLabelClipping</a></code>
+		<span class="tooltip"><p>This property comes into effect for discontinuous axes over a discontinuity.
+When there are labels either side of a discontinuity which overlap, either
+the higher or lower label will be removed, this property controls which.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/alterTickMark:">&ndash;&nbsp;alterTickMark:</a></code>
+		<span class="tooltip"><p>This will call <code>sChart:alterTickMark:onAxis:</code> if your delegate implements it. Implement this method in your axis subclass to alter tickmarks on that axis only.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/calculateMajorTickFrequencyFromDiscontinuousRange">&nbsp;&nbsp;calculateMajorTickFrequencyFromDiscontinuousRange</a></code>
+		<span class="tooltip"><p>This property controls how the auto-tick-frequency calculations are done.
+Normally, the axis will use the full range of data to calculate how often to
+place a tick-mark, however if the range has discontinuities, this option allows
+the axis to exclude the discontinuities in its calculations of the range over
+which the tick marks are added.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+						
+						<a title="BarColumn Series" name="task_BarColumn Series"></a>
+						<h3 class="subsubtitle task-title">BarColumn Series</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/barColSpacing">&nbsp;&nbsp;barColSpacing</a></code>
+		<span class="tooltip"><p>The smallest change in value between any adjacent bars or columns.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/barColMin">&nbsp;&nbsp;barColMin</a></code>
+		<span class="tooltip"><p>The minimum value of a bar or column across all of the bar/column series for this axis.
+You can set this by using the appropriate <a href="#//api/name/configureBars:withMinY:withMaxY:"><code>configureBars:withMinY:withMaxY:</code></a> or <a href="#//api/name/configureBars:withMinY:withMaxY:"><code>configureBars:withMinY:withMaxY:</code></a> method for the axis orientation.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/barColMax">&nbsp;&nbsp;barColMax</a></code>
+		<span class="tooltip"><p>The maximum value of a bar or column across all of the bar/column series for this axis.
+  You can set this by using the appropriate <a href="#//api/name/configureBars:withMinY:withMaxY:"><code>configureBars:withMinY:withMaxY:</code></a> or <a href="#//api/name/configureBars:withMinY:withMaxY:"><code>configureBars:withMinY:withMaxY:</code></a> method for the axis orientation.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/recalculateBarColumnsRequired">&nbsp;&nbsp;recalculateBarColumnsRequired</a></code>
+		<span class="tooltip"><p>DEPRECATED - this will be removed from the API soon.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/barColumnsConfigured">&nbsp;&nbsp;barColumnsConfigured</a></code>
+		<span class="tooltip"><p>DEPRECATED - this will be removed from the API soon.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/configureColumns:withMinX:withMaxX:">&ndash;&nbsp;configureColumns:withMinX:withMaxX:</a></code>
+		<span class="tooltip"><p>Provide bounds and spacing data for column series within the <a href="#//api/name/chart">chart</a> to improve performance</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/configureBars:withMinY:withMaxY:">&ndash;&nbsp;configureBars:withMinY:withMaxY:</a></code>
+		<span class="tooltip"><p>Provide bounds and spacing data for bar series within the <a href="#//api/name/chart">chart</a> to improve performance</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Zooming" name="task_Zooming"></a>
+						<h3 class="subsubtitle task-title">Zooming</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/enableGestureZooming">&nbsp;&nbsp;enableGestureZooming</a></code>
+		<span class="tooltip"><p>Set to <code>YES</code> to allow pinch gestures to <a href="#//api/name/zoom">zoom</a> the <a href="#//api/name/chart">chart</a>.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setZoom:fromPosition:withAnimation:andBounceLimits:">&ndash;&nbsp;setZoom:fromPosition:withAnimation:andBounceLimits:</a></code>
+		<span class="tooltip"><p>Sets the <a href="#//api/name/zoom">zoom</a> of the axis, based around a fixed point.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setZoom:fromPosition:withAnimation:">&ndash;&nbsp;setZoom:fromPosition:withAnimation:</a></code>
+		<span class="tooltip"><p>See <a href="#//api/name/setZoom:fromPosition:withAnimation:andBounceLimits:"><code>setZoom:fromPosition:withAnimation:andBounceLimits:</code></a>.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setZoom:fromPosition:">&ndash;&nbsp;setZoom:fromPosition:</a></code>
+		<span class="tooltip"><p>See <a href="#//api/name/setZoom:fromPosition:withAnimation:andBounceLimits:"><code>setZoom:fromPosition:withAnimation:andBounceLimits:</code></a>.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setZoom:withAnimation:">&ndash;&nbsp;setZoom:withAnimation:</a></code>
+		<span class="tooltip"><p>See <a href="#//api/name/setZoom:fromPosition:withAnimation:andBounceLimits:"><code>setZoom:fromPosition:withAnimation:andBounceLimits:</code></a>.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setZoom:">&ndash;&nbsp;setZoom:</a></code>
+		<span class="tooltip"><p>See <a href="#//api/name/setZoom:fromPosition:withAnimation:andBounceLimits:"><code>setZoom:fromPosition:withAnimation:andBounceLimits:</code></a>.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/zoomToPoint:withRange:withAnimation:usingBounceLimits:">&ndash;&nbsp;zoomToPoint:withRange:withAnimation:usingBounceLimits:</a></code>
+		<span class="tooltip"><p>Zoom to a set range, centred on a point.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/zoomToPoint:withRange:">&ndash;&nbsp;zoomToPoint:withRange:</a></code>
+		<span class="tooltip"><p>See <a href="#//api/name/zoomToPoint:withRange:withAnimation:usingBounceLimits:"><code>zoomToPoint:withRange:withAnimation:usingBounceLimits:</code></a>.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/resetZoomLevelWithAnimation:">&ndash;&nbsp;resetZoomLevelWithAnimation:</a></code>
+		<span class="tooltip"><p>Sets the axis back to its original <a href="#//api/name/zoom">zoom</a></p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/resetZoomLevel">&ndash;&nbsp;resetZoomLevel</a></code>
+		<span class="tooltip"><p>See <a href="#//api/name/resetZoomLevelWithAnimation:"><code>resetZoomLevelWithAnimation:</code></a>.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/setZoomLevel:">&ndash;&nbsp;setZoomLevel:</a></code>
+		<span class="tooltip"><p>Sets the <a href="#//api/name/zoom">zoom</a> to a standard level.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/zoom">&ndash;&nbsp;zoom</a></code>
+		<span class="tooltip"><p>Returns the current zoom level, relative to the <a href="#//api/name/defaultRange"><code>defaultRange</code></a> of the axis.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/enableMomentumZooming">&nbsp;&nbsp;enableMomentumZooming</a></code>
+		<span class="tooltip"><p>Enables momentum zooming</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/isMomentumZooming">&nbsp;&nbsp;isMomentumZooming</a></code>
+		<span class="tooltip"><p>Will always be YES when the axis is decelerating from a pinch <a href="#//api/name/zoom">zoom</a> gesture</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/zoomMomentumDelay">&nbsp;&nbsp;zoomMomentumDelay</a></code>
+		<span class="tooltip"><p>The time steps of each deceleration after a pinch <a href="#//api/name/zoom">zoom</a> gesture.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/zoomMomentumFactor">&nbsp;&nbsp;zoomMomentumFactor</a></code>
+		<span class="tooltip"><p>The factor by which the velocity of the gesture will decay during one deceleration time period.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+						
+						<a title="Panning" name="task_Panning"></a>
+						<h3 class="subsubtitle task-title">Panning</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/enableGesturePanning">&nbsp;&nbsp;enableGesturePanning</a></code>
+		<span class="tooltip"><p>Set to <code>YES</code> to allow swipe gestures to pan the <a href="#//api/name/chart">chart</a>.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/panByValue:withAnimation:withBounceLimits:andRedraw:">&ndash;&nbsp;panByValue:withAnimation:withBounceLimits:andRedraw:</a></code>
+		<span class="tooltip"><p>Pan the axis range by an explicit amount</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/panByValue:withAnimation:withBounceLimits:">&ndash;&nbsp;panByValue:withAnimation:withBounceLimits:</a></code>
+		<span class="tooltip"><p>See <code>panByValue:withAnimation:andBounceLimits:andRedraw:</code>.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/panByValue:withAnimation:">&ndash;&nbsp;panByValue:withAnimation:</a></code>
+		<span class="tooltip"><p>See <code>panByValue:withAnimation:andBounceLimits:andRedraw:</code>.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/panByValue:">&ndash;&nbsp;panByValue:</a></code>
+		<span class="tooltip"><p>See <code>panByValue:withAnimation:andBounceLimits:andRedraw:</code>.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/panTo:">&ndash;&nbsp;panTo:</a></code>
+		<span class="tooltip"><p>  DEPRECATED - this will be removed from the API soon.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/enableMomentumPanning">&nbsp;&nbsp;enableMomentumPanning</a></code>
+		<span class="tooltip"><p>Enables momentum panning</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/isMomentumPanning">&nbsp;&nbsp;isMomentumPanning</a></code>
+		<span class="tooltip"><p>Will always be YES when the axis is decelerating from a pan swipe gesture</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/panMomentumDelay">&nbsp;&nbsp;panMomentumDelay</a></code>
+		<span class="tooltip"><p>The time steps of each deceleration after a pan swipe gesture.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/panMomentumFactor">&nbsp;&nbsp;panMomentumFactor</a></code>
+		<span class="tooltip"><p>The factor by which the velocity of the gesture will decay during one deceleration time period.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+						
+						<a title="Data - Pixel Conversions" name="task_Data - Pixel Conversions"></a>
+						<h3 class="subsubtitle task-title">Data - Pixel Conversions</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/pixelValueForDataValue:">&ndash;&nbsp;pixelValueForDataValue:</a></code>
+		<span class="tooltip"><p>Returns the pixel value, in the coordinate system of the plot area, of the given data value along this axis.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/dataValueForPixelValue:">&ndash;&nbsp;dataValueForPixelValue:</a></code>
+		<span class="tooltip"><p>Returns the data value of the given pixel value along this axis, in the coordinate system of the plot area.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/offsetForDataValue:inSeries:">&ndash;&nbsp;offsetForDataValue:inSeries:</a></code>
+		<span class="tooltip"><p>DEPRECATED - use &lsquo;offsetForSeries:&rsquo; instead.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/offsetForSeries:">&ndash;&nbsp;offsetForSeries:</a></code>
+		<span class="tooltip"><p>Returns the difference in data terms between where data in a series is drawn to it&rsquo;s value on this axis.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Values in Data Terms" name="task_Values in Data Terms"></a>
+						<h3 class="subsubtitle task-title">Values in Data Terms</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/stringForId:">&ndash;&nbsp;stringForId:</a></code>
+		<span class="tooltip"><p>Returns a string representation of the given object.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Drawing" name="task_Drawing"></a>
+						<h3 class="subsubtitle task-title">Drawing</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/spaceRequiredToDrawWithTitle:">&ndash;&nbsp;spaceRequiredToDrawWithTitle:</a></code>
+		<span class="tooltip"><p>Returns the amount of space in points needed to draw the axis between the plot area and the edge of the <a href="#//api/name/chart">chart</a> frame.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/allowPanningOutOfDefaultRange" title="allowPanningOutOfDefaultRange"></a>
+	<h3 class="subsubtitle method-title">allowPanningOutOfDefaultRange</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Whether or not the user is permitted to pan outside of the user-set default range.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic) BOOL allowPanningOutOfDefaultRange</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>With a user-set default range this can be used to either limit panning and zooming to a subset of the data or to allow panning or zooming outside of the data range but whilst still setting limits. If the default range is not set, it defaults to <a href="#//api/name/dataRange"><code>dataRange</code></a> and `allowPanningOutOfMaxRange' should be used instead.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartAxis.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/allowPanningOutOfMaxRange" title="allowPanningOutOfMaxRange"></a>
+	<h3 class="subsubtitle method-title">allowPanningOutOfMaxRange</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Whether or not the user is permitted to pan outside of the union of the data range and the default range</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic) BOOL allowPanningOutOfMaxRange</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>If this is enabled but <a href="#//api/name/allowPanningOutOfDefaultRange"><code>allowPanningOutOfDefaultRange</code></a> is disabled, panning will still be restricted to the data range</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartAxis.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/anchorPoint" title="anchorPoint"></a>
+	<h3 class="subsubtitle method-title">anchorPoint</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The start point for the calculation of tick marks.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) id anchorPoint</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>For example, if your <a href="#//api/name/axisRange"><code>axisRange</code></a> is @1 to @9, your <code>anchorPoint</code> is @0 and the <a href="#//api/name/currentMajorTickFrequency"><code>currentMajorTickFrequency</code></a> is @2, you will get tickmarks and labels at @2, @4, @6 and @8, assuming that the labels' text and the clipping settings permit.</p>
+
+<p>Regardless of whether a tick mark frequency has been set or automatically calculated, it must start somewhere. This value acts as the origin point for tickmarks on the axis.
+This defaults to the <code>[dataRange minimum]</code>.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartAxis.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/animationEdgeBouncing" title="animationEdgeBouncing"></a>
+	<h3 class="subsubtitle method-title">animationEdgeBouncing</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Whether or not the axis allows the range to temporarily go past the limit specified before bouncing back in</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic) BOOL animationEdgeBouncing</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>If this is enabled, the range will bounce back into the given limit. If there is no range limit, this option does nothing</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartAxis.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/animationEnabled" title="animationEnabled"></a>
+	<h3 class="subsubtitle method-title">animationEnabled</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Whether or not the axis animates when zooming programmatically, or via double-tap on box gesture.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic) BOOL animationEnabled</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>If this is enabled, the axis will <a href="#//api/name/zoom">zoom</a> smoothly from starting to target <a href="#//api/name/zoom">zoom</a> levels.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartAxis.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/axisFrame" title="axisFrame"></a>
+	<h3 class="subsubtitle method-title">axisFrame</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The frame bounding the area where the axis is drawn.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic) CGRect axisFrame</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>This area in terms of the <a href="#//api/name/chart">chart</a> frame within which the axis line, tickmarks and ticklabels are drawn. It can have a fixed <a href="#//api/name/width">width</a> if the <a href="#//api/name/width"><code>width</code></a> property is set, otherwise it wil be dynamic and affected by the tickmarks and their labels.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartAxis.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/axisLabelsAreFixed" title="axisLabelsAreFixed"></a>
+	<h3 class="subsubtitle method-title">axisLabelsAreFixed</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>This property determines whether the axis labels will move with the axis lines and tick marks when an axis position value has been set.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic) BOOL axisLabelsAreFixed</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<pre><code>If this is set to YES, labels will stay fixed at the bottom/left or top/right of the chart depending on the axisPosition parameter.
+</code></pre>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartAxis.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/axisOrientation" title="axisOrientation"></a>
+	<h3 class="subsubtitle method-title">axisOrientation</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The orientation of the axis.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) SChartOrientation axisOrientation</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Axis objects are universal and may be used as an xAxis (horizontal) or as a yAxis (vertical). This property is determined when the axis is assigned to the <a href="#//api/name/chart">chart</a>.</p>
+
+<pre><code>typedef enum {
+SChartOrientationHorizontal,
+SChartOrientationVertical
+} SChartOrientation;
+</code></pre>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartAxis.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/axisPosition" title="axisPosition"></a>
+	<h3 class="subsubtitle method-title">axisPosition</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The <code>SChartAxisPosition</code> defines whether the axis will be positioned at the normal or reverse location.
+For xAxes, the &lsquo;normal&rsquo; position is below the plot area, with the &lsquo;reverse&rsquo; location above.
+For yAxes, the &lsquo;normal&rsquo; position is to the left of the plot area and the &lsquo;reverse&rsquo; position is to the right.
+Often, it is a good idea when adding a secondary axis, using <code>addXAxis</code> or <code>addYAxis</code>, to position one axis in each position.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic) SChartAxisPosition axisPosition</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<pre><code>typedef enum {
+SChartAxisPositionNormal,
+SChartAxisPositionReverse,
+} SChartAxisPosition 
+</code></pre>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartAxis.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/axisPositionValue" title="axisPositionValue"></a>
+	<h3 class="subsubtitle method-title">axisPositionValue</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The value at which an axis intersects with the opposite axis. For example, if this is set to 0 on a yAxis, it will intersect with the xAxis at the point which corresponds to a value of 0 in data terms.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) NSNumber *axisPositionValue</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>If there is more than one axis of the other orientation on the <a href="#//api/name/chart">chart</a>, the primary axis will be used.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartAxis.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/axisRange" title="axisRange"></a>
+	<h3 class="subsubtitle method-title">axisRange</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The current <em>displayed</em>  range of the axis.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain, readonly) SChartRange *axisRange</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>This property is the actual range currently displayed on the visible area of the chart- which may not be the range that was explicitly set. The axis may make small adjustments to the range to make sure that whole bars are displayed etc. This is a <code>readonly</code> property - explicit requests to change the axis range should be made through the method <a href="#//api/name/setRangeWithMinimum:andMaximum:"><code>setRangeWithMinimum:andMaximum:</code></a></p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="../Classes/SChartRange.html">SChartRange</a></p></code></li>
+			
+			<li><code><p><a href="../Classes/SChartNumberRange.html">SChartNumberRange</a></p></code></li>
+			
+			<li><code><p><a href="../Classes/SChartDateRange.html">SChartDateRange</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartAxis.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/barColMax" title="barColMax"></a>
+	<h3 class="subsubtitle method-title">barColMax</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The maximum value of a bar or column across all of the bar/column series for this axis.
+  You can set this by using the appropriate <a href="#//api/name/configureBars:withMinY:withMaxY:"><code>configureBars:withMinY:withMaxY:</code></a> or <a href="#//api/name/configureBars:withMinY:withMaxY:"><code>configureBars:withMinY:withMaxY:</code></a> method for the axis orientation.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) NSNumber *barColMax</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartAxis.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/barColMin" title="barColMin"></a>
+	<h3 class="subsubtitle method-title">barColMin</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The minimum value of a bar or column across all of the bar/column series for this axis.
+You can set this by using the appropriate <a href="#//api/name/configureBars:withMinY:withMaxY:"><code>configureBars:withMinY:withMaxY:</code></a> or <a href="#//api/name/configureBars:withMinY:withMaxY:"><code>configureBars:withMinY:withMaxY:</code></a> method for the axis orientation.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) NSNumber *barColMin</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartAxis.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/barColSpacing" title="barColSpacing"></a>
+	<h3 class="subsubtitle method-title">barColSpacing</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The smallest change in value between any adjacent bars or columns.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic) double barColSpacing</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Specifying this can improve the render time of the <a href="#//api/name/chart">chart</a> - it will not have to traverse all of the data to compare differences.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartAxis.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/barColumnsConfigured" title="barColumnsConfigured"></a>
+	<h3 class="subsubtitle method-title">barColumnsConfigured</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>DEPRECATED - this will be removed from the API soon.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic) BOOL barColumnsConfigured</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>A boolean indicating if the bar and column series are already configured.
+If this is YES the <a href="#//api/name/chart">chart</a> will not traverse the data to work out spacing and ranges.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartAxis.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/calculateMajorTickFrequencyFromDiscontinuousRange" title="calculateMajorTickFrequencyFromDiscontinuousRange"></a>
+	<h3 class="subsubtitle method-title">calculateMajorTickFrequencyFromDiscontinuousRange</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>This property controls how the auto-tick-frequency calculations are done.
+Normally, the axis will use the full range of data to calculate how often to
+place a tick-mark, however if the range has discontinuities, this option allows
+the axis to exclude the discontinuities in its calculations of the range over
+which the tick marks are added.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic) BOOL calculateMajorTickFrequencyFromDiscontinuousRange</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>For example - you have a year range, but are excluding 7 months using
+discontinuous periods. If this property is &lsquo;NO&rsquo;, the tick labels will be added
+as if the range is one year. If this property is &lsquo;YES&rsquo;, the tick labels will be
+added as if the range is 5 months (12 - 7).</p>
+
+<p>If YES, the axis will exclude discontinuities when calculating the range.</p>
+
+<p>Defaults to &lsquo;NO&rsquo;.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartAxis.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/chart" title="chart"></a>
+	<h3 class="subsubtitle method-title">chart</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>A pointer to the parent chart</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) ShinobiChart *chart</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The axis retains a handle on the chart using it so that it can access user-set drawing parameters.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartAxis.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/dataRange" title="dataRange"></a>
+	<h3 class="subsubtitle method-title">dataRange</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>A readonly property indicating the total data range across all series represented by this axis.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) SChartRange *dataRange</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>These are absolute minimum and absolute maximum values from the data series represented by this axis.
+This range does not necessarily represent exactly the range of what is drawn on the axis, depending on how the data is visualised - for this see <a href="#//api/name/visibleRange"><code>visibleRange</code></a>.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="../Classes/SChartRange.html">SChartRange</a></p></code></li>
+			
+			<li><code><p><a href="../Classes/SChartNumberRange.html">SChartNumberRange</a></p></code></li>
+			
+			<li><code><p><a href="../Classes/SChartDateRange.html">SChartDateRange</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartAxis.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/defaultRange" title="defaultRange"></a>
+	<h3 class="subsubtitle method-title">defaultRange</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>This is the range that will be displayed after the <a href="#//api/name/chart">chart</a> initially loads - and if the <a href="#//api/name/zoom">zoom</a> is reset.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) SChartRange *defaultRange</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>By default it is set to be the <a href="#//api/name/dataRange"><code>dataRange</code></a>, but can be set to custom values.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="../Classes/SChartRange.html">SChartRange</a></p></code></li>
+			
+			<li><code><p><a href="../Classes/SChartNumberRange.html">SChartNumberRange</a></p></code></li>
+			
+			<li><code><p><a href="../Classes/SChartDateRange.html">SChartDateRange</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartAxis.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/discontinuousTickLabelClipping" title="discontinuousTickLabelClipping"></a>
+	<h3 class="subsubtitle method-title">discontinuousTickLabelClipping</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>This property comes into effect for discontinuous axes over a discontinuity.
+When there are labels either side of a discontinuity which overlap, either
+the higher or lower label will be removed, this property controls which.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic) SChartDiscontinuousTickLabelClipping discontinuousTickLabelClipping</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<pre><code>typedef enum
+{
+    SChartDiscontinuousTickLabelClippingLow,
+    SChartDiscontinuousTickLabelClippingHigh,
+} SChartDiscontinuousTickLabelClipping;
+</code></pre>
+
+<p>SChartDiscontinuousTickLabelClippingLow removes the lower tick label while
+SChartDiscontinuousTickLabelClippingHigh removes the higher.</p>
+
+<p>Defaults to &lsquo;SChartDiscontinuousTickLabelClippingLow&rsquo;.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartAxis.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/enableGesturePanning" title="enableGesturePanning"></a>
+	<h3 class="subsubtitle method-title">enableGesturePanning</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Set to <code>YES</code> to allow swipe gestures to pan the <a href="#//api/name/chart">chart</a>.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic) BOOL enableGesturePanning</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartAxis.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/enableGestureZooming" title="enableGestureZooming"></a>
+	<h3 class="subsubtitle method-title">enableGestureZooming</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Set to <code>YES</code> to allow pinch gestures to <a href="#//api/name/zoom">zoom</a> the <a href="#//api/name/chart">chart</a>.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic) BOOL enableGestureZooming</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartAxis.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/enableMomentumPanning" title="enableMomentumPanning"></a>
+	<h3 class="subsubtitle method-title">enableMomentumPanning</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Enables momentum panning</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) BOOL enableMomentumPanning</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>When momentum panning is enabled, fast pan gestures will cause the <a href="#//api/name/chart">chart</a> to continue
+to pan during a brief &lsquo;slowing down&rsquo; period rather than stopping immediately.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartAxis.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/enableMomentumZooming" title="enableMomentumZooming"></a>
+	<h3 class="subsubtitle method-title">enableMomentumZooming</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Enables momentum zooming</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) BOOL enableMomentumZooming</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>When momentum zooming is enabled, fast pinch gestures will cause the <a href="#//api/name/chart">chart</a> to continue
+to <a href="#//api/name/zoom">zoom</a> during a brief &lsquo;slowing down&rsquo; period rather than stopping immediately.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartAxis.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/isMomentumPanning" title="isMomentumPanning"></a>
+	<h3 class="subsubtitle method-title">isMomentumPanning</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Will always be YES when the axis is decelerating from a pan swipe gesture</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) BOOL isMomentumPanning</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartAxis.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/isMomentumZooming" title="isMomentumZooming"></a>
+	<h3 class="subsubtitle method-title">isMomentumZooming</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Will always be YES when the axis is decelerating from a pinch <a href="#//api/name/zoom">zoom</a> gesture</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, readonly) BOOL isMomentumZooming</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartAxis.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/labelFormatString" title="labelFormatString"></a>
+	<h3 class="subsubtitle method-title">labelFormatString</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p><em>DEPRECATED</em> - use <a href="#//api/name/labelFormatter"><code>labelFormatter</code></a> to specify formatting.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) NSString *labelFormatString</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<div class="warning"><p><strong>Warning:</strong> <em>DEPRECATED</em> - use <a href="#//api/name/labelFormatter"><code>labelFormatter</code></a> to specify formatting.</p>
+
+<p>A string to format each tick mark label - actual format is dependent on axis type.
+If an axis is auto-calculating tick marks - it will select an appropriate label format (ie: months, days, hours, etc). However, setting this value will override all tick mark labels to use this formatter.</p>
+
+<ul>
+<li>For a number axis, use the float formatter, ie: <code>@"%1.2f mm"</code>.</li>
+<li>For a date axis, use the date formatter, ie: <code>@"dd MMM"</code>.</li>
+<li>For a category axis, use the string formatter, ie: <code>@"%@ District"</code>.</li>
+</ul>
+</div>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartAxis.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/labelFormatter" title="labelFormatter"></a>
+	<h3 class="subsubtitle method-title">labelFormatter</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>A label formatter for tick mark labels.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) SChartTickLabelFormatter *labelFormatter</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Use this to set formatting options for tick labels on this axis - currencies, (negative) value styles etc.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="../Classes/SChartTickLabelFormatter.html">SChartTickLabelFormatter</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartAxis.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/majorTickFrequency" title="majorTickFrequency"></a>
+	<h3 class="subsubtitle method-title">majorTickFrequency</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>An appropriate object representing the major tick mark frequency</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) id majorTickFrequency</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>If this value is set, the <a href="#//api/name/chart">chart</a> will not make any auto-calculations for major tick marks and only display a major tick mark at this frequency, regardless of <a href="#//api/name/zoom">zoom</a> level. The definition of appropriate value is dependent upon the axis type - ie: <a href="../Classes/SChartNumberAxis.html"><code>SChartNumberAxis</code></a>, <a href="../Classes/SChartDateTimeAxis.html"><code>SChartDateTimeAxis</code></a>. The first major tick mark will be at the absolute minimum data value across all series for this axis - with subsequent major tick marks incrementing by the frequency. To change this initial value see <a href="#//api/name/anchorPoint"><code>anchorPoint</code></a>. By default an appropriate major tick mark value will be selected by the <a href="#//api/name/chart">chart</a> and will adapt as the user zooms the <a href="#//api/name/chart">chart</a>.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartAxis.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/minorTickFrequency" title="minorTickFrequency"></a>
+	<h3 class="subsubtitle method-title">minorTickFrequency</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>An appropriate object representing the minor tick mark frequency</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) id minorTickFrequency</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>If this value is set, the <a href="#//api/name/chart">chart</a> will not make any auto-calculations for minor tick marks and only display a minor tick mark at these values, regardless of <a href="#//api/name/zoom">zoom</a> level. The first minor tick mark will be at the absolute minimum data value across all series for this axis - with subsequent minor tick marks incrementing by the frequency. To change this initial value see <a href="#//api/name/anchorPoint"><code>anchorPoint</code></a>. By default an appropriate minor tick mark value will be selected by the <a href="#//api/name/chart">chart</a> and will adapt as the user zooms the <a href="#//api/name/chart">chart</a>. In order for the <a href="#//api/name/chart">chart</a> to adhere to a non-nil value you have assigned to this property you must also set a <a href="#//api/name/majorTickFrequency"><code>majorTickFrequency</code></a>.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartAxis.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/panMomentumDelay" title="panMomentumDelay"></a>
+	<h3 class="subsubtitle method-title">panMomentumDelay</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The time steps of each deceleration after a pan swipe gesture.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic) double panMomentumDelay</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>If <a href="#//api/name/enableMomentumPanning">enableMomentumPanning</a> is set to YES, the velocity of the swipe gesture will decay over a number of increments. These increments are a fixed time period specified here. During this fixed period the velocity will decay by a factor <a href="#//api/name/panMomentumFactor"><code>panMomentumFactor</code></a></p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartAxis.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/panMomentumFactor" title="panMomentumFactor"></a>
+	<h3 class="subsubtitle method-title">panMomentumFactor</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The factor by which the velocity of the gesture will decay during one deceleration time period.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic) double panMomentumFactor</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>If <a href="#//api/name/enableMomentumPanning">enableMomentumPanning</a> is set to YES, the velocity of the swipe gesture will decay over a number of increments. These increments are a fixed time period specified in <a href="#//api/name/panMomentumDelay"><code>panMomentumDelay</code></a>. During this fixed period the velocity will decay by this factor.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartAxis.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/rangePaddingHigh" title="rangePaddingHigh"></a>
+	<h3 class="subsubtitle method-title">rangePaddingHigh</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>In data terms, the amount by which the upper limit of the axis range will be raised past the range of the data.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) id rangePaddingHigh</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>By default, this is set to 0.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartAxis.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/rangePaddingLow" title="rangePaddingLow"></a>
+	<h3 class="subsubtitle method-title">rangePaddingLow</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>In data terms, the amount by which the lower limit of the axis range will be lowered past the range of the data.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) id rangePaddingLow</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>By default, this is set to 0.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartAxis.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/recalculateBarColumnsRequired" title="recalculateBarColumnsRequired"></a>
+	<h3 class="subsubtitle method-title">recalculateBarColumnsRequired</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>DEPRECATED - this will be removed from the API soon.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic) BOOL recalculateBarColumnsRequired</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>During the next render process, forces the recalculation of the barcolumn series.
+During normal operation the panning and zooming will take place using transforms - with only periodic recalculations. Setting this to YES will force the bars and columns to recalculate all coordinates.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartAxis.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/secondaryAxisOffset" title="secondaryAxisOffset"></a>
+	<h3 class="subsubtitle method-title">secondaryAxisOffset</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The offset to the axis object from the edge of the canvas, in points.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) float secondaryAxisOffset</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>For xAxes, this is from the bottom edge of the canvas frame for axes at the &lsquo;normal&rsquo; <a href="#//api/name/axisPosition"><code>axisPosition</code></a> and from the top for axes at the &lsquo;reverse&rsquo; <a href="#//api/name/axisPosition"><code>axisPosition</code></a>.
+For yAxes, this is from the left edge of the canvas frame for axes at the &lsquo;normal&rsquo; <a href="#//api/name/axisPosition"><code>axisPosition</code></a> and from the right for axes at the &lsquo;reverse&rsquo; <a href="#//api/name/axisPosition"><code>axisPosition</code></a>.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartAxis.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/style" title="style"></a>
+	<h3 class="subsubtitle method-title">style</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The <a href="../Classes/SChartAxisStyle.html"><code>SChartAxisStyle</code></a> object that manages the appearance of the axis.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) SChartAxisStyle *style</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Setting these values will override any values set by the theme.
+Calling applyTheme on the <a href="#//api/name/chart">chart</a>, though, will reapply the theme style.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartAxis.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/tickLabelClippingModeHigh" title="tickLabelClippingModeHigh"></a>
+	<h3 class="subsubtitle method-title">tickLabelClippingModeHigh</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>This property allows you to alter the tick label clipping mode for the upper end of an axis.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic) SChartTickLabelClippingMode tickLabelClippingModeHigh</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<pre><code>typedef enum {
+SChartTickLabelClippingModeTicksAndLabelsPersist,
+SChartTickLabelClippingModeTicksPersist,
+SChartTickLabelClippingModeNeitherPersist
+} SChartTickLabelClippingMode;`
+</code></pre>
+
+<ol>
+<li>`SChartTickLabelClippingModeTicksAndLabelsPersist` - Keep both the label and tick visible for as long as possible, allowing the label to overlap with adjacent axes.</li>
+<li>`SChartTickLabelClippingModeTicksPersist`          - Keep the tick mark visible for as long as possible and clip the label as soon as it reaches the edge of its view.</li>
+<li>`SChartTickLabelClippingModeNeitherPersist`        - Keep the tick mark visible as long as the tick label is visible - as soon as the tick label reaches its bounds, and is clipped, clip the tick mark too. </li>
+</ol>
+
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartAxis.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/tickLabelClippingModeLow" title="tickLabelClippingModeLow"></a>
+	<h3 class="subsubtitle method-title">tickLabelClippingModeLow</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>This property allows you to alter the tick label clipping mode for the lower end of an axis.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic) SChartTickLabelClippingMode tickLabelClippingModeLow</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>See <a href="#//api/name/tickLabelClippingModeHigh"><code>tickLabelClippingModeHigh</code></a>.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartAxis.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/title" title="title"></a>
+	<h3 class="subsubtitle method-title">title</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The text to display in the axis title</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) NSString *title</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="../Classes/SChartTitle.html">SChartTitle</a>.</p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartAxis.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/titleLabel" title="titleLabel"></a>
+	<h3 class="subsubtitle method-title">titleLabel</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The <a href="#//api/name/title">title</a> for the axis</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) SChartTitle *titleLabel</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="../Classes/SChartTitle.html">SChartTitle</a></p></code></li>
+			
+			<li><code><p><a href="../Classes/SChartAxisTitleStyle.html">SChartAxisTitleStyle</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartAxis.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/width" title="width"></a>
+	<h3 class="subsubtitle method-title">width</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Specifies a fixed width for the axis area that won&rsquo;t change.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) NSNumber *width</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>This is useful to fix the axis in position to align multiple charts. However, it may restrict the options for labelling the <a href="#//api/name/chart">chart</a>.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartAxis.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/zoomMomentumDelay" title="zoomMomentumDelay"></a>
+	<h3 class="subsubtitle method-title">zoomMomentumDelay</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The time steps of each deceleration after a pinch <a href="#//api/name/zoom">zoom</a> gesture.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic) double zoomMomentumDelay</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>If <a href="#//api/name/enableMomentumZooming"><code>enableMomentumZooming</code></a> is set to YES, the velocity of the <a href="#//api/name/zoom">zoom</a> pinch gesture will decay over a number of increments. These increments are a fixed time period specified here. During this fixed period the velocity will decay by a factor <a href="#//api/name/zoomMomentumFactor"><code>zoomMomentumFactor</code></a></p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartAxis.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/zoomMomentumFactor" title="zoomMomentumFactor"></a>
+	<h3 class="subsubtitle method-title">zoomMomentumFactor</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The factor by which the velocity of the gesture will decay during one deceleration time period.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic) double zoomMomentumFactor</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>If <a href="#//api/name/enableMomentumZooming"><code>enableMomentumZooming</code></a> is set to YES, the velocity of the <a href="#//api/name/zoom">zoom</a> pinch gesture will decay over a number of increments. These increments are a fixed time period specified in <a href="#//api/name/zoomMomentumDelay"><code>zoomMomentumDelay</code></a>. During this fixed period the velocity will decay by this factor.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartAxis.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/alterTickMark:" title="alterTickMark:"></a>
+	<h3 class="subsubtitle method-title">alterTickMark:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>This will call <code>sChart:alterTickMark:onAxis:</code> if your delegate implements it. Implement this method in your axis subclass to alter tickmarks on that axis only.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)alterTickMark:(SChartTickMark *)<em>tickMark</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>This method gives you each tickMark just before it is added to its axis. Use this to set colors, borders, or even move the tickmark&rsquo;s label elsewhere.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartAxis.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/configureBars:withMinY:withMaxY:" title="configureBars:withMinY:withMaxY:"></a>
+	<h3 class="subsubtitle method-title">configureBars:withMinY:withMaxY:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Provide bounds and spacing data for bar series within the <a href="#//api/name/chart">chart</a> to improve performance</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)configureBars:(double)<em>barSpacing</em> withMinY:(NSNumber *)<em>minY</em> withMaxY:(NSNumber *)<em>maxY</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>barSpacing</em></dt>
+			<dd><p>the minimum distance between any two bars along the axis, in data terms.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>minY</em></dt>
+			<dd><p>the smallest <code>yValue</code> of any bar on the axis.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>maxY</em></dt>
+			<dd><p>the largest <code>yValue</code> of any bar on the axis.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartAxis.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/configureColumns:withMinX:withMaxX:" title="configureColumns:withMinX:withMaxX:"></a>
+	<h3 class="subsubtitle method-title">configureColumns:withMinX:withMaxX:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Provide bounds and spacing data for column series within the <a href="#//api/name/chart">chart</a> to improve performance</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)configureColumns:(double)<em>colSpacing</em> withMinX:(NSNumber *)<em>minX</em> withMaxX:(NSNumber *)<em>maxX</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>colSpacing</em></dt>
+			<dd><p>the minimum distance between any two columns along the axis, in data terms.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>minX</em></dt>
+			<dd><p>the smallest <code>xValue</code> of any column on the axis.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>maxX</em></dt>
+			<dd><p>the largest <code>xValue</code> of any column on the axis.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartAxis.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/currentMajorTickFrequency" title="currentMajorTickFrequency"></a>
+	<h3 class="subsubtitle method-title">currentMajorTickFrequency</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns the current major tick frequency in use by this axis.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)currentMajorTickFrequency</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<div class="warning"><p><strong>Warning:</strong> <em>Important</em> <a href="#//api/name/majorTickFrequency"><code>majorTickFrequency</code></a> returns the frequency that you have manually set, whereas <code>currentMajorTickFrequency</code> returns the frequency currently in use - the two are not necessarily the same.</p></div>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartAxis.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/currentMinorTickFrequency" title="currentMinorTickFrequency"></a>
+	<h3 class="subsubtitle method-title">currentMinorTickFrequency</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns the current minor tick frequency in use by this axis.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)currentMinorTickFrequency</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<div class="warning"><p><strong>Warning:</strong> <em>Important</em> <a href="#//api/name/minorTickFrequency"><code>minorTickFrequency</code></a> returns the frequency that you have manually set, whereas <code>currentMinorTickFrequency</code> returns the frequency currently in use - the two are not necessarily the same.</p></div>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartAxis.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/dataValueForPixelValue:" title="dataValueForPixelValue:"></a>
+	<h3 class="subsubtitle method-title">dataValueForPixelValue:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns the data value of the given pixel value along this axis, in the coordinate system of the plot area.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)dataValueForPixelValue:(float)<em>px</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>If the pixel value given is negative, or is larger than the respective height/<a href="#//api/name/width">width</a> of the plot area in pixels, than this method may return a data value
+that is not currently in range of the axis.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartAxis.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/getNewRangeWithMinimum:withMaximum:" title="getNewRangeWithMinimum:withMaximum:"></a>
+	<h3 class="subsubtitle method-title">getNewRangeWithMinimum:withMaximum:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Creates a new range object with the given maximum and minimum</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (SChartRange *)getNewRangeWithMinimum:(NSNumber *)<em>minimum</em> withMaximum:(NSNumber *)<em>maximum</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The subclass of <a href="../Classes/SChartRange.html">SChartRange</a> that is returned will correspond to the axis type.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="../Classes/SChartRange.html">SChartRange</a></p></code></li>
+			
+			<li><code><p><a href="../Classes/SChartNumberRange.html">SChartNumberRange</a></p></code></li>
+			
+			<li><code><p><a href="../Classes/SChartDateRange.html">SChartDateRange</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartAxis.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/init" title="init"></a>
+	<h3 class="subsubtitle method-title">init</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Create an axis for a given <a href="#//api/name/chart">chart</a> area.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)init</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartAxis.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/initWithRange:" title="initWithRange:"></a>
+	<h3 class="subsubtitle method-title">initWithRange:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Create an axis for a given <a href="#//api/name/chart">chart</a> area with a default range.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)initWithRange:(SChartRange *)<em>range</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>See <a href="#//api/name/defaultRange"><code>defaultRange</code></a> for the implications of setting this type of range.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartAxis.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/offsetForDataValue:inSeries:" title="offsetForDataValue:inSeries:"></a>
+	<h3 class="subsubtitle method-title">offsetForDataValue:inSeries:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>DEPRECATED - use &lsquo;offsetForSeries:&rsquo; instead.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)offsetForDataValue:(id)<em>data</em> inSeries:(SChartSeries *)<em>series</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartAxis.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/offsetForSeries:" title="offsetForSeries:"></a>
+	<h3 class="subsubtitle method-title">offsetForSeries:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns the difference in data terms between where data in a series is drawn to it&rsquo;s value on this axis.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)offsetForSeries:(SChartCartesianSeries *)<em>series</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>This is useful for calculating where the centres of datapoints are, relative to their value.
+For example, where you have more than one column series along an x-axis they will stand next to each other so as not to overlap:
+If columns in two series each have an xValue of &lsquo;5&rsquo;, the column in the first series will be offset left from &lsquo;5&rsquo; and the column in the second series will be offset right from &lsquo;5&rsquo;.
+You can use this method to find out what that offset is for each series.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartAxis.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/panByValue:" title="panByValue:"></a>
+	<h3 class="subsubtitle method-title">panByValue:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>See <code>panByValue:withAnimation:andBounceLimits:andRedraw:</code>.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)panByValue:(double)<em>value</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The pan is not animated.
+The <a href="#//api/name/axisRange">axisRange</a> will not &lsquo;bounce&rsquo; if it strays outside of the permissable range.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartAxis.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/panByValue:withAnimation:" title="panByValue:withAnimation:"></a>
+	<h3 class="subsubtitle method-title">panByValue:withAnimation:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>See <code>panByValue:withAnimation:andBounceLimits:andRedraw:</code>.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)panByValue:(double)<em>value</em> withAnimation:(BOOL)<em>animation</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>  The <a href="#//api/name/axisRange">axisRange</a> will not &lsquo;bounce&rsquo; if it strays outside of the permissable range.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartAxis.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/panByValue:withAnimation:withBounceLimits:" title="panByValue:withAnimation:withBounceLimits:"></a>
+	<h3 class="subsubtitle method-title">panByValue:withAnimation:withBounceLimits:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>See <code>panByValue:withAnimation:andBounceLimits:andRedraw:</code>.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)panByValue:(double)<em>value</em> withAnimation:(BOOL)<em>animation</em> withBounceLimits:(BOOL)<em>panWithBouncing</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartAxis.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/panByValue:withAnimation:withBounceLimits:andRedraw:" title="panByValue:withAnimation:withBounceLimits:andRedraw:"></a>
+	<h3 class="subsubtitle method-title">panByValue:withAnimation:withBounceLimits:andRedraw:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Pan the axis range by an explicit amount</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)panByValue:(double)<em>value</em> withAnimation:(BOOL)<em>animation</em> withBounceLimits:(BOOL)<em>panWithBouncing</em> andRedraw:(BOOL)<em>redraw</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>value</em></dt>
+			<dd><ul>
+<li>the value, in data terms, by which the axis range should pan by.</li>
+</ul>
+</dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>animation</em></dt>
+			<dd><ul>
+<li>whether or not the pan operation should be animated. If not animated, the pan will be instant.</li>
+</ul>
+</dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>panWithBouncing</em></dt>
+			<dd><ul>
+<li>whether or not the <a href="#//api/name/axisRange">axisRange</a> should &lsquo;bounce&rsquo; if it strays outside of the permissable range.</li>
+</ul>
+</dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>redraw</em></dt>
+			<dd><ul>
+<li>redraw the <a href="#//api/name/chart">chart</a> after the pan operation.</li>
+</ul>
+</dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Whether or not the pan operation was successful.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartAxis.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/panTo:" title="panTo:"></a>
+	<h3 class="subsubtitle method-title">panTo:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>  DEPRECATED - this will be removed from the API soon.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)panTo:(SChartAxisPanTo)<em>where</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Pan to a standard position.
+To set an explicit <a href="#//api/name/zoom">zoom</a> use <a href="#//api/name/panByValue:">panByValue:</a></p>
+
+<p>typedef enum {<br>
+SChartAxisPanToStart,<br>
+SChartAxisPanToEnd,<br>
+SChartAxisPanToCenter<br>
+} SChartAxisPanTo</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartAxis.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/pixelValueForDataValue:" title="pixelValueForDataValue:"></a>
+	<h3 class="subsubtitle method-title">pixelValueForDataValue:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns the pixel value, in the coordinate system of the plot area, of the given data value along this axis.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (float)pixelValueForDataValue:(id)<em>data</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>If a data value would fall outside of the plot area (is not currently within the range of the axis) then this method may return either a negative value,
+or a value larger than the respective height/<a href="#//api/name/width">width</a> of the plot area in pixels.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartAxis.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/resetZoomLevel" title="resetZoomLevel"></a>
+	<h3 class="subsubtitle method-title">resetZoomLevel</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>See <a href="#//api/name/resetZoomLevelWithAnimation:"><code>resetZoomLevelWithAnimation:</code></a>.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)resetZoomLevel</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartAxis.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/resetZoomLevelWithAnimation:" title="resetZoomLevelWithAnimation:"></a>
+	<h3 class="subsubtitle method-title">resetZoomLevelWithAnimation:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Sets the axis back to its original <a href="#//api/name/zoom">zoom</a></p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)resetZoomLevelWithAnimation:(BOOL)<em>animate</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>animate</em></dt>
+			<dd><ul>
+<li>whether or not the <a href="#//api/name/zoom">zoom</a> operation should be animated. If not animated, this reset will be instant.</li>
+</ul>
+</dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Whether or not the <a href="#//api/name/zoom">zoom</a> operation was successful.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartAxis.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setRangeWithMinimum:andMaximum:" title="setRangeWithMinimum:andMaximum:"></a>
+	<h3 class="subsubtitle method-title">setRangeWithMinimum:andMaximum:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Attempts to set the current visible range <a href="#//api/name/axisRange"><code>axisRange</code></a> to a range with the given minimum and maximum values.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)setRangeWithMinimum:(id)<em>minimum</em> andMaximum:(id)<em>maximum</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>minimum</em></dt>
+			<dd><ul>
+<li>the minimum value to be displayed, in data terms.</li>
+</ul>
+</dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>maximum</em></dt>
+			<dd><ul>
+<li>the maximum value to be displayed, in data terms.</li>
+</ul>
+</dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Whether or not the operation was successful.</p>
+
+<p>The permissable types of minimum and maximum will vary depending on the type of axis in use. The range of an <a href="../Classes/SChartNumberAxis.html"><code>SChartNumberAxis</code></a> should be set using two objects of type <code>NSNumber</code> for <code>minimum</code> and <code>maximum</code>, whilst that of an <a href="../Classes/SChartDateTimeAxis.html"><code>SChartDateTimeAxis</code></a> can be configured using either <code>NSNumber</code> or <code>NSDate</code> minima and maxima. In the case of <a href="../Classes/SChartCategoryAxis.html"><code>SChartCategoryAxis</code></a>, the first value has a nominal integer value of &lsquo;0&rsquo; and the nth value, &lsquo;n-1&rsquo;.</p>
+
+<p>A few examples:</p>
+
+<pre><code>// Range from 20 to 140 on an SChartNumberAxis.
+[myNumberAxis setRangeWithMinimum: @20 andMaximum: @140];
+
+// Range from June 2013 to January 2014 (approx.) on an SChartDateTimeAxis.
+[myDateTimeAxis setRangeWithMinimum: [NSDate dateWithTimeIntervalSince1970: 86400.*365*43.5] andMaximum: [NSDate dateWithTimeIntervalSince1970: 86400.*365*44]];
+
+// Range between the third and fifth elements on an SChartCategoryAxis.
+[myCategoryAxis setRangeWithMinimum: @2 andMaximum: @6];
+</code></pre>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Given any restrictions on setting the range, such as <a href="#//api/name/allowPanningOutOfMaxRange"><code>allowPanningOutOfMaxRange</code></a> etc, this method will attempt to set the current axis range.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartAxis.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setRangeWithMinimum:andMaximum:withAnimation:" title="setRangeWithMinimum:andMaximum:withAnimation:"></a>
+	<h3 class="subsubtitle method-title">setRangeWithMinimum:andMaximum:withAnimation:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Attempts to set the current visible range <a href="#//api/name/axisRange"><code>axisRange</code></a> to a range with the given minimum and maximum values.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)setRangeWithMinimum:(id)<em>minimum</em> andMaximum:(id)<em>maximum</em> withAnimation:(BOOL)<em>animation</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>animation</em></dt>
+			<dd><ul>
+<li>Whether or not to animate the range change.</li>
+</ul>
+</dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Whether or not the operation was successful.</p>
+
+<p>See <code>setRangeWithMinimum:andMaximum</code>.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Given any restrictions on setting the range, such as <a href="#//api/name/allowPanningOutOfMaxRange"><code>allowPanningOutOfMaxRange</code></a> etc, this method will attempt to set the current axis range.
+This implementation allows you to explicitly set whether to animate the transition to the new range or not.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartAxis.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setZoom:" title="setZoom:"></a>
+	<h3 class="subsubtitle method-title">setZoom:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>See <a href="#//api/name/setZoom:fromPosition:withAnimation:andBounceLimits:"><code>setZoom:fromPosition:withAnimation:andBounceLimits:</code></a>.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)setZoom:(double)<em>s</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>  The <a href="#//api/name/zoom">zoom</a> is from the midpoint of the <a href="#//api/name/axisRange">axisRange</a>.
+  The <a href="#//api/name/zoom">zoom</a> is not animated.
+  The <a href="#//api/name/axisRange">axisRange</a> will not &lsquo;bounce&rsquo; if it strays outside of the permissable range.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartAxis.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setZoom:fromPosition:" title="setZoom:fromPosition:"></a>
+	<h3 class="subsubtitle method-title">setZoom:fromPosition:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>See <a href="#//api/name/setZoom:fromPosition:withAnimation:andBounceLimits:"><code>setZoom:fromPosition:withAnimation:andBounceLimits:</code></a>.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)setZoom:(double)<em>z</em> fromPosition:(double *)<em>position</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>  The <a href="#//api/name/zoom">zoom</a> is not animated.
+  The <a href="#//api/name/axisRange">axisRange</a> will not &lsquo;bounce&rsquo; if it strays outside of the permissable range.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartAxis.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setZoom:fromPosition:withAnimation:" title="setZoom:fromPosition:withAnimation:"></a>
+	<h3 class="subsubtitle method-title">setZoom:fromPosition:withAnimation:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>See <a href="#//api/name/setZoom:fromPosition:withAnimation:andBounceLimits:"><code>setZoom:fromPosition:withAnimation:andBounceLimits:</code></a>.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)setZoom:(double)<em>z</em> fromPosition:(double *)<em>position</em> withAnimation:(BOOL)<em>animation</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The <a href="#//api/name/axisRange">axisRange</a> will not &lsquo;bounce&rsquo; if it strays outside of the permissable range.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartAxis.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setZoom:fromPosition:withAnimation:andBounceLimits:" title="setZoom:fromPosition:withAnimation:andBounceLimits:"></a>
+	<h3 class="subsubtitle method-title">setZoom:fromPosition:withAnimation:andBounceLimits:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Sets the <a href="#//api/name/zoom">zoom</a> of the axis, based around a fixed point.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)setZoom:(double)<em>z</em> fromPosition:(double *)<em>position</em> withAnimation:(BOOL)<em>animation</em> andBounceLimits:(BOOL)<em>bounceLimits</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>z</em></dt>
+			<dd><ul>
+<li>the <a href="#//api/name/zoom">zoom</a> level. 1.0 is the starting <a href="#//api/name/zoom">zoom</a> level, 0.5 is 2x magnification, etc.</li>
+</ul>
+</dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>position</em></dt>
+			<dd><ul>
+<li>the position on the axis around which to <a href="#//api/name/zoom">zoom</a> in/out.</li>
+</ul>
+</dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>animation</em></dt>
+			<dd><ul>
+<li>whether or not the <a href="#//api/name/zoom">zoom</a> operation should be animated. If not animated, the <a href="#//api/name/zoom">zoom</a> will be instant.</li>
+</ul>
+</dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>bounceLimits</em></dt>
+			<dd><ul>
+<li>whether or not the <a href="#//api/name/axisRange">axisRange</a> should &lsquo;bounce&rsquo; if it strays outside of the permissable range.</li>
+</ul>
+</dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>Whether or not the <a href="#//api/name/zoom">zoom</a> operation was successful.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartAxis.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setZoom:withAnimation:" title="setZoom:withAnimation:"></a>
+	<h3 class="subsubtitle method-title">setZoom:withAnimation:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>See <a href="#//api/name/setZoom:fromPosition:withAnimation:andBounceLimits:"><code>setZoom:fromPosition:withAnimation:andBounceLimits:</code></a>.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)setZoom:(double)<em>s</em> withAnimation:(BOOL)<em>animate</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>  The <a href="#//api/name/zoom">zoom</a> is from the midpoint of the <a href="#//api/name/axisRange">axisRange</a>.
+  The <a href="#//api/name/axisRange">axisRange</a> will not &lsquo;bounce&rsquo; if it strays outside of the permissable range.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartAxis.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/setZoomLevel:" title="setZoomLevel:"></a>
+	<h3 class="subsubtitle method-title">setZoomLevel:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Sets the <a href="#//api/name/zoom">zoom</a> to a standard level.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)setZoomLevel:(SChartAxisZoomLevel)<em>zoomLevel</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>zoomLevel</em></dt>
+			<dd><ul>
+<li>a predefined SChartAxisZoomLevel for the axis. To set an explicit <a href="#//api/name/zoom">zoom</a> use <a href="#//api/name/setZoom:fromPosition:"><code>setZoom:fromPosition:</code></a></li>
+</ul>
+</dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<pre><code>typedef enum {
+SChartAxisZoomLevelOriginal,
+SChartAxisZoomLevelDouble,
+SChartAxisZoomLevelHalf
+} SChartAxisZoomLevel 
+</code></pre>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartAxis.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/spaceRequiredToDrawWithTitle:" title="spaceRequiredToDrawWithTitle:"></a>
+	<h3 class="subsubtitle method-title">spaceRequiredToDrawWithTitle:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns the amount of space in points needed to draw the axis between the plot area and the edge of the <a href="#//api/name/chart">chart</a> frame.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (float)spaceRequiredToDrawWithTitle:(BOOL)<em>shouldIncludeTitle</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>shouldIncludeTitle</em></dt>
+			<dd><ul>
+<li>Whether or not to include the space required to draw the axis <a href="#//api/name/title">title</a>, if enabled.</li>
+</ul>
+</dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>This includes the space required to draw tickmarks and ticklabels.
+Note that altering tick labels via the delegate may cause the return value of this method to be incorrect.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartAxis.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/stringForId:" title="stringForId:"></a>
+	<h3 class="subsubtitle method-title">stringForId:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns a string representation of the given object.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSString *)stringForId:(id)<em>obj</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>This will use the &lsquo;labelFormatter&rsquo; where possible.  This is used for creating ticklabel and crosshair text.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartAxis.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/visibleRange" title="visibleRange"></a>
+	<h3 class="subsubtitle method-title">visibleRange</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns a range within which all the visible (non-hidden) series on this axis will be displayed.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (SChartRange *)visibleRange</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Setting the default range to this range should frame your data nicely.
+Note that this will take baselines, bar/column widths etc into consideration and so is not necessarily the same as <a href="#//api/name/dataRange"><code>dataRange</code></a>.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="../Classes/SChartRange.html">SChartRange</a></p></code></li>
+			
+			<li><code><p><a href="../Classes/SChartNumberRange.html">SChartNumberRange</a></p></code></li>
+			
+			<li><code><p><a href="../Classes/SChartDateRange.html">SChartDateRange</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartAxis.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/zoom" title="zoom"></a>
+	<h3 class="subsubtitle method-title">zoom</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns the current zoom level, relative to the <a href="#//api/name/defaultRange"><code>defaultRange</code></a> of the axis.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (double)zoom</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartAxis.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/zoomToPoint:withRange:" title="zoomToPoint:withRange:"></a>
+	<h3 class="subsubtitle method-title">zoomToPoint:withRange:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>See <a href="#//api/name/zoomToPoint:withRange:withAnimation:usingBounceLimits:"><code>zoomToPoint:withRange:withAnimation:usingBounceLimits:</code></a>.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)zoomToPoint:(double)<em>point</em> withRange:(double)<em>range</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartAxis.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/zoomToPoint:withRange:withAnimation:usingBounceLimits:" title="zoomToPoint:withRange:withAnimation:usingBounceLimits:"></a>
+	<h3 class="subsubtitle method-title">zoomToPoint:withRange:withAnimation:usingBounceLimits:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Zoom to a set range, centred on a point.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)zoomToPoint:(double)<em>point</em> withRange:(double)<em>range</em> withAnimation:(BOOL)<em>animate</em> usingBounceLimits:(BOOL)<em>bounce</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>point</em></dt>
+			<dd><ul>
+<li>the point on the axis around which to <a href="#//api/name/zoom">zoom</a> in/out.</li>
+</ul>
+</dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>range</em></dt>
+			<dd><ul>
+<li>the magnitude of the range to <a href="#//api/name/zoom">zoom</a> in to - this will be centred around the point specified.</li>
+</ul>
+</dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>animate</em></dt>
+			<dd><ul>
+<li>whether or not the <a href="#//api/name/zoom">zoom</a> operation should be animated. If not animated, the <a href="#//api/name/zoom">zoom</a> will be instant.</li>
+</ul>
+</dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>bounce</em></dt>
+			<dd><ul>
+<li>whether or not the <a href="#//api/name/axisRange">axisRange</a> should &lsquo;bounce&rsquo; if it strays outside of the permissable range.</li>
+</ul>
+</dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>This method is for zooming in to a point using a range in data terms rather than a <a href="#//api/name/zoom">zoom</a> level.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartAxis.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2013 Scott Logic Ltd. All rights reserved. (Last updated: 2013-10-01)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 858)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

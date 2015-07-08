@@ -1,0 +1,1832 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>SChartSeries Class Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.1 (build 858)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">ShinobiCharts </a></h1>
+				<a id="developerHome" href="../index.html">Scott Logic Ltd</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">SChartSeries Class Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	<option value="properties">Properties</option>
+	
+	<option value="//api/name/_selectedStyle">&nbsp;&nbsp;&nbsp;&nbsp;_selectedStyle</option>
+	
+	<option value="//api/name/_style">&nbsp;&nbsp;&nbsp;&nbsp;_style</option>
+	
+	<option value="//api/name/animationEnabled">&nbsp;&nbsp;&nbsp;&nbsp;animationEnabled</option>
+	
+	<option value="//api/name/crosshairEnabled">&nbsp;&nbsp;&nbsp;&nbsp;crosshairEnabled</option>
+	
+	<option value="//api/name/dataSeries">&nbsp;&nbsp;&nbsp;&nbsp;dataSeries</option>
+	
+	<option value="//api/name/entryAnimation">&nbsp;&nbsp;&nbsp;&nbsp;entryAnimation</option>
+	
+	<option value="//api/name/exitAnimation">&nbsp;&nbsp;&nbsp;&nbsp;exitAnimation</option>
+	
+	<option value="//api/name/hidden">&nbsp;&nbsp;&nbsp;&nbsp;hidden</option>
+	
+	<option value="//api/name/legendItem">&nbsp;&nbsp;&nbsp;&nbsp;legendItem</option>
+	
+	<option value="//api/name/orientation">&nbsp;&nbsp;&nbsp;&nbsp;orientation</option>
+	
+	<option value="//api/name/selected">&nbsp;&nbsp;&nbsp;&nbsp;selected</option>
+	
+	<option value="//api/name/selectionMode">&nbsp;&nbsp;&nbsp;&nbsp;selectionMode</option>
+	
+	<option value="//api/name/showInLegend">&nbsp;&nbsp;&nbsp;&nbsp;showInLegend</option>
+	
+	<option value="//api/name/title">&nbsp;&nbsp;&nbsp;&nbsp;title</option>
+	
+	<option value="//api/name/togglePointSelection">&nbsp;&nbsp;&nbsp;&nbsp;togglePointSelection</option>
+	
+	<option value="//api/name/toggleSelection">&nbsp;&nbsp;&nbsp;&nbsp;toggleSelection</option>
+	
+	
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/centreXOfDataPointAtIndex:onChart:">&nbsp;&nbsp;&nbsp;&nbsp;- centreXOfDataPointAtIndex:onChart:</option>
+	
+	<option value="//api/name/centreYOfDataPointAtIndex:onChart:">&nbsp;&nbsp;&nbsp;&nbsp;- centreYOfDataPointAtIndex:onChart:</option>
+	
+	<option value="//api/name/comparatorForValueKeys">&nbsp;&nbsp;&nbsp;&nbsp;- comparatorForValueKeys</option>
+	
+	<option value="//api/name/heightOfDataPointAtIndex:onChart:">&nbsp;&nbsp;&nbsp;&nbsp;- heightOfDataPointAtIndex:onChart:</option>
+	
+	<option value="//api/name/shouldBeDrawn">&nbsp;&nbsp;&nbsp;&nbsp;- shouldBeDrawn</option>
+	
+	<option value="//api/name/stringForKey:withDataPoint:">&nbsp;&nbsp;&nbsp;&nbsp;- stringForKey:withDataPoint:</option>
+	
+	<option value="//api/name/stringForValueWithKey:withDataPoint:usingAxis:">&nbsp;&nbsp;&nbsp;&nbsp;- stringForValueWithKey:withDataPoint:usingAxis:</option>
+	
+	<option value="//api/name/valueKeys">&nbsp;&nbsp;&nbsp;&nbsp;- valueKeys</option>
+	
+	<option value="//api/name/widthOfDataPointAtIndex:onChart:">&nbsp;&nbsp;&nbsp;&nbsp;- widthOfDataPointAtIndex:onChart:</option>
+	
+	<option value="//api/name/xValueKeys">&nbsp;&nbsp;&nbsp;&nbsp;- xValueKeys</option>
+	
+	<option value="//api/name/yValueKeys">&nbsp;&nbsp;&nbsp;&nbsp;- yValueKeys</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Data and Axis setup">Data and Axis setup</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Status">Status</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Animation">Animation</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Selection Options">Selection Options</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Crosshair">Crosshair</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Styling">Styling</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Legend Display Options">Legend Display Options</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Drawing">Drawing</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#properties">Properties</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/_selectedStyle">_selectedStyle</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/_style">_style</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/animationEnabled">animationEnabled</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/crosshairEnabled">crosshairEnabled</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/dataSeries">dataSeries</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/entryAnimation">entryAnimation</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/exitAnimation">exitAnimation</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/hidden">hidden</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/legendItem">legendItem</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/orientation">orientation</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/selected">selected</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/selectionMode">selectionMode</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/showInLegend">showInLegend</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/title">title</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/togglePointSelection">togglePointSelection</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/toggleSelection">toggleSelection</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/centreXOfDataPointAtIndex:onChart:">centreXOfDataPointAtIndex:onChart:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/centreYOfDataPointAtIndex:onChart:">centreYOfDataPointAtIndex:onChart:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/comparatorForValueKeys">comparatorForValueKeys</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/heightOfDataPointAtIndex:onChart:">heightOfDataPointAtIndex:onChart:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/shouldBeDrawn">shouldBeDrawn</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/stringForKey:withDataPoint:">stringForKey:withDataPoint:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/stringForValueWithKey:withDataPoint:usingAxis:">stringForValueWithKey:withDataPoint:usingAxis:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/valueKeys">valueKeys</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/widthOfDataPointAtIndex:onChart:">widthOfDataPointAtIndex:onChart:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/xValueKeys">xValueKeys</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/yValueKeys">yValueKeys</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="SChartSeries Class Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">SChartSeries Class Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Inherits from</td>
+	<td class="specification-value">NSObject</td>
+</tr><tr>
+	<td class="specification-title">Conforms to</td>
+	<td class="specification-value"><a href="../Protocols/SChartLegendItem.html">SChartLegendItem</a></td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">SChartSeries.h</td>
+</tr><tr>
+	<td class="specification-title">Companion guide</td>
+	<td class="specification-value"><a href="../docs/markdown_files/ChartsUserGuide.html">ChartsUserGuide</a></td>
+</tr><tr>
+	<td class="specification-title">Availability</td>
+	<td class="specification-value">Standard<br />Premium</td>
+</tr><tr>
+	<td class="specification-title">Related samples</td>
+	<td class="specification-value"></td>
+</tr>
+						</tbody></table></div>
+					
+					
+					
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>SChartSeries manages the display of a data series on a <a href="../Classes/ShinobiChart.html"><code>ShinobiChart</code></a>.  It contains a set of data points.</p>
+
+<p>There are various things which you can do to configure the behavior and appearance of a chart series:</p>
+
+<ul>
+<li>A series can optionally use animations when it appears and disappears on the chart.  You can set whether animation should be enabled, and if so, you can configure the animations which the series uses.</li>
+<li>You can configure whether the series is selectable, and if so, its behavior when it is <a href="#//api/name/selected">selected</a>.</li>
+<li>The series contains instances of <a href="../Classes/SChartSeriesStyle.html"><code>SChartSeriesStyle</code></a>, or one of its sub-classes, to manage its appearance.  Tweaking these style objects allows you to change the look of the series on the chart.</li>
+<li>You can update the representation of the series in the chart legend, and whether the chart crosshair is enabled for the series.</li>
+</ul>
+
+
+<p>We have created sub-classes of SChartSeries for each of the concrete types of chart series which are available on a chart.  These are:</p>
+
+<ul>
+<li><a href="../Classes/SChartBarSeries.html"><code>SChartBarSeries</code></a> - represents a bar series.</li>
+<li><a href="../Classes/SChartColumnSeries.html"><code>SChartColumnSeries</code></a> - represents a column series.</li>
+<li><a href="../Classes/SChartLineSeries.html"><code>SChartLineSeries</code></a> - represents a line series.</li>
+<li><a href="../Classes/SChartStepLineSeries.html"><code>SChartStepLineSeries</code></a> - represents a stepped line series.</li>
+<li><a href="../Classes/SChartBandSeries.html"><code>SChartBandSeries</code></a> - represents a band series.  These are only available in the premium version of charts.</li>
+<li><a href="../Classes/SChartScatterSeries.html"><code>SChartScatterSeries</code></a> - represents a scatter plots.</li>
+<li><a href="../Classes/SChartCandlestickSeries.html"><code>SChartCandlestickSeries</code></a> - represents a candlestick series.  These are only available in the premium version of charts.</li>
+<li><a href="../Classes/SChartOHLCSeries.html"><code>SChartOHLCSeries</code></a> - represents an Open-High-Low-Closed (OHLC) series.  These are only available in the premium version of charts.</li>
+<li><a href="../Classes/SChartDonutSeries.html"><code>SChartDonutSeries</code></a> - represents a donut series.</li>
+<li><a href="../Classes/SChartPieSeries.html"><code>SChartPieSeries</code></a> - represents a pie series.</li>
+</ul>
+
+
+<p>Series are always drawn in order with the lowest series index first. This means that higher numbered series sit on top and potentially obscure lower numbered series.</p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						<a title="Data and Axis setup" name="task_Data and Axis setup"></a>
+						<h3 class="subsubtitle task-title">Data and Axis setup</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/dataSeries">&nbsp;&nbsp;dataSeries</a></code>
+		<span class="tooltip"><p><a href="../Classes/SChartDataSeries.html"><code>SChartDataSeries</code></a> gives you access to the set of data points in the series.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/stringForValueWithKey:withDataPoint:usingAxis:">&ndash;&nbsp;stringForValueWithKey:withDataPoint:usingAxis:</a></code>
+		<span class="tooltip"><p>This method returns a string value that will represent the value of a given data point based on its key.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/stringForKey:withDataPoint:">&ndash;&nbsp;stringForKey:withDataPoint:</a></code>
+		<span class="tooltip"><p>This method returns a string value that will represent the key of a given datapoint.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Status" name="task_Status"></a>
+						<h3 class="subsubtitle task-title">Status</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/orientation">&nbsp;&nbsp;orientation</a></code>
+		<span class="tooltip"><p>The orientation of the chart axis which is associated with the series.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/hidden">&nbsp;&nbsp;hidden</a></code>
+		<span class="tooltip"><p>Dictates whether or not a series is hidden on the chart.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/xValueKeys">&ndash;&nbsp;xValueKeys</a></code>
+		<span class="tooltip"><p>Used for data points which contain multiple values (e.g. OHLC data points).  Returns the keys for the x values of the data point.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/yValueKeys">&ndash;&nbsp;yValueKeys</a></code>
+		<span class="tooltip"><p>Used for data points which contain multiple values (e.g. OHLC data points).  Returns the keys for the y values of the data point.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/valueKeys">&ndash;&nbsp;valueKeys</a></code>
+		<span class="tooltip"><p>Used for data points which contain values that are independent of axes (e.g. Bubble data points).  Returns the keys for the axis independent values of the data point.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/comparatorForValueKeys">&ndash;&nbsp;comparatorForValueKeys</a></code>
+		<span class="tooltip"><p>If the chart ever needs to know about the order in which the value-keys belonging to this series should be used then this method is called for an appropriate comparator.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Animation" name="task_Animation"></a>
+						<h3 class="subsubtitle task-title">Animation</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/animationEnabled">&nbsp;&nbsp;animationEnabled</a></code>
+		<span class="tooltip"><p>Whether entry and exit animations are enabled for this series.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/entryAnimation">&nbsp;&nbsp;entryAnimation</a></code>
+		<span class="tooltip"><p>The animation which describes how the series will enter the chart.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/exitAnimation">&nbsp;&nbsp;exitAnimation</a></code>
+		<span class="tooltip"><p>The animation which describes how the series will exit the chart.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+						
+						<a title="Selection Options" name="task_Selection Options"></a>
+						<h3 class="subsubtitle task-title">Selection Options</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/selectionMode">&nbsp;&nbsp;selectionMode</a></code>
+		<span class="tooltip"><p>Defines what should be <a href="#//api/name/selected">selected</a> when the user taps the chart.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/toggleSelection">&nbsp;&nbsp;toggleSelection</a></code>
+		<span class="tooltip"><p>Dictates whether the chart should allow other series to be <a href="#//api/name/selected">selected</a> simultaneously.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/togglePointSelection">&nbsp;&nbsp;togglePointSelection</a></code>
+		<span class="tooltip"><p>Dictates whether the series should only allow only one <a href="#//api/name/selected">selected</a> point at a time.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/selected">&nbsp;&nbsp;selected</a></code>
+		<span class="tooltip"><p>Whether or not the series is selected</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+						
+						<a title="Crosshair" name="task_Crosshair"></a>
+						<h3 class="subsubtitle task-title">Crosshair</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/crosshairEnabled">&nbsp;&nbsp;crosshairEnabled</a></code>
+		<span class="tooltip"><p>Display a tooltip with connecting lines after the user taps-and-holds.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+						
+						<a title="Styling" name="task_Styling"></a>
+						<h3 class="subsubtitle task-title">Styling</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/_style">&nbsp;&nbsp;_style</a></code>
+		<span class="tooltip"><p>Manages the appearance of the chart series on the chart.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/_selectedStyle">&nbsp;&nbsp;_selectedStyle</a></code>
+		<span class="tooltip"><p>Manages the appearance of the chart series when it is <a href="#//api/name/selected">selected</a>.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+						
+						<a title="Legend Display Options" name="task_Legend Display Options"></a>
+						<h3 class="subsubtitle task-title">Legend Display Options</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/title">&nbsp;&nbsp;title</a></code>
+		<span class="tooltip"><p>The title of the series to be displayed in the legend.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/showInLegend">&nbsp;&nbsp;showInLegend</a></code>
+		<span class="tooltip"><p>Whether or not the series should be represented in the legend</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/legendItem">&nbsp;&nbsp;legendItem</a></code>
+		<span class="tooltip"><p>The object responsible for providing the <a href="#//api/name/title">title</a> and <a href="../Classes/SChartLegendSymbol.html"><code>SChartLegendSymbol</code></a> item for representing this symbol in the legend.</p></span>
+	</span>
+	<span class="task-item-suffix">property</span>
+	
+</li>
+						</ul>
+						
+						
+						<a title="Drawing" name="task_Drawing"></a>
+						<h3 class="subsubtitle task-title">Drawing</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/shouldBeDrawn">&ndash;&nbsp;shouldBeDrawn</a></code>
+		<span class="tooltip"><p>DEPRECATED - Use the <a href="#//api/name/hidden"><code>hidden</code></a> property instead.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/centreXOfDataPointAtIndex:onChart:">&ndash;&nbsp;centreXOfDataPointAtIndex:onChart:</a></code>
+		<span class="tooltip"><p>Returns, in data terms, the x component of the point upon which the datapoint at the given index is centered.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/centreYOfDataPointAtIndex:onChart:">&ndash;&nbsp;centreYOfDataPointAtIndex:onChart:</a></code>
+		<span class="tooltip"><p>Returns, in data terms, the y component of the point upon which the datapoint at the given index is centered.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/widthOfDataPointAtIndex:onChart:">&ndash;&nbsp;widthOfDataPointAtIndex:onChart:</a></code>
+		<span class="tooltip"><p>Returns the width, in data terms, of the datapoint at the given index.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/heightOfDataPointAtIndex:onChart:">&ndash;&nbsp;heightOfDataPointAtIndex:onChart:</a></code>
+		<span class="tooltip"><p>Returns the width, in data terms, of the datapoint at the given index.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Properties" name="properties"></a>
+						<h2 class="subtitle subtitle-methods">Properties</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/_selectedStyle" title="_selectedStyle"></a>
+	<h3 class="subsubtitle method-title">_selectedStyle</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Manages the appearance of the chart series when it is <a href="#//api/name/selected">selected</a>.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) SChartSeriesStyle *_selectedStyle</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Style settings in this object will be applied when the series is marked as <a href="#//api/name/selected">selected</a> (or a point is <a href="#//api/name/selected">selected</a>).</p>
+
+<p>The default settings of the style are inherited from the chart theme.  You can tweak the appearance of the series by modifying the style.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="../Classes/SChartSeriesStyle.html">SChartSeriesStyle</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartSeries.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/_style" title="_style"></a>
+	<h3 class="subsubtitle method-title">_style</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Manages the appearance of the chart series on the chart.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) SChartSeriesStyle *_style</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The default settings of the style are inherited from the chart theme.  You can tweak the appearance of the series by modifying the style.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="../Classes/SChartSeriesStyle.html">SChartSeriesStyle</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartSeries.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/animationEnabled" title="animationEnabled"></a>
+	<h3 class="subsubtitle method-title">animationEnabled</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Whether entry and exit animations are enabled for this series.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic) BOOL animationEnabled</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>If this is set to <code>YES</code>, the series will animate in and out using its <a href="#//api/name/entryAnimation">entryAnimation</a> and <a href="#//api/name/exitAnimation">exitAnimation</a> animation properties.
+If this is set to <code>NO</code>, the series will appear and disappear instantly, with no animation.
+The default is <code>NO</code> - animation disabled.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartSeries.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/crosshairEnabled" title="crosshairEnabled"></a>
+	<h3 class="subsubtitle method-title">crosshairEnabled</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Display a tooltip with connecting lines after the user taps-and-holds.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic) BOOL crosshairEnabled</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>For line series, the tooltip will appear on the nearest series and interpolate values between data points. For column/bar series the crosshair will snap to the nearest column or bar. Once a crosshair is visible it is locked to that current series. It will ignore other series until it is dismissed and re-established on a different series. To dismiss the crosshair the user performs a single tap on the chart.  This defaults to <code>NO</code>.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartSeries.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/dataSeries" title="dataSeries"></a>
+	<h3 class="subsubtitle method-title">dataSeries</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p><a href="../Classes/SChartDataSeries.html"><code>SChartDataSeries</code></a> gives you access to the set of data points in the series.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) SChartDataSeries *dataSeries</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>It contains the data values only, it is not concerned with the appearance of the series on the chart.  The data series is provided to allow you to query the data values in the series, you should not try and use this to modify the series.  If you wish to modify the data in the series, you should update the chart datasource, and then call <a href="../Classes/ShinobiChart.html#//api/name/reloadData"><code>[ShinobiChart reloadData]</code></a>.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartSeries.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/entryAnimation" title="entryAnimation"></a>
+	<h3 class="subsubtitle method-title">entryAnimation</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The animation which describes how the series will enter the chart.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (retain, nonatomic) SChartAnimation *entryAnimation</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The chart series will enter when the chart is first drawn, or when its <a href="#//api/name/hidden"><code>hidden</code></a> property is set to <code>NO</code> (having previously been <code>YES</code>).
+See <a href="../Classes/SChartAnimation.html"><code>SChartAnimation</code></a> for more details.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartSeries.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/exitAnimation" title="exitAnimation"></a>
+	<h3 class="subsubtitle method-title">exitAnimation</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The animation which describes how the series will exit the chart.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (retain, nonatomic) SChartAnimation *exitAnimation</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The chart series will exit the chart when its <a href="#//api/name/hidden"><code>hidden</code></a> property is set to <code>YES</code> (having previously been <code>NO</code>).
+See <a href="../Classes/SChartAnimation.html"><code>SChartAnimation</code></a> for more details.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartSeries.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/hidden" title="hidden"></a>
+	<h3 class="subsubtitle method-title">hidden</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Dictates whether or not a series is hidden on the chart.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic) BOOL hidden</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>If the <code>hidden</code> property of a chart series is set to <code>YES</code>, then the series will not be drawn on the chart.
+If this property is set to <code>NO</code>, the series will be drawn as usual.
+The default setting is <code>NO</code>.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartSeries.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/legendItem" title="legendItem"></a>
+	<h3 class="subsubtitle method-title">legendItem</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The object responsible for providing the <a href="#//api/name/title">title</a> and <a href="../Classes/SChartLegendSymbol.html"><code>SChartLegendSymbol</code></a> item for representing this symbol in the legend.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) id&lt;SChartLegendItem&gt; legendItem</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>By default, this is set to the series itself.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartSeries.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/orientation" title="orientation"></a>
+	<h3 class="subsubtitle method-title">orientation</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The orientation of the chart axis which is associated with the series.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) SChartSeriesOrientation orientation</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The orientation can be either horizontal or vertical.  It is defined as follows:</p>
+
+<pre><code>typedef enum {
+    SChartSeriesOrientationHorizontal,
+    SChartSeriesOrientationVertical
+} SChartSeriesOrientation;
+</code></pre>
+
+<p>For example, the orientation for column series is SChartSeriesOrientationHorizontal, and the orientation for bar series is SChartSeriesOrientationVertical.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartSeries.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/selected" title="selected"></a>
+	<h3 class="subsubtitle method-title">selected</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Whether or not the series is selected</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) BOOL selected</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartSeries.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/selectionMode" title="selectionMode"></a>
+	<h3 class="subsubtitle method-title">selectionMode</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Defines what should be <a href="#//api/name/selected">selected</a> when the user taps the chart.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic) SChartSelection selectionMode</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>This property defines how the series will respond when a tap gesture indicates a point on this series.</p>
+
+<p>The selection modes are defined as follows:</p>
+
+<pre><code>typedef enum {
+    SChartSelectionNone,
+    SChartSelectionSeries,
+    SChartSelectionPoint
+} SChartSelection;
+</code></pre>
+
+<p>There is an important effect of choosing <code>SChartSelectionNone</code> - this option will remove this series from the algorithm that searches for the nearest point to the tap.  Hence, a user may tap near to this series - but the algorithm will select a different series based upon its proximity.</p>
+
+<p>Currently selection is handled separately for radial chart series - <code>selectionMode</code>, <a href="#//api/name/toggleSelection"><code>toggleSelection</code></a>, and <a href="#//api/name/togglePointSelection"><code>togglePointSelection</code></a> are only applicable to cartesian series.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartSeries.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/showInLegend" title="showInLegend"></a>
+	<h3 class="subsubtitle method-title">showInLegend</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Whether or not the series should be represented in the legend</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, assign) BOOL showInLegend</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartSeries.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/title" title="title"></a>
+	<h3 class="subsubtitle method-title">title</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>The title of the series to be displayed in the legend.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic, retain) NSString *title</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartSeries.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/togglePointSelection" title="togglePointSelection"></a>
+	<h3 class="subsubtitle method-title">togglePointSelection</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Dictates whether the series should only allow only one <a href="#//api/name/selected">selected</a> point at a time.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic) BOOL togglePointSelection</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>If this is set to <code>NO</code>, the series will de-select all other points in this series before selecting the tapped point. Setting <code>YES</code> will allow multiple points to be <a href="#//api/name/selected">selected</a> (&ldquo;toggled&rdquo;) as they are tapped. NOTE: This is <em>per</em> series and will allow multiple points to be <a href="#//api/name/selected">selected</a> across series regardless of value. To enable single point selection across all of the series for the chart, use the chart <a href="#//api/name/delegate">delegate</a>.</p>
+
+<p>Defaults to <code>NO</code>.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartSeries.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/toggleSelection" title="toggleSelection"></a>
+	<h3 class="subsubtitle method-title">toggleSelection</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Dictates whether the chart should allow other series to be <a href="#//api/name/selected">selected</a> simultaneously.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>@property (nonatomic) BOOL toggleSelection</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>If this is set to <code>NO</code>, the chart will de-select all other series before selecting the tapped series. Setting <code>YES</code> will allow multiple series to be <a href="#//api/name/selected">selected</a> (&ldquo;toggled&rdquo;) as they are tapped.</p>
+
+<p>Defaults to <code>NO</code>.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartSeries.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/centreXOfDataPointAtIndex:onChart:" title="centreXOfDataPointAtIndex:onChart:"></a>
+	<h3 class="subsubtitle method-title">centreXOfDataPointAtIndex:onChart:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns, in data terms, the x component of the point upon which the datapoint at the given index is centered.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)centreXOfDataPointAtIndex:(NSInteger)<em>index</em> onChart:(ShinobiChart *)<em>chart</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartSeries.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/centreYOfDataPointAtIndex:onChart:" title="centreYOfDataPointAtIndex:onChart:"></a>
+	<h3 class="subsubtitle method-title">centreYOfDataPointAtIndex:onChart:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns, in data terms, the y component of the point upon which the datapoint at the given index is centered.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)centreYOfDataPointAtIndex:(NSInteger)<em>index</em> onChart:(ShinobiChart *)<em>chart</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartSeries.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/comparatorForValueKeys" title="comparatorForValueKeys"></a>
+	<h3 class="subsubtitle method-title">comparatorForValueKeys</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>If the chart ever needs to know about the order in which the value-keys belonging to this series should be used then this method is called for an appropriate comparator.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSComparator)comparatorForValueKeys</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>For example, an <a href="../Classes/SChartCrosshairMultiValueTooltip.html">SChartCrosshairMultiValueTooltip</a> needs to know the order in which to display its dictionary of key-value pairs.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartSeries.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/heightOfDataPointAtIndex:onChart:" title="heightOfDataPointAtIndex:onChart:"></a>
+	<h3 class="subsubtitle method-title">heightOfDataPointAtIndex:onChart:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns the width, in data terms, of the datapoint at the given index.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)heightOfDataPointAtIndex:(NSInteger)<em>index</em> onChart:(ShinobiChart *)<em>chart</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartSeries.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/shouldBeDrawn" title="shouldBeDrawn"></a>
+	<h3 class="subsubtitle method-title">shouldBeDrawn</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>DEPRECATED - Use the <a href="#//api/name/hidden"><code>hidden</code></a> property instead.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (BOOL)shouldBeDrawn</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Whether or not the series should be drawn on the chart.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartSeries.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/stringForKey:withDataPoint:" title="stringForKey:withDataPoint:"></a>
+	<h3 class="subsubtitle method-title">stringForKey:withDataPoint:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>This method returns a string value that will represent the key of a given datapoint.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSString *)stringForKey:(NSString *)<em>key</em> withDataPoint:(id&lt;SChartData&gt;)<em>dataPoint</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>key</em></dt>
+			<dd><p>The key that needs a string representation.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>dataPoint</em></dt>
+			<dd><p>The data point that the key corresponds to.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>A string that will be used to represent the given key for a data point.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The multi value tooltip uses this method to decide what string to use in its labels for the key of a given datapoint.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartSeries.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/stringForValueWithKey:withDataPoint:usingAxis:" title="stringForValueWithKey:withDataPoint:usingAxis:"></a>
+	<h3 class="subsubtitle method-title">stringForValueWithKey:withDataPoint:usingAxis:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>This method returns a string value that will represent the value of a given data point based on its key.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSString *)stringForValueWithKey:(NSString *)<em>key</em> withDataPoint:(id&lt;SChartData&gt;)<em>dataPoint</em> usingAxis:(SChartAxis *)<em>axis</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>key</em></dt>
+			<dd><p>The key that corresponds to the value needing a string representation.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>dataPoint</em></dt>
+			<dd><p>The data point that the value corresponds to.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>The</em></dt>
+			<dd><p>axis that the value corresponds to, where <code>nil</code> represents an axis independent value.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>A string that will be used to represent a value for a data point.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>This relies on the data point responding to the appropriate optional method (sChartValueForKey:, sChartXValueForKey: or sChartYValueForKey:).</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartSeries.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/valueKeys" title="valueKeys"></a>
+	<h3 class="subsubtitle method-title">valueKeys</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Used for data points which contain values that are independent of axes (e.g. Bubble data points).  Returns the keys for the axis independent values of the data point.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSArray *)valueKeys</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartSeries.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/widthOfDataPointAtIndex:onChart:" title="widthOfDataPointAtIndex:onChart:"></a>
+	<h3 class="subsubtitle method-title">widthOfDataPointAtIndex:onChart:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Returns the width, in data terms, of the datapoint at the given index.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (id)widthOfDataPointAtIndex:(NSInteger)<em>index</em> onChart:(ShinobiChart *)<em>chart</em></code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartSeries.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/xValueKeys" title="xValueKeys"></a>
+	<h3 class="subsubtitle method-title">xValueKeys</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Used for data points which contain multiple values (e.g. OHLC data points).  Returns the keys for the x values of the data point.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSArray *)xValueKeys</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartSeries.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/yValueKeys" title="yValueKeys"></a>
+	<h3 class="subsubtitle method-title">yValueKeys</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Used for data points which contain multiple values (e.g. OHLC data points).  Returns the keys for the y values of the data point.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSArray *)yValueKeys</code></div>
+
+    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartSeries.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2013 Scott Logic Ltd. All rights reserved. (Last updated: 2013-10-01)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 858)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>

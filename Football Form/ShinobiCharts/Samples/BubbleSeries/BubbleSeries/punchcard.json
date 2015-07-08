@@ -1,0 +1,842 @@
+ [
+  {
+  "day": "Sunday",
+  "hour": 0,
+  "commits": 0
+  },
+  {
+  "day": "Sunday",
+  "hour": 1,
+  "commits": 0
+  },
+  {
+  "day": "Sunday",
+  "hour": 2,
+  "commits": 1
+  },
+  {
+  "day": "Sunday",
+  "hour": 3,
+  "commits": 0
+  },
+  {
+  "day": "Sunday",
+  "hour": 4,
+  "commits": 0
+  },
+  {
+  "day": "Sunday",
+  "hour": 5,
+  "commits": 0
+  },
+  {
+  "day": "Sunday",
+  "hour": 6,
+  "commits": 0
+  },
+  {
+  "day": "Sunday",
+  "hour": 7,
+  "commits": 0
+  },
+  {
+  "day": "Sunday",
+  "hour": 8,
+  "commits": 0
+  },
+  {
+  "day": "Sunday",
+  "hour": 9,
+  "commits": 1
+  },
+  {
+  "day": "Sunday",
+  "hour": 10,
+  "commits": 0
+  },
+  {
+  "day": "Sunday",
+  "hour": 11,
+  "commits": 0
+  },
+  {
+  "day": "Sunday",
+  "hour": 12,
+  "commits": 0
+  },
+  {
+  "day": "Sunday",
+  "hour": 13,
+  "commits": 0
+  },
+  {
+  "day": "Sunday",
+  "hour": 14,
+  "commits": 0
+  },
+  {
+  "day": "Sunday",
+  "hour": 15,
+  "commits": 1
+  },
+  {
+  "day": "Sunday",
+  "hour": 16,
+  "commits": 0
+  },
+  {
+  "day": "Sunday",
+  "hour": 17,
+  "commits": 0
+  },
+  {
+  "day": "Sunday",
+  "hour": 18,
+  "commits": 0
+  },
+  {
+  "day": "Sunday",
+  "hour": 19,
+  "commits": 0
+  },
+  {
+  "day": "Sunday",
+  "hour": 20,
+  "commits": 0
+  },
+  {
+  "day": "Sunday",
+  "hour": 21,
+  "commits": 3
+  },
+  {
+  "day": "Sunday",
+  "hour": 22,
+  "commits": 0
+  },
+  {
+  "day": "Sunday",
+  "hour": 23,
+  "commits": 0
+  },
+  {
+  "day": "Monday",
+  "hour": 0,
+  "commits": 0
+  },
+  {
+  "day": "Monday",
+  "hour": 1,
+  "commits": 0
+  },
+  {
+  "day": "Monday",
+  "hour": 2,
+  "commits": 0
+  },
+  {
+  "day": "Monday",
+  "hour": 3,
+  "commits": 0
+  },
+  {
+  "day": "Monday",
+  "hour": 4,
+  "commits": 0
+  },
+  {
+  "day": "Monday",
+  "hour": 5,
+  "commits": 0
+  },
+  {
+  "day": "Monday",
+  "hour": 6,
+  "commits": 0
+  },
+  {
+  "day": "Monday",
+  "hour": 7,
+  "commits": 0
+  },
+  {
+  "day": "Monday",
+  "hour": 8,
+  "commits": 1
+  },
+  {
+  "day": "Monday",
+  "hour": 9,
+  "commits": 6
+  },
+  {
+  "day": "Monday",
+  "hour": 10,
+  "commits": 6
+  },
+  {
+  "day": "Monday",
+  "hour": 11,
+  "commits": 9
+  },
+  {
+  "day": "Monday",
+  "hour": 12,
+  "commits": 5
+  },
+  {
+  "day": "Monday",
+  "hour": 13,
+  "commits": 3
+  },
+  {
+  "day": "Monday",
+  "hour": 14,
+  "commits": 5
+  },
+  {
+  "day": "Monday",
+  "hour": 15,
+  "commits": 4
+  },
+  {
+  "day": "Monday",
+  "hour": 16,
+  "commits": 9
+  },
+  {
+  "day": "Monday",
+  "hour": 17,
+  "commits": 2
+  },
+  {
+  "day": "Monday",
+  "hour": 18,
+  "commits": 0
+  },
+  {
+  "day": "Monday",
+  "hour": 19,
+  "commits": 0
+  },
+  {
+  "day": "Monday",
+  "hour": 20,
+  "commits": 2
+  },
+  {
+  "day": "Monday",
+  "hour": 21,
+  "commits": 2
+  },
+  {
+  "day": "Monday",
+  "hour": 22,
+  "commits": 2
+  },
+  {
+  "day": "Monday",
+  "hour": 23,
+  "commits": 0
+  },
+  {
+  "day": "Tuesday",
+  "hour": 0,
+  "commits": 0
+  },
+  {
+  "day": "Tuesday",
+  "hour": 1,
+  "commits": 0
+  },
+  {
+  "day": "Tuesday",
+  "hour": 2,
+  "commits": 0
+  },
+  {
+  "day": "Tuesday",
+  "hour": 3,
+  "commits": 0
+  },
+  {
+  "day": "Tuesday",
+  "hour": 4,
+  "commits": 0
+  },
+  {
+  "day": "Tuesday",
+  "hour": 5,
+  "commits": 0
+  },
+  {
+  "day": "Tuesday",
+  "hour": 6,
+  "commits": 0
+  },
+  {
+  "day": "Tuesday",
+  "hour": 7,
+  "commits": 0
+  },
+  {
+  "day": "Tuesday",
+  "hour": 8,
+  "commits": 2
+  },
+  {
+  "day": "Tuesday",
+  "hour": 9,
+  "commits": 4
+  },
+  {
+  "day": "Tuesday",
+  "hour": 10,
+  "commits": 8
+  },
+  {
+  "day": "Tuesday",
+  "hour": 11,
+  "commits": 13
+  },
+  {
+  "day": "Tuesday",
+  "hour": 12,
+  "commits": 5
+  },
+  {
+  "day": "Tuesday",
+  "hour": 13,
+  "commits": 7
+  },
+  {
+  "day": "Tuesday",
+  "hour": 14,
+  "commits": 11
+  },
+  {
+  "day": "Tuesday",
+  "hour": 15,
+  "commits": 11
+  },
+  {
+  "day": "Tuesday",
+  "hour": 16,
+  "commits": 13
+  },
+  {
+  "day": "Tuesday",
+  "hour": 17,
+  "commits": 14
+  },
+  {
+  "day": "Tuesday",
+  "hour": 18,
+  "commits": 3
+  },
+  {
+  "day": "Tuesday",
+  "hour": 19,
+  "commits": 0
+  },
+  {
+  "day": "Tuesday",
+  "hour": 20,
+  "commits": 0
+  },
+  {
+  "day": "Tuesday",
+  "hour": 21,
+  "commits": 0
+  },
+  {
+  "day": "Tuesday",
+  "hour": 22,
+  "commits": 3
+  },
+  {
+  "day": "Tuesday",
+  "hour": 23,
+  "commits": 0
+  },
+  {
+  "day": "Wednesday",
+  "hour": 0,
+  "commits": 0
+  },
+  {
+  "day": "Wednesday",
+  "hour": 1,
+  "commits": 0
+  },
+  {
+  "day": "Wednesday",
+  "hour": 2,
+  "commits": 0
+  },
+  {
+  "day": "Wednesday",
+  "hour": 3,
+  "commits": 0
+  },
+  {
+  "day": "Wednesday",
+  "hour": 4,
+  "commits": 0
+  },
+  {
+  "day": "Wednesday",
+  "hour": 5,
+  "commits": 0
+  },
+  {
+  "day": "Wednesday",
+  "hour": 6,
+  "commits": 0
+  },
+  {
+  "day": "Wednesday",
+  "hour": 7,
+  "commits": 1
+  },
+  {
+  "day": "Wednesday",
+  "hour": 8,
+  "commits": 1
+  },
+  {
+  "day": "Wednesday",
+  "hour": 9,
+  "commits": 9
+  },
+  {
+  "day": "Wednesday",
+  "hour": 10,
+  "commits": 20
+  },
+  {
+  "day": "Wednesday",
+  "hour": 11,
+  "commits": 3
+  },
+  {
+  "day": "Wednesday",
+  "hour": 12,
+  "commits": 17
+  },
+  {
+  "day": "Wednesday",
+  "hour": 13,
+  "commits": 8
+  },
+  {
+  "day": "Wednesday",
+  "hour": 14,
+  "commits": 10
+  },
+  {
+  "day": "Wednesday",
+  "hour": 15,
+  "commits": 11
+  },
+  {
+  "day": "Wednesday",
+  "hour": 16,
+  "commits": 8
+  },
+  {
+  "day": "Wednesday",
+  "hour": 17,
+  "commits": 6
+  },
+  {
+  "day": "Wednesday",
+  "hour": 18,
+  "commits": 6
+  },
+  {
+  "day": "Wednesday",
+  "hour": 19,
+  "commits": 2
+  },
+  {
+  "day": "Wednesday",
+  "hour": 20,
+  "commits": 0
+  },
+  {
+  "day": "Wednesday",
+  "hour": 21,
+  "commits": 2
+  },
+  {
+  "day": "Wednesday",
+  "hour": 22,
+  "commits": 3
+  },
+  {
+  "day": "Wednesday",
+  "hour": 23,
+  "commits": 0
+  },
+  {
+  "day": "Thursday",
+  "hour": 0,
+  "commits": 0
+  },
+  {
+  "day": "Thursday",
+  "hour": 1,
+  "commits": 0
+  },
+  {
+  "day": "Thursday",
+  "hour": 2,
+  "commits": 0
+  },
+  {
+  "day": "Thursday",
+  "hour": 3,
+  "commits": 0
+  },
+  {
+  "day": "Thursday",
+  "hour": 4,
+  "commits": 0
+  },
+  {
+  "day": "Thursday",
+  "hour": 5,
+  "commits": 0
+  },
+  {
+  "day": "Thursday",
+  "hour": 6,
+  "commits": 1
+  },
+  {
+  "day": "Thursday",
+  "hour": 7,
+  "commits": 2
+  },
+  {
+  "day": "Thursday",
+  "hour": 8,
+  "commits": 3
+  },
+  {
+  "day": "Thursday",
+  "hour": 9,
+  "commits": 7
+  },
+  {
+  "day": "Thursday",
+  "hour": 10,
+  "commits": 4
+  },
+  {
+  "day": "Thursday",
+  "hour": 11,
+  "commits": 18
+  },
+  {
+  "day": "Thursday",
+  "hour": 12,
+  "commits": 9
+  },
+  {
+  "day": "Thursday",
+  "hour": 13,
+  "commits": 6
+  },
+  {
+  "day": "Thursday",
+  "hour": 14,
+  "commits": 10
+  },
+  {
+  "day": "Thursday",
+  "hour": 15,
+  "commits": 14
+  },
+  {
+  "day": "Thursday",
+  "hour": 16,
+  "commits": 13
+  },
+  {
+  "day": "Thursday",
+  "hour": 17,
+  "commits": 6
+  },
+  {
+  "day": "Thursday",
+  "hour": 18,
+  "commits": 0
+  },
+  {
+  "day": "Thursday",
+  "hour": 19,
+  "commits": 1
+  },
+  {
+  "day": "Thursday",
+  "hour": 20,
+  "commits": 3
+  },
+  {
+  "day": "Thursday",
+  "hour": 21,
+  "commits": 0
+  },
+  {
+  "day": "Thursday",
+  "hour": 22,
+  "commits": 3
+  },
+  {
+  "day": "Thursday",
+  "hour": 23,
+  "commits": 1
+  },
+  {
+  "day": "Friday",
+  "hour": 0,
+  "commits": 0
+  },
+  {
+  "day": "Friday",
+  "hour": 1,
+  "commits": 0
+  },
+  {
+  "day": "Friday",
+  "hour": 2,
+  "commits": 0
+  },
+  {
+  "day": "Friday",
+  "hour": 3,
+  "commits": 0
+  },
+  {
+  "day": "Friday",
+  "hour": 4,
+  "commits": 0
+  },
+  {
+  "day": "Friday",
+  "hour": 5,
+  "commits": 0
+  },
+  {
+  "day": "Friday",
+  "hour": 6,
+  "commits": 0
+  },
+  {
+  "day": "Friday",
+  "hour": 7,
+  "commits": 0
+  },
+  {
+  "day": "Friday",
+  "hour": 8,
+  "commits": 0
+  },
+  {
+  "day": "Friday",
+  "hour": 9,
+  "commits": 7
+  },
+  {
+  "day": "Friday",
+  "hour": 10,
+  "commits": 11
+  },
+  {
+  "day": "Friday",
+  "hour": 11,
+  "commits": 16
+  },
+  {
+  "day": "Friday",
+  "hour": 12,
+  "commits": 6
+  },
+  {
+  "day": "Friday",
+  "hour": 13,
+  "commits": 1
+  },
+  {
+  "day": "Friday",
+  "hour": 14,
+  "commits": 6
+  },
+  {
+  "day": "Friday",
+  "hour": 15,
+  "commits": 13
+  },
+  {
+  "day": "Friday",
+  "hour": 16,
+  "commits": 7
+  },
+  {
+  "day": "Friday",
+  "hour": 17,
+  "commits": 8
+  },
+  {
+  "day": "Friday",
+  "hour": 18,
+  "commits": 1
+  },
+  {
+  "day": "Friday",
+  "hour": 19,
+  "commits": 0
+  },
+  {
+  "day": "Friday",
+  "hour": 20,
+  "commits": 1
+  },
+  {
+  "day": "Friday",
+  "hour": 21,
+  "commits": 0
+  },
+  {
+  "day": "Friday",
+  "hour": 22,
+  "commits": 0
+  },
+  {
+  "day": "Friday",
+  "hour": 23,
+  "commits": 0
+  },
+  {
+  "day": "Saturday",
+  "hour": 0,
+  "commits": 0
+  },
+  {
+  "day": "Saturday",
+  "hour": 1,
+  "commits": 0
+  },
+  {
+  "day": "Saturday",
+  "hour": 2,
+  "commits": 0
+  },
+  {
+  "day": "Saturday",
+  "hour": 3,
+  "commits": 0
+  },
+  {
+  "day": "Saturday",
+  "hour": 4,
+  "commits": 0
+  },
+  {
+  "day": "Saturday",
+  "hour": 5,
+  "commits": 0
+  },
+  {
+  "day": "Saturday",
+  "hour": 6,
+  "commits": 0
+  },
+  {
+  "day": "Saturday",
+  "hour": 7,
+  "commits": 2
+  },
+  {
+  "day": "Saturday",
+  "hour": 8,
+  "commits": 2
+  },
+  {
+  "day": "Saturday",
+  "hour": 9,
+  "commits": 0
+  },
+  {
+  "day": "Saturday",
+  "hour": 10,
+  "commits": 0
+  },
+  {
+  "day": "Saturday",
+  "hour": 11,
+  "commits": 1
+  },
+  {
+  "day": "Saturday",
+  "hour": 12,
+  "commits": 0
+  },
+  {
+  "day": "Saturday",
+  "hour": 13,
+  "commits": 0
+  },
+  {
+  "day": "Saturday",
+  "hour": 14,
+  "commits": 0
+  },
+  {
+  "day": "Saturday",
+  "hour": 15,
+  "commits": 0
+  },
+  {
+  "day": "Saturday",
+  "hour": 16,
+  "commits": 0
+  },
+  {
+  "day": "Saturday",
+  "hour": 17,
+  "commits": 0
+  },
+  {
+  "day": "Saturday",
+  "hour": 18,
+  "commits": 0
+  },
+  {
+  "day": "Saturday",
+  "hour": 19,
+  "commits": 0
+  },
+  {
+  "day": "Saturday",
+  "hour": 20,
+  "commits": 0
+  },
+  {
+  "day": "Saturday",
+  "hour": 21,
+  "commits": 2
+  },
+  {
+  "day": "Saturday",
+  "hour": 22,
+  "commits": 0
+  },
+  {
+  "day": "Saturday",
+  "hour": 23,
+  "commits": 0
+  }
+  ]

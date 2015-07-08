@@ -1,0 +1,2184 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="html/html; charset=utf-8" />
+		<title>SChartDelegate Protocol Reference</title>
+		<meta id="xcode-display" name="xcode-display" content="render"/>
+		<link rel="stylesheet" type="text/css" href="../css/styles.css" media="all" />
+		<link rel="stylesheet" type="text/css" media="print" href="../css/stylesPrint.css" />
+		<meta name="generator" content="appledoc 2.1 (build 858)" />
+	</head>
+	<body>
+		<header id="top_header">
+			<div id="library" class="hideInXcode">
+				<h1><a id="libraryTitle" href="../index.html">ShinobiCharts </a></h1>
+				<a id="developerHome" href="../index.html">Scott Logic Ltd</a>
+			</div>
+			
+			<div id="title" role="banner">
+				<h1 class="hideInXcode">SChartDelegate Protocol Reference</h1>
+			</div>
+			<ul id="headerButtons" role="toolbar">
+				<li id="toc_button">
+					<button aria-label="Show Table of Contents" role="checkbox" class="open" id="table_of_contents"><span class="disclosure"></span>Table of Contents</button>
+				</li>
+				<li id="jumpto_button" role="navigation">
+					<select id="jumpTo">
+	<option value="top">Jump To&#133;</option>
+	
+	<option value="overview">Overview</option>
+	
+	
+	
+	
+	<option value="tasks">Tasks</option>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<option value="instance_methods">Instance Methods</option>
+	
+	<option value="//api/name/sChart:alterLabel:forDatapoint:atSliceIndex:inRadialSeries:">&nbsp;&nbsp;&nbsp;&nbsp;- sChart:alterLabel:forDatapoint:atSliceIndex:inRadialSeries:</option>
+	
+	<option value="//api/name/sChart:alterTickMark:beforeAddingToAxis:">&nbsp;&nbsp;&nbsp;&nbsp;- sChart:alterTickMark:beforeAddingToAxis:</option>
+	
+	<option value="//api/name/sChart:crosshairMovedToXValue:andYValue:">&nbsp;&nbsp;&nbsp;&nbsp;- sChart:crosshairMovedToXValue:andYValue:</option>
+	
+	<option value="//api/name/sChart:longestLabelStringOnAxis:">&nbsp;&nbsp;&nbsp;&nbsp;- sChart:longestLabelStringOnAxis:</option>
+	
+	<option value="//api/name/sChart:radialSeriesDidEndDecelerating:">&nbsp;&nbsp;&nbsp;&nbsp;- sChart:radialSeriesDidEndDecelerating:</option>
+	
+	<option value="//api/name/sChart:radialSeriesDidStartPanning:">&nbsp;&nbsp;&nbsp;&nbsp;- sChart:radialSeriesDidStartPanning:</option>
+	
+	<option value="//api/name/sChart:radialSeriesIsPanning:">&nbsp;&nbsp;&nbsp;&nbsp;- sChart:radialSeriesIsPanning:</option>
+	
+	<option value="//api/name/sChart:radialSeriesWillBeginDecelerating:">&nbsp;&nbsp;&nbsp;&nbsp;- sChart:radialSeriesWillBeginDecelerating:</option>
+	
+	<option value="//api/name/sChart:setMajorTickFrequency:andMinorTickFrequency:onGeneratingTickMarksforAxis:">&nbsp;&nbsp;&nbsp;&nbsp;- sChart:setMajorTickFrequency:andMinorTickFrequency:onGeneratingTickMarksforAxis:</option>
+	
+	<option value="//api/name/sChart:toggledSelectionForPoint:inSeries:atPixelCoordinate:">&nbsp;&nbsp;&nbsp;&nbsp;- sChart:toggledSelectionForPoint:inSeries:atPixelCoordinate:</option>
+	
+	<option value="//api/name/sChart:toggledSelectionForRadialPoint:inSeries:atPixelCoordinate:">&nbsp;&nbsp;&nbsp;&nbsp;- sChart:toggledSelectionForRadialPoint:inSeries:atPixelCoordinate:</option>
+	
+	<option value="//api/name/sChart:toggledSelectionForSeries:nearPoint:atPixelCoordinate:">&nbsp;&nbsp;&nbsp;&nbsp;- sChart:toggledSelectionForSeries:nearPoint:atPixelCoordinate:</option>
+	
+	<option value="//api/name/sChartDidBoxZoom:">&nbsp;&nbsp;&nbsp;&nbsp;- sChartDidBoxZoom:</option>
+	
+	<option value="//api/name/sChartDidFinishLoadingData:">&nbsp;&nbsp;&nbsp;&nbsp;- sChartDidFinishLoadingData:</option>
+	
+	<option value="//api/name/sChartDidFinishPanning:">&nbsp;&nbsp;&nbsp;&nbsp;- sChartDidFinishPanning:</option>
+	
+	<option value="//api/name/sChartDidFinishZooming:">&nbsp;&nbsp;&nbsp;&nbsp;- sChartDidFinishZooming:</option>
+	
+	<option value="//api/name/sChartDidResetZoom:">&nbsp;&nbsp;&nbsp;&nbsp;- sChartDidResetZoom:</option>
+	
+	<option value="//api/name/sChartDidStartPanning:">&nbsp;&nbsp;&nbsp;&nbsp;- sChartDidStartPanning:</option>
+	
+	<option value="//api/name/sChartDidStartZooming:">&nbsp;&nbsp;&nbsp;&nbsp;- sChartDidStartZooming:</option>
+	
+	<option value="//api/name/sChartIsPanning:">&nbsp;&nbsp;&nbsp;&nbsp;- sChartIsPanning:</option>
+	
+	<option value="//api/name/sChartIsPanning:withChartMovementInformation:">&nbsp;&nbsp;&nbsp;&nbsp;- sChartIsPanning:withChartMovementInformation:</option>
+	
+	<option value="//api/name/sChartIsZooming:">&nbsp;&nbsp;&nbsp;&nbsp;- sChartIsZooming:</option>
+	
+	<option value="//api/name/sChartIsZooming:withChartMovementInformation:">&nbsp;&nbsp;&nbsp;&nbsp;- sChartIsZooming:withChartMovementInformation:</option>
+	
+	<option value="//api/name/sChartRenderFinished:">&nbsp;&nbsp;&nbsp;&nbsp;- sChartRenderFinished:</option>
+	
+	<option value="//api/name/sChartRenderStarted:withFullRedraw:">&nbsp;&nbsp;&nbsp;&nbsp;- sChartRenderStarted:withFullRedraw:</option>
+	
+	<option value="//api/name/sChartSeries:animationDidFinish:">&nbsp;&nbsp;&nbsp;&nbsp;- sChartSeries:animationDidFinish:</option>
+	
+	<option value="//api/name/sChartWillStartLoadingData:">&nbsp;&nbsp;&nbsp;&nbsp;- sChartWillStartLoadingData:</option>
+	
+	
+	
+</select>
+				</li>
+			</ul>
+		</header>
+		<nav id="tocContainer" class="isShowingTOC">
+			<ul id="toc" role="tree">
+				
+<li role="treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#overview">Overview</a></span></li>
+
+
+
+
+<li role="treeitem" id="task_treeitem"><span class="nodisclosure"></span><span class="sectionName"><a href="#tasks">Tasks</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Responding to zoom events">Responding to zoom events</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Responding to panning events">Responding to panning events</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Responding to touch events">Responding to touch events</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Tracking the crosshair">Tracking the crosshair</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Chart Rendering">Chart Rendering</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Tick Marks">Tick Marks</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Animation">Animation</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#task_Data Loading">Data Loading</a></span></li>
+	
+</ul></li>
+
+
+
+
+
+
+
+
+
+<li role="treeitem" class="children"><span class="disclosure"></span><span class="sectionName"><a href="#instance_methods">Instance Methods</a></span><ul>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/sChart:alterLabel:forDatapoint:atSliceIndex:inRadialSeries:">sChart:alterLabel:forDatapoint:atSliceIndex:inRadialSeries:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/sChart:alterTickMark:beforeAddingToAxis:">sChart:alterTickMark:beforeAddingToAxis:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/sChart:crosshairMovedToXValue:andYValue:">sChart:crosshairMovedToXValue:andYValue:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/sChart:longestLabelStringOnAxis:">sChart:longestLabelStringOnAxis:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/sChart:radialSeriesDidEndDecelerating:">sChart:radialSeriesDidEndDecelerating:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/sChart:radialSeriesDidStartPanning:">sChart:radialSeriesDidStartPanning:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/sChart:radialSeriesIsPanning:">sChart:radialSeriesIsPanning:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/sChart:radialSeriesWillBeginDecelerating:">sChart:radialSeriesWillBeginDecelerating:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/sChart:setMajorTickFrequency:andMinorTickFrequency:onGeneratingTickMarksforAxis:">sChart:setMajorTickFrequency:andMinorTickFrequency:onGeneratingTickMarksforAxis:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/sChart:toggledSelectionForPoint:inSeries:atPixelCoordinate:">sChart:toggledSelectionForPoint:inSeries:atPixelCoordinate:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/sChart:toggledSelectionForRadialPoint:inSeries:atPixelCoordinate:">sChart:toggledSelectionForRadialPoint:inSeries:atPixelCoordinate:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/sChart:toggledSelectionForSeries:nearPoint:atPixelCoordinate:">sChart:toggledSelectionForSeries:nearPoint:atPixelCoordinate:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/sChartDidBoxZoom:">sChartDidBoxZoom:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/sChartDidFinishLoadingData:">sChartDidFinishLoadingData:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/sChartDidFinishPanning:">sChartDidFinishPanning:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/sChartDidFinishZooming:">sChartDidFinishZooming:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/sChartDidResetZoom:">sChartDidResetZoom:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/sChartDidStartPanning:">sChartDidStartPanning:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/sChartDidStartZooming:">sChartDidStartZooming:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/sChartIsPanning:">sChartIsPanning:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/sChartIsPanning:withChartMovementInformation:">sChartIsPanning:withChartMovementInformation:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/sChartIsZooming:">sChartIsZooming:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/sChartIsZooming:withChartMovementInformation:">sChartIsZooming:withChartMovementInformation:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/sChartRenderFinished:">sChartRenderFinished:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/sChartRenderStarted:withFullRedraw:">sChartRenderStarted:withFullRedraw:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/sChartSeries:animationDidFinish:">sChartSeries:animationDidFinish:</a></span></li>
+	
+	<li><span class="nodisclosure"></span><span class="sectionName"><a href="#//api/name/sChartWillStartLoadingData:">sChartWillStartLoadingData:</a></span></li>
+	
+</ul></li>
+
+
+			</ul>
+		</nav>
+		<article>
+			<div id="contents" class="isShowingTOC" role="main">
+				<a title="SChartDelegate Protocol Reference" name="top"></a>
+				<div class="main-navigation navigation-top">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="header">
+					<div class="section-header">
+						<h1 class="title title-header">SChartDelegate Protocol Reference</h1>
+					</div>		
+				</div>
+				<div id="container">	
+					
+					<div class="section section-specification"><table cellspacing="0"><tbody>
+						<tr>
+	<td class="specification-title">Conforms to</td>
+	<td class="specification-value">NSObject</td>
+</tr><tr>
+	<td class="specification-title">Declared in</td>
+	<td class="specification-value">SChartDelegate.h</td>
+</tr><tr>
+	<td class="specification-title">Companion guide</td>
+	<td class="specification-value"><a href="../docs/markdown_files/ChartsUserGuide.html">ChartsUserGuide</a></td>
+</tr><tr>
+	<td class="specification-title">Availability</td>
+	<td class="specification-value">Standard<br />Premium</td>
+</tr><tr>
+	<td class="specification-title">Related samples</td>
+	<td class="specification-value"></td>
+</tr>
+						</tbody></table></div>
+					
+					
+					
+					
+					<div class="section section-overview">
+						<a title="Overview" name="overview"></a>
+						<h2 class="subtitle subtitle-overview">Overview</h2>
+						<p>The delegate of a <a href="../Classes/ShinobiChart.html"><code>ShinobiChart</code></a> object must adopt the <code>SChartDelegate</code> protocol.  Optional methods of the protocol allow the delegate to respond to the following types of events:</p>
+
+<ul>
+<li>Zooming.</li>
+<li>Panning.</li>
+<li>Selection on the chart.</li>
+<li>Chart rendering.</li>
+<li>Data loading.</li>
+<li>Chart series animations.</li>
+<li>Crosshair tracking.</li>
+</ul>
+
+
+<p>As well as methods to respond to events on the chart, the protocol also provides methods to allow the delegate to manage the chart axes, by altering tick marks on the axes, or by setting tick frequencies.</p>
+					</div>
+					
+					
+					
+					
+					
+					<div class="section section-tasks">
+						<a title="Tasks" name="tasks"></a>
+						<h2 class="subtitle subtitle-tasks">Tasks</h2>
+						
+						
+						<a title="Responding to zoom events" name="task_Responding to zoom events"></a>
+						<h3 class="subsubtitle task-title">Responding to zoom events</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/sChartDidStartZooming:">&ndash;&nbsp;sChartDidStartZooming:</a></code>
+		<span class="tooltip"><p>A notification that the chart object has started a zoom operation.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/sChartDidFinishZooming:">&ndash;&nbsp;sChartDidFinishZooming:</a></code>
+		<span class="tooltip"><p>A notification that the chart object has finished a zoom operation.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/sChartDidResetZoom:">&ndash;&nbsp;sChartDidResetZoom:</a></code>
+		<span class="tooltip"><p>A notification that the chart object has reset the zoom level.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/sChartIsZooming:">&ndash;&nbsp;sChartIsZooming:</a></code>
+		<span class="tooltip"><p>A notification that the chart object is zooming.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/sChartIsZooming:withChartMovementInformation:">&ndash;&nbsp;sChartIsZooming:withChartMovementInformation:</a></code>
+		<span class="tooltip"><p>A notification that the chart object is zooming, with additional data.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/sChartDidBoxZoom:">&ndash;&nbsp;sChartDidBoxZoom:</a></code>
+		<span class="tooltip"><p>A notification that the chart has adjusted its zoom level using the box feature.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Responding to panning events" name="task_Responding to panning events"></a>
+						<h3 class="subsubtitle task-title">Responding to panning events</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/sChartDidStartPanning:">&ndash;&nbsp;sChartDidStartPanning:</a></code>
+		<span class="tooltip"><p>A notification that the chart object has started a panning operation.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/sChartDidFinishPanning:">&ndash;&nbsp;sChartDidFinishPanning:</a></code>
+		<span class="tooltip"><p>A notification that the chart object has finished a panning operation.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/sChartIsPanning:">&ndash;&nbsp;sChartIsPanning:</a></code>
+		<span class="tooltip"><p>A notification that the chart object is panning.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/sChartIsPanning:withChartMovementInformation:">&ndash;&nbsp;sChartIsPanning:withChartMovementInformation:</a></code>
+		<span class="tooltip"><p>A notification that the chart object is panning, with additional data.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/sChart:radialSeriesDidStartPanning:">&ndash;&nbsp;sChart:radialSeriesDidStartPanning:</a></code>
+		<span class="tooltip"><p>A notification that we have started panning on a radial series.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/sChart:radialSeriesIsPanning:">&ndash;&nbsp;sChart:radialSeriesIsPanning:</a></code>
+		<span class="tooltip"><p>A notification that a radial series is being panned.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/sChart:radialSeriesWillBeginDecelerating:">&ndash;&nbsp;sChart:radialSeriesWillBeginDecelerating:</a></code>
+		<span class="tooltip"><p>A notification that a panning gesture on a radial series has ended, and the series will begin to decelerate.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/sChart:radialSeriesDidEndDecelerating:">&ndash;&nbsp;sChart:radialSeriesDidEndDecelerating:</a></code>
+		<span class="tooltip"><p>A notification that a radial series has come to a halt after being panned and released.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Responding to touch events" name="task_Responding to touch events"></a>
+						<h3 class="subsubtitle task-title">Responding to touch events</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/sChart:toggledSelectionForSeries:nearPoint:atPixelCoordinate:">&ndash;&nbsp;sChart:toggledSelectionForSeries:nearPoint:atPixelCoordinate:</a></code>
+		<span class="tooltip"><p>A notification that a series has been selected or de-selected.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/sChart:toggledSelectionForPoint:inSeries:atPixelCoordinate:">&ndash;&nbsp;sChart:toggledSelectionForPoint:inSeries:atPixelCoordinate:</a></code>
+		<span class="tooltip"><p>A notification that a data point has been selected or de-selected.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/sChart:toggledSelectionForRadialPoint:inSeries:atPixelCoordinate:">&ndash;&nbsp;sChart:toggledSelectionForRadialPoint:inSeries:atPixelCoordinate:</a></code>
+		<span class="tooltip"><p>A notification that a data point on a radial (pie or donut, etc) chart has changed state to &lsquo;selected&rsquo; from &lsquo;deselected&rsquo; or vice versa.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Tracking the crosshair" name="task_Tracking the crosshair"></a>
+						<h3 class="subsubtitle task-title">Tracking the crosshair</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/sChart:crosshairMovedToXValue:andYValue:">&ndash;&nbsp;sChart:crosshairMovedToXValue:andYValue:</a></code>
+		<span class="tooltip"><p>Notifies the user when the crosshair moves.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Chart Rendering" name="task_Chart Rendering"></a>
+						<h3 class="subsubtitle task-title">Chart Rendering</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/sChartRenderStarted:withFullRedraw:">&ndash;&nbsp;sChartRenderStarted:withFullRedraw:</a></code>
+		<span class="tooltip"><p>A notification that the chart object has started rendering.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/sChartRenderFinished:">&ndash;&nbsp;sChartRenderFinished:</a></code>
+		<span class="tooltip"><p>A notification that the chart object has finished rendering.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Tick Marks" name="task_Tick Marks"></a>
+						<h3 class="subsubtitle task-title">Tick Marks</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/sChart:alterTickMark:beforeAddingToAxis:">&ndash;&nbsp;sChart:alterTickMark:beforeAddingToAxis:</a></code>
+		<span class="tooltip"><p>Alter a tick mark before it is added to an axis on the chart.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/sChart:longestLabelStringOnAxis:">&ndash;&nbsp;sChart:longestLabelStringOnAxis:</a></code>
+		<span class="tooltip"><p>Assist the chart in calculating tick label lengths. This is useful when you provide an implementation for <a href="#//api/name/sChart:alterTickMark:beforeAddingToAxis:">sChart:alterTickMark:beforeAddingToAxis:</a></p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/sChart:alterLabel:forDatapoint:atSliceIndex:inRadialSeries:">&ndash;&nbsp;sChart:alterLabel:forDatapoint:atSliceIndex:inRadialSeries:</a></code>
+		<span class="tooltip"><p>Alter a radial label before it is added to the chart.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/sChart:setMajorTickFrequency:andMinorTickFrequency:onGeneratingTickMarksforAxis:">&ndash;&nbsp;sChart:setMajorTickFrequency:andMinorTickFrequency:onGeneratingTickMarksforAxis:</a></code>
+		<span class="tooltip"><p>Set the major and minor tick frequencies for an axis.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Animation" name="task_Animation"></a>
+						<h3 class="subsubtitle task-title">Animation</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/sChartSeries:animationDidFinish:">&ndash;&nbsp;sChartSeries:animationDidFinish:</a></code>
+		<span class="tooltip"><p>A notification that an animation of a chart series has ended.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+						
+						<a title="Data Loading" name="task_Data Loading"></a>
+						<h3 class="subsubtitle task-title">Data Loading</h3>
+
+						<ul class="task-list">
+							<li>
+	<span class="tooltip">
+		<code><a href="#//api/name/sChartWillStartLoadingData:">&ndash;&nbsp;sChartWillStartLoadingData:</a></code>
+		<span class="tooltip"><p>A notification that the chart will start loading its data.</p></span>
+	</span>
+	
+	
+</li><li>
+	<span class="tooltip">
+		<code><a href="#//api/name/sChartDidFinishLoadingData:">&ndash;&nbsp;sChartDidFinishLoadingData:</a></code>
+		<span class="tooltip"><p>A notification that the chart has finished loading its data.</p></span>
+	</span>
+	
+	
+</li>
+						</ul>
+						
+					</div>
+					
+					
+					
+					
+					
+					
+					
+					
+					
+					<div class="section section-methods">
+						<a title="Instance Methods" name="instance_methods"></a>
+						<h2 class="subtitle subtitle-methods">Instance Methods</h2>
+						
+						<div class="section-method">
+	<a name="//api/name/sChart:alterLabel:forDatapoint:atSliceIndex:inRadialSeries:" title="sChart:alterLabel:forDatapoint:atSliceIndex:inRadialSeries:"></a>
+	<h3 class="subsubtitle method-title">sChart:alterLabel:forDatapoint:atSliceIndex:inRadialSeries:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Alter a radial label before it is added to the chart.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)sChart:(ShinobiChart *)<em>chart</em> alterLabel:(UILabel *)<em>label</em> forDatapoint:(SChartRadialDataPoint *)<em>datapoint</em> atSliceIndex:(NSInteger)<em>index</em> inRadialSeries:(SChartRadialSeries *)<em>series</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>chart</em></dt>
+			<dd><p>The chart containing the radial label.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>label</em></dt>
+			<dd><p>The radial label being added to the chart.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>datapoint</em></dt>
+			<dd><p>The data point on the chart to which the label applies.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>index</em></dt>
+			<dd><p>The index of the data point in its radial series.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>series</em></dt>
+			<dd><p>The radial series containing the data point.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>This method gives you each label for each radial series before it is added to the chart. Use this to set colors, borders, or reposition the label.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartDelegate.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/sChart:alterTickMark:beforeAddingToAxis:" title="sChart:alterTickMark:beforeAddingToAxis:"></a>
+	<h3 class="subsubtitle method-title">sChart:alterTickMark:beforeAddingToAxis:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Alter a tick mark before it is added to an axis on the chart.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)sChart:(ShinobiChart *)<em>chart</em> alterTickMark:(SChartTickMark *)<em>tickMark</em> beforeAddingToAxis:(SChartAxis *)<em>axis</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>chart</em></dt>
+			<dd><p>The chart containing the tick marks.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>tickMark</em></dt>
+			<dd><p>The tick mark which will be added to its axis.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>axis</em></dt>
+			<dd><p>The axis on the chart to which the tick mark will be added.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>This method gives you each tick mark just before it is added to its axis. Use this to set colors, borders, or even move the tickmark&rsquo;s label elsewhere.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartDelegate.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/sChart:crosshairMovedToXValue:andYValue:" title="sChart:crosshairMovedToXValue:andYValue:"></a>
+	<h3 class="subsubtitle method-title">sChart:crosshairMovedToXValue:andYValue:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Notifies the user when the crosshair moves.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)sChart:(ShinobiChart *)<em>chart</em> crosshairMovedToXValue:(id)<em>x</em> andYValue:(id)<em>y</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>chart</em></dt>
+			<dd><p>The chart containing the crosshair.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>x</em></dt>
+			<dd><p>The x value of the current crosshair position.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>y</em></dt>
+			<dd><p>The y value of the current crosshair position.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>When the crosshair is panned, the new values at the crosshair point are passed into this method. For a line series, the values will be interpolated if they lie between actual data points. On a category axis - or bar/column series - the crosshair will snap to the discrete values.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartDelegate.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/sChart:longestLabelStringOnAxis:" title="sChart:longestLabelStringOnAxis:"></a>
+	<h3 class="subsubtitle method-title">sChart:longestLabelStringOnAxis:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Assist the chart in calculating tick label lengths. This is useful when you provide an implementation for <a href="#//api/name/sChart:alterTickMark:beforeAddingToAxis:">sChart:alterTickMark:beforeAddingToAxis:</a></p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (NSString *)sChart:(ShinobiChart *)<em>chart</em> longestLabelStringOnAxis:(SChartAxis *)<em>axis</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>chart</em></dt>
+			<dd><p>The chart containing the axis.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>axis</em></dt>
+			<dd><p>The axis for which we are returning the longest tick label string.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	<div class="method-subsection return">
+		<h4 class="method-subtitle parameter-title">Return Value</h4>
+		<p>A string of the right size, from which the axis can deduce the maximum amount of space that tick mark labels will require.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>For example, if you lengthen the tick label strings in alterTickMark, you should hint to the axis that extra room will be required by implementing this method.</p>
+
+<p>The actual contents of this string are ignored, only its size with the current tick-label font is used.
+For example, if you are using a currency format, a string like @&ldquo;$#.##&rdquo; will ensure sufficient room is calculated.
+Return nil for the chart to use automatically calculated values for the tick label lengths.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartDelegate.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/sChart:radialSeriesDidEndDecelerating:" title="sChart:radialSeriesDidEndDecelerating:"></a>
+	<h3 class="subsubtitle method-title">sChart:radialSeriesDidEndDecelerating:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>A notification that a radial series has come to a halt after being panned and released.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)sChart:(ShinobiChart *)<em>chart</em> radialSeriesDidEndDecelerating:(SChartRadialSeries *)<em>radialSeries</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>chart</em></dt>
+			<dd><p>The chart containing the radial series.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>radialSeries</em></dt>
+			<dd><p>The radial series which has finished panning.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartDelegate.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/sChart:radialSeriesDidStartPanning:" title="sChart:radialSeriesDidStartPanning:"></a>
+	<h3 class="subsubtitle method-title">sChart:radialSeriesDidStartPanning:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>A notification that we have started panning on a radial series.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)sChart:(ShinobiChart *)<em>radial</em> radialSeriesDidStartPanning:(SChartRadialSeries *)<em>radialSeries</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>radial</em></dt>
+			<dd><p>The chart containing the radial series which has started panning.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>radialSeries</em></dt>
+			<dd><p>The radial series being panned.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartDelegate.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/sChart:radialSeriesIsPanning:" title="sChart:radialSeriesIsPanning:"></a>
+	<h3 class="subsubtitle method-title">sChart:radialSeriesIsPanning:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>A notification that a radial series is being panned.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)sChart:(ShinobiChart *)<em>radial</em> radialSeriesIsPanning:(SChartRadialSeries *)<em>radialSeries</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>radial</em></dt>
+			<dd><p>The chart containing the radial series.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>radialSeries</em></dt>
+			<dd><p>The radial series being panned.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The rotation of the series is updated as the user pans the chart.  You can query the current rotation of the series using the <a href="../Classes/SChartDonutSeries.html#//api/name/rotation">[SChartDonutSeries rotation]</a> property.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartDelegate.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/sChart:radialSeriesWillBeginDecelerating:" title="sChart:radialSeriesWillBeginDecelerating:"></a>
+	<h3 class="subsubtitle method-title">sChart:radialSeriesWillBeginDecelerating:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>A notification that a panning gesture on a radial series has ended, and the series will begin to decelerate.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)sChart:(ShinobiChart *)<em>chart</em> radialSeriesWillBeginDecelerating:(SChartRadialSeries *)<em>radialSeries</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>chart</em></dt>
+			<dd><p>The chart containing the radial series.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>radialSeries</em></dt>
+			<dd><p>The radial series which has started to decelerate.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartDelegate.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/sChart:setMajorTickFrequency:andMinorTickFrequency:onGeneratingTickMarksforAxis:" title="sChart:setMajorTickFrequency:andMinorTickFrequency:onGeneratingTickMarksforAxis:"></a>
+	<h3 class="subsubtitle method-title">sChart:setMajorTickFrequency:andMinorTickFrequency:onGeneratingTickMarksforAxis:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>Set the major and minor tick frequencies for an axis.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)sChart:(ShinobiChart *)<em>chart</em> setMajorTickFrequency:(id *const)<em>majorTickFrequency</em> andMinorTickFrequency:(id *const)<em>minorTickFrequency</em> onGeneratingTickMarksforAxis:(SChartAxis *)<em>axis</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>chart</em></dt>
+			<dd><p>The chart containing the axis.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>majorTickFrequency</em></dt>
+			<dd><p>A pointer to the major tick frequency on the axis.  If you set this value, the axis will update to use the new value.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>minorTickFrequency</em></dt>
+			<dd><p>A pointer to the minor tick frequency on the axis.  If you set this value, the axis will update to use the new value.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>axis</em></dt>
+			<dd><p>The axis for which we are setting the tick frequencies.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Implement this method to customize your major and minor tick frequencies depending on the state of the axis.</p>
+
+<p>Set the majorTickFrequency and minorTickFrequency pointers to objects of your choosing.</p>
+
+<p>Not setting the minorTickFrequency, or setting it to nil, will result in minor ticks not being displayed.
+You should set frequencies of the correct type to match the axis - for example, <a href="../Classes/SChartDateFrequency.html">SChartDateFrequency</a> for <a href="../Classes/SChartDateTimeAxis.html">SChartDateTimeAxis</a>, or NSNumber for <a href="../Classes/SChartNumberAxis.html">SChartNumberAxis</a>.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartDelegate.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/sChart:toggledSelectionForPoint:inSeries:atPixelCoordinate:" title="sChart:toggledSelectionForPoint:inSeries:atPixelCoordinate:"></a>
+	<h3 class="subsubtitle method-title">sChart:toggledSelectionForPoint:inSeries:atPixelCoordinate:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>A notification that a data point has been selected or de-selected.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)sChart:(ShinobiChart *)<em>chart</em> toggledSelectionForPoint:(SChartDataPoint *)<em>dataPoint</em> inSeries:(SChartSeries *)<em>series</em> atPixelCoordinate:(CGPoint)<em>pixelPoint</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>chart</em></dt>
+			<dd><p>The chart on which the selection has occurred.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>dataPoint</em></dt>
+			<dd><p>The data point which was selected or de-selected.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>series</em></dt>
+			<dd><p>The chart series which contains that data point.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>pixelPoint</em></dt>
+			<dd><p>The pixel coordinates of that data point.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>A touch gesture has resulted in the <code>selected</code> property of the data point changing. The data point is passed into the method along with the current pixel coordinates of that point and the series that it belongs to.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartDelegate.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/sChart:toggledSelectionForRadialPoint:inSeries:atPixelCoordinate:" title="sChart:toggledSelectionForRadialPoint:inSeries:atPixelCoordinate:"></a>
+	<h3 class="subsubtitle method-title">sChart:toggledSelectionForRadialPoint:inSeries:atPixelCoordinate:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>A notification that a data point on a radial (pie or donut, etc) chart has changed state to &lsquo;selected&rsquo; from &lsquo;deselected&rsquo; or vice versa.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)sChart:(ShinobiChart *)<em>chart</em> toggledSelectionForRadialPoint:(SChartRadialDataPoint *)<em>dataPoint</em> inSeries:(SChartRadialSeries *)<em>series</em> atPixelCoordinate:(CGPoint)<em>pixelPoint</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>chart</em></dt>
+			<dd><p>The chart on which the selection occurred.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>dataPoint</em></dt>
+			<dd><p>The data point which was selected or de-selected.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>series</em></dt>
+			<dd><p>The chart series which contains the data point.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>pixelPoint</em></dt>
+			<dd><p>The pixel coordinate of the data point.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The<code>selected</code> property of the data point has changed. This could be as a result of a tap gesture on the chart, or of programmatically selecting the point (<code>setSlice:asSelected</code>). The data point is returned along with the series that it belongs to and the pixel coordinates of the tap, if any.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartDelegate.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/sChart:toggledSelectionForSeries:nearPoint:atPixelCoordinate:" title="sChart:toggledSelectionForSeries:nearPoint:atPixelCoordinate:"></a>
+	<h3 class="subsubtitle method-title">sChart:toggledSelectionForSeries:nearPoint:atPixelCoordinate:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>A notification that a series has been selected or de-selected.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)sChart:(ShinobiChart *)<em>chart</em> toggledSelectionForSeries:(SChartSeries *)<em>series</em> nearPoint:(SChartDataPoint *)<em>dataPoint</em> atPixelCoordinate:(CGPoint)<em>pixelPoint</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>chart</em></dt>
+			<dd><p>The chart on which the selection has occurred.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>series</em></dt>
+			<dd><p>The series which has been selected or de-selected.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>dataPoint</em></dt>
+			<dd><p>The nearest data point on that series to the point on the screen which was touched.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>pixelPoint</em></dt>
+			<dd><p>The pixel coordinates of that data point.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>A touch gesture has resulted in the <code>selected</code> property of the series changing. The nearest data point is passed into the method along with the current pixel coordinates of that point.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartDelegate.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/sChartDidBoxZoom:" title="sChartDidBoxZoom:"></a>
+	<h3 class="subsubtitle method-title">sChartDidBoxZoom:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>A notification that the chart has adjusted its zoom level using the box feature.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)sChartDidBoxZoom:(ShinobiChart *)<em>chart</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>chart</em></dt>
+			<dd><p>The chart which is zooming.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The box gesture can be enabled on the chart by setting <a href="../Classes/ShinobiChart.html#//api/name/gesturePanType">[ShinobiChart gesturePanType]</a> to <code>SChartGesturePanTypeBoxDraw</code>.  In this case, panning on the chart will cause a box to be drawn on the chart.  When the user finishes panning, the chart zooms to the limits of the box.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="../Classes/ShinobiChart.html">ShinobiChart</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartDelegate.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/sChartDidFinishLoadingData:" title="sChartDidFinishLoadingData:"></a>
+	<h3 class="subsubtitle method-title">sChartDidFinishLoadingData:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>A notification that the chart has finished loading its data.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)sChartDidFinishLoadingData:(ShinobiChart *)<em>chart</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>chart</em></dt>
+			<dd><p>The chart which finished loading its data.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>This is called once the chart has finished loading its data, and before it starts rendering its plot area and axes. A common use of this method would be to close the activity indicator if you popped one up during loading. At this point, the chart axes will have been refreshed from the new data, so you could update the chart axes here before they are rendered. It is important to note that this method is only called when we load data, rather than each time the chart is rendered.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartDelegate.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/sChartDidFinishPanning:" title="sChartDidFinishPanning:"></a>
+	<h3 class="subsubtitle method-title">sChartDidFinishPanning:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>A notification that the chart object has finished a panning operation.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)sChartDidFinishPanning:(ShinobiChart *)<em>chart</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>chart</em></dt>
+			<dd><p>The chart which finished panning.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>After a pan operation, the axis will have a new range available, which you can query via the <a href="../Classes/SChartAxis.html#//api/name/axisRange">[SChartAxis axisRange]</a> property.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartDelegate.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/sChartDidFinishZooming:" title="sChartDidFinishZooming:"></a>
+	<h3 class="subsubtitle method-title">sChartDidFinishZooming:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>A notification that the chart object has finished a zoom operation.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)sChartDidFinishZooming:(ShinobiChart *)<em>chart</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>chart</em></dt>
+			<dd><p>The chart which finished zooming.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The resulting zoom level is available for each axis object, via the <a href="../Classes/SChartAxis.html#//api/name/zoom">[SChartAxis zoom]</a> property.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartDelegate.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/sChartDidResetZoom:" title="sChartDidResetZoom:"></a>
+	<h3 class="subsubtitle method-title">sChartDidResetZoom:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>A notification that the chart object has reset the zoom level.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)sChartDidResetZoom:(ShinobiChart *)<em>chart</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>chart</em></dt>
+			<dd><p>The chart which reset its zoom to the default level.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The zoom level on an axis can be reset to the <em>default range</em>. Implement this method to be notified when the chart has reset to the default zoom level.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartDelegate.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/sChartDidStartPanning:" title="sChartDidStartPanning:"></a>
+	<h3 class="subsubtitle method-title">sChartDidStartPanning:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>A notification that the chart object has started a panning operation.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)sChartDidStartPanning:(ShinobiChart *)<em>chart</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>chart</em></dt>
+			<dd><p>The chart which has started panning.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartDelegate.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/sChartDidStartZooming:" title="sChartDidStartZooming:"></a>
+	<h3 class="subsubtitle method-title">sChartDidStartZooming:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>A notification that the chart object has started a zoom operation.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)sChartDidStartZooming:(ShinobiChart *)<em>chart</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>chart</em></dt>
+			<dd><p>The chart which is zooming.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>This method is called once at the start of a zoom gesture by the user. Each axis maintains its own zoom level, which is available through the <a href="../Classes/SChartAxis.html#//api/name/zoom">[SChartAxis zoom]</a> property. To monitor the progress of the zoom gesture as it happens, implement the method <a href="#//api/name/sChartIsZooming:">sChartIsZooming:</a>.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartDelegate.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/sChartIsPanning:" title="sChartIsPanning:"></a>
+	<h3 class="subsubtitle method-title">sChartIsPanning:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>A notification that the chart object is panning.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)sChartIsPanning:(ShinobiChart *)<em>chart</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>chart</em></dt>
+			<dd><p>The chart which is panning.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>The range for each axis is updated as the user pans the chart.  You can query the axis range via the <a href="../Classes/SChartAxis.html#//api/name/axisRange">[SChartAxis axisRange]</a> property.</p>
+
+<p>This method is called continually during the pan gesture.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartDelegate.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/sChartIsPanning:withChartMovementInformation:" title="sChartIsPanning:withChartMovementInformation:"></a>
+	<h3 class="subsubtitle method-title">sChartIsPanning:withChartMovementInformation:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>A notification that the chart object is panning, with additional data.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)sChartIsPanning:(ShinobiChart *)<em>chart</em> withChartMovementInformation:(const SChartMovementInformation *)<em>information</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>chart</em></dt>
+			<dd><p>The chart which is panning.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>information</em></dt>
+			<dd><p>Extra information regarding the pan.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>This method is similar to <a href="#//api/name/sChartIsPanning:">sChartIsPanning:</a>, however extra data describing the pan is given as an argument.</p>
+	</div>
+	
+	
+	
+	
+	
+	<div class="method-subsection see-also-section">
+		<h4 class="method-subtitle">See Also</h4>
+		<ul>
+			
+			<li><code><p><a href="#//api/name/sChartIsPanning:">- sChartIsPanning:</a></p></code></li>
+			
+		</ul>
+	</div>
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartDelegate.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/sChartIsZooming:" title="sChartIsZooming:"></a>
+	<h3 class="subsubtitle method-title">sChartIsZooming:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>A notification that the chart object is zooming.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)sChartIsZooming:(ShinobiChart *)<em>chart</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>chart</em></dt>
+			<dd><p>The chart which is zooming.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>This method will be continually called during a zoom operation and is particularly useful to keep multiple charts synchronised. The current zoom level is available on the axis object, and other charts may be programatically zoomed to respond.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartDelegate.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/sChartIsZooming:withChartMovementInformation:" title="sChartIsZooming:withChartMovementInformation:"></a>
+	<h3 class="subsubtitle method-title">sChartIsZooming:withChartMovementInformation:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>A notification that the chart object is zooming, with additional data.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)sChartIsZooming:(ShinobiChart *)<em>chart</em> withChartMovementInformation:(const SChartMovementInformation *)<em>information</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>chart</em></dt>
+			<dd><p>The chart which is zooming.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>information</em></dt>
+			<dd><p>Extra information describing the zoom.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>This method is similar to <a href="#//api/name/sChartIsZooming:">sChartIsZooming:</a>, however extra data describing the zoom is given as an argument.  The other difference is that this method is called during deceleration, if an axis has momentum zooming enabled.  <a href="#//api/name/sChartIsZooming:">sChartIsZooming:</a> is not.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartDelegate.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/sChartRenderFinished:" title="sChartRenderFinished:"></a>
+	<h3 class="subsubtitle method-title">sChartRenderFinished:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>A notification that the chart object has finished rendering.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)sChartRenderFinished:(ShinobiChart *)<em>chart</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>chart</em></dt>
+			<dd><p>The chart which has finished rendering.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>This is called once the chart has finished rendering its data. A common use case for this method would be to display the crosshair on the chart after it has rendered, or to add annotations onto the chart. You could also update other UI elements in your application so that they reflect the new state of the chart. You shouldn’t modify the chart plot area or its axes here, as any changes won’t be visualized until the next time that the chart is rendered.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartDelegate.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/sChartRenderStarted:withFullRedraw:" title="sChartRenderStarted:withFullRedraw:"></a>
+	<h3 class="subsubtitle method-title">sChartRenderStarted:withFullRedraw:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>A notification that the chart object has started rendering.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)sChartRenderStarted:(ShinobiChart *)<em>chart</em> withFullRedraw:(BOOL)<em>fullRedraw</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>chart</em></dt>
+			<dd><p>The chart which has started rendering.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>fullRedraw</em></dt>
+			<dd><p>If the chart is carrying out a full redraw, this argument is set to <code>YES</code>.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>This is called before the chart starts rendering its data. At this point, the chart axes will be up to date with your data, so a common use case of this method would be to update the chart axes before they are rendered, for example to modify the axis title or range.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartDelegate.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/sChartSeries:animationDidFinish:" title="sChartSeries:animationDidFinish:"></a>
+	<h3 class="subsubtitle method-title">sChartSeries:animationDidFinish:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>A notification that an animation of a chart series has ended.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)sChartSeries:(SChartSeries *)<em>series</em> animationDidFinish:(SChartAnimation *)<em>animation</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>series</em></dt>
+			<dd><p>The chart series which has finished animating.</p></dd>
+		</dl>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>animation</em></dt>
+			<dd><p>The animation which finished.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>Note that this callback will still be called should one animation be interrupted by another and the series continues to be animated by the second animation.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartDelegate.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+						<div class="section-method">
+	<a name="//api/name/sChartWillStartLoadingData:" title="sChartWillStartLoadingData:"></a>
+	<h3 class="subsubtitle method-title">sChartWillStartLoadingData:</h3>
+	
+	
+	
+	<div class="method-subsection brief-description">
+		<p>A notification that the chart will start loading its data.</p>
+	</div>		
+	
+    
+
+	<div class="method-subsection method-declaration"><code>- (void)sChartWillStartLoadingData:(ShinobiChart *)<em>chart</em></code></div>
+
+    
+	
+	<div class="method-subsection arguments-section parameters">
+		<h4 class="method-subtitle parameter-title">Parameters</h4>
+		
+		<dl class="argument-def parameter-def">
+			<dt><em>chart</em></dt>
+			<dd><p>The chart which started loading its data.</p></dd>
+		</dl>
+		
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection discussion-section">
+		<h4 class="method-subtitle">Discussion</h4>
+		<p>At this point, the chart has been created, but it either doesn’t contain any data, or it is about to reload its data. You shouldn’t do anything with chart axes at this point, as they will be out of date with the new data. A common use case for this method would be to pop up an activity indicator if you think the data will take a long time to load.</p>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	<div class="method-subsection declared-in-section">
+		<h4 class="method-subtitle">Declared In</h4>
+		<code class="declared-in-ref">SChartDelegate.h</code><br />
+	</div>				
+	
+	
+</div>
+						
+					</div>
+					
+					
+				</div>
+				<div class="main-navigation navigation-bottom">
+					<ul>
+	<li><a href="../index.html">Index</a></li>
+	<li><a href="../hierarchy.html">Hierarchy</a></li>
+</ul>
+				</div>
+				<div id="footer">
+					<hr />
+					<div class="footer-copyright">
+						<p><span class="copyright">&copy; 2013 Scott Logic Ltd. All rights reserved. (Last updated: 2013-10-01)</span><br />
+						
+						<span class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.1 (build 858)</a>.</span></p>
+						
+					</div>
+				</div>
+			</div>
+		</article>
+		<script type="text/javascript">
+			function jumpToChange()
+			{
+				window.location.hash = this.options[this.selectedIndex].value;
+			}
+			
+			function toggleTOC()
+			{
+				var contents = document.getElementById('contents');
+				var tocContainer = document.getElementById('tocContainer');
+				
+				if (this.getAttribute('class') == 'open')
+				{
+					this.setAttribute('class', '');
+					contents.setAttribute('class', '');
+					tocContainer.setAttribute('class', '');
+					
+					window.name = "hideTOC";
+				}
+				else
+				{
+					this.setAttribute('class', 'open');
+					contents.setAttribute('class', 'isShowingTOC');
+					tocContainer.setAttribute('class', 'isShowingTOC');
+					
+					window.name = "";
+				}
+				return false;
+			}
+			
+			function toggleTOCEntryChildren(e)
+			{
+				e.stopPropagation();
+				var currentClass = this.getAttribute('class');
+				if (currentClass == 'children') {
+					this.setAttribute('class', 'children open');
+				}
+				else if (currentClass == 'children open') {
+					this.setAttribute('class', 'children');
+				}
+				return false;
+			}
+			
+			function tocEntryClick(e)
+			{
+				e.stopPropagation();
+				return true;
+			}
+			
+			function init()
+			{
+				var selectElement = document.getElementById('jumpTo');
+				selectElement.addEventListener('change', jumpToChange, false);
+				
+				var tocButton = document.getElementById('table_of_contents');
+				tocButton.addEventListener('click', toggleTOC, false);
+				
+				var taskTreeItem = document.getElementById('task_treeitem');
+				if (taskTreeItem.getElementsByTagName('li').length > 0)
+				{
+					taskTreeItem.setAttribute('class', 'children');
+					taskTreeItem.firstChild.setAttribute('class', 'disclosure');
+				}
+				
+				var tocList = document.getElementById('toc');
+				
+				var tocEntries = tocList.getElementsByTagName('li');
+				for (var i = 0; i < tocEntries.length; i++) {
+					tocEntries[i].addEventListener('click', toggleTOCEntryChildren, false);
+				}
+				
+				var tocLinks = tocList.getElementsByTagName('a');
+				for (var i = 0; i < tocLinks.length; i++) {
+					tocLinks[i].addEventListener('click', tocEntryClick, false);
+				}
+				
+				if (window.name == "hideTOC") {
+					toggleTOC.call(tocButton);
+				}
+			}
+			
+			window.onload = init;
+			
+			// If showing in Xcode, hide the TOC and Header
+			if (navigator.userAgent.match(/xcode/i)) {
+				document.getElementById("contents").className = "hideInXcode"
+				document.getElementById("tocContainer").className = "hideInXcode"
+				document.getElementById("top_header").className = "hideInXcode"
+			}
+			
+		</script>
+	</body>
+</html>
